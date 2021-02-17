@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Muse1\GLASFISH.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Muse1d" source="../../../Muse1d.bmp" />
+-->
+<VertexBuffer id="GLASFISH_VertexBuffer_TransparentTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-160 -320 -160 0 -1 0 0xffffffff 0.560156 0.770312</v>
+	<v index="1">-480 -320 -480 0 -1 0 0xffffffff 0.314063 0.770312</v>
+	<v index="2">-160 -320 -800 0 -1 0 0xffffffff 0.314453 0.576172</v>
+	<v index="3">160 -320 -480 0 -1 0 0xffffffff 0.560156 0.576563</v>
+	<v index="4">160 -320 160 0 -1 0 0xffffffff 0.314063 0.770312</v>
+	<v index="5">-160 -320 -160 0 -1 0 0xffffffff 0.560156 0.770312</v>
+	<v index="6">160 -320 -480 0 -1 0 0xffffffff 0.560156 0.576563</v>
+	<v index="7">480 -320 -160 0 -1 0 0xffffffff 0.314453 0.576172</v>
+	<v index="8">480 -320 480 0 -1 0 0xffffffff 0.560156 0.770312</v>
+	<v index="9">160 -320 160 0 -1 0 0xffffffff 0.314063 0.770312</v>
+	<v index="10">480 -320 -160 0 -1 0 0xffffffff 0.314453 0.576172</v>
+	<v index="11">800 -320 160 0 -1 0 0xffffffff 0.560156 0.576563</v>
+	<v index="12">-319.65 -320 1.58203 -0.325628 -0.887656 0.325628 0xffffffff 0.314453 0.576172</v>
+	<v index="13">-639.65 -320 -318.418 -0.325628 -0.887656 0.325628 0xffffffff 0.560156 0.576563</v>
+	<v index="14">-480 -320 -480 0 -1 0 0xffffffff 0.560156 0.770312</v>
+	<v index="15">-160 -320 -160 0 -1 0 0xffffffff 0.314063 0.770312</v>
+	<v index="16">0.349609 -320 321.582 -0.325628 -0.887655 0.325628 0xffffffff 0.560156 0.576563</v>
+	<v index="17">-319.65 -320 1.58203 -0.325628 -0.887656 0.325628 0xffffffff 0.314453 0.576172</v>
+	<v index="18">-160 -320 -160 0 -1 0 0xffffffff 0.314063 0.770312</v>
+	<v index="19">160 -320 160 0 -1 0 0xffffffff 0.560156 0.770312</v>
+	<v index="20">320.35 -320 641.582 -0.325629 -0.887655 0.325628 0xffffffff 0.314453 0.576172</v>
+	<v index="21">0.349609 -320 321.582 -0.325628 -0.887655 0.325628 0xffffffff 0.560156 0.576563</v>
+	<v index="22">160 -320 160 0 -1 0 0xffffffff 0.560156 0.770312</v>
+	<v index="23">480 -320 480 0 -1 0 0xffffffff 0.314063 0.770312</v>
+	<v index="24">-480 0 160 -0.578091 -0.575865 0.578092 0xffffffff 0.560156 0.770312</v>
+	<v index="25">-800 0 -160 -0.578091 -0.575865 0.578091 0xffffffff 0.314063 0.770312</v>
+	<v index="26">-639.65 -320 -318.418 -0.325628 -0.887656 0.325628 0xffffffff 0.314453 0.576172</v>
+	<v index="27">-319.65 -320 1.58203 -0.325628 -0.887656 0.325628 0xffffffff 0.560156 0.576563</v>
+	<v index="28">-159.999 0 480 -0.578092 -0.575864 0.578092 0xffffffff 0.314063 0.770312</v>
+	<v index="29">-480 0 160 -0.578091 -0.575865 0.578092 0xffffffff 0.560156 0.770312</v>
+	<v index="30">-319.65 -320 1.58203 -0.325628 -0.887656 0.325628 0xffffffff 0.560156 0.576563</v>
+	<v index="31">0.349609 -320 321.582 -0.325628 -0.887655 0.325628 0xffffffff 0.314453 0.576172</v>
+	<v index="32">160 0 800 -0.578093 -0.575864 0.578091 0xffffffff 0.560156 0.770312</v>
+	<v index="33">-159.999 0 480 -0.578092 -0.575864 0.578092 0xffffffff 0.314063 0.770312</v>
+	<v index="34">0.349609 -320 321.582 -0.325628 -0.887655 0.325628 0xffffffff 0.314453 0.576172</v>
+	<v index="35">320.35 -320 641.582 -0.325629 -0.887655 0.325628 0xffffffff 0.560156 0.576563</v>
+</VertexBuffer>
+<Model id="GLASFISH">
+	<!--
+	<Revolt Radius="876.356079" Xmin="-800.000000" Xmax="800.000000" Ymin="-320.000000" Ymax="0.000000" Zmin="-800.000000" Zmax="800.000000"
+	 PolyNum="9" VertNum="16" QuadNumTex="9" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="GLASFISH_VertexBuffer_TransparentTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="GLASFISH_PreviewCamera">
+				0.00114109 0 0 0
+				0 0.00114109 0 0
+				0 0 0.000570544 0
+				0 0.182574 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Muse1d"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="36" />
+	</Pass>
+</Model>
+</XDX>

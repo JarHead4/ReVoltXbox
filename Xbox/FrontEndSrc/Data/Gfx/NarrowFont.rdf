@@ -1,0 +1,23 @@
+// List of resources to bundle.
+//
+// The output will be a header file (.h) used at compile time,
+// and a packed resource file (.xpr) used at runtime.
+
+out_header         NarrowFont.h
+out_packedresource NarrowFont.xpr
+out_error          NarrowFont.err
+
+
+Texture Font
+{
+   Source      Arial_12.bmp
+   AlphaSource Arial_12_a.bmp
+   Format      D3DFMT_A4R4G4B4
+   Levels      1
+}
+
+UserData FontData
+{
+   DataFile    Arial_12.abc
+}
+

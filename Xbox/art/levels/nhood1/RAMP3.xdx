@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\NHood1\RAMP3.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="NHood1b" source="../../../NHood1b.bmp" />
+<Texture id="NHood1c" source="../../../NHood1c.bmp" />
+-->
+<VertexBuffer id="RAMP3_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-93.6162 -0.313285 -161.053 -0.707107 0.612775 0.352855 0xff808080 0.25 0.0585938</v>
+	<v index="1">-93.6162 0.0118089 -194.259 -0.707107 -0.612372 -0.353554 0xff808080 0.21875 0.0585938</v>
+	<v index="2">-93.6163 -179.642 116.91 -0.816497 -0.557677 0.149429 0xff808080 0.21875 0.53125</v>
+	<v index="3">-93.6163 -130.471 64.9812 -0.707107 0.612775 0.352855 0xff808080 0.25 0.53125</v>
+	<v index="4">93.6161 -130.471 64.9812 0.707107 0.612775 0.352855 0xff808080 0.25 0.0585938</v>
+	<v index="5">93.6161 -179.642 116.91 0.816496 -0.557678 0.149429 0xff808080 0.21875 0.0585938</v>
+	<v index="6">93.6162 0.0117965 -194.259 0.707107 -0.612373 -0.353553 0xff808080 0.21875 0.53125</v>
+	<v index="7">93.6162 -0.313304 -161.053 0.707107 0.612775 0.352855 0xff808080 0.25 0.53125</v>
+	<v index="8">-93.6163 -165.181 125.259 -0.57757 0.211734 0.788404 0xffc8c8c8 0.292969 0.296875</v>
+	<v index="9">-93.6163 -179.642 116.91 -0.816497 -0.557677 0.149429 0xffc8c8c8 0.292969 0.261719</v>
+	<v index="10">93.6161 -179.642 116.91 0.816496 -0.557678 0.149429 0xffc8c8c8 0.105469 0.261719</v>
+	<v index="11">93.6161 -165.181 125.259 0.57757 0.211734 0.788405 0xffc8c8c8 0.105469 0.296875</v>
+	<v index="12">93.6162 -0.313304 -161.053 0.707107 0.612775 0.352855 0xff272727 0.105469 0.53125</v>
+	<v index="13">-93.6162 -0.313285 -161.053 -0.707107 0.612775 0.352855 0xff272727 0.292969 0.53125</v>
+	<v index="14">-93.6163 -130.471 64.9812 -0.707107 0.612775 0.352855 0xff272727 0.292969 0.0585938</v>
+	<v index="15">93.6161 -130.471 64.9812 0.707107 0.612775 0.352855 0xff272727 0.105469 0.0585938</v>
+	<v index="16">93.6161 -179.642 116.91 0.816496 -0.557678 0.149429 0xffffffff 0.105469 0.53125</v>
+	<v index="17">-93.6163 -179.642 116.91 -0.816497 -0.557677 0.149429 0xffffffff 0.292969 0.53125</v>
+	<v index="18">-93.6162 0.0118089 -194.259 -0.707107 -0.612372 -0.353554 0xffffffff 0.292969 0.0585938</v>
+	<v index="19">93.6162 0.0117965 -194.259 0.707107 -0.612373 -0.353553 0xffffffff 0.105469 0.0585938</v>
+	<v index="20">-93.6163 -130.471 64.9812 -0.707107 0.612775 0.352855 0xff272727 0.292969 0.0585938</v>
+	<v index="21">-93.6163 -165.181 125.259 -0.57757 0.211734 0.788404 0xff272727 0.292969 0.53125</v>
+	<v index="22">93.6161 -165.181 125.259 0.57757 0.211734 0.788405 0xff272727 0.105469 0.53125</v>
+	<v index="23">93.6161 -130.471 64.9812 0.707107 0.612775 0.352855 0xff272727 0.105469 0.0585938</v>
+	<v index="24">-93.6163 -165.181 125.259 -0.57757 0.211734 0.788404 0xff808080 0.21875 0.53125</v>
+	<v index="25">-93.6163 -130.471 64.9812 -0.707107 0.612775 0.352855 0xff808080 0.21875 0.0585938</v>
+	<v index="26">-93.6163 -179.642 116.91 -0.816497 -0.557677 0.149429 0xff808080 0.25 0.0585938</v>
+	<v index="27">93.6161 -130.471 64.9812 0.707107 0.612775 0.352855 0xff808080 0.21875 0.53125</v>
+	<v index="28">93.6161 -165.181 125.259 0.57757 0.211734 0.788405 0xff808080 0.21875 0.0585938</v>
+	<v index="29">93.6161 -179.642 116.91 0.816496 -0.557678 0.149429 0xff808080 0.25 0.0585938</v>
+	<v index="30">80.181 0.000545502 162.618 0.707107 0 0.707107 0xff695355 0.0507813 0.777344</v>
+	<v index="31">80.181 -129.997 162.618 0.57735 -0.57735 0.57735 0xff695355 0.179688 0.777344</v>
+	<v index="32">80.1811 -129.997 64.3245 0.57735 -0.57735 -0.57735 0xff493a3b 0.179688 0.636719</v>
+	<v index="33">80.1811 0.000545502 64.3245 0.707107 0 -0.707107 0xff695355 0.0507813 0.636719</v>
+	<v index="34">-79.5453 0.000539303 64.3244 -0.707107 0 -0.707107 0xff695355 0.0507813 0.777344</v>
+	<v index="35">-79.5453 -129.997 64.3245 -0.57735 -0.57735 -0.57735 0xff493a3b 0.179688 0.777344</v>
+	<v index="36">-79.5453 -129.997 162.618 -0.57735 -0.57735 0.57735 0xff6e5656 0.179688 0.636719</v>
+	<v index="37">-79.5453 0.000539303 162.618 -0.707107 0 0.707107 0xff6e5656 0.0507813 0.636719</v>
+	<v index="38">80.181 -129.997 162.618 0.57735 -0.57735 0.57735 0xffffffff 0.101563 0.949219</v>
+	<v index="39">-79.5453 -129.997 162.618 -0.57735 -0.57735 0.57735 0xffffffff 0.101563 0.644531</v>
+	<v index="40">-79.5453 -129.997 64.3245 -0.57735 -0.57735 -0.57735 0xff595959 0.183594 0.644531</v>
+	<v index="41">80.1811 -129.997 64.3245 0.57735 -0.57735 -0.57735 0xff595959 0.183594 0.949219</v>
+	<v index="42">-79.5453 0.000539303 162.618 -0.707107 0 0.707107 0xffb5b5b5 0.0976563 0.9375</v>
+	<v index="43">-79.5453 -129.997 162.618 -0.57735 -0.57735 0.57735 0xffaa9898 0.226563 0.9375</v>
+	<v index="44">80.181 -129.997 162.618 0.57735 -0.57735 0.57735 0xffaa9898 0.226563 0.636719</v>
+	<v index="45">80.181 0.000545502 162.618 0.707107 0 0.707107 0xffb5b5b5 0.0976563 0.636719</v>
+	<v index="46">80.1811 0.000545502 64.3245 0.707107 0 -0.707107 0xff231920 0.144531 0.636719</v>
+	<v index="47">80.1811 -129.997 64.3245 0.57735 -0.57735 -0.57735 0xff150e13 0.273438 0.636719</v>
+	<v index="48">-79.5453 -129.997 64.3245 -0.57735 -0.57735 -0.57735 0xff150e13 0.273438 0.9375</v>
+	<v index="49">-79.5453 0.000539303 64.3244 -0.707107 0 -0.707107 0xff231920 0.144531 0.9375</v>
+</VertexBuffer>
+<Model id="RAMP3">
+	<!--
+	<Revolt Radius="233.886673" Xmin="-93.616333" Xmax="93.616180" Ymin="-179.641525" Ymax="0.011809" Zmin="-194.258820" Zmax="162.617584"
+	 PolyNum="13" VertNum="18" QuadNumTex="11" TriNumTex="2" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="RAMP3_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="RAMP3_PreviewCamera">
+				0.00427557 0 0 0
+				0 0.00427557 0 0
+				0 0 0.00213779 0
+				3.262e-007 0.38401 0.533821 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="NHood1b"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="24" />
+		<Draw primitive="TRILIST" start="24" count="6" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="RAMP3_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="RAMP3_PreviewCamera">
+				0.00427557 0 0 0
+				0 0.00427557 0 0
+				0 0 0.00213779 0
+				3.262e-007 0.38401 0.533821 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="NHood1c"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="30" count="20" />
+	</Pass>
+</Model>
+</XDX>

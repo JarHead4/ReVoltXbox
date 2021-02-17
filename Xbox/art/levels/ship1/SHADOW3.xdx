@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Ship1\SHADOW3.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="fxpage1" source="../../gfx/fxpage1.bmp" />
+-->
+<VertexBuffer id="SHADOW3_VertexBuffer_TransparentTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-36.448 136.5 -256.772 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="1">-36.448 136.5 -275.939 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="2">77.1605 136.5 -280.293 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="3">126.876 136.5 -248.655 0 -1 0 0xff000000 0.859375 0.642578</v>
+	<v index="4">-36.3948 136.5 114.52 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="5">-64.2727 136.5 121.543 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="6">-82.5349 136.5 103.873 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="7">-36.3948 136.5 92.9543 0 -1 0 0xff000000 0.859375 0.642578</v>
+	<v index="8">-36.448 136.5 -256.772 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="9">-64.813 136.5 -252.184 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="10">-83.3186 136.5 -269.16 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="11">-36.448 136.5 -275.939 0 -1 0 0xff000000 0.859375 0.642578</v>
+	<v index="12">151.734 136.5 -180.861 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="13">-36.448 136.5 -256.772 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="14">126.876 136.5 -248.655 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="15">-36.448 136.5 -256.772 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="16">151.734 136.5 -180.861 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="17">-36.3948 136.5 92.9543 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="18">-36.3948 136.5 92.9543 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="19">151.734 136.5 -180.861 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="20">149.474 136.5 100.483 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="21">-36.3948 136.5 114.52 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="22">-36.3948 136.5 92.9543 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="23">149.474 136.5 100.483 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="24">65.8615 136.5 196.525 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="25">-36.3948 136.5 114.52 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="26">149.474 136.5 100.483 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="27">65.8615 136.5 196.525 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="28">149.474 136.5 100.483 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="29">219.528 136.5 190.029 0 -1 0 0xff000000 0.859375 0.609375</v>
+</VertexBuffer>
+<Model id="SHADOW3">
+	<!--
+	<Revolt Radius="321.169678" Xmin="-83.318626" Xmax="219.527817" Ymin="136.500000" Ymax="136.500000" Zmin="-280.292633" Zmax="196.524857"
+	 PolyNum="9" VertNum="14" QuadNumTex="3" TriNumTex="6" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="SHADOW3_VertexBuffer_TransparentTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="SHADOW3_PreviewCamera">
+				0.00311362 0 0 0
+				0 0.00311362 0 0
+				0 0 0.00155681 0
+				-0.212052 -0.425009 0.565205 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="fxpage1"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="12" />
+		<Draw primitive="TRILIST" start="12" count="18" />
+	</Pass>
+</Model>
+</XDX>

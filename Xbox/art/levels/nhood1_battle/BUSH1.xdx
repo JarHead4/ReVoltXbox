@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Nhood1_Battle\BUSH1.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Nhood1_Battlei" source="../../../Nhood1_Battlei.bmp" />
+-->
+<VertexBuffer id="BUSH1_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-674.095 -718.251 -895.635 0.636078 5.09533e-009 -0.771625 0xffb0ffaa 0.25 0.375</v>
+	<v index="1">-674.095 -242.04 -895.635 0.636078 5.09533e-009 -0.771625 0xffb0ffaa 0 0.375</v>
+	<v index="2">-32.248 -242.04 -366.537 0.636078 5.09533e-009 -0.771625 0xffb0ffaa 0 0.875</v>
+	<v index="3">-32.248 -718.251 -366.537 0.636078 5.09533e-009 -0.771625 0xffb0ffaa 0.25 0.875</v>
+	<!-- double-sided begin -->
+	<v index="4">-32.248 -242.04 -366.537 -0.636078 -5.09533e-009 0.771625 0xffb0ffaa 0 0.875</v>
+	<v index="5">-674.095 -242.04 -895.635 -0.636078 -5.09533e-009 0.771625 0xffb0ffaa 0 0.375</v>
+	<v index="6">-674.095 -718.251 -895.635 -0.636078 -5.09533e-009 0.771625 0xffb0ffaa 0.25 0.375</v>
+	<v index="7">-32.248 -718.251 -366.537 -0.636078 -5.09533e-009 0.771625 0xffb0ffaa 0.25 0.875</v>
+	<!-- double-sided end -->
+	<v index="8">-769.078 -718.251 -631.086 0 0 -1 0xffb0ffaa 0.25 0.375</v>
+	<v index="9">-769.078 -242.04 -631.086 0 0 -1 0xffb0ffaa 0 0.375</v>
+	<v index="10">62.7348 -242.04 -631.086 0 0 -1 0xffb0ffaa 0 0.875</v>
+	<v index="11">62.7348 -718.251 -631.086 0 0 -1 0xffb0ffaa 0.25 0.875</v>
+	<!-- double-sided begin -->
+	<v index="12">62.7348 -242.04 -631.086 0 0 1 0xffb0ffaa 0 0.875</v>
+	<v index="13">-769.078 -242.04 -631.086 0 0 1 0xffb0ffaa 0 0.375</v>
+	<v index="14">-769.078 -718.251 -631.086 0 0 1 0xffb0ffaa 0.25 0.375</v>
+	<v index="15">62.7348 -718.251 -631.086 0 0 1 0xffb0ffaa 0.25 0.875</v>
+	<!-- double-sided end -->
+	<v index="16">-620.511 -718.251 -312.483 -0.766044 0 -0.642788 0xffb0ffaa 0.25 0.375</v>
+	<v index="17">-620.511 -242.04 -312.483 -0.766044 0 -0.642788 0xffb0ffaa 0 0.375</v>
+	<v index="18">-85.8321 -242.04 -949.689 -0.766044 0 -0.642788 0xffb0ffaa 0 0.875</v>
+	<v index="19">-85.8321 -718.251 -949.689 -0.766044 0 -0.642788 0xffb0ffaa 0.25 0.875</v>
+	<!-- double-sided begin -->
+	<v index="20">-85.8321 -242.04 -949.689 0.766044 0 0.642788 0xffb0ffaa 0 0.875</v>
+	<v index="21">-620.511 -242.04 -312.483 0.766044 0 0.642788 0xffb0ffaa 0 0.375</v>
+	<v index="22">-620.511 -718.251 -312.483 0.766044 0 0.642788 0xffb0ffaa 0.25 0.375</v>
+	<v index="23">-85.8321 -718.251 -949.689 0.766044 0 0.642788 0xffb0ffaa 0.25 0.875</v>
+	<!-- double-sided end -->
+</VertexBuffer>
+<Model id="BUSH1">
+	<!--
+	<Revolt Radius="1331.333862" Xmin="-769.077942" Xmax="62.734772" Ymin="-718.250732" Ymax="-242.040497" Zmin="-949.688538" Zmax="-312.483063"
+	 PolyNum="3" VertNum="12" QuadNumTex="3" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="BUSH1_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="BUSH1_PreviewCamera">
+				0.000751126 0 0 0
+				0 0.000751126 0 0
+				0 0 0.000375563 0
+				0.265276 0.36065 0.737013 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Nhood1_Battlei"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="24" />
+	</Pass>
+</Model>
+</XDX>

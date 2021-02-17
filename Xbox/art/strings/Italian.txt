@@ -1,0 +1,417 @@
+
+
+
+Re-Volt
+Seleziona gara
+Inserisci nome
+Seleziona auto
+Seleziona pista
+Seleziona coppa
+Sommario
+Tipo connessione:
+Impostazioni rendering
+Modalità
+Sala d'attesa
+La partita è già cominciata!
+Opzioni Controller
+Seleziona partita in corso
+
+
+Inizia gara
+[Play Live!]
+[Single Player]
+[Multiplayer]
+[System Link]
+Migliori tempi
+Tabella progr.
+Editor di piste
+Opzioni
+[Language]
+[Create Account]
+
+
+[Quick Match]
+[Find a Match]
+[Friends]
+[Create a Match]
+[Statistics]
+
+
+[Select Race]
+[Race]
+[Battle Tag]
+
+
+Campionato
+Gara singola
+Clockwork Carnage
+Prove cronometrate
+Allenamento
+Arena
+Modalità modifica 
+Calcola statistiche auto 
+
+
+Seleziona auto
+
+
+Seleziona pista
+Speculare
+Invertita
+Auto controllate automat.
+Giri
+Lunghezza
+
+
+Coppa di Bronzo
+Coppa d'Argento
+Coppa d'Oro
+Coppa di Platino
+
+
+Modalità selezione 
+Rotazione semplice 
+Rotazione avanzata
+La prima acrobazia
+
+
+Impostazioni del gioco
+Impostazioni video
+Impostazioni audio
+Impostazioni Controller
+Ringraziamenti
+
+
+Numero di auto
+Auto a caso
+Piste a caso  
+Oggetti da raccogliere
+Numero di giri
+Tempo Battle Tag 
+Difficoltà
+Accesso auto
+Intertempi
+Collisione
+Misurazione velocità 
+
+
+Inserisci il nome
+
+
+Si	
+No
+Si
+No
+Facile
+Medio
+Difficile
+
+
+Risoluzione
+Textures 
+Brillantezza
+Ombre
+Dispositivo video
+Luminosità
+Contrasto
+Mostra distanza
+Riflessi
+Mostra modelli
+Indicatori derapata
+Luci
+Automatico
+Non disponibile
+Antialias
+Abilitazione V-Sync
+Mostra frame rate 
+Filtro texture
+Livello Mipmap
+Wireframe
+Auto BBoxes
+Particelle
+Fumo
+Alta risoluzione
+Split-screen 
+
+
+Musica del gioco 
+Volume effetti
+Volume musica
+Prova effetti
+Prova musica
+Canali SFX 
+Audio
+Stereo
+Mono
+
+
+Guarda i Record
+Salva i Record
+
+Records
+
+
+Comincia partita
+Unisciti alla partita
+In attesa connessione
+Scegli partita
+Computer host:
+Continua partita in connessione
+Finisci partita in connessione
+Numero di giocatori
+Ottimizzazione pacchetti dati:
+Protocollo DirectPlay:
+Ricerca dei giochi...
+Collegamento al gioco...
+Premere la barra spaziatrice per aggiornare la lista del gioco
+Pista seguente
+
+
+Predefinito  
+Bronzo
+Argento 
+Oro
+Speciale 
+
+
+Carica replay
+Salva replay
+
+
+Riprendi
+Continua il Campionato
+Fine Campionato
+Sospendi il tentativo
+Riavvia partita
+Riavvia replay
+Esci
+Vedi replay
+
+
+Seleziona Controller:
+Configura Controller
+Sterzata non attiva
+Raggio sterzata
+Sterzata non lineare
+Impostazioni predefinite 
+Configurazione
+
+
+Modalità demo
+Giocatore 
+Salva auto info singole 
+Salva auto info multiple
+Salva auto info in uso 
+Azzera tabella progressi
+Modalità
+Simulazione
+Arcade
+Console
+Junior RC
+MPH
+MPH modif.
+Fpm
+Kph
+Kph modif.
+
+
+SEI ARRIVATO
+PROVA A MIGLIORARE PER
+SBLOCCARE LA PROSSIMA SFIDA!
+LA COPPA DI BRONZO
+LA COPPA D'ARGENTO
+LA COPPA D'ORO
+LA COPPA SPECIALE
+E' SBLOCCATA
+LE PISTE SPECULARI
+LE PISTE INVERTITE
+SONO STATE SBLOCCATE
+LA NUOVA SERIE DI AUTO
+TU HAI SBLOCCATO
+LE NUOVE MACCHINE
+1°
+2°
+3°
+
+Sei sicuro?
+
+
+Classificati almeno terzo 
+per avanzare!
+Classificati in prima posizione
+per accedere alla prossima sfida
+Classificati in prima posizione per
+essere incoronato ""Re-Volt Master""!
+
+
+S
+I
+(S)
+(I)
+
+
+Classe
+Posiz.
+Vel.
+Acc.
+Peso
+Tras.
+
+Elettrica
+Benzina
+Speciale
+
+Principiante
+Appassionato
+Avanzato
+Semi-Prof.
+Profess.
+
+4WD
+RWD
+FWD
+
+
+Sconosciuto  
+Bloccato
+
+
+Giocatore
+Giocatori
+
+
+Vel. piena; scontri realistici 
+Vel. piena; scontri auto semplici 
+Vel. piena; scontri semplici
+Vel. ridotta; scontri semplici
+
+
+Accelera
+Frena
+Fuoco  
+Ribalta
+Riposiziona
+Pausa  
+
+
+Piste  
+Vinte
+Gare
+Norm.
+Inv.
+Spec.
+Stelle 
+
+
+Modalità di gioco:
+Livello:
+Pista:
+Auto
+Gare vinte:
+Stelle trovate:
+Stelle raccolte:
+di  
+Battuto 
+Tempo di sfida: 
+
+Hai
+tentativo.
+tentativi. 
+
+
+1º
+2º
+3º
+4º
+5º
+6º
+7º
+8º
+9º
+10º
+11º
+12º
+13º
+14º
+15º
+16º
+
+
+CONGRATULAZIONI!
+TI SEI QUALIFICATO
+CONGRATULAZIONI!
+CAMPIONATO FINITO!
+HAI FINITO QUESTO CAMPIONATO!
+Auto
+Punti
+
+
+Miglior giro
+Ultimo giro
+Giro
+Gara
+Giro
+Split
+Avversario
+Sfida
+Tempo record sulla sfida!
+Tempo
+Risultati del gioco 
+Risultati della gara
+
+
+Vuoi veramente uscire? 
+Vuoi veramente ripartire?
+Veramente o per finta? 
+Veramente 
+Per finta 
+
+
+Predefinito  
+Bronzo 
+Argento  
+Oro 
+Platino
+
+Partita finita! Buona fortuna per\nla prossima volta!\n
+
+
+NUOVA CONSEGNA DI AUTO!\n(Controlla le scatole nella\nschermata di selezione auto)\n 
+CONGRATULAZIONI!\n%s PISTE ORA SONO\nINVERTITE\n(Premi GIU' nella schermata\n di selezione pista)\n
+CONGRATULAZIONI!\n%s PISTE ORA SONO\nSPECULARI\n(Premi SU nella schermata\n di selezione pista)\n
+CONGRATULAZIONI!\n%s PISTE ORA SONO\nSPECULARI INVERTITE\n(Premi SU e poi GIU' nella\nschermata di selezione pista)\n
+NUOVA MODALITA' DI GIOCO!\nLA ""CLOCKWORK CARNAGE""\nE' STATA SBLOCCATA\n
+
+
+Sinistra 
+Destra 
+Clacson  
+Provare ancora? 
+Demo
+Caricamento interfaccia 
+Caricamento ringraziamenti
+Caricamento del Gauge Benchmark del gioco
+Corridori:
+CPU 
+Casuale 
+Stato 
+Pronto 
+Non pronto 
+Premere TAB per cominciare
+Gioco multiplayer finito!
+Attesa:  
+In attesa dell'host...
+Host
+Pista 
+Gioco
+Ver. errata
+Pieno  
+Record  
+Modificato  
+Finito  
+Avviato  
+Apri
+Replay
+Guarda la galleria
+Locale
+Scaricamento

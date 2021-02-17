@@ -1,0 +1,90 @@
+/////////////////////////////////////////////////////////////////////////////////
+// Menu.h
+/////////////////////////////////////////////////////////////////////////////////
+#ifndef __MENU_H
+#define __MENU_H
+
+#include "revolt.h"
+#include "TypeDefs.h"
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+/////////////////////////////////////////////////////////////////////////////////
+enum
+{
+	MENUITEM_HILIGHT	= 0x00000001,
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// Structures
+/////////////////////////////////////////////////////////////////////////////////
+
+// Menu model
+typedef struct t_MenuModel
+{
+	VEC			pos;				// Position
+//	MODEL		*pModel;			// Model
+
+} s_MenuModel;
+
+
+// Menu item
+struct t_Menu;
+
+typedef struct t_MenuItem
+{
+	int			textX, textY;			// Text position
+	char		*pText;					// Text string
+
+	t_MenuModel	*pModel;				// Model for menu item
+
+	t_MenuItem	*pSelectMenuItem[4];	// Menu item select up/down/left/right
+	t_Menu		*pSelectMenu;			// Menu when selected
+
+	void (*Function[4])(t_Menu *pMenu);	// Function up/down/left/right/select
+
+} s_MenuItem;
+
+
+// Menu
+typedef struct t_Menu
+{
+	t_MenuItem	**pMenuItems;				// Pointer to menu item pointer list
+
+	t_MenuItem	*pMenuItemCur;				// Currently selected menu item
+	int			iMenuItemStart;				// Startinf menu item (-1 = Last used item)
+
+	void (*StartUpFunc)(t_Menu *pMenu);		// Function called when menu is selected
+	int (*StartLoopFunc)(t_Menu *pMenu);	// Function called at start of loop
+
+	t_Menu		*pParentMenu;				// Parent menu
+
+} s_Menu;
+
+
+/////////////////////////////////////////////////////////////////////////////////
+// Externs
+/////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////
+// Prototypes
+/////////////////////////////////////////////////////////////////////////////////
+void MenuInit(t_Menu *pMenu, t_Menu *pParentMenu);
+t_Menu *MenuProcess(t_Menu *pMenu);
+void MenuRender(t_Menu *pMenu);
+
+void MenuItemRender(t_MenuItem *pMenuItem, int flags);
+
+
+void DecLightPower(t_Menu* pMenu);
+void IncLightPower(t_Menu* pMenu);
+void DecLightStrength(t_Menu* pMenu);
+void IncLightStrength(t_Menu* pMenu);
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+/////////////////////////////////////////////////////////////////////////////////
+#endif //__MENU_H

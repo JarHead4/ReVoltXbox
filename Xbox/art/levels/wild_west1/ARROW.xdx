@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Wild_West1\ARROW.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Wild_West1j" source="../../../Wild_West1j.bmp" />
+-->
+<VertexBuffer id="ARROW_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-115 0 -10 0 -1 0 0xff808080 0.960938 0</v>
+	<v index="1">115 0 -10 0 -1 0 0xff808080 0.960938 0.46875</v>
+	<v index="2">115 0 0 0 -0.707107 -0.707107 0xff808080 1 0.46875</v>
+	<v index="3">-115 0 0 0 -0.707107 -0.707107 0xff808080 1 0</v>
+	<!-- double-sided begin -->
+	<v index="4">115 0 0 0 0.707107 0.707107 0xff808080 1 0.46875</v>
+	<v index="5">115 0 -10 0 1 0 0xff808080 0.960938 0.46875</v>
+	<v index="6">-115 0 -10 0 1 0 0xff808080 0.960938 0</v>
+	<v index="7">-115 0 0 0 0.707107 0.707107 0xff808080 1 0</v>
+	<!-- double-sided end -->
+	<v index="8">-115 0 10 0 -1 0 0xff808080 0.960938 0</v>
+	<v index="9">-115 0 0 0 -0.707107 -0.707107 0xff808080 1 0</v>
+	<v index="10">115 0 0 0 -0.707107 -0.707107 0xff808080 1 0.46875</v>
+	<v index="11">115 0 10 0 -1 0 0xff808080 0.960938 0.46875</v>
+	<!-- double-sided begin -->
+	<v index="12">115 0 0 0 0.707107 0.707107 0xff808080 1 0.46875</v>
+	<v index="13">-115 0 0 0 0.707107 0.707107 0xff808080 1 0</v>
+	<v index="14">-115 0 10 0 1 0 0xff808080 0.960938 0</v>
+	<v index="15">115 0 10 0 1 0 0xff808080 0.960938 0.46875</v>
+	<!-- double-sided end -->
+	<v index="16">115 0 0 0 -0.707107 -0.707107 0xff808080 1 0.46875</v>
+	<v index="17">-115 0 0 0 -0.707107 -0.707107 0xff808080 1 0</v>
+	<v index="18">-115 10 0 0 0 -1 0xff808080 0.960938 0</v>
+	<v index="19">115 10 0 0 0 -1 0xff808080 0.960938 0.46875</v>
+	<!-- double-sided begin -->
+	<v index="20">-115 10 0 0 0 1 0xff808080 0.960938 0</v>
+	<v index="21">-115 0 0 0 0.707107 0.707107 0xff808080 1 0</v>
+	<v index="22">115 0 0 0 0.707107 0.707107 0xff808080 1 0.46875</v>
+	<v index="23">115 10 0 0 0 1 0xff808080 0.960938 0.46875</v>
+	<!-- double-sided end -->
+	<v index="24">115 -10 0 0 0 -1 0xff808080 0.960938 0.46875</v>
+	<v index="25">-115 -10 0 0 0 -1 0xff808080 0.960938 0</v>
+	<v index="26">-115 0 0 0 -0.707107 -0.707107 0xff808080 1 0</v>
+	<v index="27">115 0 0 0 -0.707107 -0.707107 0xff808080 1 0.46875</v>
+	<!-- double-sided begin -->
+	<v index="28">-115 0 0 0 0.707107 0.707107 0xff808080 1 0</v>
+	<v index="29">-115 -10 0 0 0 1 0xff808080 0.960938 0</v>
+	<v index="30">115 -10 0 0 0 1 0xff808080 0.960938 0.46875</v>
+	<v index="31">115 0 0 0 0.707107 0.707107 0xff808080 1 0.46875</v>
+	<!-- double-sided end -->
+	<v index="32">-115 0 -10 0 -1 0 0xff808080 0.960938 0</v>
+	<v index="33">115 0 -10 0 -1 0 0xff808080 0.960938 0.46875</v>
+	<v index="34">115 0 0 0 -0.707107 -0.707107 0xff808080 1 0.46875</v>
+	<v index="35">-115 0 0 0 -0.707107 -0.707107 0xff808080 1 0</v>
+	<!-- double-sided begin -->
+	<v index="36">115 0 0 0 0.707107 0.707107 0xff808080 1 0.46875</v>
+	<v index="37">115 0 -10 0 1 0 0xff808080 0.960938 0.46875</v>
+	<v index="38">-115 0 -10 0 1 0 0xff808080 0.960938 0</v>
+	<v index="39">-115 0 0 0 0.707107 0.707107 0xff808080 1 0</v>
+	<!-- double-sided end -->
+	<v index="40">-115 0 10 0 -1 0 0xff808080 0.960938 0</v>
+	<v index="41">-115 0 0 0 -0.707107 -0.707107 0xff808080 1 0</v>
+	<v index="42">115 0 0 0 -0.707107 -0.707107 0xff808080 1 0.46875</v>
+	<v index="43">115 0 10 0 -1 0 0xff808080 0.960938 0.46875</v>
+	<!-- double-sided begin -->
+	<v index="44">115 0 0 0 0.707107 0.707107 0xff808080 1 0.46875</v>
+	<v index="45">-115 0 0 0 0.707107 0.707107 0xff808080 1 0</v>
+	<v index="46">-115 0 10 0 1 0 0xff808080 0.960938 0</v>
+	<v index="47">115 0 10 0 1 0 0xff808080 0.960938 0.46875</v>
+	<!-- double-sided end -->
+	<v index="48">115 0 0 0 -0.707107 -0.707107 0xff808080 1 0.46875</v>
+	<v index="49">-115 0 0 0 -0.707107 -0.707107 0xff808080 1 0</v>
+	<v index="50">-115 10 0 0 0 -1 0xff808080 0.960938 0</v>
+	<v index="51">115 10 0 0 0 -1 0xff808080 0.960938 0.46875</v>
+	<!-- double-sided begin -->
+	<v index="52">-115 10 0 0 0 1 0xff808080 0.960938 0</v>
+	<v index="53">-115 0 0 0 0.707107 0.707107 0xff808080 1 0</v>
+	<v index="54">115 0 0 0 0.707107 0.707107 0xff808080 1 0.46875</v>
+	<v index="55">115 10 0 0 0 1 0xff808080 0.960938 0.46875</v>
+	<!-- double-sided end -->
+	<v index="56">115 -10 0 0 0 -1 0xff808080 0.960938 0.46875</v>
+	<v index="57">-115 -10 0 0 0 -1 0xff808080 0.960938 0</v>
+	<v index="58">-115 0 0 0 -0.707107 -0.707107 0xff808080 1 0</v>
+	<v index="59">115 0 0 0 -0.707107 -0.707107 0xff808080 1 0.46875</v>
+	<!-- double-sided begin -->
+	<v index="60">-115 0 0 0 0.707107 0.707107 0xff808080 1 0</v>
+	<v index="61">-115 -10 0 0 0 1 0xff808080 0.960938 0</v>
+	<v index="62">115 -10 0 0 0 1 0xff808080 0.960938 0.46875</v>
+	<v index="63">115 0 0 0 0.707107 0.707107 0xff808080 1 0.46875</v>
+	<!-- double-sided end -->
+</VertexBuffer>
+<Model id="ARROW">
+	<!--
+	<Revolt Radius="115.433968" Xmin="-115.000000" Xmax="115.000000" Ymin="-10.000000" Ymax="10.000000" Zmin="-10.000000" Zmax="10.000000"
+	 PolyNum="8" VertNum="10" QuadNumTex="8" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="ARROW_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="ARROW_PreviewCamera">
+				0.00866296 0 0 0
+				0 0.00866296 0 0
+				0 0 0.00433148 0
+				0 0 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Wild_West1j"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="64" />
+	</Pass>
+</Model>
+</XDX>

@@ -1,0 +1,135 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Wild_West1\POSTER1.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Wild_West1a" source="../../../Wild_West1a.bmp" />
+<Texture id="Wild_West1h" source="../../../Wild_West1h.bmp" />
+-->
+<VertexBuffer id="POSTER1_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">89.7553 164.719 5 -0.57735 -0.57735 -0.57735 0xff222222 0.230469 0.851563</v>
+	<v index="1">89.7553 164.719 -5 -0.408248 -0.408248 -0.816497 0xff4b4b4b 0.269531 0.851563</v>
+	<v index="2">89.7553 -164.719 -5 -0.408248 0.408248 -0.816497 0xff4b4b4b 0.269531 0.21875</v>
+	<v index="3">89.7553 -164.719 5 -0.57735 0.57735 -0.57735 0xff222222 0.230469 0.21875</v>
+	<v index="4">-89.7553 164.719 5 0.57735 -0.57735 -0.57735 0xff808080 0.269531 0.851563</v>
+	<v index="5">-89.7553 164.719 -5 0.408248 -0.408248 -0.816497 0xff808080 0.269531 0.21875</v>
+	<v index="6">89.7553 164.719 -5 -0.408248 -0.408248 -0.816497 0xff808080 0.230469 0.21875</v>
+	<v index="7">89.7553 164.719 5 -0.57735 -0.57735 -0.57735 0xff808080 0.230469 0.851563</v>
+	<v index="8">-89.7553 -164.719 5 0.57735 0.57735 -0.57735 0xff161413 0.269531 0.21875</v>
+	<v index="9">-89.7553 -164.719 -5 0.408248 0.408248 -0.816497 0xff292623 0.230469 0.21875</v>
+	<v index="10">-89.7553 164.719 -5 0.408248 -0.408248 -0.816497 0xff292623 0.230469 0.851563</v>
+	<v index="11">-89.7553 164.719 5 0.57735 -0.57735 -0.57735 0xff161413 0.269531 0.851563</v>
+	<v index="12">89.7553 -164.719 5 -0.57735 0.57735 -0.57735 0xff070707 0.269531 0.21875</v>
+	<v index="13">89.7553 -164.719 -5 -0.408248 0.408248 -0.816497 0xff1a1a1a 0.230469 0.21875</v>
+	<v index="14">-89.7553 -164.719 -5 0.408248 0.408248 -0.816497 0xff1a1a1a 0.230469 0.851563</v>
+	<v index="15">-89.7553 -164.719 5 0.57735 0.57735 -0.57735 0xff070707 0.269531 0.851563</v>
+	<v index="16">89.7553 164.719 -5 -0.408248 -0.408248 -0.816497 0xff808080 0.507813 0.105469</v>
+	<v index="17">99.7553 174.719 -5 0.408248 0.408248 -0.816497 0xff727272 0.445313 0.105469</v>
+	<v index="18">99.7553 -174.719 -5 0.408248 -0.408248 -0.816497 0xff727272 0.445313 0.894531</v>
+	<v index="19">89.7553 -164.719 -5 -0.408248 0.408248 -0.816497 0xff808080 0.507813 0.894531</v>
+	<v index="20">-89.7553 164.719 -5 0.408248 -0.408248 -0.816497 0xff5e5e5e 0.230469 0.851563</v>
+	<v index="21">-99.7553 174.719 -5 -0.408248 0.408248 -0.816497 0xff5e5e5e 0.269531 0.851563</v>
+	<v index="22">99.7553 174.719 -5 0.408248 0.408248 -0.816497 0xff5e5e5e 0.269531 0.21875</v>
+	<v index="23">89.7553 164.719 -5 -0.408248 -0.408248 -0.816497 0xff5e5e5e 0.230469 0.21875</v>
+	<v index="24">-89.7553 -164.719 -5 0.408248 0.408248 -0.816497 0xff727272 0.230469 0.851563</v>
+	<v index="25">-99.7553 -174.719 -5 -0.408248 -0.408248 -0.816497 0xff727272 0.269531 0.851563</v>
+	<v index="26">-99.7553 174.719 -5 -0.408248 0.408248 -0.816497 0xff727272 0.269531 0.21875</v>
+	<v index="27">-89.7553 164.719 -5 0.408248 -0.408248 -0.816497 0xff727272 0.230469 0.21875</v>
+	<v index="28">89.7553 -164.719 -5 -0.408248 0.408248 -0.816497 0xff808080 0.507813 0.105469</v>
+	<v index="29">99.7553 -174.719 -5 0.408248 -0.408248 -0.816497 0xff808080 0.445313 0.105469</v>
+	<v index="30">-99.7553 -174.719 -5 -0.408248 -0.408248 -0.816497 0xff808080 0.445313 0.894531</v>
+	<v index="31">-89.7553 -164.719 -5 0.408248 0.408248 -0.816497 0xff808080 0.507813 0.894531</v>
+	<v index="32">99.7553 174.719 -5 0.408248 0.408248 -0.816497 0xff292623 0.269531 0.21875</v>
+	<v index="33">99.7553 174.719 5 0.707107 0.707107 0 0xff292623 0.230469 0.21875</v>
+	<v index="34">99.7553 -174.719 5 0.707107 -0.707107 0 0xff292623 0.230469 0.851563</v>
+	<v index="35">99.7553 -174.719 -5 0.408248 -0.408248 -0.816497 0xff292623 0.269531 0.851563</v>
+	<v index="36">-99.7553 174.719 -5 -0.408248 0.408248 -0.816497 0xff1a1a1a 0.269531 0.851563</v>
+	<v index="37">-99.7553 174.719 5 -0.707107 0.707107 0 0xff070707 0.269531 0.21875</v>
+	<v index="38">99.7553 174.719 5 0.707107 0.707107 0 0xff070707 0.230469 0.21875</v>
+	<v index="39">99.7553 174.719 -5 0.408248 0.408248 -0.816497 0xff1a1a1a 0.230469 0.851563</v>
+	<v index="40">-99.7553 -174.719 -5 -0.408248 -0.408248 -0.816497 0xff353535 0.230469 0.851563</v>
+	<v index="41">-99.7553 -174.719 5 -0.707107 -0.707107 0 0xff353535 0.269531 0.851563</v>
+	<v index="42">-99.7553 174.719 5 -0.707107 0.707107 0 0xff353535 0.269531 0.21875</v>
+	<v index="43">-99.7553 174.719 -5 -0.408248 0.408248 -0.816497 0xff353535 0.230469 0.21875</v>
+	<v index="44">99.7553 -174.719 -5 0.408248 -0.408248 -0.816497 0xff808080 0.269531 0.21875</v>
+	<v index="45">99.7553 -174.719 5 0.707107 -0.707107 0 0xff808080 0.230469 0.21875</v>
+	<v index="46">-99.7553 -174.719 5 -0.707107 -0.707107 0 0xff808080 0.230469 0.851563</v>
+	<v index="47">-99.7553 -174.719 -5 -0.408248 -0.408248 -0.816497 0xff808080 0.269531 0.851563</v>
+	<v index="48">-89.7553 -164.719 5 0.57735 0.57735 -0.57735 0xff807a72 0.996094 0</v>
+	<v index="49">-89.7553 164.719 5 0.57735 -0.57735 -0.57735 0xff808080 0.378906 0</v>
+	<v index="50">89.7553 164.719 5 -0.57735 -0.57735 -0.57735 0xff808080 0.378906 0.355469</v>
+	<v index="51">89.7553 -164.719 5 -0.57735 0.57735 -0.57735 0xff59554f 1 0.355469</v>
+</VertexBuffer>
+<Model id="POSTER1">
+	<!--
+	<Revolt Radius="201.253479" Xmin="-99.755302" Xmax="99.755302" Ymin="-174.719330" Ymax="174.719330" Zmin="-5.000000" Zmax="5.000000"
+	 PolyNum="13" VertNum="16" QuadNumTex="13" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="POSTER1_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="POSTER1_PreviewCamera">
+				0.00496886 0 0 0
+				0 0.00496886 0 0
+				0 0 0.00248443 0
+				0 0 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Wild_West1a"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="48" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="POSTER1_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="POSTER1_PreviewCamera">
+				0.00496886 0 0 0
+				0 0.00496886 0 0
+				0 0 0.00248443 0
+				0 0 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Wild_West1h"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="48" count="4" />
+	</Pass>
+</Model>
+</XDX>

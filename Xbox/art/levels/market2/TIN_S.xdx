@@ -1,0 +1,147 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Market2\TIN_S.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Market2e" source="../../../Market2e.bmp" />
+<Texture id="fxpage1" source="../../gfx/fxpage1.bmp" />
+-->
+<VertexBuffer id="TIN_S_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">31.2258 60.0762 29.8682 0.472267 0.734475 0.48735 0xffdcdcdc 0.292969 0.496094</v>
+	<v index="1">31.2258 -60.0762 29.8682 0.61204 -0.475926 0.631587 0xffdcdcdc 0.472656 0.496094</v>
+	<v index="2">44.16 -60.0762 0 0.67612 -0.736792 0 0xffffffff 0.472656 0.433594</v>
+	<v index="3">44.16 60.0762 0 0.878112 0.478455 0 0xffffffff 0.292969 0.433594</v>
+	<v index="4">1.98263e-009 60.0762 42.24 0 0.473658 0.880709 0xffb3b3b3 0.292969 0.300781</v>
+	<v index="5">1.98263e-009 -60.0762 42.24 0 -0.732385 0.68089 0xffb3b3b3 0.472656 0.300781</v>
+	<v index="6">31.2258 -60.0762 29.8682 0.61204 -0.475926 0.631587 0xffdcdcdc 0.472656 0.234375</v>
+	<v index="7">31.2258 60.0762 29.8682 0.472267 0.734475 0.48735 0xffdcdcdc 0.292969 0.234375</v>
+	<v index="8">-31.2258 60.0762 29.8682 -0.472267 0.734475 0.48735 0xff787878 0.292969 0.371094</v>
+	<v index="9">-31.2258 -60.0762 29.8682 -0.61204 -0.475926 0.631587 0xff787878 0.472656 0.371094</v>
+	<v index="10">1.98263e-009 -60.0762 42.24 0 -0.732385 0.68089 0xffb3b3b3 0.472656 0.300781</v>
+	<v index="11">1.98263e-009 60.0762 42.24 0 0.473658 0.880709 0xffb3b3b3 0.292969 0.300781</v>
+	<v index="12">-44.16 60.0762 3.79286e-009 -0.878112 0.478455 0 0xff787878 0.292969 0.433594</v>
+	<v index="13">-44.16 -60.0762 3.79286e-009 -0.67612 -0.736792 0 0xff787878 0.472656 0.433594</v>
+	<v index="14">-31.2258 -60.0762 29.8682 -0.61204 -0.475926 0.631587 0xff787878 0.472656 0.371094</v>
+	<v index="15">-31.2258 60.0762 29.8682 -0.472267 0.734475 0.48735 0xff787878 0.292969 0.371094</v>
+	<v index="16">-31.2258 60.0762 -29.8682 -0.472267 0.734475 -0.48735 0xffb3b3b3 0.292969 0.496094</v>
+	<v index="17">-31.2258 -60.0762 -29.8682 -0.61204 -0.475926 -0.631587 0xffb3b3b3 0.472656 0.496094</v>
+	<v index="18">-44.16 -60.0762 3.79286e-009 -0.67612 -0.736792 0 0xff787878 0.472656 0.433594</v>
+	<v index="19">-44.16 60.0762 3.79286e-009 -0.878112 0.478455 0 0xff787878 0.292969 0.433594</v>
+	<v index="20">-5.9479e-009 60.0762 -42.24 0 0.473658 -0.880709 0xffdcdcdc 0.292969 0.300781</v>
+	<v index="21">-5.9479e-009 -60.0762 -42.24 0 -0.732385 -0.68089 0xffdcdcdc 0.472656 0.300781</v>
+	<v index="22">-31.2258 -60.0762 -29.8682 -0.61204 -0.475926 -0.631587 0xffb3b3b3 0.472656 0.234375</v>
+	<v index="23">-31.2258 60.0762 -29.8682 -0.472267 0.734475 -0.48735 0xffb3b3b3 0.292969 0.234375</v>
+	<v index="24">31.2258 60.0762 -29.8682 0.472267 0.734475 -0.48735 0xffffffff 0.292969 0.371094</v>
+	<v index="25">31.2258 -60.0762 -29.8682 0.61204 -0.475926 -0.631587 0xffffffff 0.472656 0.371094</v>
+	<v index="26">-5.9479e-009 -60.0762 -42.24 0 -0.732385 -0.68089 0xffdcdcdc 0.472656 0.300781</v>
+	<v index="27">-5.9479e-009 60.0762 -42.24 0 0.473658 -0.880709 0xffdcdcdc 0.292969 0.300781</v>
+	<v index="28">44.16 60.0762 0 0.878112 0.478455 0 0xffffffff 0.292969 0.433594</v>
+	<v index="29">44.16 -60.0762 0 0.67612 -0.736792 0 0xffffffff 0.472656 0.433594</v>
+	<v index="30">31.2258 -60.0762 -29.8682 0.61204 -0.475926 -0.631587 0xffffffff 0.472656 0.371094</v>
+	<v index="31">31.2258 60.0762 -29.8682 0.472267 0.734475 -0.48735 0xffffffff 0.292969 0.371094</v>
+	<v index="32">0 60.0762 0 0 1 0 0xff646a71 0.890625 0.642578</v>
+	<v index="33">-31.2258 60.0762 -29.8682 -0.472267 0.734475 -0.48735 0xffb0bac6 0.890625 0.611328</v>
+	<v index="34">-44.16 60.0762 3.79286e-009 -0.878112 0.478455 0 0xffb0bac6 0.859375 0.609375</v>
+	<v index="35">-31.2258 60.0762 29.8682 -0.472267 0.734475 0.48735 0xffb0bac6 0.859375 0.642578</v>
+	<v index="36">1.98263e-009 60.0762 42.24 0 0.473658 0.880709 0xffb0bac6 0.890625 0.642578</v>
+	<v index="37">31.2258 60.0762 29.8682 0.472267 0.734475 0.48735 0xffb0bac6 0.890625 0.611328</v>
+	<v index="38">0 60.0762 0 0 1 0 0xff646a71 0.859375 0.609375</v>
+	<v index="39">-31.2258 60.0762 29.8682 -0.472267 0.734475 0.48735 0xffb0bac6 0.859375 0.642578</v>
+	<v index="40">44.16 60.0762 0 0.878112 0.478455 0 0xffb0bac6 0.890625 0.642578</v>
+	<v index="41">31.2258 60.0762 -29.8682 0.472267 0.734475 -0.48735 0xffb0bac6 0.890625 0.611328</v>
+	<v index="42">0 60.0762 0 0 1 0 0xff646a71 0.859375 0.609375</v>
+	<v index="43">31.2258 60.0762 29.8682 0.472267 0.734475 0.48735 0xffb0bac6 0.859375 0.642578</v>
+	<v index="44">-5.9479e-009 60.0762 -42.24 0 0.473658 -0.880709 0xffb0bac6 0.890625 0.642578</v>
+	<v index="45">-31.2258 60.0762 -29.8682 -0.472267 0.734475 -0.48735 0xffb0bac6 0.890625 0.611328</v>
+	<v index="46">0 60.0762 0 0 1 0 0xff646a71 0.859375 0.609375</v>
+	<v index="47">31.2258 60.0762 -29.8682 0.472267 0.734475 -0.48735 0xffb0bac6 0.859375 0.642578</v>
+	<v index="48">0 -60.0762 0 0 -1 0 0xff646a71 0.890625 0.642578</v>
+	<v index="49">-44.16 -60.0762 3.79286e-009 -0.67612 -0.736792 0 0xffb0bac6 0.890625 0.611328</v>
+	<v index="50">-31.2258 -60.0762 -29.8682 -0.61204 -0.475926 -0.631587 0xffb0bac6 0.859375 0.609375</v>
+	<v index="51">-5.9479e-009 -60.0762 -42.24 0 -0.732385 -0.68089 0xffb0bac6 0.859375 0.642578</v>
+	<v index="52">31.2258 -60.0762 -29.8682 0.61204 -0.475926 -0.631587 0xffb0bac6 0.890625 0.642578</v>
+	<v index="53">44.16 -60.0762 0 0.67612 -0.736792 0 0xffb0bac6 0.890625 0.611328</v>
+	<v index="54">0 -60.0762 0 0 -1 0 0xff646a71 0.859375 0.609375</v>
+	<v index="55">-5.9479e-009 -60.0762 -42.24 0 -0.732385 -0.68089 0xffb0bac6 0.859375 0.642578</v>
+	<v index="56">31.2258 -60.0762 29.8682 0.61204 -0.475926 0.631587 0xffb0bac6 0.890625 0.642578</v>
+	<v index="57">1.98263e-009 -60.0762 42.24 0 -0.732385 0.68089 0xffb0bac6 0.890625 0.611328</v>
+	<v index="58">0 -60.0762 0 0 -1 0 0xff646a71 0.859375 0.609375</v>
+	<v index="59">44.16 -60.0762 0 0.67612 -0.736792 0 0xffb0bac6 0.859375 0.642578</v>
+	<v index="60">-31.2258 -60.0762 29.8682 -0.61204 -0.475926 0.631587 0xffb0bac6 0.890625 0.642578</v>
+	<v index="61">-44.16 -60.0762 3.79286e-009 -0.67612 -0.736792 0 0xffb0bac6 0.890625 0.611328</v>
+	<v index="62">0 -60.0762 0 0 -1 0 0xff646a71 0.859375 0.609375</v>
+	<v index="63">1.98263e-009 -60.0762 42.24 0 -0.732385 0.68089 0xffb0bac6 0.859375 0.642578</v>
+</VertexBuffer>
+<Model id="TIN_S">
+	<!--
+	<Revolt Radius="74.560440" Xmin="-44.160004" Xmax="44.160004" Ymin="-60.076225" Ymax="60.076225" Zmin="-42.239998" Zmax="42.239998"
+	 PolyNum="16" VertNum="18" QuadNumTex="16" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="TIN_S_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="TIN_S_PreviewCamera">
+				0.0134119 0 0 0
+				0 0.0134119 0 0
+				0 0 0.00670597 0
+				0 0 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Market2e"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="32" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="TIN_S_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="TIN_S_PreviewCamera">
+				0.0134119 0 0 0
+				0 0.0134119 0 0
+				0 0 0.00670597 0
+				0 0 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="fxpage1"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="32" count="32" />
+	</Pass>
+</Model>
+</XDX>

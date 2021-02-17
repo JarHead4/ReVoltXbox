@@ -1,0 +1,18 @@
+!INCLUDE ..\sources.inc 
+
+TARGETNAME = revolt_xbox_internal$(D)
+XE_FLAGS = $(XE_FLAGS) /TESTSERVICE:0x54534554
+
+C_DEFINES = $(C_DEFINES)
+
+TARGETLIBS = \
+  $(XDK_LIB_PATH)\d3d8$(D).lib \
+  $(XDK_LIB_PATH)\d3dx8$(D).lib \
+  $(XDK_LIB_PATH)\dsound$(D).lib \
+  $(XDK_LIB_PATH)\xonlineS$(D).lib \
+  $(XDK_LIB_PATH)\xgraphics$(D).lib \
+  $(XDK_LIB_PATH)\xvoice$(D).lib \
+  $(XDK_LIB_PATH)\xbdm.lib
+
+INCLUDES = \
+  $(INCLUDES)

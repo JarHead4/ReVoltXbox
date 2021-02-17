@@ -1,0 +1,417 @@
+
+
+
+Re-Volt
+Waehle rennen
+Namen eingeben
+Waehle Auto
+Waehle Strecke
+Pokal auswählen
+Zusammenfsg
+Verbindungsmodus:
+Einstellungen vornehmen
+Spiel-Auswahl
+Wartehalle
+Das Spiel hat bereits begonnen!
+Controller
+Spiel-Auswahl vor der Teilnahme
+
+
+Rennen starten
+[Start Race]
+[Play Live!]
+[Single Player]
+[System Link]
+Zeitrennen
+Bestenliste
+Streckeneditor
+Optionen
+[Language]
+[Create Account]
+
+
+[Quick Match]
+[Find a Match]
+[Friends]
+[Create a Match]
+[Statistics]
+
+
+[Select Race]
+[Race]
+[Battle Tag]
+
+
+Meisterschaft
+Einzelrennen
+Clockwork Carnage
+Zeitrennen
+Training
+Stunt Arena
+Modus bearbeiten
+Auto Statistiken
+
+
+Fahrzeug auswählen
+
+
+Rennstrecke auswählen
+Gespiegelt
+Zurück
+Computer Gegner
+Runden
+Länge
+
+
+Bronze Pokal
+Silber Pokal
+Gold Pokal
+Platin Pokal
+
+
+Auswahl Modus
+Einfache Ecken
+Hochentwickelte Ecken
+Der Erste Trick
+
+
+Spiel-Einstellungen
+Grafik-Einstellungen
+Audio-Einstellungen
+Spielsteuerung-Einstellungen
+Mitwirkende
+
+
+Anzahl der Fahrzeuge
+Gelegentliche Autos
+Gelegentliche Spuren
+Pick-Ups
+Anzahl der Runden
+Battle Tag Zeit
+Schwierigk
+Zugängliche Autos
+Split Times!!
+Kollision
+Geschwindigkeitsstufen
+
+
+Namen eingeben
+
+
+Ein
+Aus
+Ja
+Nein
+Leicht
+Mittel
+Schwer
+
+
+Auflösung
+Beschaffenheit
+Glanz
+Schatten
+Grafikkarte
+Helligkeit
+Kontrast
+Draw Distance
+Spiegelung
+Objekte im Spiel
+Reifenspuren
+Lichter
+Automatisch
+Nicht verfügbar
+Weiche Kanten
+Enalble V-Sync
+Bilder pro Sekunde anzeigen
+Struktur Filter
+Mipmap Stufe
+Drahtgitter
+Auto Boxen
+Partikel
+Rauch
+Hohe Auflösung
+Bildschirm Aufteilung
+
+
+Musik im Spiel
+SFX Lautstärke
+Musik Lautstärke
+SFX Test
+Musik Test
+SFX Kanäle
+Audio
+Stereo
+Mono
+
+
+Rekorde anzeigen
+Rekorde speichern
+
+Rekorde
+
+
+Spiel starten
+Mitspielen
+Auf Lobby-Verbindung warten
+Spiel auswählen
+Computer-Host:
+Lobby-Spiel fortsetzen
+Lobby-Spiel beenden
+Anzahl der Spieler
+Paket Optimierung:
+DirectPlay Protokoll:
+Nach Spielen suchen...
+Mitspielen...
+Drücke die Leertaste, um die Liste der Spiele und Spieler zu erneuern
+Nächste Strecke
+
+
+Verloren
+Bronze
+Silber
+Gold
+Special
+
+
+Replay laden
+Replay speichern
+
+
+Weiterspielen
+Meisterschaft fortsetzen
+Meisterschaft beenden
+Aufgeben
+Spiel neu starten
+Wiederholung neu starten
+Beenden
+Wiederholung anzeigen
+
+
+Controller auswählen:
+Controller konfigurieren
+Toten Winkel der Steuerung
+Steuerungsbereich
+Nicht-lineare Steuerung
+Standard-Einstellungen übernehmen
+Konfiguration
+
+
+Demo-Modus
+Spieler
+Fahrzeugbeschreibung einmalig speichern
+Fahrzeugbeschreibung mehrfach speichern
+Fahrzeugbeschreibung laufend speichern
+Bestenliste zurücksetzen
+Modus
+Simulation
+Arcade
+Konsole
+Junior RC
+Mph
+Mph Anzeige
+FPM
+KM/H
+KM/H Anzeige
+
+
+GESCHAFFT
+VERSUCH NOCH BESSER ZU FAHREN
+STELLE DICH DER NÄCHSTEN HERAUSFORDERUNG!
+BRONZE POKAL
+SILBER POKAL
+GOLD POKAL
+SUPER POKAL
+WURDE GEÖFFNET
+GESPIEGELTE STRECKEN
+UMGEKEHRTE STRECKEN
+WURDEN GEÖFFNET
+NEUE FAHRZEUGLIEFERUNG
+VON DIR GEÖFFNET WURDE
+NEUE FAHRZEUGE
+1.
+2.
+3.
+
+Wirklich?
+
+
+Meistere das Rennen als Dritter 
+oder besser um weiter zu kommen
+Beende Dein Rennen als Bester um 
+die nächste Herrausforderung in\n\rAngriff zu nehmen!
+Du hast das oberste Treppchen 
+erreicht und wurdest zum \n\r""Re-Volt Meister"" gekrönt!
+
+
+S
+R
+(S)
+(R)
+
+
+Kateg.
+Bewer.
+Geschw.
+Acc
+Gewicht
+Trans
+
+Elektrisch
+Glow
+Speziell
+
+Leicht
+Amateur
+Fortgeschr
+Semi-Profi
+Profi
+
+4WD
+RWD
+FWD
+
+
+Unbekannt
+Gesperrt
+
+
+Spieler
+Spieler
+
+
+Schwer
+Mittel
+Leicht
+Anfänger
+
+
+Beschlng.
+Zurück
+Feuern
+Auto drehen
+Neue position
+Pause
+
+
+Strecke
+Gew-
+onnen
+N.
+Z.
+S.
+Sterne
+
+
+modus:
+Rennen:
+Strecke:
+Fahrzeug
+gewonnen:
+Stern
+Gesammelte Sterne
+Von
+Geschlagen
+Wettkampf Zeit:
+
+Du hast
+Versuch übrig.
+Versuche übrig.
+
+
+1ter
+2ter
+3ter
+4ter
+5ter
+6ter
+7ter
+8ter
+9ter
+10ter
+11ter
+12ter
+13ter
+14ter
+15ter
+16ter
+
+
+HERZLICHEN GLÜCKWUNSCH!
+DU HAST DICH QUALIFIZIERT!
+HERZLICHEN GLÜCKWUNSCH!
+DU HAST DIE MEISTERSCHAFT BEENDET!
+DU HAST DICH NICHT QUALIFIZIERT!
+Fahrzeug
+Pkte
+
+
+Beste
+Letzte
+Runde
+Rennen
+Runde
+Zwischenzeit
+Konkurrent
+Herausforderung
+Die vorgegebene Zeit wurde unterboten
+Zeit
+Spielresultate
+Rennresultate
+
+
+Beenden?
+Neustarten?
+Ja / Nein?
+Ja
+Nein
+
+
+Versagt
+Bronze
+Silber
+Gold
+Platin
+
+Game Over!
+
+
+NEUE AUTOSwurden geliefert!\n(Überprüfe das Angebot an Boxen am\nder Auto-Auswahl-Screen)\n
+GLÜCKWUNSCH!\n%s STRECKEN SIND JETZT\n ABRUFBAR IM REVERSE-MODUS\n(Drücke UNTEN auf dem Strecken-Auswahl-Screen)\n
+GLÜCKWUNSCH!\n%s STRECKEN SIND JETZT\n ABRUFBAR IM SPIEGEL-MODUS\n(Drücke OBEN auf dem Strecken-Auswahl-Screen)\n
+GLÜCKWUNSCH!\n%s STRECKEN SIND JETZT\n ABRUFBAR IM REVERSE-SPIEGEL-MODUS\n(Drücke erst UNTEN dann OBEN auf dem Strecken-Auswahl-Screen)\n
+NEUER SPIELE Modus!\n""CLOCKWORK CARNAGE""\nWURDE GEKNACKT\n
+
+
+Links
+Recht
+Hupe
+Versuch es noch mal?
+Demo
+Hauptmenue laden
+Credits laden
+Spiel-Lehre Benchmark laden
+Rennfahrer:
+CPU
+Zufall
+Status
+Bereit
+Nicht bereit
+Drücke TAB für beginnen
+Multi-Player Game abgebrochen!
+Warten auf:
+Warten auf den Host...
+Host
+Strecke
+Spiel
+Falsche Version
+Voll
+Rekorde
+Aufgelistet
+Beenden
+Begonnen
+Geöffnet
+Replay
+Ansicht Galerie
+Lokal
+Download

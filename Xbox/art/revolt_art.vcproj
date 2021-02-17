@@ -1,0 +1,1896 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="revolt_art"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="MakeFileProj">
+	<Platforms>
+		<Platform
+			Name="Xbox"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Xbox"
+			OutputDirectory=".\_Debug"
+			IntermediateDirectory=".\_Debug"
+			ConfigurationType="10"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copying art to the Xbox"
+				CommandLine="call copyart.bat"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Xbox"
+			OutputDirectory=".\_Release"
+			IntermediateDirectory=".\_Release"
+			ConfigurationType="10"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copying art to the Xbox"
+				CommandLine="call copyart.bat"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Levels"
+			Filter="">
+			<File
+				RelativePath="levels\frontend\frontend.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\garden1\garden1.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\markar\markar.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\market1\market1.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\market2\market2.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\muse1\muse1.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\muse2\muse2.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\muse_bat\muse_bat.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\nhood1\nhood1.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\nhood1_battle\nhood1_battle.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\nhood2\nhood2.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\ship1\ship1.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\ship2\ship2.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\stunts\stunts.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\toy2\toy2.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\toylite\toylite.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\wild_west1\wild_west1.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\wild_west2\wild_west2.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Cars"
+			Filter="xdx">
+			<File
+				RelativePath="cars\adeon\adeon.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\amw\amw.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\beatall\beatall.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\candy\candy.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\cougar\cougar.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\dino\dino.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\flag\flag.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\fone\fone.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\gencar\gencar.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\mite\mite.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\moss\moss.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\mouse\mouse.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\mud\mud.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\panga\panga.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\phat\phat.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\q\q.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\r5\r5.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\rc\rc.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\rotor\rotor.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\sgt\sgt.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\sugo\sugo.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\tc1\tc1.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\tc2\tc2.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\tc3\tc3.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\tc4\tc4.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\tc5\tc5.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\tc6\tc6.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\toyeca\toyeca.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\trolley\trolley.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\ufo\ufo.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\volken\volken.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\wincar\wincar.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\wincar2\wincar2.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\wincar3\wincar3.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="cars\wincar4\wincar4.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Gfx"
+			Filter="">
+			<File
+				RelativePath="gfx\gamepad.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="Gfx\splash.xdx">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="xbrc $(InputPath)"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\xbrc &quot;$(InputName)&quot;.xdx"
+						Outputs="$(InputDir)$(InputName).xbr"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Wave Banks"
+			Filter=".xwp">
+			<File
+				RelativePath="levels\COMMON\sounds_common.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\garden1\sounds_garden1.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\markar\sounds_markar.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\market1\sounds_market1.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\market2\sounds_market2.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\muse1\sounds_muse1.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\muse2\sounds_muse2.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\Muse_Bat\sounds_muse_bat.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\nhood1\sounds_nhood1.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\nhood1_battle\sounds_nhood1_battle.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\nhood2\sounds_nhood2.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\ship1\sounds_ship1.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\ship2\sounds_ship2.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\toy2\sounds_toy2.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\toylite\sounds_toylite.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\wild_west1\sounds_wild_west1.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\wild_west2\sounds_wild_west2.xwp">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\wavbndlr.exe /L &quot;$(InputName)&quot;.xwp"
+						Outputs="$(InputDir)$(InputName).xwb"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Sound Effects"
+			Filter=".sdf">
+			<File
+				RelativePath="levels\COMMON\sounds_common.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\garden1\sounds_garden1.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\markar\sounds_markar.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\market1\sounds_market1.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\market2\sounds_market2.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\muse1\sounds_muse1.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\muse2\sounds_muse2.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\Muse_Bat\sounds_muse_bat.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\nhood1\sounds_nhood1.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\nhood1_battle\sounds_nhood1_battle.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\nhood2\sounds_nhood2.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\ship1\sounds_ship1.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\ship2\sounds_ship2.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\toy2\sounds_toy2.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\toylite\sounds_toylite.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\wild_west1\sounds_wild_west1.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="levels\wild_west2\sounds_wild_west2.sdf">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="cd &quot;$(InputDir)&quot;
+&quot;$(SolutionDir)&quot;..\utils\sfxparse.exe &quot;$(InputName)&quot;.sdf &quot;$(InputName)&quot;.sfx &quot;$(SolutionDir)&quot;Src\&quot;$(InputName)&quot;.h"
+						Outputs="$(InputDir)$(InputName).sfx"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="XACT Projects"
+			Filter="*.xap">
+			<File
+				RelativePath="XACTProject\revolt.xap">
+				<FileConfiguration
+					Name="Debug|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="xactbld /L &quot;$(InputPath)&quot;"
+						Outputs="..\src\revolt_audio.h;levels\COMMON\sounds_xact_common.xwb;levels\garden1\sounds_xact_garden1.xwb;levels\markar\sounds_xact_markar.xwb;levels\market1\sounds_xact_market1.xwb;levels\market2\sounds_xact_market2.xwb;levels\muse1\sounds_xact_muse1.xwb;levels\muse2\sounds_xact_muse2.xwb;levels\Muse_Bat\sounds_xact_muse_bat.xwb;levels\nhood1\sounds_xact_nhood1.xwb;levels\nhood1_battle\sounds_xact_nhood1_battle.xwb;levels\nhood2\sounds_xact_nhood2.xwb;levels\ship1\sounds_xact_ship1.xwb;levels\ship2\sounds_xact_ship2.xwb;levels\toy2\sounds_xact_toy2.xwb;levels\toylite\sounds_xact_toylite.xwb;levels\wild_west1\sounds_xact_wild_west1.xwb;levels\wild_west2\sounds_xact_wild_west2.xwb;levels\COMMON\sounds_xact_common.xsb;levels\garden1\sounds_xact_garden1.xsb;levels\markar\sounds_xact_markar.xsb;levels\market1\sounds_xact_market1.xsb;levels\market2\sounds_xact_market2.xsb;levels\muse1\sounds_xact_muse1.xsb;levels\muse2\sounds_xact_muse2.xsb;levels\Muse_Bat\sounds_xact_muse_bat.xsb;levels\nhood1\sounds_xact_nhood1.xsb;levels\nhood1_battle\sounds_xact_nhood1_battle.xsb;levels\nhood2\sounds_xact_nhood2.xsb;levels\ship1\sounds_xact_ship1.xsb;levels\ship2\sounds_xact_ship2.xsb;levels\toy2\sounds_xact_toy2.xsb;levels\toylite\sounds_xact_toylite.xsb;levels\wild_west1\sounds_xact_wild_west1.xsb;levels\wild_west2\sounds_xact_wild_west2.xsb"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Xbox">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Build XACT Projects"
+						CommandLine="xactbld /L &quot;$(InputPath)&quot;"
+						Outputs="..\src\revolt_audio.h;levels\COMMON\sounds_xact_common.xwb;levels\garden1\sounds_xact_garden1.xwb;levels\markar\sounds_xact_markar.xwb;levels\market1\sounds_xact_market1.xwb;levels\market2\sounds_xact_market2.xwb;levels\muse1\sounds_xact_muse1.xwb;levels\muse2\sounds_xact_muse2.xwb;levels\Muse_Bat\sounds_xact_muse_bat.xwb;levels\nhood1\sounds_xact_nhood1.xwb;levels\nhood1_battle\sounds_xact_nhood1_battle.xwb;levels\nhood2\sounds_xact_nhood2.xwb;levels\ship1\sounds_xact_ship1.xwb;levels\ship2\sounds_xact_ship2.xwb;levels\toy2\sounds_xact_toy2.xwb;levels\toylite\sounds_xact_toylite.xwb;levels\wild_west1\sounds_xact_wild_west1.xwb;levels\wild_west2\sounds_xact_wild_west2.xwb;levels\COMMON\sounds_xact_common.xsb;levels\garden1\sounds_xact_garden1.xsb;levels\markar\sounds_xact_markar.xsb;levels\market1\sounds_xact_market1.xsb;levels\market2\sounds_xact_market2.xsb;levels\muse1\sounds_xact_muse1.xsb;levels\muse2\sounds_xact_muse2.xsb;levels\Muse_Bat\sounds_xact_muse_bat.xsb;levels\nhood1\sounds_xact_nhood1.xsb;levels\nhood1_battle\sounds_xact_nhood1_battle.xsb;levels\nhood2\sounds_xact_nhood2.xsb;levels\ship1\sounds_xact_ship1.xsb;levels\ship2\sounds_xact_ship2.xsb;levels\toy2\sounds_xact_toy2.xsb;levels\toylite\sounds_xact_toylite.xsb;levels\wild_west1\sounds_xact_wild_west1.xsb;levels\wild_west2\sounds_xact_wild_west2.xsb"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Muse2\SIGN4.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Muse2f" source="../../../Muse2f.bmp" />
+<Texture id="fxpage1" source="../../gfx/fxpage1.bmp" />
+-->
+<VertexBuffer id="SIGN4_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">44.5238 51.6477 -16.9191 0.57735 0.57735 -0.57735 0xffffffff 0.749023 0.99707</v>
+	<v index="1">44.5238 -107.748 -16.9191 0.57735 -0.57735 -0.57735 0xffd3c69a 0.749023 0.779297</v>
+	<v index="2">-69.4572 -107.748 -16.9191 -0.57735 -0.57735 -0.57735 0xffd3c69a 0.588867 0.779297</v>
+	<v index="3">-69.4572 51.6477 -16.9191 -0.57735 0.57735 -0.57735 0xffffffff 0.588867 0.99707</v>
+	<v index="4">44.5238 -107.748 -16.9191 0.57735 -0.57735 -0.57735 0xffb3a646 0.890625 0.642578</v>
+	<v index="5">44.5238 51.6477 -16.9191 0.57735 0.57735 -0.57735 0xffb3a646 0.890625 0.611328</v>
+	<v index="6">44.5238 51.6477 -7.12381 0.57735 0.57735 0.57735 0xff51491b 0.859375 0.609375</v>
+	<v index="7">44.5238 -107.748 -7.12381 0.57735 -0.57735 0.57735 0xff51491b 0.859375 0.642578</v>
+	<v index="8">44.5238 -107.748 -7.12381 0.57735 -0.57735 0.57735 0xff0c0a0a 0.890625 0.642578</v>
+	<v index="9">44.5238 51.6477 -7.12381 0.57735 0.57735 0.57735 0xff0c0a0a 0.890625 0.611328</v>
+	<v index="10">-69.4572 51.6477 -7.12381 -0.57735 0.57735 0.57735 0xff0c0a0a 0.859375 0.609375</v>
+	<v index="11">-69.4572 -107.748 -7.12381 -0.57735 -0.57735 0.57735 0xff0c0a0a 0.859375 0.642578</v>
+	<v index="12">44.5238 -107.748 -16.9191 0.57735 -0.57735 -0.57735 0xffb3a646 0.890625 0.642578</v>
+	<v index="13">44.5238 -107.748 -7.12381 0.57735 -0.57735 0.57735 0xff645b23 0.890625 0.611328</v>
+	<v index="14">-69.4572 -107.748 -7.12381 -0.57735 -0.57735 0.57735 0xff51491b 0.859375 0.609375</v>
+	<v index="15">-69.4572 -107.748 -16.9191 -0.57735 -0.57735 -0.57735 0xffb3a646 0.859375 0.642578</v>
+	<v index="16">44.5238 51.6477 -7.12381 0.57735 0.57735 0.57735 0xff51491b 0.890625 0.642578</v>
+	<v index="17">44.5238 51.6477 -16.9191 0.57735 0.57735 -0.57735 0xffb3a646 0.890625 0.611328</v>
+	<v index="18">-69.4572 51.6477 -16.9191 -0.57735 0.57735 -0.57735 0xffb3a646 0.859375 0.609375</v>
+	<v index="19">-69.4572 51.6477 -7.12381 -0.57735 0.57735 0.57735 0xff51491b 0.859375 0.642578</v>
+	<v index="20">-69.4572 -107.748 -16.9191 -0.57735 -0.57735 -0.57735 0xffb3a646 0.890625 0.642578</v>
+	<v index="21">-69.4572 -107.748 -7.12381 -0.57735 -0.57735 0.57735 0xff51491b 0.890625 0.611328</v>
+	<v index="22">-69.4572 51.6477 -7.12381 -0.57735 0.57735 0.57735 0xff645b23 0.859375 0.609375</v>
+	<v index="23">-69.4572 51.6477 -16.9191 -0.57735 0.57735 -0.57735 0xffb3a646 0.859375 0.642578</v>
+</VertexBuffer>
+<Model id="SIGN4">
+	<!--
+	<Revolt Radius="129.306320" Xmin="-69.457199" Xmax="44.523846" Ymin="-107.747704" Ymax="51.647663" Zmin="-16.919064" Zmax="-7.123815"
+	 PolyNum="6" VertNum="8" QuadNumTex="6" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="SIGN4_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="SIGN4_PreviewCamera">
+				0.00773357 0 0 0
+				0 0.00773357 0 0
+				0 0 0.00386679 0
+				0.096412 0.216927 0.546484 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Muse2f"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="4" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="SIGN4_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="SIGN4_PreviewCamera">
+				0.00773357 0 0 0
+				0 0.00773357 0 0
+				0 0 0.00386679 0
+				0.096412 0.216927 0.546484 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="fxpage1"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="4" count="20" />
+	</Pass>
+</Model>
+</XDX>

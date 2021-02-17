@@ -1,0 +1,81 @@
+/////////////////////////////////////////////////////////////////////////////////
+// TitleScreen.h
+/////////////////////////////////////////////////////////////////////////////////
+#ifndef __TITLESCREEN_H
+#define __TITLESCREEN_H
+
+
+/////////////////////////////////////////////////////////////////////////////////
+// Structures
+/////////////////////////////////////////////////////////////////////////////////
+typedef struct t_FlagPoint
+{
+	VEC		pos;
+	REAL	u,v;
+
+} s_FlagPoint;
+
+typedef struct t_Flag
+{
+	int				w,h;
+	t_FlagPoint*	pPoints;
+
+} s_Flag;
+
+
+typedef struct t_Light
+{
+	VEC		pos;
+	VEC		dir;
+	REAL	power;
+	REAL	strength;
+	REAL	range;
+	REAL	range2;
+	REAL	rangeInv;
+
+} s_light;
+
+
+// Camera position
+typedef struct t_CameraPos
+{
+	VEC			eye;
+	VEC			focus;
+	QUATERNION	quat;
+
+} s_CameraPos;
+
+
+/////////////////////////////////////////////////////////////////////////////////
+// Externs
+/////////////////////////////////////////////////////////////////////////////////
+extern	t_Light		gLight[];
+
+
+/////////////////////////////////////////////////////////////////////////////////
+// Prototypes
+/////////////////////////////////////////////////////////////////////////////////
+void GoTitleScreen(void);
+void ReleaseTitleScreen(void);
+void TitleScreen(void);
+
+void ts_InitCameraPositions(void);
+
+void SetLightPos(t_Light* pLight, REAL x, REAL y, REAL z);
+void SetLightDir(t_Light* pLight, REAL x, REAL y, REAL z);
+void SetLightPower(t_Light* pLight, REAL power);
+void SetLightStrength(t_Light* pLight, REAL strength);
+void SetLightRange(t_Light* pLight, REAL range);
+
+void InitFlag(t_Flag *pFlag, int w, int h, REAL sX, REAL sY);
+void ReleaseFlag(t_Flag *pFlag);
+void RenderFlag(t_Flag *pFlag);
+
+void ts_ApplyLightPull(t_Light* pLight, VEC* pN, VEC* pS, VEC* pE);
+REAL ts_Power(REAL value, REAL power);
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+/////////////////////////////////////////////////////////////////////////////////
+#endif //__TITLESCREEN_H

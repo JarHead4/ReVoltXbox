@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\models\packet1.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Market2e" source="../levels/Market2/Market2e.bmp" />
+-->
+<VertexBuffer id="packet1_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-33.9524 68.1511 -34.3484 -0.57735 0.57735 -0.57735 0xff1d1d1d 0.488281 0.0078125</v>
+	<v index="1">-33.9524 68.1511 35.8054 -0.57735 0.57735 0.57735 0xff1d1d1d 0.496094 0.0078125</v>
+	<v index="2">36.2005 68.1511 35.8054 0.57735 0.57735 0.57735 0xff1d1d1d 0.496094 0.0195313</v>
+	<v index="3">36.2005 68.1511 -34.3484 0.57735 0.57735 -0.57735 0xff1d1d1d 0.488281 0.0195313</v>
+	<v index="4">-33.9524 68.1511 35.8054 -0.57735 0.57735 0.57735 0xff53535b 0.1875 0.183594</v>
+	<v index="5">-33.9524 68.1511 -34.3484 -0.57735 0.57735 -0.57735 0xff53535b 0.324219 0.183594</v>
+	<v index="6">-33.9524 -69.6442 -34.3484 -0.57735 -0.57735 -0.57735 0xff53535b 0.324219 0.0078125</v>
+	<v index="7">-33.9524 -69.6442 35.8054 -0.57735 -0.57735 0.57735 0xff53535b 0.1875 0.0078125</v>
+	<v index="8">36.2005 68.1511 35.8054 0.57735 0.57735 0.57735 0xff4d4d4d 0.0859375 0.183594</v>
+	<v index="9">-33.9524 68.1511 35.8054 -0.57735 0.57735 0.57735 0xff4d4d4d 0.1875 0.183594</v>
+	<v index="10">-33.9524 -69.6442 35.8054 -0.57735 -0.57735 0.57735 0xff4d4d4d 0.1875 0.0078125</v>
+	<v index="11">36.2005 -69.6442 35.8054 0.57735 -0.57735 0.57735 0xff4d4d4d 0.0859375 0.0078125</v>
+	<v index="12">36.2005 68.1511 -34.3484 0.57735 0.57735 -0.57735 0xff53535b 0.1875 0.183594</v>
+	<v index="13">36.2005 68.1511 35.8054 0.57735 0.57735 0.57735 0xff53535b 0.324219 0.183594</v>
+	<v index="14">36.2005 -69.6442 35.8054 0.57735 -0.57735 0.57735 0xff53535b 0.324219 0.0078125</v>
+	<v index="15">36.2005 -69.6442 -34.3484 0.57735 -0.57735 -0.57735 0xff53535b 0.1875 0.0078125</v>
+	<v index="16">-33.9524 68.1511 -34.3484 -0.57735 0.57735 -0.57735 0xff4d4d4d 0.0859375 0.183594</v>
+	<v index="17">36.2005 68.1511 -34.3484 0.57735 0.57735 -0.57735 0xff4d4d4d 0.1875 0.183594</v>
+	<v index="18">36.2005 -69.6442 -34.3484 0.57735 -0.57735 -0.57735 0xff4d4d4d 0.1875 0.0078125</v>
+	<v index="19">-33.9524 -69.6442 -34.3484 -0.57735 -0.57735 -0.57735 0xff4d4d4d 0.0859375 0.0078125</v>
+	<v index="20">36.2005 -69.6442 35.8054 0.57735 -0.57735 0.57735 0xff53535b 0.488281 0.0078125</v>
+	<v index="21">-33.9524 -69.6442 35.8054 -0.57735 -0.57735 0.57735 0xff53535b 0.496094 0.0078125</v>
+	<v index="22">-33.9524 -69.6442 -34.3484 -0.57735 -0.57735 -0.57735 0xff53535b 0.496094 0.0195313</v>
+	<v index="23">36.2005 -69.6442 -34.3484 0.57735 -0.57735 -0.57735 0xff53535b 0.488281 0.0195313</v>
+</VertexBuffer>
+<Model id="packet1">
+	<!--
+	<Revolt Radius="86.271729" Xmin="-33.952358" Xmax="36.200535" Ymin="-69.644157" Ymax="68.151100" Zmin="-34.348442" Zmax="35.805367"
+	 PolyNum="6" VertNum="8" QuadNumTex="6" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="packet1_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="packet1_PreviewCamera">
+				0.0115913 0 0 0
+				0 0.0115913 0 0
+				0 0 0.00579564 0
+				-0.0130296 0.00865322 0.495778 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Market2e"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="24" />
+	</Pass>
+</Model>
+</XDX>

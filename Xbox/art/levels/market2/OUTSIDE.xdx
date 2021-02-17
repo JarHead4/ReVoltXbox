@@ -1,0 +1,269 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Market2\OUTSIDE.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Market2b" source="../../../Market2b.bmp" />
+<Texture id="Market2c" source="../../../Market2c.bmp" />
+<Texture id="Market2h" source="../../../Market2h.bmp" />
+<Texture id="Market2j" source="../../../Market2j.bmp" />
+-->
+<VertexBuffer id="OUTSIDE_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-3000 -500 1500 0.707107 0 -0.707107 0xff588eb8 0.378906 0.621094</v>
+	<v index="1">-2500 -500 2000 0.382683 0 -0.92388 0xff588eb8 0.496094 0.621094</v>
+	<v index="2">-2500 -1000 2000 0.382683 0 -0.92388 0xff588eb8 0.496094 0.503906</v>
+	<v index="3">-3000 -1000 1500 0.707107 0 -0.707107 0xff588eb8 0.378906 0.503906</v>
+	<v index="4">-3000 -500 1500 0.707107 0 -0.707107 0xff588eb8 0.496094 0.621094</v>
+	<v index="5">-3000 -1000 1500 0.707107 0 -0.707107 0xff588eb8 0.496094 0.503906</v>
+	<v index="6">-3500 -1000 1000 0.92388 0 -0.382683 0xff588eb8 0.378906 0.503906</v>
+	<v index="7">-3500 -500 1000 0.92388 0 -0.382683 0xff588eb8 0.378906 0.621094</v>
+	<v index="8">-3000 0 1500 0.392232 -0.83205 -0.392232 0xff588eb8 0.378906 0.621094</v>
+	<v index="9">-2500 0 2000 0.259688 -0.73451 -0.626943 0xff588eb8 0.496094 0.621094</v>
+	<v index="10">-2500 -500 2000 0.382683 0 -0.92388 0xff588eb8 0.496094 0.503906</v>
+	<v index="11">-3000 -500 1500 0.707107 0 -0.707107 0xff588eb8 0.378906 0.503906</v>
+	<v index="12">-3000 0 1500 0.392232 -0.83205 -0.392232 0xff588eb8 0.496094 0.621094</v>
+	<v index="13">-3000 -500 1500 0.707107 0 -0.707107 0xff588eb8 0.496094 0.503906</v>
+	<v index="14">-3500 -500 1000 0.92388 0 -0.382683 0xff588eb8 0.378906 0.503906</v>
+	<v index="15">-3500 0 1000 0.626943 -0.73451 -0.259688 0xff588eb8 0.378906 0.621094</v>
+	<v index="16">-3000 0 1500 0.392232 -0.83205 -0.392232 0xff9b9383 0.5 0</v>
+	<v index="17">-3000 0 1000 0 -1 0 0xff9b9383 0 0</v>
+	<v index="18">-2500 0 1000 0 -1 0 0xff9b9383 0 0.5</v>
+	<v index="19">-2500 0 1500 0 -1 0 0xff9b9383 0.5 0.5</v>
+	<v index="20">-3500 0 -1000 0.707107 -0.707107 0 0xffffde96 1 0</v>
+	<v index="21">-3000 0 -1000 0 -1 0 0xffffde96 1 0.5</v>
+	<v index="22">-3000 0 -500 0 -1 0 0xffffde96 0.5 0.5</v>
+	<v index="23">-3500 0 -500 0.707107 -0.707107 0 0xffffde96 0.5 0</v>
+	<v index="24">-3000 0 -1000 0 -1 0 0xffffde96 0 0</v>
+	<v index="25">-2500 0 -1000 0 -1 0 0xffffde96 0 0.5</v>
+	<v index="26">-2500 0 -500 0 -1 0 0xffffde96 0.5 0.5</v>
+	<v index="27">-3000 0 -500 0 -1 0 0xffffde96 0.5 0</v>
+	<v index="28">-3500 0 -500 0.707107 -0.707107 0 0xffffde96 0.5 0.5</v>
+	<v index="29">-3000 0 -500 0 -1 0 0xffffde96 0.5 0</v>
+	<v index="30">-3000 0 0 0 -1 0 0xffffde96 1 0</v>
+	<v index="31">-3500 0 0 0.707107 -0.707107 0 0xffffde96 1 0.5</v>
+	<v index="32">-3000 0 -500 0 -1 0 0xffffde96 0.5 0</v>
+	<v index="33">-2500 0 -500 0 -1 0 0xffffde96 0.5 0.5</v>
+	<v index="34">-2500 0 0 0 -1 0 0xffffde96 1 0.5</v>
+	<v index="35">-3000 0 0 0 -1 0 0xffffde96 1 0</v>
+	<v index="36">-2500 0 0 0 -1 0 0xffffde96 0 0</v>
+	<v index="37">-2500 0 -500 0 -1 0 0xffffde96 0.5 0</v>
+	<v index="38">-2000 0 -500 0 -1 0 0xffffde96 0.5 0.5</v>
+	<v index="39">-2000 0 0 0 -1 0 0xffffde96 0 0.5</v>
+	<v index="40">-3000 0 0 0 -1 0 0xffffde96 0 0</v>
+	<v index="41">-3000 0 500 0 -1 0 0xffffde96 0 0.5</v>
+	<v index="42">-3500 0 500 0.707107 -0.707107 0 0xffffde96 0.5 0.5</v>
+	<v index="43">-3500 0 0 0.707107 -0.707107 0 0xffffde96 0.5 0</v>
+	<v index="44">-2500 0 0 0 -1 0 0xffffde96 1 0.5</v>
+	<v index="45">-2500 0 500 0 -1 0 0xffffde96 0.5 0.5</v>
+	<v index="46">-3000 0 500 0 -1 0 0xffffde96 0.5 0</v>
+	<v index="47">-3000 0 0 0 -1 0 0xffffde96 1 0</v>
+	<v index="48">-2000 0 0 0 -1 0 0xffffde96 1 0.5</v>
+	<v index="49">-2000 0 500 0 -1 0 0xffffde96 0.5 0.5</v>
+	<v index="50">-2500 0 500 0 -1 0 0xffffde96 0.5 0</v>
+	<v index="51">-2500 0 0 0 -1 0 0xffffde96 1 0</v>
+	<v index="52">-3000 0 500 0 -1 0 0xffffde96 0 0.5</v>
+	<v index="53">-3000 0 1000 0 -1 0 0xffffde96 0.5 0.5</v>
+	<v index="54">-3500 0 1000 0.626943 -0.73451 -0.259688 0xffffde96 0.5 0</v>
+	<v index="55">-3500 0 500 0.707107 -0.707107 0 0xffffde96 0 0</v>
+	<v index="56">-2500 0 500 0 -1 0 0xffffde96 0.5 0.5</v>
+	<v index="57">-2500 0 1000 0 -1 0 0xffffde96 0 0.5</v>
+	<v index="58">-3000 0 1000 0 -1 0 0xffffde96 0 0</v>
+	<v index="59">-3000 0 500 0 -1 0 0xffffde96 0.5 0</v>
+	<v index="60">-2000 0 1500 0 -1 0 0xff9b9383 0.5 0</v>
+	<v index="61">-2000 0 2000 0 -0.707107 -0.707107 0xff9b9383 0.5 0.5</v>
+	<v index="62">-2500 0 2000 0.259688 -0.73451 -0.626943 0xff9b9383 1 0.5</v>
+	<v index="63">-2500 0 1500 0 -1 0 0xff9b9383 1 0</v>
+	<v index="64">-2500 0 1500 0 -1 0 0xff9b9383 0 0.5</v>
+	<v index="65">-2500 0 2000 0.259688 -0.73451 -0.626943 0xff9b9383 0.5 0.5</v>
+	<v index="66">-3000 0 1500 0.392232 -0.83205 -0.392232 0xff9b9383 0 0</v>
+	<v index="67">-3000 0 1500 0.392232 -0.83205 -0.392232 0xff9b9383 0.5 0.5</v>
+	<v index="68">-3500 0 1000 0.626943 -0.73451 -0.259688 0xff9b9383 0 0</v>
+	<v index="69">-3000 0 1000 0 -1 0 0xff9b9383 0 0.5</v>
+	<v index="70">-2500 0 -1000 0 -1 0 0xffffde96 0.5 0.5</v>
+	<v index="71">-2000 0 -500 0 -1 0 0xffffde96 0 0</v>
+	<v index="72">-2500 0 -500 0 -1 0 0xffffde96 0 0.5</v>
+	<v index="73">-2500 0 1000 0 -1 0 0xffffde96 1 0.5</v>
+	<v index="74">-2500 0 500 0 -1 0 0xffffde96 0.5 0.5</v>
+	<v index="75">-2000 0 500 0 -1 0 0xffffde96 0.5 1</v>
+	<v index="76">-2000 0 1000 0 -1 0 0xffffde96 1 1</v>
+	<v index="77">-2000 0 1000 0 -1 0 0xff9b9383 1 1</v>
+	<v index="78">-2000 0 1500 0 -1 0 0xff9b9383 0.5 1</v>
+	<v index="79">-2500 0 1500 0 -1 0 0xff9b9383 0.5 0.5</v>
+	<v index="80">-2500 0 1000 0 -1 0 0xff9b9383 1 0.5</v>
+	<v index="81">-3500 -500 -1000 1 0 0 0xffffde96 0.751953 0.00195313</v>
+	<v index="82">-3500 -500 -500 1 0 0 0xffffde96 0.998047 0.00195313</v>
+	<v index="83">-3500 -1000 -500 1 0 0 0xffffde96 0.998047 0.125</v>
+	<v index="84">-3500 -1000 -1000 1 0 0 0xffffde96 0.751953 0.125</v>
+	<v index="85">-3500 -500 -1000 1 0 0 0xffffde96 0.751953 0.125</v>
+	<v index="86">-3500 0 -1000 0.707107 -0.707107 0 0xffffde96 0.751953 0.248047</v>
+	<v index="87">-3500 0 -500 0.707107 -0.707107 0 0xffffde96 0.998047 0.248047</v>
+	<v index="88">-3500 -500 -500 1 0 0 0xffffde96 0.998047 0.125</v>
+	<v index="89">-3500 -1000 0 1 0 0 0xffffde96 0.998047 0.125</v>
+	<v index="90">-3500 -1000 -500 1 0 0 0xffffde96 0.751953 0.125</v>
+	<v index="91">-3500 -500 -500 1 0 0 0xffffde96 0.751953 0.00195313</v>
+	<v index="92">-3500 -500 0 1 0 0 0xffffde96 0.998047 0.00195313</v>
+	<v index="93">-3500 -500 0 1 0 0 0xffffde96 0.751953 0.125</v>
+	<v index="94">-3500 -500 -500 1 0 0 0xffffde96 0.998047 0.125</v>
+	<v index="95">-3500 0 -500 0.707107 -0.707107 0 0xffffde96 0.998047 0.248047</v>
+	<v index="96">-3500 0 0 0.707107 -0.707107 0 0xffffde96 0.751953 0.248047</v>
+	<v index="97">-3500 -1000 0 1 0 0 0xffffde96 0.761719 0.0117188</v>
+	<v index="98">-3500 -500 0 1 0 0 0xffffde96 0.761719 0.117188</v>
+	<v index="99">-3500 -500 500 1 0 0 0xffffde96 0.863281 0.117188</v>
+	<v index="100">-3500 -1000 500 1 0 0 0xffffde96 0.863281 0.0117188</v>
+	<v index="101">-3500 0 0 0.707107 -0.707107 0 0xffffde96 0.761719 0.238281</v>
+	<v index="102">-3500 0 500 0.707107 -0.707107 0 0xffffde96 0.863281 0.238281</v>
+	<v index="103">-3500 -500 500 1 0 0 0xffffde96 0.863281 0.136719</v>
+	<v index="104">-3500 -500 0 1 0 0 0xffffde96 0.761719 0.136719</v>
+	<v index="105">-3500 -500 500 1 0 0 0xffffde96 0.886719 0.117188</v>
+	<v index="106">-3500 -500 1000 0.92388 0 -0.382683 0xffffde96 0.988281 0.117188</v>
+	<v index="107">-3500 -1000 1000 0.92388 0 -0.382683 0xffffde96 0.988281 0.0117188</v>
+	<v index="108">-3500 -1000 500 1 0 0 0xffffde96 0.886719 0.0117188</v>
+	<v index="109">-3500 0 500 0.707107 -0.707107 0 0xffffde96 0.988281 0.238281</v>
+	<v index="110">-3500 0 1000 0.626943 -0.73451 -0.259688 0xffffde96 0.886719 0.238281</v>
+	<v index="111">-3500 -500 1000 0.92388 0 -0.382683 0xffffde96 0.886719 0.136719</v>
+	<v index="112">-3500 -500 500 1 0 0 0xffffde96 0.988281 0.136719</v>
+	<v index="113">-2000 -500 2000 0 0 -1 0xffffde96 0.998047 0.125</v>
+	<v index="114">-2500 -500 2000 0.382683 0 -0.92388 0xffffde96 0.751953 0.125</v>
+	<v index="115">-2500 0 2000 0.259688 -0.73451 -0.626943 0xffffde96 0.751953 0.248047</v>
+	<v index="116">-2000 0 2000 0 -0.707107 -0.707107 0xffffde96 0.998047 0.248047</v>
+	<v index="117">-2000 -1000 2000 0 0 -1 0xffffde96 0.998047 0.125</v>
+	<v index="118">-2500 -1000 2000 0.382683 0 -0.92388 0xffffde96 0.751953 0.125</v>
+	<v index="119">-2500 -500 2000 0.382683 0 -0.92388 0xffffde96 0.751953 0.00195313</v>
+	<v index="120">-2000 -500 2000 0 0 -1 0xffffde96 0.998047 0.00195313</v>
+</VertexBuffer>
+<Model id="OUTSIDE">
+	<!--
+	<Revolt Radius="3774.917236" Xmin="-3500.000000" Xmax="-2000.000000" Ymin="-1000.000000" Ymax="0.000000" Zmin="-1000.000000" Zmax="2000.000000"
+	 PolyNum="31" VertNum="40" QuadNumTex="28" TriNumTex="3" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="OUTSIDE_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="OUTSIDE_PreviewCamera">
+				0.000264906 0 0 0
+				0 0.000264906 0 0
+				0 0 0.000132453 0
+				0.728493 0.132453 0.433773 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Market2b"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="16" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="OUTSIDE_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="OUTSIDE_PreviewCamera">
+				0.000264906 0 0 0
+				0 0.000264906 0 0
+				0 0 0.000132453 0
+				0.728493 0.132453 0.433773 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Market2c"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="16" count="48" />
+		<Draw primitive="TRILIST" start="64" count="9" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="OUTSIDE_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="OUTSIDE_PreviewCamera">
+				0.000264906 0 0 0
+				0 0.000264906 0 0
+				0 0 0.000132453 0
+				0.728493 0.132453 0.433773 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Market2h"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="73" count="8" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="OUTSIDE_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="OUTSIDE_PreviewCamera">
+				0.000264906 0 0 0
+				0 0.000264906 0 0
+				0 0 0.000132453 0
+				0.728493 0.132453 0.433773 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Market2j"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="81" count="40" />
+	</Pass>
+</Model>
+</XDX>

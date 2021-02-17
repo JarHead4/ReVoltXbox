@@ -1,0 +1,5 @@
+DIRS=\
+    cars \
+    gfx \
+    levels \
+    XACTProject

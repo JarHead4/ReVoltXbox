@@ -1,0 +1,162 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Market1\FLOURO.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Market1h" source="../../../Market1h.bmp" />
+-->
+<VertexBuffer id="FLOURO_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">0.25 -0.25 250.25 -0.707107 0 0.707107 0xffffffff 0.582031 0.5</v>
+	<v index="1">0.25 -0.25 -249.75 -0.707107 0 -0.707107 0xffffffff 0.996094 0.5</v>
+	<v index="2">0.25 -174.463 -249.75 -0.316169 0.948703 -7.25594e-005 0xffffffff 0.996094 0.445313</v>
+	<v index="3">0.25 -174.5 250.25 -0.316169 0.948703 0 0xffffffff 0.582031 0.445313</v>
+	<!-- double-sided begin -->
+	<v index="4">0.25 -174.463 -249.75 0.316169 -0.948703 7.25594e-005 0xffffffff 0.996094 0.445313</v>
+	<v index="5">0.25 -0.25 -249.75 0.707107 0 0.707107 0xffffffff 0.996094 0.5</v>
+	<v index="6">0.25 -0.25 250.25 0.707107 0 -0.707107 0xffffffff 0.582031 0.5</v>
+	<v index="7">0.25 -174.5 250.25 0.316169 -0.948703 0 0xffffffff 0.582031 0.445313</v>
+	<!-- double-sided end -->
+	<v index="8">22.6 -0.25 -249.75 0.57619 0.409885 -0.707107 0xffffffff 0.890625 0.304688</v>
+	<v index="9">0.25 31.1682 -249.75 -0.654278 0.379262 -0.654278 0xffffffff 0.890625 0.257813</v>
+	<v index="10">0.25 31.1682 250.25 -0.654278 0.379262 0.654278 0xffffffff 0.757813 0.257813</v>
+	<v index="11">22.6 -0.25 250.25 0.57619 0.409885 0.707107 0xffffffff 0.757813 0.304688</v>
+	<v index="12">-22.1 -0.25 250.25 -0.57619 0.409885 0.707107 0xffffffff 0.890625 0.304688</v>
+	<v index="13">0.25 31.1682 250.25 -0.654278 0.379262 0.654278 0xffffffff 0.890625 0.257813</v>
+	<v index="14">0.25 31.1682 -249.75 -0.654278 0.379262 -0.654278 0xffffffff 0.757813 0.257813</v>
+	<v index="15">-22.1 -0.25 -249.75 -0.57619 0.409885 -0.707107 0xffffffff 0.757813 0.304688</v>
+	<v index="16">0.25 31.1682 -249.75 -0.654278 0.379262 -0.654278 0xffffffff 0.894531 0.257813</v>
+	<v index="17">22.6 -0.25 -249.75 0.57619 0.409885 -0.707107 0xffffffff 0.945313 0.304688</v>
+	<v index="18">0.25 -0.25 -249.75 -0.707107 0 -0.707107 0xffffffff 0.894531 0.304688</v>
+	<v index="19">0.25 31.1682 250.25 -0.654278 0.379262 0.654278 0xffffffff 0.894531 0.257813</v>
+	<v index="20">-22.1 -0.25 250.25 -0.57619 0.409885 0.707107 0xffffffff 0.945313 0.304688</v>
+	<v index="21">0.25 -0.25 250.25 -0.707107 0 0.707107 0xffffffff 0.894531 0.304688</v>
+	<v index="22">0.25 31.1682 250.25 -0.654278 0.379262 0.654278 0xffffffff 0.894531 0.257813</v>
+	<v index="23">0.25 -0.25 250.25 -0.707107 0 0.707107 0xffffffff 0.894531 0.304688</v>
+	<v index="24">22.6 -0.25 250.25 0.57619 0.409885 0.707107 0xffffffff 0.945313 0.304688</v>
+	<v index="25">0.25 31.1682 -249.75 -0.654278 0.379262 -0.654278 0xffffffff 0.894531 0.257813</v>
+	<v index="26">0.25 -0.25 -249.75 -0.707107 0 -0.707107 0xffffffff 0.894531 0.304688</v>
+	<v index="27">-22.1 -0.25 -249.75 -0.57619 0.409885 -0.707107 0xffffffff 0.945313 0.304688</v>
+</VertexBuffer>
+<VertexBuffer id="FLOURO_VertexBuffer_TransparentTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-179.098 -174.5 -411.417 0 1 -0.000114724 0xff040404 0.996094 0.167969</v>
+	<v index="1">-179.098 -174.5 411.917 0 1 0 0xff040404 0.589844 0.167969</v>
+	<v index="2">0.25 -174.5 250.25 -0.316169 0.948703 0 0xffffffff 0.664063 0.25</v>
+	<v index="3">0.25 -174.463 -249.75 -0.316169 0.948703 -7.25594e-005 0xffffffff 0.917969 0.25</v>
+	<v index="4">179.598 -174.5 411.917 0.000103414 1 0 0xff040404 0.589844 0.167969</v>
+	<v index="5">179.598 -174.5 -411.417 0.000103414 1 -0.000114724 0xff040404 0.996094 0.167969</v>
+	<v index="6">0.25 -174.463 -249.75 -0.316169 0.948703 -7.25594e-005 0xffffffff 0.917969 0.25</v>
+	<v index="7">0.25 -174.5 250.25 -0.316169 0.948703 0 0xffffffff 0.664063 0.25</v>
+	<v index="8">0.25 191.173 342.687 -1 0 0 0xff040404 0.714844 0.441406</v>
+	<v index="9">0.25 191.173 -342.187 -1 0 0 0xff040404 0.996094 0.441406</v>
+	<v index="10">0.25 31.1682 -249.75 -0.654278 0.379262 -0.654278 0xffffffff 0.953125 0.308594</v>
+	<v index="11">0.25 31.1682 250.25 -0.654278 0.379262 0.654278 0xffffffff 0.753906 0.308594</v>
+	<!-- double-sided begin -->
+	<v index="12">0.25 31.1682 -249.75 0.654278 -0.379262 0.654278 0xffffffff 0.953125 0.308594</v>
+	<v index="13">0.25 191.173 -342.187 1 0 0 0xff040404 0.996094 0.441406</v>
+	<v index="14">0.25 191.173 342.687 1 0 0 0xff040404 0.714844 0.441406</v>
+	<v index="15">0.25 31.1682 250.25 0.654278 -0.379262 -0.654278 0xffffffff 0.753906 0.308594</v>
+	<!-- double-sided end -->
+	<v index="16">0.25 -0.25 407.75 -1 0 0 0xff040404 0.671875 0.289063</v>
+	<v index="17">0.25 191.173 342.687 -1 0 0 0xff040404 0.714844 0.441406</v>
+	<v index="18">0.25 31.1682 250.25 -0.654278 0.379262 0.654278 0xffffffff 0.753906 0.308594</v>
+	<v index="19">0.25 -0.25 250.25 -0.707107 0 0.707107 0xff040404 0.753906 0.289063</v>
+	<!-- double-sided begin -->
+	<v index="20">0.25 31.1682 250.25 0.654278 -0.379262 -0.654278 0xffffffff 0.753906 0.308594</v>
+	<v index="21">0.25 191.173 342.687 1 0 0 0xff040404 0.714844 0.441406</v>
+	<v index="22">0.25 -0.25 407.75 1 0 0 0xff040404 0.671875 0.289063</v>
+	<v index="23">0.25 -0.25 250.25 0.707107 0 -0.707107 0xff040404 0.753906 0.289063</v>
+	<!-- double-sided end -->
+	<v index="24">0.25 -0.249997 -407.25 -1 0 0 0xff040404 0.671875 0.289063</v>
+	<v index="25">0.25 -0.25 -249.75 -0.707107 0 -0.707107 0xff5f5f5f 0.753906 0.289063</v>
+	<v index="26">0.25 31.1682 -249.75 -0.654278 0.379262 -0.654278 0xffffffff 0.753906 0.308594</v>
+	<v index="27">0.25 191.173 -342.187 -1 0 0 0xff040404 0.714844 0.441406</v>
+	<!-- double-sided begin -->
+	<v index="28">0.25 31.1682 -249.75 0.654278 -0.379262 0.654278 0xffffffff 0.753906 0.308594</v>
+	<v index="29">0.25 -0.25 -249.75 0.707107 0 0.707107 0xff5f5f5f 0.753906 0.289063</v>
+	<v index="30">0.25 -0.249997 -407.25 1 0 0 0xff040404 0.671875 0.289063</v>
+	<v index="31">0.25 191.173 -342.187 1 0 0 0xff040404 0.714844 0.441406</v>
+	<!-- double-sided end -->
+	<v index="32">0.25 -174.463 -249.75 -0.316169 0.948703 -7.25594e-005 0xffffffff 0.917969 0.25</v>
+	<v index="33">179.598 -174.5 -411.417 0.000103414 1 -0.000114724 0xff040404 0.996094 0.332031</v>
+	<v index="34">-179.098 -174.5 -411.417 0 1 -0.000114724 0xff040404 0.996094 0.167969</v>
+	<v index="35">0.25 -174.5 250.25 -0.316169 0.948703 0 0xffffffff 0.917969 0.25</v>
+	<v index="36">-179.098 -174.5 411.917 0 1 0 0xff040404 0.996094 0.167969</v>
+	<v index="37">179.598 -174.5 411.917 0.000103414 1 0 0xff040404 0.996094 0.332031</v>
+</VertexBuffer>
+<Model id="FLOURO">
+	<!--
+	<Revolt Radius="482.059326" Xmin="-179.098404" Xmax="179.598389" Ymin="-174.500000" Ymax="191.173416" Zmin="-411.416656" Zmax="411.916687"
+	 PolyNum="14" VertNum="18" QuadNumTex="8" TriNumTex="6" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="FLOURO_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="FLOURO_PreviewCamera">
+				0.00207443 0 0 0
+				0 0.00207443 0 0
+				0 0 0.00103722 0
+				-0.000518593 -0.0172939 0.499741 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Market1h"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="16" />
+		<Draw primitive="TRILIST" start="16" count="12" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="FLOURO_VertexBuffer_TransparentTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="FLOURO_PreviewCamera">
+				0.00207443 0 0 0
+				0 0.00207443 0 0
+				0 0 0.00103722 0
+				-0.000518593 -0.0172939 0.499741 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Market1h"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="32" />
+		<Draw primitive="TRILIST" start="32" count="6" />
+	</Pass>
+</Model>
+</XDX>

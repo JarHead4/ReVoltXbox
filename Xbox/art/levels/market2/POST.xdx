@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Market2\POST.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Market2b" source="../../../Market2b.bmp" />
+-->
+<VertexBuffer id="POST_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">25 -0.0625575 24.9999 1 0 0 0xffcd9b43 0.613281 0.00390625</v>
+	<v index="1">25 -500.063 24.9999 1 0 0 0xffcd9b43 0.253906 0.00390625</v>
+	<v index="2">25 -500.063 -25 1 0 0 0xffcd9b43 0.253906 0.0703125</v>
+	<v index="3">25 -0.0625575 -25 1 0 0 0xffcd9b43 0.613281 0.0703125</v>
+	<v index="4">25 -0.0625575 24.9999 1 0 0 0xffcd9b43 0.613281 0.00390625</v>
+	<v index="5">25 -0.0625575 -25 1 0 0 0xffcd9b43 0.613281 0.0703125</v>
+	<v index="6">25 499.937 -25 1 0 0 0xffcd9b43 0.253906 0.0703125</v>
+	<v index="7">25 499.937 24.9999 1 0 0 0xffcd9b43 0.253906 0.00390625</v>
+	<v index="8">-25 0.0626123 25 1.18256e-006 0 1 0xff694e20 0.613281 0.0703125</v>
+	<v index="9">-25 -500.063 25 1.18256e-006 0 1 0xff694e20 0.253906 0.0703125</v>
+	<v index="10">25 -500.063 24.9999 1.18256e-006 0 1 0xff694e20 0.253906 0.00390625</v>
+	<v index="11">25 -0.0625575 24.9999 1.18256e-006 0 1 0xff694e20 0.613281 0.00390625</v>
+	<v index="12">-25 0.0626123 25 1.18256e-006 0 1 0xff694e20 0.613281 0.0703125</v>
+	<v index="13">25 -0.0625575 24.9999 1.18256e-006 0 1 0xff694e20 0.613281 0.00390625</v>
+	<v index="14">25 499.937 24.9999 1.18256e-006 0 1 0xff694e20 0.253906 0.00390625</v>
+	<v index="15">-25 500.063 25 1.18256e-006 0 1 0xff694e20 0.253906 0.0703125</v>
+	<v index="16">-25 0.0626123 -25 0 0 -1 0xff694e20 0.613281 0.0703125</v>
+	<v index="17">-25 499.937 -25 0 0 -1 0xff694e20 0.253906 0.0703125</v>
+	<v index="18">25 499.937 -25 0 0 -1 0xff694e20 0.253906 0.00390625</v>
+	<v index="19">25 -0.0625575 -25 0 0 -1 0xff694e20 0.613281 0.00390625</v>
+	<v index="20">-25 0.0626123 -25 0 0 -1 0xff694e20 0.613281 0.0703125</v>
+	<v index="21">25 -0.0625575 -25 0 0 -1 0xff694e20 0.613281 0.00390625</v>
+	<v index="22">25 -500.063 -25 0 0 -1 0xff694e20 0.253906 0.00390625</v>
+	<v index="23">-25 -500.063 -25 0 0 -1 0xff694e20 0.253906 0.0703125</v>
+</VertexBuffer>
+<Model id="POST">
+	<!--
+	<Revolt Radius="501.310883" Xmin="-24.999977" Xmax="24.999977" Ymin="-500.062592" Ymax="500.062592" Zmin="-25.000006" Zmax="25.000006"
+	 PolyNum="6" VertNum="18" QuadNumTex="6" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="POST_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="POST_PreviewCamera">
+				0.00199477 0 0 0
+				0 0.00199477 0 0
+				0 0 0.000997385 0
+				0 0 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Market2b"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="24" />
+	</Pass>
+</Model>
+</XDX>

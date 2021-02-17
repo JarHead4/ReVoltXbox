@@ -1,0 +1,417 @@
+
+
+
+Re-Volt
+Sél. Course
+Entrer nom
+Sél. Voit.
+Circuit
+Sél. Coupe
+Sommaire
+Type de connect.
+Config. Ecran
+Type de jeu
+Salle d'attente
+La partie est déjà commencée
+Contrôleur
+Sél. la partie
+
+
+En piste!
+[Play Live!]
+[Single Player]
+[Multiplayer]
+[System Link]
+Meilleurs Tps
+Tabl. progres.
+Edit. circuits
+Options
+[Language]
+[Create Account]
+
+
+[Quick Match]
+[Find a Match]
+Amis
+[Create a Match]
+[Statistics]
+
+
+[Select Race]
+[Race]
+[Battle Tag]
+
+
+Championnat
+Course unique
+Horde sauvage
+Contre la montre
+Entrainement
+Cascades
+Edit. Circuits
+Stats de la voiture
+
+
+Sél. voiture
+
+
+circuit
+Mode mirroir
+Mode inversé
+Voit. CPU
+Nb tours
+Longueur
+
+
+Coupe en Bronze
+Coupe en Argent
+Coupe en Or
+Coupe en Platine
+
+
+Choisir Mode
+Virages faciles
+Virages difficiles
+1ères cascades
+
+
+Config. Jeu
+Config. Vidéo
+Config. Audio
+Config. contrôles
+Voir crédits
+
+
+Nb de voitures
+Voitures aléatoires
+Circuits aléatoires
+Bonus
+Nb de tours
+Tps Battle Tag
+Difficulté
+Niveau véhicules
+Vs. Phantôme
+Collision
+Unités De Vitesse
+
+
+Entrer noms
+
+
+Oui
+Non
+Oui
+Non
+Facile
+Moyen
+Difficile
+
+
+Résolution
+Textures
+Brillance
+Ombres
+Carte Vidéo
+Luminosité
+Contraste
+Distance affichage
+Reflets
+Exemples de modèles
+Traces pneus
+Lumières
+Automatique
+Indisponible
+Antialias
+V-Sync
+Affichage cadence de trame
+Filtrage Textures
+Qlté Texture
+3D fil de fer
+Boites
+Projections
+Fumée
+Haute résolution
+Ecran splitté
+
+
+Musique
+Vol. Sfx
+Vol. Musique
+Tester SFX
+Tester Musiq.
+Canaux Sfx
+Audio
+Stéréo
+Mono
+
+
+Voir records
+Sauv. records
+
+Records
+
+
+En piste!
+Rejoindre course
+Attendre connection réseau
+Choisir partie
+Serveur
+Continuer partie réseau
+Quitter partie en réseau
+Nb de joueurs
+Optimisation des paquets
+Protocole DirectPlay
+Recherche des parties
+Entrée en jeu
+Barre espace afin d'actualiser les parties et les joueurs.
+Circuit suivant
+
+
+Défaut
+Bronze
+Argent
+Or
+Spécial
+
+
+Charger ralenti
+Sauver ralenti
+
+
+Continuer
+Continuer championnat
+Terminer championnat
+Abandonner
+Recommencer partie
+Revoir ralenti
+Quitter
+Voir ralenti
+
+
+Sélect. contrôles
+Config. contrôles
+Equilibrage direct°
+Sensibilité dir.
+Equilibrage non linéaire
+Contrôles par défaut
+Configuration
+
+
+Mode démo
+Joueur
+Sauve config 1 joueur
+Sauve config multi.
+Sauve config actuelle
+Effacer tableau progression
+Mode
+Simulation
+Arcade
+Console
+RC junior
+MPH
+MPH Mesurés
+Fpm
+K/h
+K/h Mesurés
+
+
+VOUS ETES
+PASSER LA VITESSE SUPERIEURE
+POUR ACCEDER AU PROCHAIN NIVEAU
+LA COUPE EN  BRONZE
+LA COUPE EN  ARGENT
+LA COUPE EN OR
+LA COUPE SPECIALE
+EST ACCESSIBLE.
+LES CIRCUITS MIRROIRS
+LES CIRCUITS INVERSES
+SONT ACCESSIBLES.
+NOUVELLES VOITURES
+VOUS AVEZ LIBERE
+DES VOITURES
+1er
+2ème
+3ème
+
+Etes vous sûr?
+
+
+Finissez au moins 3ème pour
+rester en course pour la coupe!
+Finissez premier pour avoir
+accès à la prochaine coupe.
+Finissez 1er au classement,
+et vous serez sacré Champion \n\rincontesté de Re-Volt!
+
+
+M
+R
+(M)
+(R)
+
+
+Classe
+Niveau
+Vitesse
+Acc
+Poids
+Trans
+
+Électrique
+Essence
+Spécial
+
+Débutant
+Amateur
+Avançé
+Semi Pro
+Pro
+
+4x4
+T. Arrière
+T. Avant
+
+
+Inconnu
+Bloqué
+
+
+Joueur
+Joueurs
+
+
+MAX VITESSE COLLISIONS REALISTES
+MAX VITESSE COLLISIONS SIMPLES
+MAX VITESSE COLLISION SIMPLE
+VITESSE RÉDUITE COLLISION SIMPLE
+
+
+ACCÉLERER
+FREIN/AR
+TIR
+REMET. VOIT
+REPLACER
+PAUSE
+
+
+Circuits
+Gag-
+né
+N.
+R.
+M.
+Étoile
+
+
+Mode de jeu:
+Étape:
+Circuit:
+Voiture
+Victoire:
+Etoile:
+Etoiles collectées:
+de
+Battu
+Tps référence
+
+Vous avez encore
+Essai
+Essais
+
+
+1er
+2ème
+3ème
+4ème
+5ème
+6ème
+7ème
+8ème
+9ème
+10ème
+11ème
+12ème
+13ème
+14ème
+15ème
+16ème
+
+
+Félicitations!
+Vous êtes qualifié
+Félicitations!
+Fin du Championnat
+Vous n'avez pas été qualifié
+Voiture
+Pnts
+
+
+Meilleur
+Dernier
+Tour
+Course
+Tour
+Fractionnement
+Adversaire
+Challenge
+Temps du challenge battu
+Temps
+Rslt course
+Rslt partie
+
+
+Voulez vous quitter?
+Recommencer la partie?
+Quitter?
+Vraiment?
+Sur?
+
+
+Défaut
+Bronze
+Argent
+Or
+Platine
+
+Perdu! Mieux chance la prochaine fois!
+
+
+NOUVELLE LIVRAISON DE VÉHICULES!\n\r(allez admirer les nouvelles voitures)\n
+Félicitations!\n%s DE NOUVEAUX CIRCUITS SONT\nDISPONIBLES EN MODE RENVERSÉ\n(appuyer sur la touche BAS lors\n de sélection de circuits)\n
+Félicitations!\n%s DE NOUVEAUX CIRCUITS SONT\nDISPONIBLES EN MODE MIROIR\n(appuyer sur la touche HAUT lors\n de la sélection des circuits)\n
+Félicitations!\n%s DE NOUVEAUX CIRCUITS SONT\nDISPONIBLES EN MODE MIROIR RENVERSÉ\n(appuyer sur haut et bas\n lors de la sélection des circuits)\n
+UN NOUVEAU MODE DE JEU EST\nDISPONIBLE: "LA HORDE SAUVAGE"
+
+
+Gauche
+Droite
+Klaxon
+Nouvel essai?
+Demo
+Chargement menu
+Chargement des Crédits
+Chargement "Référence mesures"
+Coureurs :
+CPU
+Aléatoire
+Mode
+Prêt
+Non prêt
+Appuyez sur TAB pour démarrer
+Le Jeu Multijoueur est terminé!
+Attente :
+D'Attente Centre serveur
+Centre serveur
+Circuit
+Jeu
+Mauvaise Version
+Complet
+Enregistré
+Mesuré
+Terminé
+Démarré
+Ouvert
+Rejouer
+Voir Galerie
+Local
+Téléchargement

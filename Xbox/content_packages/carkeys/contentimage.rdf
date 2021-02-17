@@ -1,0 +1,21 @@
+// List of resources to bundle.
+//
+// The output will be a header file (.h) used at compile time,
+// and a packed resource file (.xpr) used at runtime.
+
+out_header         Resource.h
+out_packedresource packagefiles\contentimage.xbx
+out_error          Resource.err
+out_prefix         Resource
+
+Texture Contentimage
+{
+   Source contentimage.bmp
+   Format D3DFMT_DXT1
+   Width  64
+   Height 64
+   Levels 1   
+}
+
+
+

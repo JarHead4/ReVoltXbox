@@ -1,0 +1,119 @@
+TARGETNAME = revolt_xbox
+TARGETPATH = obj
+TARGETTYPE = PROGRAM
+
+UMTYPE     = xboxapp
+USE_LIBCMT = 1
+USE_NATIVE_EH = 1
+USE_STL = 1
+
+XE_FLAGS   = $(XE_FLAGS) /INSERTFILE:dspimage.bin,DSPImage,RN /testid:"0xFFEDB18A" /testname:"Revolt (Microsoft ATG)" /titleimage:"..\art\gfx\title.xbx"
+
+# $BUGBUG: do we really want to specify "NOT_UNICODE" ?
+NOT_UNICODE = 1
+
+C_DEFINES = \
+  -DXBOX_DISABLE_NETWORK \
+  -DXBOX_NOT_YET_IMPLEMENTED \
+  -D_USE_XGMATH \
+  $(C_DEFINES)
+
+TARGETLIBS = \
+  $(XDK_LIB_PATH)\d3d8$(D).lib \
+  $(XDK_LIB_PATH)\d3dx8$(D).lib \
+  $(XDK_LIB_PATH)\dsound$(D).lib \
+  $(XDK_LIB_PATH)\xnet$(D).lib \
+  $(XDK_LIB_PATH)\xgraphics$(D).lib \
+  $(XDK_LIB_PATH)\xvoice$(D).lib \
+  $(XDK_LIB_PATH)\xbdm.lib
+
+INCLUDES = \
+  $(INCLUDES)
+
+SOURCES = \
+  aerial.cpp \
+  ai.cpp \
+  ai_car.cpp \
+  ai_init.cpp \
+  ainode.cpp \
+  aizone.cpp \
+  body.cpp \
+  camera.cpp \
+  car.cpp \
+  competition.cpp \
+  control.cpp \
+  credits.cpp \
+  ctrlread.cpp \
+  debug.cpp \
+  draw.cpp \
+  drawobj.cpp \
+  dx.cpp \
+  EditAi.cpp \
+  EditCam.cpp \
+  EditField.cpp \
+  EditObject.cpp \
+  EditPortal.cpp \
+  EditPos.cpp \
+  EditTrigger.cpp \
+  EditZone.cpp \
+  field.cpp \
+  gamegauge.cpp \
+  gameloop.cpp \
+  gamepad.cpp \
+  gaussian.cpp \
+  geom.cpp \
+  ghost.cpp \
+  InitPlay.cpp \
+  input.cpp \
+  instance.cpp \
+  intro.cpp \
+  LevelInfo.cpp \
+  LevelLoad.cpp \
+  light.cpp \
+  load.cpp \
+  main.cpp \
+  menu2.cpp \
+  menudat2.cpp \
+  MenuDraw.cpp \
+  menutext.cpp \
+  mirror.cpp \
+  model.cpp \
+  move.cpp \
+  musicmanager.cpp \
+  network.cpp \
+  newcoll.cpp \
+  obj_init.cpp \
+  object.cpp \
+  objinfo.cpp \
+  panel.cpp \
+  particle.cpp \
+  path.cpp \
+  piano.cpp \
+  pickup.cpp \
+  player.cpp \
+  podium.cpp \
+  posnode.cpp \
+  readinit.cpp \
+  replay.cpp \
+  settings.cpp \
+  sfx.cpp \
+  shadow.cpp \
+  shareware.cpp \
+  SoundBank.cpp \
+  SoundEffectEngine.cpp \
+  spark.cpp \
+  text.cpp \
+  texture.cpp \
+  timing.cpp \
+  titlescreen.cpp \
+  trigger.cpp \
+  util.cpp \
+  visibox.cpp \
+  VoiceCommunicator.cpp \
+  weapon.cpp \
+  wheel.cpp \
+  world.cpp \
+  XBInput.cpp \
+  XBMediaDebug.cpp \
+  XBResource.cpp \
+  xdx.cpp

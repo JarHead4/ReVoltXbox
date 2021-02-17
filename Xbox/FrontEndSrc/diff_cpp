@@ -1,0 +1,465 @@
+//depot/xbox/private/atg/Re-volt/Xbox/Src/acm_simplex.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/acm_simplex.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/aerial.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/aerial.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/ai.cpp
+... #7 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #6 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #5 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #4 change 24503 edit on 2001/12/14 11:00:15 by REDMOND\jharding@JHARDING-DEV1X (text) 'Re-Volt now has background musi'
+... #3 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/ai.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/ai_car.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/ai_car.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/ai_init.cpp
+... #6 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #5 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #4 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #3 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/ai_init.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/ainode.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/ainode.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/aizone.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/aizone.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/body.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/body.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/camera.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/camera.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/car.cpp
+... #7 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #6 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #5 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #4 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #3 change 24395 edit on 2001/12/12 13:12:05 by REDMOND\cprince@CPRINCE0_1 (text) 'Initial port of network code (f'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/car.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/control.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/control.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/ctrlread.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/ctrlread.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/debug.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/debug.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/draw.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/draw.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/drawobj.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/drawobj.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/dx.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/dx.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/edfield.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/edfield.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/editai.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/editai.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/editcam.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/editcam.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/editobj.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/editobj.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/edittrig.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/edittrig.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/editzone.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/editzone.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/edportal.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/edportal.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/field.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/field.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/gameloop.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/gameloop.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/gamepad.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/gamepad.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/gaussian.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/gaussian.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/geom.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/geom.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/ghost.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/ghost.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/grid.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/grid.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/input.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 24196 edit on 2001/12/10 10:39:18 by REDMOND\cprince@CPRINCE0_zzz (text) 'Added dpad support for menus (b'
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/input.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/instance.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/instance.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/level.cpp
+... #6 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #5 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #4 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #3 change 24503 edit on 2001/12/14 11:00:15 by REDMOND\jharding@JHARDING-DEV1X (text) 'Re-Volt now has background musi'
+... #2 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/level.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/light.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/light.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/main.cpp
+... #8 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #7 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #6 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #5 change 24503 edit on 2001/12/14 11:00:15 by REDMOND\jharding@JHARDING-DEV1X (text) 'Re-Volt now has background musi'
+... #4 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #3 change 24395 edit on 2001/12/12 13:12:05 by REDMOND\cprince@CPRINCE0_1 (text) 'Initial port of network code (f'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/main.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/menu.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/menu.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/menudata.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/menudata.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/menutext.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/menutext.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/mirror.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/mirror.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/model.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/model.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/move.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/move.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/MusicManager.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 24503 add on 2001/12/14 11:00:15 by REDMOND\jharding@JHARDING-DEV1X (text) 'Re-Volt now has background musi'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/network.cpp
+... #7 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #6 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #5 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #4 change 24482 edit on 2001/12/13 17:37:55 by REDMOND\cprince@CPRINCE0_1 (text) 'Massive code cleanup, and fixed'
+... #3 change 24395 edit on 2001/12/12 13:12:05 by REDMOND\cprince@CPRINCE0_1 (text) 'Initial port of network code (f'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/network.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/newcoll.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/newcoll.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/obj_init.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/obj_init.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/object.cpp
+... #6 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #5 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #4 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #3 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/object.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/objinfo.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/objinfo.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/panel.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/panel.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/particle.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/particle.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/piano.cpp
+... #6 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #5 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #4 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #3 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/piano.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/player.cpp
+... #6 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #5 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #4 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #3 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/player.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/readinit.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/readinit.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/settings.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/settings.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/shadow.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/shadow.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/smoke.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/smoke.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/soundbank.cpp
+... #6 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #5 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #4 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #3 change 24487 edit on 2001/12/13 18:00:45 by REDMOND\jharding@JHARDING-DEV1X (text) 'I'm a moron '
+... #2 change 24486 edit on 2001/12/13 17:57:02 by REDMOND\jharding@JHARDING-DEV1X (text) 'Argh!  Their assert actually ef'
+... #1 change 24485 add on 2001/12/13 17:51:21 by REDMOND\jharding@JHARDING-DEV1X (text) 'Missing files, dur '
+//depot/xbox/private/atg/Re-volt/Xbox/Src/spark.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/spark.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/text.cpp
+... #6 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #5 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #4 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #3 change 24482 edit on 2001/12/13 17:37:55 by REDMOND\cprince@CPRINCE0_1 (text) 'Massive code cleanup, and fixed'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/text.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/texture.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/texture.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/timing.cpp
+... #6 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #5 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #4 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #3 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/timing.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/titlescreen.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/titlescreen.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/trigger.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/trigger.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/util.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/util.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/visibox.cpp
+... #4 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #3 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #2 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/visibox.cpp#1
+//depot/xbox/private/atg/Re-volt/Xbox/Src/weapon.cpp
+... #6 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #5 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #4 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #3 change 24484 edit on 2001/12/13 17:48:54 by REDMOND\jharding@JHARDING-DEV1X (text) 'Added basic sound triggering ca'
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/weapon.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/wheel.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/wheel.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'
+//depot/xbox/private/atg/Re-volt/Xbox/Src/world.cpp
+... #5 change 24701 edit on 2001/12/18 18:15:16 by REDMOND\mwetzel@MWETZEL0 (text) 'Added/improved fonts, gamma, UI'
+... #4 change 24632 edit on 2001/12/17 19:41:29 by REDMOND\mwetzel@MWETZEL0 (text) 'Code cleanup pass '
+... #3 change 24606 edit on 2001/12/17 15:09:32 by REDMOND\mwetzel@MWETZEL0 (text) 'Added file header comments for '
+... #2 change 23946 edit on 2001/12/06 15:59:26 by REDMOND\cprince@CPRINCE0_zzz (text) 'Re-Volt: misc cleanup (tabs-to-'
+... ... branch into //depot/xbox-dec01/private/atg/Re-volt/Xbox/Src/world.cpp#1
+... #1 change 23889 add on 2001/12/05 20:14:34 by REDMOND\cprince@CPRINCE0_0 (text) 'Re-Volt: initial checkin of Xbo'

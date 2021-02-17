@@ -1,0 +1,3018 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\NHood2\NHood2.w 
+WorldBigCubeCount="4" 
+WorldCubeCount="14" 
+WorldPolyCount="0" 
+WorldCubeNum="618" 
+-->
+<include href="Default.xdx" />
+<Texture id="font1" source="../../gfx/font1.bmp" levels="1" colorkey="0xff000000" />
+<Texture id="font2" source="../../gfx/font2.bmp" levels="1" colorkey="0xff000000" />
+<Texture id="envstill" source="../../gfx/envstill.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="envroll" source="../../gfx/envroll.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="shadow" source="../../gfx/shadow.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="fxpage1" source="../../gfx/fxpage1.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="fxpage2" source="../../gfx/fxpage2.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="fxpage3" source="../../gfx/fxpage3.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="NHood2a" source="NHood2a.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="NHood2b" source="NHood2b.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="NHood2c" source="NHood2c.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="NHood2d" source="NHood2d.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="NHood2e" source="NHood2e.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="NHood2f" source="NHood2f.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="NHood2g" source="NHood2g.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="NHood2h" source="NHood2h.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="NHood2i" source="NHood2i.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="NHood2j" source="NHood2j.bmp" levels="0" colorkey="0xff000000" />
+<!-- level models -->
+<include href="../../models/pickup.xdx" />
+<include href="../../models/firework.xdx" />
+<include href="../../models/wbomb.xdx" />
+<include href="../../models/ball.xdx" />
+<!-- include href="../../models/ball.xdx" / -->
+<include href="../../models/star.xdx" />
+<include href="../../models/stream.xdx" />
+<include href="../../models/sphose.xdx" />
+<include href="../../models/spbase.xdx" />
+<include href="../../models/sphead.xdx" />
+<include href="../../models/n2trafficcone.xdx" />
+<!-- InstanceModelNum="25" -->
+<include href="BIN.xdx" />
+<include href="BMW.xdx" />
+<include href="BMW2.xdx" />
+<include href="BMW_W.xdx" />
+<include href="DOGB.xdx" />
+<include href="DUSTBIN.xdx" />
+<include href="HOOP.xdx" />
+<include href="HOUSE1.xdx" />
+<include href="HOUSE2.xdx" />
+<include href="LAMPOST.xdx" />
+<include href="PANTS.xdx" />
+<include href="RAMP3.xdx" />
+<include href="REED1.xdx" />
+<include href="REED2.xdx" />
+<include href="REED3.xdx" />
+<include href="SFLOWER.xdx" />
+<include href="SFLOWER2.xdx" />
+<include href="SFLOWER3.xdx" />
+<include href="SKATE.xdx" />
+<include href="START.xdx" />
+<include href="STOOL.xdx" />
+<include href="TABLE.xdx" />
+<include href="TREE1.xdx" />
+<include href="TREE2.xdx" />
+<include href="TREETEST1.xdx" />
+<!-- Put world vertices in a separate file. -->
+<include href="NHood2_vertex.xdx" />
+<Material id="DefaultWorldCubeMaterial">
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="NHood2_VertexBuffer" />
+			</decl>
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWorldViewProjection" count="4" parameter="NHood2_Camera">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0
+				0 0 0 1</Constant>
+			<Constant index="8" name="MWorldInverseTranspose" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+	</Pass>
+</Material>
+<!--
+<revolt:bigcubes>
+	<revolt:bigcube count="22" center="-14940.8 -493.074 -17353.2" radius="3103.58">
+		<revolt:cube index="0" center="-16259.3 -967.235 -19068.6" radius="700.683" min="-16769.8 -1254.74 -19454.3" max="-15748.7 -679.735 -18683" />
+		<revolt:cube index="1" center="-16768.8 -879.735 -17933" radius="776.209" min="-16768.8 -1079.74 -18683" max="-16768.8 -679.735 -17183" />
+		<revolt:cube index="2" center="-16768.8 -879.735 -16683" radius="538.517" min="-16768.8 -1079.74 -17183" max="-16768.8 -679.735 -16183" />
+		<revolt:cube index="3" center="-16768.8 -879.735 -15683" radius="538.516" min="-16768.8 -1079.74 -16183" max="-16768.8 -679.735 -15183" />
+		<revolt:cube index="10" center="-16269.3 -454.735 -19058" radius="673.558" min="-16769.8 -704.735 -19433" max="-15768.7 -204.735 -18683" />
+		<revolt:cube index="11" center="-16268.8 -442.235 -17933" radius="932.151" min="-16768.8 -679.735 -18683" max="-15768.8 -204.735 -17183" />
+		<revolt:cube index="12" center="-16268.8 -442.235 -16683" radius="745.927" min="-16768.8 -679.735 -17183" max="-15768.8 -204.735 -16183" />
+		<revolt:cube index="13" center="-16268.8 -442.235 -15683" radius="745.925" min="-16768.8 -679.735 -16183" max="-15768.8 -204.735 -15183" />
+		<revolt:cube index="20" center="-15268.8 -967.235 -19183" radius="564.697" min="-15768.7 -1229.74 -19183" max="-14768.8 -704.735 -19183" />
+		<revolt:cube index="23" center="-15268.8 -467.235 -18933" radius="617.58" min="-15768.8 -729.735 -19183" max="-14768.8 -204.735 -18683" />
+		<revolt:cube index="24" center="-15268.8 -217.235 -17933" radius="901.474" min="-15768.8 -229.735 -18683" max="-14768.8 -204.735 -17183" />
+		<revolt:cube index="25" center="-15268.8 -217.235 -16683" radius="707.217" min="-15768.8 -229.735 -17183" max="-14768.8 -204.735 -16183" />
+		<revolt:cube index="26" center="-15268.8 -217.235 -15683" radius="707.216" min="-15768.8 -229.735 -16183" max="-14768.8 -204.735 -15183" />
+		<revolt:cube index="35" center="-14268.8 -979.735 -19072.1" radius="690.651" min="-14768.8 -1254.74 -19461.1" max="-13768.8 -704.735 -18683" />
+		<revolt:cube index="38" center="-14268.8 -467.235 -18808" radius="822.059" min="-14768.8 -729.735 -19433" max="-13768.8 -204.735 -18183" />
+		<revolt:cube index="39" center="-14268.8 -242.235 -17933" radius="902.168" min="-14768.8 -279.735 -18683" max="-13768.8 -204.735 -17183" />
+		<revolt:cube index="40" center="-14268.8 -242.235 -16683" radius="708.101" min="-14768.8 -279.735 -17183" max="-13768.8 -204.735 -16183" />
+		<revolt:cube index="41" center="-14268.8 -242.235 -15683" radius="708.1" min="-14768.8 -279.735 -16183" max="-13768.8 -204.735 -15183" />
+		<revolt:cube index="51" center="-13268.8 -979.735 -18433" radius="622.997" min="-13768.8 -1254.74 -18683" max="-12768.8 -704.735 -18183" />
+		<revolt:cube index="55" center="-13268.8 -517.235 -17933" radius="932.151" min="-13768.8 -754.735 -18683" max="-12768.8 -279.735 -17183" />
+		<revolt:cube index="56" center="-13268.8 -304.735 -16683" radius="707.549" min="-13768.8 -329.735 -17183" max="-12768.8 -279.735 -16183" />
+		<revolt:cube index="57" center="-13268.8 -304.735 -15933" radius="901.734" min="-13768.8 -329.735 -16683" max="-12768.8 -279.735 -15183" />
+	</revolt:bigcube>
+	<revolt:bigcube count="29" center="-10684.3 -1152.23 -16763.3" radius="3057.65">
+		<revolt:cube index="67" center="-12168.8 -2204.74 -17433" radius="533.855" min="-12568.8 -2454.74 -17683" max="-11768.8 -1954.74 -17183" />
+		<revolt:cube index="68" center="-12543.8 -2179.78 -16933" radius="799.205" min="-12568.8 -2454.74 -17683" max="-12518.8 -1904.82 -16183" />
+		<revolt:cube index="69" center="-12168.8 -1954.74 -15708" radius="797.261" min="-12568.8 -2454.74 -16233" max="-11768.8 -1454.74 -15183" />
+		<revolt:cube index="70" center="-12018.8 -1704.74 -15433" radius="433.013" min="-12268.8 -1954.74 -15683" max="-11768.8 -1454.74 -15183" />
+		<revolt:cube index="74" center="-12268.8 -1354.74 -17683" radius="927.361" min="-12768.8 -1954.74 -18183" max="-11768.8 -754.735 -17183" />
+		<revolt:cube index="75" center="-12393.8 -1429.74 -16933" radius="923.987" min="-12518.8 -1954.74 -17683" max="-12268.8 -904.735 -16183" />
+		<revolt:cube index="76" center="-12418.8 -1429.74 -15683" radius="740.354" min="-12568.8 -1954.74 -16183" max="-12268.8 -904.735 -15183" />
+		<revolt:cube index="86" center="-12268.8 -617.235 -17683" radius="763.319" min="-12768.8 -904.735 -18183" max="-11768.8 -329.735 -17183" />
+		<revolt:cube index="87" center="-12518.8 -617.235 -16933" radius="841.224" min="-12768.8 -904.735 -17683" max="-12268.8 -329.735 -16183" />
+		<revolt:cube index="88" center="-12518.8 -592.235 -15683" radius="640.434" min="-12768.8 -904.735 -16183" max="-12268.8 -279.735 -15183" />
+		<revolt:cube index="98" center="-11268.8 -2204.74 -17433" radius="612.373" min="-11768.8 -2454.74 -17683" max="-10768.8 -1954.74 -17183" />
+		<revolt:cube index="99" center="-11518.8 -2204.74 -15683" radius="612.372" min="-11768.8 -2454.74 -16183" max="-11268.8 -1954.74 -15183" />
+		<revolt:cube index="103" center="-11268.8 -1392.24 -17933" radius="793.036" min="-11768.8 -1954.74 -18183" max="-10768.8 -829.735 -17683" />
+		<revolt:cube index="108" center="-11268.8 -617.235 -17933" radius="628.615" min="-11768.8 -904.735 -18183" max="-10768.8 -329.735 -17683" />
+		<revolt:cube index="114" center="-10395 -2204.74 -17433" radius="514.492" min="-10768.8 -2454.74 -17683" max="-10021.2 -1954.74 -17183" />
+		<revolt:cube index="115" center="-10021.2 -2204.74 -16933" radius="790.57" min="-10021.2 -2454.74 -17683" max="-10021.2 -1954.74 -16183" />
+		<revolt:cube index="116" center="-10021.9 -2204.74 -15933" radius="830.099" min="-10275 -2454.74 -16683" max="-9768.78 -1954.74 -15183" />
+		<revolt:cube index="120" center="-10270 -1392.24 -17683" radius="902.87" min="-10768.8 -1954.74 -18183" max="-9771.24 -829.735 -17183" />
+		<revolt:cube index="121" center="-10148.1 -1429.74 -16683" radius="736.019" min="-10275 -1954.74 -17183" max="-10021.2 -904.735 -16183" />
+		<revolt:cube index="122" center="-9771.89 -1429.74 -15683" radius="882.466" min="-10275 -1954.74 -16183" max="-9268.78 -904.735 -15183" />
+		<revolt:cube index="127" center="-10270 -617.235 -17683" radius="762.512" min="-10768.8 -904.735 -18183" max="-9771.24 -329.735 -17183" />
+		<revolt:cube index="128" center="-10021.9 -617.235 -16683" radius="629.864" min="-10275 -904.735 -17183" max="-9768.78 -329.735 -16183" />
+		<revolt:cube index="129" center="-10021.9 -642.235 -15683" radius="641.655" min="-10275 -954.735 -16183" max="-9768.78 -329.735 -15183" />
+		<revolt:cube index="139" center="-9520 -1079.73 -17683" radius="613.278" min="-9771.24 -1329.73 -18183.5" max="-9268.75 -829.735 -17182.5" />
+		<revolt:cube index="140" center="-9019.27 -1080.24 -17182.5" radius="353.545" min="-9268.75 -1330.74 -17182.5" max="-8769.79 -829.735 -17182.5" />
+		<revolt:cube index="141" center="-9518.78 -1704.74 -15683" radius="612.368" min="-9768.78 -1954.74 -16183" max="-9268.78 -1454.74 -15183" />
+		<revolt:cube index="147" center="-9520 -579.735 -17683" radius="613.278" min="-9771.24 -829.735 -18183.5" max="-9268.75 -329.735 -17182.5" />
+		<revolt:cube index="148" center="-9055.04 -502.872 -16632.7" radius="919.61" min="-9771.24 -830.744 -17183" max="-8338.84 -175 -16082.5" />
+		<revolt:cube index="149" center="-9053.81 -314.867 -15932.5" radius="1045.23" min="-9768.78 -454.735 -16682.5" max="-8338.84 -175 -15182.5" />
+	</revolt:bigcube>
+	<revolt:bigcube count="11" center="-6409.38 -368.645 -16399" radius="2796.65">
+		<revolt:cube index="159" center="-8271.17 -1002.87 -17182.5" radius="596.757" min="-8769.79 -1330.74 -17182.5" max="-7772.55 -675 -17182.5" />
+		<revolt:cube index="161" center="-8271.34 -502.872 -16682.5" radius="778.427" min="-8770.13 -830.744 -17182.5" max="-7772.55 -175 -16182.5" />
+		<revolt:cube index="162" center="-8020.57 -252.872 -15920" radius="1054.42" min="-8770.13 -330.744 -16657.5" max="-7271.01 -175 -15182.5" />
+		<revolt:cube index="175" center="-7039.36 -862.839 -17182.5" radius="834.489" min="-7772.55 -1261.34 -17182.5" max="-6306.17 -464.342 -17182.5" />
+		<revolt:cube index="180" center="-7089.24 -362.839 -16682.5" radius="1010.94" min="-7872.32 -761.336 -17182.5" max="-6306.17 35.6582 -16182.5" />
+		<revolt:cube index="181" center="-7039.37 -114.672 -15682.8" radius="899.958" min="-7772.56 -265.002 -16183" max="-6306.17 35.6582 -15182.5" />
+		<revolt:cube index="204" center="-5806.92 -446.64 -16682.5" radius="875.934" min="-6306.17 -964.342 -17182.5" max="-5307.68 71.0626 -16182.5" />
+		<revolt:cube index="205" center="-5806.92 103.36 -15682.5" radius="709.809" min="-6306.17 35.6582 -16182.5" max="-5307.68 171.063 -15182.5" />
+		<revolt:cube index="243" center="-4807.68 -428.937 -16682.5" radius="866.025" min="-5307.68 -928.937 -17182.5" max="-4307.68 71.0626 -16182.5" />
+		<revolt:cube index="244" center="-5057.68 58.5626 -15682.5" radius="901.474" min="-5807.68 -53.9374 -16182.5" max="-4307.68 171.063 -15182.5" />
+		<revolt:cube index="282" center="-4515.6 -378.937 -15682.5" radius="771.835" min="-4723.52 -928.937 -16182.5" max="-4307.68 171.063 -15182.5" />
+	</revolt:bigcube>
+	<revolt:bigcube count="1" center="-4307.68 -428.937 -16682.5" radius="707.107">
+		<revolt:cube index="281" center="-4307.68 -428.937 -16682.5" radius="707.107" min="-4307.68 -928.937 -17182.5" max="-4307.68 71.0625 -16182.5" />
+	</revolt:bigcube>
+	<revolt:bigcube count="20" center="-14838.1 -379.16 -13384.1" radius="3160.83">
+		<revolt:cube index="4" center="-16768.8 -879.735 -14683" radius="538.516" min="-16768.8 -1079.74 -15183" max="-16768.8 -679.735 -14183" />
+		<revolt:cube index="5" center="-16768.8 -879.735 -13683" radius="538.516" min="-16768.8 -1079.74 -14183" max="-16768.8 -679.735 -13183" />
+		<revolt:cube index="6" center="-16768.8 -879.735 -12683" radius="538.516" min="-16768.8 -1079.74 -13183" max="-16768.8 -679.735 -12183" />
+		<revolt:cube index="7" center="-16768.8 -874.967 -11683" radius="540.306" min="-16768.8 -1079.74 -12183" max="-16768.8 -670.199 -11183" />
+		<revolt:cube index="14" center="-16268.8 -454.735 -14683" radius="750" min="-16768.8 -704.735 -15183" max="-15768.8 -204.735 -14183" />
+		<revolt:cube index="15" center="-16268.8 -442.235 -13683" radius="745.926" min="-16768.8 -679.735 -14183" max="-15768.8 -204.735 -13183" />
+		<revolt:cube index="16" center="-16268.8 -442.235 -12683" radius="745.926" min="-16768.8 -679.735 -13183" max="-15768.8 -204.735 -12183" />
+		<revolt:cube index="17" center="-16268.8 -429.735 -11683" radius="750" min="-16768.8 -679.735 -12183" max="-15768.8 -179.735 -11183" />
+		<revolt:cube index="27" center="-15268.8 -217.235 -14683" radius="707.217" min="-15768.8 -229.735 -15183" max="-14768.8 -204.735 -14183" />
+		<revolt:cube index="28" center="-15268.8 -217.235 -13683" radius="707.217" min="-15768.8 -229.735 -14183" max="-14768.8 -204.735 -13183" />
+		<revolt:cube index="29" center="-15268.8 -217.235 -12683" radius="707.217" min="-15768.8 -229.735 -13183" max="-14768.8 -204.735 -12183" />
+		<revolt:cube index="30" center="-15268.8 -204.735 -11683" radius="707.549" min="-15768.8 -229.735 -12183" max="-14768.8 -179.735 -11183" />
+		<revolt:cube index="42" center="-14268.8 -242.235 -14933" radius="902.168" min="-14768.8 -279.735 -15683" max="-13768.8 -204.735 -14183" />
+		<revolt:cube index="43" center="-14268.8 -242.235 -13683" radius="708.1" min="-14768.8 -279.735 -14183" max="-13768.8 -204.735 -13183" />
+		<revolt:cube index="44" center="-14268.8 -242.235 -12683" radius="708.1" min="-14768.8 -279.735 -13183" max="-13768.8 -204.735 -12183" />
+		<revolt:cube index="45" center="-14268.8 -229.735 -11683" radius="708.872" min="-14768.8 -279.735 -12183" max="-13768.8 -179.735 -11183" />
+		<revolt:cube index="58" center="-13268.8 -304.735 -14933" radius="901.734" min="-13768.8 -329.735 -15683" max="-12768.8 -279.735 -14183" />
+		<revolt:cube index="59" center="-13268.8 -304.735 -13683" radius="707.549" min="-13768.8 -329.735 -14183" max="-12768.8 -279.735 -13183" />
+		<revolt:cube index="60" center="-13268.8 -304.735 -12683" radius="707.549" min="-13768.8 -329.735 -13183" max="-12768.8 -279.735 -12183" />
+		<revolt:cube index="61" center="-13268.8 -292.235 -11683" radius="708.101" min="-13768.8 -329.735 -12183" max="-12768.8 -254.735 -11183" />
+	</revolt:bigcube>
+	<revolt:bigcube count="33" center="-10627.9 -1091.31 -13408.8" radius="3407.41">
+		<revolt:cube index="71" center="-12168.8 -1954.74 -13658" radius="797.261" min="-12568.8 -2454.74 -14183" max="-11768.8 -1454.74 -13133" />
+		<revolt:cube index="72" center="-12543.8 -2179.78 -12883" radius="752.481" min="-12568.8 -2454.74 -13583" max="-12518.8 -1904.82 -12183" />
+		<revolt:cube index="73" center="-12168.8 -2179.78 -11958" radius="535.041" min="-12568.8 -2454.74 -12233" max="-11768.8 -1904.82 -11683" />
+		<revolt:cube index="77" center="-12168.8 -1429.74 -14933" radius="999.062" min="-12568.8 -1954.74 -15683" max="-11768.8 -904.735 -14183" />
+		<revolt:cube index="78" center="-12168.8 -1429.74 -13683" radius="805.062" min="-12568.8 -1954.74 -14183" max="-11768.8 -904.735 -13183" />
+		<revolt:cube index="79" center="-12393.8 -1429.74 -12683" radius="735.697" min="-12518.8 -1954.74 -13183" max="-12268.8 -904.735 -12183" />
+		<revolt:cube index="80" center="-12168.8 -1429.74 -11683" radius="805.062" min="-12568.8 -1954.74 -12183" max="-11768.8 -904.735 -11183" />
+		<revolt:cube index="89" center="-12268.8 -617.235 -14933" radius="962.5" min="-12768.8 -954.735 -15683" max="-11768.8 -279.735 -14183" />
+		<revolt:cube index="90" center="-12268.8 -617.235 -13683" radius="783.522" min="-12768.8 -954.735 -14183" max="-11768.8 -279.735 -13183" />
+		<revolt:cube index="91" center="-12518.8 -617.235 -12683" radius="628.615" min="-12768.8 -904.735 -13183" max="-12268.8 -329.735 -12183" />
+		<revolt:cube index="92" center="-12518.8 -617.235 -11683" radius="628.615" min="-12768.8 -904.735 -12183" max="-12268.8 -329.735 -11183" />
+		<revolt:cube index="100" center="-11518.8 -2204.74 -14683" radius="612.373" min="-11768.8 -2454.74 -15183" max="-11268.8 -1954.74 -14183" />
+		<revolt:cube index="101" center="-11518.8 -2204.74 -13683" radius="612.373" min="-11768.8 -2454.74 -14183" max="-11268.8 -1954.74 -13183" />
+		<revolt:cube index="102" center="-11268.8 -2204.74 -11933" radius="612.373" min="-11768.8 -2454.74 -12183" max="-10768.8 -1954.74 -11683" />
+		<revolt:cube index="104" center="-11268.8 -1704.74 -11433" radius="612.373" min="-11768.8 -1954.74 -11683" max="-10768.8 -1454.74 -11183" />
+		<revolt:cube index="117" center="-10021.9 -2204.74 -14683" radius="613.65" min="-10275 -2454.74 -15183" max="-9768.78 -1954.74 -14183" />
+		<revolt:cube index="118" center="-9771.89 -1954.74 -13683" radius="867.826" min="-10275 -2454.74 -14183" max="-9268.78 -1454.74 -13183" />
+		<revolt:cube index="119" center="-10268.8 -2204.74 -11933" radius="612.373" min="-10768.8 -2454.74 -12183" max="-9768.78 -1954.74 -11683" />
+		<revolt:cube index="123" center="-9768.78 -1204.74 -14683" radius="559.017" min="-9768.78 -1454.74 -15183" max="-9768.78 -954.735 -14183" />
+		<revolt:cube index="124" center="-9518.78 -1204.74 -14183" radius="353.553" min="-9768.78 -1454.74 -14183" max="-9268.78 -954.735 -14183" />
+		<revolt:cube index="125" center="-10268.8 -1704.74 -11433" radius="612.372" min="-10768.8 -1954.74 -11683" max="-9768.78 -1454.74 -11183" />
+		<revolt:cube index="130" center="-9768.78 -704.735 -14683" radius="559.017" min="-9768.78 -954.735 -15183" max="-9768.78 -454.735 -14183" />
+		<revolt:cube index="136" center="-9393.78 -1954.74 -13683" radius="800.391" min="-9768.78 -2454.74 -14183" max="-9018.78 -1454.74 -13183" />
+		<revolt:cube index="137" center="-9018.78 -2204.74 -12683" radius="559.017" min="-9018.78 -2454.74 -13183" max="-9018.78 -1954.74 -12183" />
+		<revolt:cube index="138" center="-9393.78 -2204.74 -11933" radius="515.388" min="-9768.78 -2454.74 -12183" max="-9018.78 -1954.74 -11683" />
+		<revolt:cube index="142" center="-9518.78 -1704.74 -14683" radius="612.372" min="-9768.78 -1954.74 -15183" max="-9268.78 -1454.74 -14183" />
+		<revolt:cube index="143" center="-9393.78 -1429.74 -13683" radius="816.241" min="-9768.78 -1954.74 -14183" max="-9018.78 -904.735 -13183" />
+		<revolt:cube index="144" center="-9143.78 -1429.74 -12683" radius="735.697" min="-9268.78 -1954.74 -13183" max="-9018.78 -904.735 -12183" />
+		<revolt:cube index="145" center="-9393.78 -1429.74 -11683" radius="816.241" min="-9768.78 -1954.74 -12183" max="-9018.78 -904.735 -11183" />
+		<revolt:cube index="150" center="-9026.41 -314.867 -14932.5" radius="1064.5" min="-9768.78 -454.735 -15682.5" max="-8284.04 -175 -14182.5" />
+		<revolt:cube index="151" center="-9056.1 -564.867 -13682.7" radius="954.011" min="-9768.78 -954.735 -14183" max="-8343.43 -175 -13182.5" />
+		<revolt:cube index="152" center="-8760.54 -539.867 -12682.7" radius="801.047" min="-9268.78 -904.735 -13183" max="-8252.3 -175 -12182.5" />
+		<revolt:cube index="153" center="-9019.28 -617.235 -11682.7" radius="628.605" min="-9268.78 -904.735 -12183" max="-8769.79 -329.735 -11182.5" />
+	</revolt:bigcube>
+	<revolt:bigcube count="18" center="-6408.08 -211.111 -13350.9" radius="3210.31">
+		<revolt:cube index="163" center="-8052.98 -252.872 -14857.5" radius="850.384" min="-8834.94 -330.744 -15532.5" max="-7271.01 -175 -14182.5" />
+		<revolt:cube index="164" center="-8262.98 -252.872 -13857.5" radius="837.61" min="-8782.96 -330.744 -14532.5" max="-7742.99 -175 -13182.5" />
+		<revolt:cube index="165" center="-8020.4 -245.738 -12857.5" radius="1012.14" min="-8769.79 -330.744 -13532.5" max="-7271.01 -160.731 -12182.5" />
+		<revolt:cube index="166" center="-8056.65 -243.915 -11848.4" radius="979.54" min="-8769.79 -330.744 -12514.3" max="-7343.52 -157.085 -11182.5" />
+		<revolt:cube index="182" center="-7137.53 -233.805 -14682.5" radius="877.575" min="-7871.43 -569.764 -15182.5" max="-6403.64 102.155 -14182.5" />
+		<revolt:cube index="183" center="-7036.64 -225.571 -13816.3" radius="1001.73" min="-7767.1 -569.764 -14450" max="-6306.17 118.621 -13182.5" />
+		<revolt:cube index="184" center="-7037.25 -37.8389 -12682.5" radius="912.49" min="-7768.33 -261.336 -13182.5" max="-6306.17 185.658 -12182.5" />
+		<revolt:cube index="185" center="-7039.36 -62.8389 -11820" radius="991.655" min="-7772.55 -261.336 -12457.5" max="-6306.17 135.658 -11182.5" />
+		<revolt:cube index="206" center="-6047.81 -199.351 -14932.5" radius="974.275" min="-6787.95 -569.764 -15682.5" max="-5307.68 171.062 -14182.5" />
+		<revolt:cube index="207" center="-6047.81 -195.489 -13816.3" radius="897.575" min="-6787.95 -569.764 -14450" max="-5307.68 178.785 -13182.5" />
+		<revolt:cube index="208" center="-6047.81 27.8603 -12832.2" radius="915.552" min="-6787.95 -129.938 -13481.9" max="-5307.68 185.658 -12182.5" />
+		<revolt:cube index="209" center="-6047.81 -401.237 -11801.9" radius="1006.97" min="-6787.95 -964.342 -12421.4" max="-5307.68 161.869 -11182.5" />
+		<revolt:cube index="236" center="-4727.15 -900.2 -11421.4" radius="12.5016" min="-4727.15 -900.4 -11433.9" max="-4727.15 -900 -11408.9" />
+		<revolt:cube index="245" center="-4945.77 -99.8128 -14907.5" radius="980.797" min="-5583.85 -370.688 -15632.5" max="-4307.68 171.063 -14182.5" />
+		<revolt:cube index="246" center="-5011.66 -99.8129 -13816.3" radius="985.188" min="-5715.63 -370.688 -14450" max="-4307.68 171.062 -13182.5" />
+		<revolt:cube index="247" center="-5011.66 121.062 -12682.5" radius="864.918" min="-5715.63 71.0625 -13182.5" max="-4307.68 171.062 -12182.5" />
+		<revolt:cube index="248" center="-4915.55 -387.7 -11852" radius="898.172" min="-5523.42 -900.4 -12295" max="-4307.68 125 -11408.9" />
+		<revolt:cube index="283" center="-4557.68 -378.937 -14769.2" radius="842.115" min="-4807.68 -928.937 -15355.8" max="-4307.68 171.063 -14182.5" />
+	</revolt:bigcube>
+	<revolt:bigcube count="6" center="-3460.1 -401.969 -12578.8" radius="2099">
+		<revolt:cube index="284" center="-4307.68 -428.937 -13682.5" radius="707.107" min="-4307.68 -928.937 -14182.5" max="-4307.68 71.0625 -13182.5" />
+		<revolt:cube index="285" center="-4307.68 -428.937 -12682.5" radius="707.107" min="-4307.68 -928.937 -13182.5" max="-4307.68 71.0625 -12182.5" />
+		<revolt:cube index="286" center="-4010.92 -401.969 -11808.1" radius="824.941" min="-4523.42 -928.937 -12182.5" max="-3498.42 125 -11433.7" />
+		<revolt:cube index="314" center="-2498.42 -949.98 -11358.7" radius="79.0569" min="-2523.42 -950 -11433.7" max="-2473.42 -949.96 -11283.7" />
+		<revolt:cube index="324" center="-2985.92 -375 -11433.7" radius="665.793" min="-3498.42 -800 -11433.7" max="-2473.42 50 -11433.7" />
+		<revolt:cube index="359" center="-2348.42 -375 -11433.7" radius="443.001" min="-2473.42 -800 -11433.7" max="-2223.42 50 -11433.7" />
+	</revolt:bigcube>
+	<revolt:bigcube count="21" center="-14630.5 -393.9 -9131.05" radius="3076.03">
+		<revolt:cube index="8" center="-16268.8 -919.743 -10552.2" radius="844.389" min="-16768.8 -1175 -11183" max="-15768.8 -664.485 -9921.44" />
+		<revolt:cube index="9" center="-15998.7 -887.5 -9734.77" radius="778.739" min="-16273.9 -1012.5 -10452.5" max="-15723.5 -762.5 -9017.09" />
+		<revolt:cube index="18" center="-16244.5 -508.618 -10577" radius="840.555" min="-16768.8 -762.5 -11183" max="-15720.2 -254.735 -9971.03" />
+		<revolt:cube index="19" center="-15852 -525 -10038.2" radius="649.311" min="-16038.5 -762.5 -10613" max="-15665.5 -287.5 -9463.34" />
+		<revolt:cube index="21" center="-15494.1 -887.5 -8777.6" radius="743.092" min="-15751.6 -1012.5 -9463.34" max="-15236.5 -762.5 -8091.87" />
+		<revolt:cube index="22" center="-15083.6 -912.5 -7922.66" radius="440.861" min="-15458.5 -1062.5 -8099.5" max="-14708.6 -762.5 -7745.82" />
+		<revolt:cube index="31" center="-15192.4 -323.753 -10511" radius="896.909" min="-15768.8 -612.203 -11183" max="-14616.1 -35.303 -9839.08" />
+		<revolt:cube index="32" center="-15183.8 -368.422 -9830.34" radius="898.532" min="-15751.6 -762.5 -10575.3" max="-14616.1 25.656 -9085.39" />
+		<revolt:cube index="33" center="-15171.2 -329.464 -8761.27" radius="1008.58" min="-15751.6 -762.5 -9463.34" max="-14590.9 103.572 -8059.2" />
+		<revolt:cube index="34" center="-14907.4 -525 -7917.42" radius="441.792" min="-15236.5 -762.5 -8091.87" max="-14578.2 -287.5 -7742.97" />
+		<revolt:cube index="36" center="-14509.8 -912.5 -7452.05" radius="566.094" min="-14959.4 -1062.5 -7761.69" max="-14060.3 -762.5 -7142.42" />
+		<revolt:cube index="46" center="-14212.7 -168.664 -10651.9" radius="769.808" min="-14768.8 -254.735 -11183" max="-13656.6 -82.5927 -10120.8" />
+		<revolt:cube index="47" center="-14200.7 -73.7558 -9638.46" radius="943.422" min="-14882.9 -174.577 -10402.5" max="-13518.4 27.0652 -8874.37" />
+		<revolt:cube index="48" center="-14239.5 32.9689 -8786.31" radius="943.362" min="-15011.5 -37.6346 -9616.81" max="-13467.5 103.572 -7955.81" />
+		<revolt:cube index="49" center="-14143.1 -313.028 -7672.18" radius="882.576" min="-14708.6 -762.5 -8386.63" max="-13577.5 136.445 -6957.74" />
+		<revolt:cube index="52" center="-13018.8 -1017.38 -10711.5" radius="618.387" min="-13268.8 -1329.74 -11183" max="-12768.8 -705.025 -10239.9" />
+		<revolt:cube index="53" center="-12889 -925.298 -9968.14" radius="427.35" min="-13063.6 -1205.02 -10239.9" max="-12714.3 -645.571 -9696.35" />
+		<revolt:cube index="62" center="-13268.8 -502.156 -10711.5" radius="761.344" min="-13768.8 -829.735 -11183" max="-12768.8 -174.577 -10239.9" />
+		<revolt:cube index="63" center="-13117.4 -349.198 -9722.02" radius="885.586" min="-13749.6 -705.025 -10402.5" max="-12485.2 6.62959 -9041.49" />
+		<revolt:cube index="64" center="-13102.5 15.7652 -8713.16" radius="954.712" min="-13847.9 -64.1463 -9415.01" max="-12357.1 95.6767 -8011.32" />
+		<revolt:cube index="65" center="-13179.9 102.959 -7588.79" radius="799.486" min="-13795 63.5113 -8333.69" max="-12564.8 142.407 -6843.89" />
+	</revolt:bigcube>
+	<revolt:bigcube count="20" center="-10694.1 -443.994 -9320.54" radius="3300.72">
+		<revolt:cube index="81" center="-12268.8 -1142.28 -11258" radius="594.396" min="-12768.8 -1454.82 -11333" max="-11768.8 -829.735 -11183" />
+		<revolt:cube index="82" center="-12470.1 -875.577 -9484.77" radius="421.044" min="-12714.3 -1145.57 -9696.35" max="-12225.9 -605.583 -9273.2" />
+		<revolt:cube index="83" center="-11932.1 -844.327 -9138.99" radius="415.494" min="-12225.9 -1105.58 -9273.2" max="-11638.2 -583.072 -9004.78" />
+		<revolt:cube index="93" center="-12268.8 -617.235 -11183" radius="576.764" min="-12768.8 -904.735 -11183" max="-11768.8 -329.735 -11183" />
+		<revolt:cube index="94" center="-12470.1 -375.577 -9484.77" radius="421.044" min="-12714.3 -645.571 -9696.35" max="-12225.9 -105.583 -9273.2" />
+		<revolt:cube index="95" center="-12225.4 -254.953 -8756.3" radius="824.419" min="-12812.7 -605.583 -9467.31" max="-11638.2 95.6767 -8045.28" />
+		<revolt:cube index="96" center="-12250.4 58.6817 -7740.66" radius="1016.57" min="-13036.9 1.6415 -8525.03" max="-11464 115.722 -6956.28" />
+		<revolt:cube index="105" center="-11268.8 -1179.74 -11183" radius="570.636" min="-11768.8 -1454.74 -11183" max="-10768.8 -904.735 -11183" />
+		<revolt:cube index="106" center="-11479.9 -830.363 -8970.35" radius="300.151" min="-11638.2 -1083.07 -9004.78" max="-11321.7 -577.655 -8935.92" />
+		<revolt:cube index="109" center="-11268.8 -617.235 -11183" radius="576.764" min="-11768.8 -904.735 -11183" max="-10768.8 -329.735 -11183" />
+		<revolt:cube index="110" center="-11151.2 -513.827 -8458.8" radius="993.87" min="-11779 -1077.65 -9004.78" max="-10523.3 50 -7912.82" />
+		<revolt:cube index="111" center="-11221.6 62.5 -7687.35" radius="1028.07" min="-11919.9 3.72529e-007 -8441.01" max="-10523.3 125 -6933.69" />
+		<revolt:cube index="126" center="-10018.8 -1179.74 -11183" radius="798.827" min="-10768.8 -1454.74 -11183" max="-9268.78 -904.735 -11183" />
+		<revolt:cube index="131" center="-10268.8 -617.235 -11183" radius="576.764" min="-10768.8 -904.735 -11183" max="-9768.77 -329.735 -11183" />
+		<revolt:cube index="132" center="-10023.3 -350 -8683.75" radius="687.386" min="-10523.3 -750 -8933.75" max="-9523.32 50 -8433.75" />
+		<revolt:cube index="133" center="-10023.3 87.5 -7683.75" radius="902.168" min="-10523.3 50 -8433.75" max="-9523.32 125 -6933.75" />
+		<revolt:cube index="146" center="-9269.28 -1142.74 -11182.7" radius="588.927" min="-9768.77 -1454.74 -11183" max="-8769.79 -830.744 -11182.5" />
+		<revolt:cube index="154" center="-9269.28 -617.235 -11182.7" radius="576.325" min="-9768.77 -904.735 -11183" max="-8769.79 -329.735 -11182.5" />
+		<revolt:cube index="155" center="-9023.32 -350 -8683.75" radius="687.386" min="-9523.32 -750 -8933.75" max="-8523.32 50 -8433.75" />
+		<revolt:cube index="156" center="-9023.32 87.5 -7683.75" radius="902.168" min="-9523.32 50 -8433.75" max="-8523.32 125 -6933.75" />
+	</revolt:bigcube>
+	<revolt:bigcube count="17" center="-6523.33 -353.807 -9399.29" radius="3223.33">
+		<revolt:cube index="160" center="-8271.17 -1046.04 -11182.5" radius="574.173" min="-8769.79 -1330.74 -11182.5" max="-7772.55 -761.336 -11182.5" />
+		<revolt:cube index="167" center="-8271.17 -546.04 -11182.5" radius="574.173" min="-8769.79 -830.744 -11182.5" max="-7772.55 -261.336 -11182.5" />
+		<revolt:cube index="168" center="-8023.32 -350 -8683.75" radius="687.387" min="-8523.32 -750 -8933.75" max="-7523.32 50 -8433.75" />
+		<revolt:cube index="169" center="-8023.32 87.5 -7683.75" radius="902.168" min="-8523.32 50 -8433.75" max="-7523.32 125 -6933.75" />
+		<revolt:cube index="176" center="-7039.36 -862.839 -11182.5" radius="834.489" min="-7772.55 -1261.34 -11182.5" max="-6306.17 -464.342 -11182.5" />
+		<revolt:cube index="186" center="-7039.36 -362.839 -11182.5" radius="834.489" min="-7772.55 -761.336 -11182.5" max="-6306.17 35.6582 -11182.5" />
+		<revolt:cube index="187" center="-7023.32 -350 -8433.75" radius="812.404" min="-7523.32 -750 -8933.75" max="-6523.32 50 -7933.75" />
+		<revolt:cube index="188" center="-7023.32 87.5 -7683.75" radius="902.168" min="-7523.32 50 -8433.75" max="-6523.32 125 -6933.75" />
+		<revolt:cube index="199" center="-6023.32 -1025 -8933.75" radius="650" min="-6023.32 -1675 -8933.75" max="-6023.32 -375 -8933.75" />
+		<revolt:cube index="210" center="-5773.42 -375 -10933.9" radius="750" min="-6023.42 -875 -11433.9" max="-5523.42 125 -10433.9" />
+		<revolt:cube index="211" center="-5773.42 -375 -9933.92" radius="750" min="-6023.42 -875 -10433.9" max="-5523.42 125 -9433.92" />
+		<revolt:cube index="212" center="-6023.32 -525 -8771.34" radius="1039.01" min="-6523.32 -1175 -9433.92" max="-5523.32 125 -8108.75" />
+		<revolt:cube index="213" center="-6023.32 87.5 -7683.75" radius="902.168" min="-6523.32 50 -8433.75" max="-5523.32 125 -6933.75" />
+		<revolt:cube index="249" center="-5023.42 112.5 -10933.9" radius="707.217" min="-5523.42 100 -11433.9" max="-4523.42 125 -10433.9" />
+		<revolt:cube index="250" center="-5023.42 112.5 -9933.92" radius="707.217" min="-5523.42 100 -10433.9" max="-4523.42 125 -9433.92" />
+		<revolt:cube index="251" center="-5023.42 87.5 -8933.81" radius="708.179" min="-5523.42 50 -9433.92" max="-4523.42 125 -8433.7" />
+		<revolt:cube index="252" center="-5023.37 87.5 -7683.84" radius="902.213" min="-5523.32 50 -8433.92" max="-4523.42 125 -6933.75" />
+	</revolt:bigcube>
+	<revolt:bigcube count="31" center="-2388.74 -1186.66 -9238.78" radius="3492.41">
+		<revolt:cube index="287" center="-4010.92 87.5 -10933.7" radius="716.981" min="-4523.42 50 -11433.7" max="-3498.42 125 -10433.7" />
+		<revolt:cube index="288" center="-4010.92 87.5 -9683.92" radius="909.155" min="-4523.42 50 -10433.9" max="-3498.42 125 -8933.92" />
+		<revolt:cube index="289" center="-4010.92 87.5 -8683.7" radius="909.154" min="-4523.42 50 -9433.7" max="-3498.42 125 -7933.71" />
+		<revolt:cube index="290" center="-4010.92 87.5 -7683.7" radius="909.154" min="-4523.42 50 -8433.7" max="-3498.42 125 -6933.71" />
+		<revolt:cube index="307" center="-2498.42 -2149.98 -9933.7" radius="541.421" min="-2523.42 -2450 -10433.7" max="-2473.42 -1849.96 -9433.7" />
+		<revolt:cube index="308" center="-2460.92 -2000 -8433.7" radius="242.706" min="-2698.42 -2050 -8433.7" max="-2223.42 -1950 -8433.7" />
+		<revolt:cube index="309" center="-2460.92 -2375 -7683.7" radius="894.164" min="-2698.42 -2800 -8433.7" max="-2223.42 -1950 -6933.71" />
+		<revolt:cube index="315" center="-2498.42 -1449.98 -10908.7" radius="725.417" min="-2523.42 -1950 -11433.7" max="-2473.42 -949.96 -10383.7" />
+		<revolt:cube index="316" center="-2498.42 -1450 -9683.7" radius="901.734" min="-2523.42 -1950 -10433.7" max="-2473.42 -950 -8933.7" />
+		<revolt:cube index="317" center="-2535.92 -1449.98 -8933.7" radius="709.878" min="-2598.42 -1950 -9433.7" max="-2473.42 -949.96 -8433.7" />
+		<revolt:cube index="318" center="-2533.38 -1450 -7683.7" radius="903.73" min="-2598.42 -1950 -8433.7" max="-2468.34 -950 -6933.71" />
+		<revolt:cube index="325" center="-2985.92 50 -10683.7" radius="908.381" min="-3498.42 50 -11433.7" max="-2473.42 50 -9933.7" />
+		<revolt:cube index="326" center="-2985.92 50 -9933.7" radius="716" min="-3498.42 50 -10433.7" max="-2473.42 50 -9433.7" />
+		<revolt:cube index="327" center="-2985.92 50 -8933.7" radius="716" min="-3498.42 50 -9433.7" max="-2473.42 50 -8433.7" />
+		<revolt:cube index="328" center="-2983.38 -437.5 -7683.7" radius="1044.23" min="-3498.42 -950 -8433.7" max="-2468.34 75 -6933.71" />
+		<revolt:cube index="344" center="-1848.42 -1950 -9683.7" radius="976.281" min="-2473.42 -2450 -10433.7" max="-1223.42 -1450 -8933.7" />
+		<revolt:cube index="345" center="-1723.42 -1750 -8433.7" radius="583.095" min="-2223.42 -2050 -8433.7" max="-1223.42 -1450 -8433.7" />
+		<revolt:cube index="346" center="-1720.88 -2375 -7684.12" radius="994.972" min="-2223.42 -2800 -8433.7" max="-1218.34 -1950 -6934.53" />
+		<revolt:cube index="349" center="-1848.42 -1450 -10933.7" radius="943.729" min="-2473.42 -1950 -11433.7" max="-1223.42 -950 -10433.7" />
+		<revolt:cube index="350" center="-2348.42 -950 -9933.7" radius="515.388" min="-2473.42 -950 -10433.7" max="-2223.42 -950 -9433.7" />
+		<revolt:cube index="351" center="-1910.92 -1450 -8933.7" radius="986.233" min="-2598.42 -1950 -9433.7" max="-1223.42 -950 -8433.7" />
+		<revolt:cube index="352" center="-1643.34 -850 -7309.53" radius="160.078" min="-1768.34 -950 -7309.53" max="-1518.34 -750 -7309.53" />
+		<revolt:cube index="360" center="-2348.42 -450 -10933.7" radius="718.07" min="-2473.42 -950 -11433.7" max="-2223.42 50 -10433.7" />
+		<revolt:cube index="361" center="-2348.42 -450 -9933.7" radius="718.07" min="-2473.42 -950 -10433.7" max="-2223.42 50 -9433.7" />
+		<revolt:cube index="362" center="-2348.42 -450 -8933.7" radius="718.07" min="-2473.42 -950 -9433.7" max="-2223.42 50 -8433.7" />
+		<revolt:cube index="363" center="-1643.34 -350 -7309.53" radius="419.076" min="-1768.34 -750 -7309.53" max="-1518.34 50 -7309.53" />
+		<revolt:cube index="377" center="-723.422 -2200 -9933.7" radius="750" min="-1223.42 -2450 -10433.7" max="-223.422 -1950 -9433.7" />
+		<revolt:cube index="378" center="-1223.42 -1950 -8933.7" radius="866.025" min="-1723.42 -2450 -9433.7" max="-723.422 -1450 -8433.7" />
+		<revolt:cube index="380" center="-723.422 -1450 -10933.7" radius="866.025" min="-1223.42 -1950 -11433.7" max="-223.422 -950 -10433.7" />
+		<revolt:cube index="381" center="-893.343 -985.829 -7434.53" radius="834.41" min="-1518.34 -1221.66 -7934.53" max="-268.342 -750 -6934.53" />
+		<revolt:cube index="388" center="-893.343 -362.023 -7559.53" radius="789.232" min="-1518.34 -774.045 -7809.53" max="-268.342 50 -7309.53" />
+	</revolt:bigcube>
+	<revolt:bigcube count="2" center="-268.342 -890.46 -7435.57" radius="645.016">
+		<revolt:cube index="407" center="-268.342 -933.988 -7435.57" radius="575.947" min="-268.342 -1221.66 -7934.53" max="-268.342 -646.318 -6936.61" />
+		<revolt:cube index="416" center="-268.342 -602.424 -7559.53" radius="331.439" min="-268.342 -820.028 -7809.53" max="-268.342 -384.82 -7309.53" />
+	</revolt:bigcube>
+	<revolt:bigcube count="4" center="-13367.7 -470.162 -6837.58" radius="1330.44">
+		<revolt:cube index="37" center="-14049.8 -900 -6901.54" radius="521.739" min="-14439.4 -1037.5 -7220.08" max="-13660.1 -762.5 -6583" />
+		<revolt:cube index="50" center="-13862.6 -525 -7095.38" radius="387.544" min="-14060.3 -762.5 -7347.46" max="-13664.8 -287.5 -6843.29" />
+		<revolt:cube index="54" center="-13208.4 -900 -6542.8" radius="583.015" min="-13688.7 -1037.5 -6843.29" max="-12728 -762.5 -6242.31" />
+		<revolt:cube index="66" center="-13015.6 -308.905 -6863.78" radius="851.596" min="-13688.7 -762.5 -7298.71" max="-12342.5 144.691 -6428.86" />
+	</revolt:bigcube>
+	<revolt:bigcube count="10" center="-10767.9 -262.159 -6358.75" radius="2560.04">
+		<revolt:cube index="84" center="-12531.8 -862.5 -6240.4" radius="308.603" min="-12823.7 -962.5 -6428.86" max="-12239.9 -762.5 -6051.94" />
+		<revolt:cube index="85" center="-11943.3 -862.5 -6054.68" radius="443.911" min="-12368.4 -962.5 -6234.26" max="-11518.1 -762.5 -5875.11" />
+		<revolt:cube index="97" center="-12209.3 -308.636 -6716.43" radius="1011.28" min="-12980.2 -762.5 -7298.71" max="-11438.3 145.229 -6134.15" />
+		<revolt:cube index="107" center="-11533.4 -844.52 -5691.9" radius="473.844" min="-11677.9 -934.257 -6134.15" max="-11388.9 -754.783 -5249.65" />
+		<revolt:cube index="112" center="-11100.4 -285.612 -6692.44" radius="1010.57" min="-11677.5 -716.453 -7451.19" max="-10523.3 145.229 -5933.69" />
+		<revolt:cube index="113" center="-11020.7 -356.25 -5742.18" radius="752.391" min="-11518.1 -762.5 -6234.71" max="-10523.3 50 -5249.65" />
+		<revolt:cube index="134" center="-10023.3 87.5 -6433.75" radius="708.1" min="-10523.3 50 -6933.75" max="-9523.32 125 -5933.75" />
+		<revolt:cube index="135" center="-10023.3 -312.5 -5933.75" radius="831.508" min="-10523.3 -750 -6433.75" max="-9523.32 125 -5433.75" />
+		<revolt:cube index="157" center="-9023.32 87.5 -6433.75" radius="708.1" min="-9523.32 50 -6933.75" max="-8523.32 125 -5933.75" />
+		<revolt:cube index="158" center="-9023.32 -350 -5683.75" radius="687.386" min="-9523.32 -750 -5933.75" max="-8523.32 50 -5433.75" />
+	</revolt:bigcube>
+	<revolt:bigcube count="12" center="-6523.33 -255.754 -4912.78" radius="2874.99">
+		<revolt:cube index="170" center="-8023.32 87.5 -6433.75" radius="708.101" min="-8523.32 50 -6933.75" max="-7523.32 125 -5933.75" />
+		<revolt:cube index="171" center="-8023.32 -350 -5683.75" radius="687.387" min="-8523.32 -750 -5933.75" max="-7523.32 50 -5433.75" />
+		<revolt:cube index="189" center="-7023.32 87.5 -6433.75" radius="708.1" min="-7523.32 50 -6933.75" max="-6523.32 125 -5933.75" />
+		<revolt:cube index="190" center="-7023.32 -350 -5933.75" radius="812.404" min="-7523.32 -750 -6433.75" max="-6523.32 50 -5433.75" />
+		<revolt:cube index="214" center="-6023.32 87.5 -6433.75" radius="708.1" min="-6523.32 50 -6933.75" max="-5523.32 125 -5933.75" />
+		<revolt:cube index="215" center="-6023.37 -375 -5596.34" radius="956.226" min="-6523.32 -875 -6258.75" max="-5523.42 125 -4933.92" />
+		<revolt:cube index="216" center="-5773.42 -375 -4433.82" radius="750.073" min="-6023.42 -875 -4933.92" max="-5523.42 125 -3933.71" />
+		<revolt:cube index="217" center="-5773.42 -375 -3433.71" radius="750" min="-6023.42 -875 -3933.71" max="-5523.42 125 -2933.71" />
+		<revolt:cube index="253" center="-5023.42 112.5 -6433.93" radius="707.218" min="-5523.42 100 -6933.93" max="-4523.42 125 -5933.92" />
+		<revolt:cube index="254" center="-5023.42 87.5 -5433.82" radius="708.178" min="-5523.42 50 -5933.92" max="-4523.42 125 -4933.71" />
+		<revolt:cube index="255" center="-5023.42 87.5 -4433.82" radius="708.178" min="-5523.42 50 -4933.92" max="-4523.42 125 -3933.71" />
+		<revolt:cube index="256" center="-5023.42 112.5 -3433.71" radius="707.217" min="-5523.42 100 -3933.71" max="-4523.42 125 -2933.71" />
+	</revolt:bigcube>
+	<revolt:bigcube count="26" center="-2399.64 -1138.12 -5211.61" radius="3412.06">
+		<revolt:cube index="291" center="-4010.92 87.5 -6683.71" radius="908.974" min="-4523.42 50 -7433.71" max="-3498.42 125 -5933.71" />
+		<revolt:cube index="292" center="-4010.92 87.5 -5683.71" radius="909.155" min="-4523.42 50 -6433.71" max="-3498.42 125 -4933.71" />
+		<revolt:cube index="293" center="-4010.92 50 -4433.71" radius="716" min="-4523.42 50 -4933.71" max="-3498.42 50 -3933.71" />
+		<revolt:cube index="294" center="-4023.42 -312.5 -3683.71" radius="1001.95" min="-4523.42 -750 -4433.71" max="-3523.42 125 -2933.71" />
+		<revolt:cube index="310" center="-2458.38 -1750 -6934.12" radius="384.212" min="-2698.42 -2050 -6934.53" max="-2218.34 -1450 -6933.71" />
+		<revolt:cube index="319" center="-2408.38 -1450 -6434.12" radius="732.482" min="-2598.42 -1950 -6934.53" max="-2218.34 -950 -5933.71" />
+		<revolt:cube index="320" center="-2408.38 -1450 -5621.62" radius="619.702" min="-2598.42 -1950 -5934.53" max="-2218.34 -950 -5308.71" />
+		<revolt:cube index="329" center="-2983.38 75 -6434.12" radius="718.109" min="-3498.42 75 -6934.53" max="-2468.34 75 -5933.71" />
+		<revolt:cube index="330" center="-2983.38 -437.5 -5683.71" radius="1032.19" min="-3498.42 -950 -6433.71" max="-2468.34 75 -4933.71" />
+		<revolt:cube index="331" center="-2999.21 -375 -4433.71" radius="840.88" min="-3525 -800 -4933.71" max="-2473.42 50 -3933.71" />
+		<revolt:cube index="332" center="-3385.92 -362.5 -4058.71" radius="452.424" min="-3523.42 -775 -4183.71" max="-3248.42 50 -3933.71" />
+		<revolt:cube index="347" center="-2020.88 -2250 -6684.53" radius="1022.89" min="-2698.42 -2550 -7434.53" max="-1343.34 -1950 -5934.53" />
+		<revolt:cube index="348" center="-2030.84 -2200 -6184.53" radius="400.195" min="-2218.34 -2450 -6434.53" max="-1843.34 -1950 -5934.53" />
+		<revolt:cube index="353" center="-1933.38 -1350 -6621.62" radius="1036.55" min="-2598.42 -1950 -7309.53" max="-1268.34 -750 -5933.71" />
+		<revolt:cube index="354" center="-1995.88 -1200.44 -5684.12" radius="993.783" min="-2598.42 -1950 -6434.53" max="-1393.34 -450.875 -4933.71" />
+		<revolt:cube index="355" center="-1760.92 -987.5 -4871.21" radius="698.547" min="-2048.42 -1450 -5308.71" max="-1473.42 -525 -4433.71" />
+		<revolt:cube index="364" center="-1868.34 -437.5 -6622.03" radius="1033.69" min="-2468.34 -950 -7309.53" max="-1268.34 75 -5934.53" />
+		<revolt:cube index="365" center="-1870.88 -437.5 -5684.12" radius="1078.81" min="-2473.42 -950 -6434.53" max="-1268.34 75 -4933.71" />
+		<revolt:cube index="366" center="-1974.94 -450 -4683.71" radius="748.991" min="-2473.42 -950 -4933.71" max="-1476.45 50 -4433.71" />
+		<revolt:cube index="379" center="-868.342 -2200 -6184.53" radius="632.949" min="-1393.34 -2450 -6434.53" max="-343.342 -1950 -5934.53" />
+		<revolt:cube index="382" center="-893.343 -1074.33 -6622.03" radius="937.424" min="-1518.34 -1198.76 -7309.53" max="-268.342 -949.902 -5934.53" />
+		<revolt:cube index="383" center="-870.882 -1431.42 -5621.62" radius="854.341" min="-1473.42 -1950 -5934.53" max="-268.342 -912.832 -5308.71" />
+		<revolt:cube index="384" center="-974.937 -987.5 -4871.21" radius="810.45" min="-1476.45 -1450 -5308.71" max="-473.422 -525 -4433.71" />
+		<revolt:cube index="389" center="-893.343 -574.382 -6622.03" radius="1119.43" min="-1518.34 -1198.76 -7309.53" max="-268.342 50 -5934.53" />
+		<revolt:cube index="390" center="-768.343 -450.875 -6159.53" radius="758.058" min="-1268.34 -949.902 -6434.53" max="-268.342 48.1518 -5884.53" />
+		<revolt:cube index="391" center="-976.451 -244.87 -4433.71" radius="573.125" min="-1476.45 -525 -4433.71" max="-476.451 35.2598 -4433.71" />
+	</revolt:bigcube>
+	<revolt:bigcube count="27" center="1595.79 -898.76 -5298.01" radius="3251.74">
+		<revolt:cube index="403" center="-118.342 -2200 -6184.53" radius="447.912" min="-393.342 -2450 -6434.53" max="156.658 -1950 -5934.53" />
+		<revolt:cube index="408" center="231.658 -949.951 -6434.53" radius="707.107" min="-268.342 -950 -6934.53" max="731.658 -949.902 -5934.53" />
+		<revolt:cube index="409" center="129.118 -1200 -5621.62" radius="1011.67" min="-473.422 -1950 -5934.53" max="731.658 -450 -5308.71" />
+		<revolt:cube index="410" center="26.7597 -987.5 -4871.21" radius="811.501" min="-476.451 -1450 -5308.71" max="529.971 -525 -4433.71" />
+		<revolt:cube index="417" center="231.658 -574.382 -6622.03" radius="1054.76" min="-268.342 -1198.76 -7309.53" max="731.658 50 -5934.53" />
+		<revolt:cube index="418" center="231.658 -432.645 -6159.53" radius="746.184" min="-268.342 -915.29 -6434.53" max="731.658 50 -5884.53" />
+		<revolt:cube index="419" center="26.7597 -244.87 -4433.71" radius="575.929" min="-476.451 -525 -4433.71" max="529.971 35.2598 -4433.71" />
+		<revolt:cube index="427" center="1206.29 -888.137 -6434.53" radius="692.176" min="731.658 -950 -6934.53" max="1680.93 -826.273 -5934.53" />
+		<revolt:cube index="428" center="1299.34 -700 -5866.45" radius="840.615" min="731.658 -950 -6434.53" max="1867.03 -450 -5298.36" />
+		<revolt:cube index="429" center="1198.5 -987.5 -4774.32" radius="882.453" min="529.971 -1450 -5299.1" max="1867.02 -525 -4249.53" />
+		<revolt:cube index="430" center="1617.02 -762.5 -3730.6" radius="605.762" min="1367.01 -950 -4249.53" max="1867.02 -575 -3211.67" />
+		<revolt:cube index="434" center="1206.29 -450 -6434.53" radius="851.634" min="731.658 -950 -6934.53" max="1680.93 50 -5934.53" />
+		<revolt:cube index="435" center="1299.34 -450 -5866.45" radius="945.59" min="731.658 -950 -6434.53" max="1867.02 50 -5298.36" />
+		<revolt:cube index="436" center="1198.49 -450 -4774.29" radius="986.075" min="529.971 -950 -5299.1" max="1867.02 50 -4249.49" />
+		<revolt:cube index="437" center="1498.27 -431.25 -3730.6" radius="727.577" min="1329.52 -912.5 -4249.53" max="1667.02 50 -3211.67" />
+		<revolt:cube index="446" center="1916.94 -888.137 -6507.38" radius="422.498" min="1633.13 -950 -6814.18" max="2200.76 -826.273 -6200.58" />
+		<revolt:cube index="447" center="2024.18 -950 -5773.4" radius="586.071" min="1680.93 -950 -6248.44" max="2367.43 -950 -5298.36" />
+		<revolt:cube index="448" center="2367.02 -850 -4774.14" radius="731.841" min="1867.02 -950 -5299.1" max="2867.02 -750 -4249.17" />
+		<revolt:cube index="449" center="2204.52 -950 -3749.35" radius="830.113" min="1542.02 -950 -4249.53" max="2867.02 -950 -3249.17" />
+		<revolt:cube index="454" center="1916.94 -450 -6507.38" radius="651.673" min="1633.13 -950 -6814.18" max="2200.76 50 -6200.58" />
+		<revolt:cube index="455" center="2024.18 -450 -5773.4" radius="770.376" min="1680.93 -950 -6248.44" max="2367.43 50 -5298.36" />
+		<revolt:cube index="456" center="1992.02 -450 -4774.14" radius="957.192" min="1367.01 -950 -5299.1" max="2617.02 50 -4249.17" />
+		<revolt:cube index="457" center="2242.02 -125 -3749.36" radius="819.414" min="1617.01 -300 -4249.54" max="2867.02 50 -3249.17" />
+		<revolt:cube index="468" center="2992.02 -888.137 -4274.17" radius="380.89" min="2617.02 -950 -4299.17" max="3367.02 -826.273 -4249.17" />
+		<revolt:cube index="469" center="3367.02 -950 -3749.17" radius="707.107" min="2867.02 -950 -4249.17" max="3867.02 -950 -3249.17" />
+		<revolt:cube index="474" center="3242.02 -450 -4274.17" radius="800.781" min="2617.02 -950 -4299.17" max="3867.02 50 -4249.17" />
+		<revolt:cube index="475" center="3242.02 50 -3749.17" radius="800.391" min="2617.02 50 -4249.17" max="3867.02 50 -3249.17" />
+	</revolt:bigcube>
+	<revolt:bigcube count="4" center="4768.29 -637.562 -3559.77" radius="1543.15">
+		<revolt:cube index="487" center="4154.52 -1200 -3749.17" radius="628.615" min="3867.02 -1450 -4249.17" max="4442.02 -950 -3249.17" />
+		<revolt:cube index="493" center="4117.02 -450 -4249.17" radius="559.017" min="3867.02 -950 -4249.17" max="4367.02 50 -4249.17" />
+		<revolt:cube index="494" center="4353.93 -407.533 -3562" radius="958.446" min="3867.02 -950 -4249.17" max="4840.84 134.934 -2874.83" />
+		<revolt:cube index="511" center="5223.37 -364.243 -3229.09" radius="917.734" min="4500.93 -863.419 -3495.81" max="5945.81 134.934 -2962.38" />
+	</revolt:bigcube>
+	<revolt:bigcube count="18" center="-5922.08 -812.959 -822.835" radius="2770.94">
+		<revolt:cube index="172" center="-6773.42 -1775 941.294" radius="358.817" min="-7023.42 -2000 816.294" max="-6523.42 -1550 1066.29" />
+		<revolt:cube index="177" center="-6773.83 -1312.5 904.759" radius="749.303" min="-7024.24 -2000 566.294" max="-6523.42 -625 1243.22" />
+		<revolt:cube index="191" center="-6773.42 -387.5 -2433.71" radius="758.391" min="-7023.42 -900 -2933.71" max="-6523.42 125 -1933.71" />
+		<revolt:cube index="192" center="-6773.42 -387.5 -1433.71" radius="758.391" min="-7023.42 -900 -1933.71" max="-6523.42 125 -933.706" />
+		<revolt:cube index="193" center="-6773.42 -437.5 -433.706" radius="741.725" min="-7023.42 -925 -933.706" max="-6523.42 50 66.2942" />
+		<revolt:cube index="194" center="-6773.42 -450 566.294" radius="733.57" min="-7023.42 -925 66.2942" max="-6523.42 25 1066.29" />
+		<revolt:cube index="196" center="-6273.42 -1850 866.948" radius="423.802" min="-6523.42 -2150 567.602" max="-6023.42 -1550 1166.29" />
+		<revolt:cube index="200" center="-6023.42 -1562.5 816.294" radius="709.863" min="-6523.42 -2000 566.294" max="-5523.42 -1125 1066.29" />
+		<revolt:cube index="218" center="-6023.42 -375 -2433.71" radius="866.025" min="-6523.42 -875 -2933.71" max="-5523.42 125 -1933.71" />
+		<revolt:cube index="219" center="-6023.42 87.5 -1433.71" radius="708.101" min="-6523.42 50 -1933.71" max="-5523.42 125 -933.706" />
+		<revolt:cube index="220" center="-6023.42 25 -433.706" radius="707.549" min="-6523.42 0 -933.706" max="-5523.42 50 66.2942" />
+		<revolt:cube index="221" center="-6023.42 -62.5 566.294" radius="709.863" min="-6523.42 -125 66.2942" max="-5523.42 0 1066.29" />
+		<revolt:cube index="233" center="-5023.42 -1850 854.448" radius="595.635" min="-5523.42 -2150 567.602" max="-4523.42 -1550 1141.29" />
+		<revolt:cube index="237" center="-5023.42 -1562.5 816.294" radius="709.864" min="-5523.42 -2000 566.294" max="-4523.42 -1125 1066.29" />
+		<revolt:cube index="257" center="-5023.42 112.5 -2433.71" radius="707.217" min="-5523.42 100 -2933.71" max="-4523.42 125 -1933.71" />
+		<revolt:cube index="258" center="-5023.42 87.5 -1433.71" radius="708.101" min="-5523.42 50 -1933.71" max="-4523.42 125 -933.706" />
+		<revolt:cube index="259" center="-5023.42 25 -433.706" radius="707.549" min="-5523.42 0 -933.706" max="-4523.42 50 66.2942" />
+		<revolt:cube index="260" center="-5023.42 -50 566.294" radius="711.073" min="-5523.42 -125 66.2942" max="-4523.42 25 1066.29" />
+	</revolt:bigcube>
+	<revolt:bigcube count="20" center="-2675.39 -733.172 -794.284" radius="3111">
+		<revolt:cube index="273" center="-3773.42 -1775 816.948" radius="418.687" min="-4023.42 -2000 567.602" max="-3523.42 -1550 1066.29" />
+		<revolt:cube index="276" center="-4023.42 -1562.5 816.294" radius="709.864" min="-4523.42 -2000 566.294" max="-3523.42 -1125 1066.29" />
+		<revolt:cube index="295" center="-4023.42 87.5 -2521.21" radius="771.566" min="-4523.42 50 -3108.71" max="-3523.42 125 -1933.71" />
+		<revolt:cube index="296" center="-4023.42 87.5 -1433.71" radius="708.101" min="-4523.42 50 -1933.71" max="-3523.42 125 -933.706" />
+		<revolt:cube index="297" center="-4023.42 25 -433.706" radius="707.549" min="-4523.42 0 -933.706" max="-3523.42 50 66.2942" />
+		<revolt:cube index="298" center="-4023.42 -62.5 566.294" radius="709.864" min="-4523.42 -125 66.2942" max="-3523.42 0 1066.29" />
+		<revolt:cube index="311" center="-3273.42 -1850 854.448" radius="415.067" min="-3523.42 -2150 567.602" max="-3023.42 -1550 1141.29" />
+		<revolt:cube index="321" center="-3023.42 -1562.5 941.294" radius="762.91" min="-3523.42 -2000 566.294" max="-2523.42 -1125 1316.29" />
+		<revolt:cube index="333" center="-3023.42 -275 -2433.71" radius="812.404" min="-3523.42 -675 -2933.71" max="-2523.42 125 -1933.71" />
+		<revolt:cube index="334" center="-3023.42 87.5 -1433.71" radius="708.101" min="-3523.42 50 -1933.71" max="-2523.42 125 -933.706" />
+		<revolt:cube index="335" center="-3023.42 25 -433.706" radius="707.549" min="-3523.42 0 -933.706" max="-2523.42 50 66.2942" />
+		<revolt:cube index="336" center="-3023.42 -62.5 566.294" radius="709.864" min="-3523.42 -125 66.2942" max="-2523.42 0 1066.29" />
+		<revolt:cube index="367" center="-2023.42 -275 -2433.71" radius="812.404" min="-2523.42 -675 -2933.71" max="-1523.42 125 -1933.71" />
+		<revolt:cube index="368" center="-2023.42 87.5 -1433.71" radius="708.101" min="-2523.42 50 -1933.71" max="-1523.42 125 -933.706" />
+		<revolt:cube index="369" center="-2023.42 50 -433.706" radius="708.872" min="-2523.42 0 -933.706" max="-1523.42 100 66.2942" />
+		<revolt:cube index="370" center="-2023.42 25 566.294" radius="707.549" min="-2523.42 0 66.2942" max="-1523.42 50 1066.29" />
+		<revolt:cube index="392" center="-1273.42 -325 -2433.71" radius="717.635" min="-1523.42 -775 -2933.71" max="-1023.42 125 -1933.71" />
+		<revolt:cube index="393" center="-1273.42 -325 -1433.71" radius="717.635" min="-1523.42 -775 -1933.71" max="-1023.42 125 -933.706" />
+		<revolt:cube index="394" center="-1273.42 -337.5 -433.706" radius="709.864" min="-1523.42 -775 -933.706" max="-1023.42 100 66.2942" />
+		<revolt:cube index="395" center="-1273.42 -362.5 566.294" radius="694.735" min="-1523.42 -775 66.2942" max="-1023.42 50 1066.29" />
+	</revolt:bigcube>
+	<revolt:bigcube count="17" center="2463.49 -591.927 -1619.41" radius="2289.76">
+		<revolt:cube index="431" center="1448.27 -762.5 -2749.17" radius="547.045" min="1329.52 -950 -3249.17" max="1567.02 -575 -2249.17" />
+		<revolt:cube index="432" center="1567.02 -762.5 -1749.17" radius="534" min="1567.02 -950 -2249.17" max="1567.02 -575 -1249.17" />
+		<revolt:cube index="438" center="1498.27 -606.25 -2749.17" radius="610.136" min="1329.52 -912.5 -3249.17" max="1667.02 -300 -2249.17" />
+		<revolt:cube index="439" center="1517.02 -437.5 -1499.17" radius="777.114" min="1367.02 -575 -2249.17" max="1667.02 -300 -749.171" />
+		<revolt:cube index="440" center="1617.02 -437.5 -999.171" radius="379.35" min="1367.02 -575 -1249.17" max="1867.02 -300 -749.171" />
+		<revolt:cube index="450" center="2217.02 -949.997 -2749.17" radius="820.061" min="1567.02 -950 -3249.17" max="2867.02 -949.995 -2249.17" />
+		<revolt:cube index="451" center="2217.02 -762.5 -1599.17" radius="938.167" min="1567.02 -950 -2249.17" max="2867.02 -575 -949.168" />
+		<revolt:cube index="452" center="2367.01 -1008.08 -602.465" radius="746.834" min="1867.02 -1441.17 -949.172" max="2867.01 -575 -255.759" />
+		<revolt:cube index="458" center="2267.02 -125 -2749.17" radius="800.391" min="1667.02 -300 -3249.17" max="2867.02 50 -2249.17" />
+		<revolt:cube index="459" center="2267.02 -125 -1649.17" radius="866.388" min="1667.02 -300 -2249.17" max="2867.02 50 -1049.17" />
+		<revolt:cube index="460" center="2117.02 -624.145 -652.465" radius="908.265" min="1367.02 -948.289 -1049.17" max="2867.02 -300 -255.759" />
+		<revolt:cube index="470" center="3367.02 -949.997 -2749.17" radius="707.107" min="2867.02 -950 -3249.17" max="3867.02 -949.995 -2249.17" />
+		<revolt:cube index="471" center="3367.01 -950 -1599.17" radius="820.065" min="2867.01 -950 -2249.17" max="3867.02 -950 -949.168" />
+		<revolt:cube index="472" center="3189.13 -1008.08 -602.465" radius="932.878" min="2439.14 -1441.17 -949.172" max="3939.13 -574.999 -255.759" />
+		<revolt:cube index="476" center="3367.02 50 -2749.17" radius="707.107" min="2867.02 50 -3249.17" max="3867.02 50 -2249.17" />
+		<revolt:cube index="477" center="3367.01 -125 -1649.17" radius="800.396" min="2867.01 -300 -2249.17" max="3867.02 50 -1049.17" />
+		<revolt:cube index="478" center="3189.13 -624.145 -652.465" radius="908.262" min="2439.14 -948.289 -1049.17" max="3939.13 -300 -255.759" />
+	</revolt:bigcube>
+	<revolt:bigcube count="19" center="5885.01 -405.53 -952.871" radius="3246.34">
+		<revolt:cube index="488" center="4154.52 -1200 -2749.17" radius="628.615" min="3867.02 -1450 -3249.17" max="4442.02 -950 -2249.17" />
+		<revolt:cube index="489" center="4154.52 -1200 -1749.18" radius="628.615" min="3867.02 -1450 -2249.18" max="4442.02 -950 -1249.18" />
+		<revolt:cube index="490" center="4154.52 -1012.5 -752.469" radius="721.653" min="3867.02 -1450 -1249.18" max="4442.02 -575 -255.759" />
+		<revolt:cube index="495" center="4469.25 -311.2 -2499.17" radius="1027.45" min="3867.02 -950 -3249.17" max="5071.49 327.599 -1749.17" />
+		<revolt:cube index="496" center="4553.58 -400 -1499.17" radius="1111.92" min="3867.02 -950 -2249.17" max="5240.14 150 -749.171" />
+		<revolt:cube index="497" center="4553.58 -412.29 -959.557" radius="1124.8" min="3867.02 -950 -1669.97" max="5240.14 125.42 -249.145" />
+		<revolt:cube index="498" center="4389.97 -410.215 341.075" radius="805.078" min="4137.54 -950 -255.759" max="4642.41 129.571 937.909" />
+		<revolt:cube index="512" center="5259.68 -227.585 -2464.4" radius="925.331" min="4444.16 -782.768 -3142.23" max="6075.2 327.599 -1786.57" />
+		<revolt:cube index="513" center="5201.61 -316.384 -1247" radius="1306.49" min="4441.66 -782.768 -2244.85" max="5961.56 150 -249.145" />
+		<revolt:cube index="514" center="5359.19 -405.53 -299.535" radius="1476.06" min="4442.02 -940.631 -1467.32" max="6276.35 129.571 868.247" />
+		<revolt:cube index="515" center="5138.47 -352.954 903.078" radius="717.801" min="4632.07 -860.479 868.247" max="5644.87 154.571 937.909" />
+		<revolt:cube index="526" center="6207.01 -267.91 -2493.07" radius="908.271" min="5553.75 -863.419 -3140.92" max="6860.27 327.599 -1845.23" />
+		<revolt:cube index="527" center="6369.07 -2.1032 -1623.35" radius="768.418" min="5627.55 -331.806 -2361.11" max="7110.6 327.599 -885.577" />
+		<revolt:cube index="528" center="6478.21 -306.785 -695.061" radius="820.413" min="5891.36 -763.571 -1274.87" max="7065.05 150 -115.248" />
+		<revolt:cube index="529" center="5992.33 -355.239 26.1659" radius="1297.76" min="5132.07 -860.479 -885.577" max="6852.59 150 937.909" />
+		<revolt:cube index="541" center="7075.81 -531.017 -2201.52" radius="647.656" min="6632.94 -863.419 -2647.56" max="7518.68 -198.616 -1755.48" />
+		<revolt:cube index="542" center="7328.52 -267.91 -1570.57" radius="958.88" min="6683.98 -863.419 -2315.26" max="7973.06 327.599 -825.877" />
+		<revolt:cube index="543" center="7238.4 -233.281 -493.506" radius="911.416" min="6630.48 -794.162 -1263.38" max="7846.31 327.599 276.372" />
+		<revolt:cube index="544" center="7316.29 -266.44 284.719" radius="1024.96" min="6645.13 -860.479 -368.471" max="7987.46 327.599 937.909" />
+	</revolt:bigcube>
+	<revolt:bigcube count="5" center="8681.95 -267.91 -12.8361" radius="1954.16">
+		<revolt:cube index="555" center="7936.23 -613.419 -1293.19" radius="353.457" min="7813.07 -863.419 -1510.59" max="8059.39 -363.419 -1075.78" />
+		<revolt:cube index="556" center="8067.57 -364.243 -482.437" radius="779.521" min="7739.59 -863.419 -1075.78" max="8395.54 134.934 110.909" />
+		<revolt:cube index="557" center="8155.42 -267.91 524.514" radius="1020.52" min="7560.84 -863.419 -136.295" max="8750 327.599 1185.32" />
+		<revolt:cube index="571" center="9151.66 -352.954 903.078" radius="717.892" min="8645.13 -860.479 868.247" max="9658.19 154.571 937.909" />
+		<revolt:cube index="582" center="9872.62 -606.785 997.306" radius="356.368" min="9658.19 -860.479 868.247" max="10087.1 -353.091 1126.36" />
+	</revolt:bigcube>
+	<revolt:bigcube count="19" center="-6006.12 -983.748 3054.17" radius="3006.97">
+		<revolt:cube index="173" center="-6773.97 -1988.1 1477.13" radius="650.765" min="-7024.53 -2426.21 1066.29" max="-6523.42 -1550 1887.96" />
+		<revolt:cube index="174" center="-7024.53 -2211.94 2515.02" radius="662.665" min="-7024.53 -2426.21 1887.96" max="-7024.53 -1997.67 3142.09" />
+		<revolt:cube index="178" center="-6773.97 -1312.5 1352.13" radius="905.178" min="-7024.53 -2000 816.294" max="-6523.42 -625 1887.96" />
+		<revolt:cube index="179" center="-7024.53 -1552.14 2659.88" radius="891.263" min="-7024.53 -1997.67 1887.96" max="-7024.53 -1106.62 3431.79" />
+		<revolt:cube index="195" center="-6773.42 -375 1066.29" radius="353.553" min="-7023.42 -625 1066.29" max="-6523.42 -125 1066.29" />
+		<revolt:cube index="197" center="-6023.42 -2212.5 1191.29" radius="557.478" min="-6523.42 -2425 1066.29" max="-5523.42 -2000 1316.29" />
+		<revolt:cube index="198" center="-6000 -2012.5 3125" radius="557.478" min="-6500 -2225 3000" max="-5500 -1800 3250" />
+		<revolt:cube index="201" center="-6023.42 -875 1066.29" radius="559.017" min="-6523.42 -1125 1066.29" max="-5523.42 -625 1066.29" />
+		<revolt:cube index="202" center="-6000 -1362.5 3500" radius="709.864" min="-6500 -1800 3250" max="-5500 -925 3750" />
+		<revolt:cube index="222" center="-6023.42 -375 1066.29" radius="559.017" min="-6523.42 -625 1066.29" max="-5523.42 -125 1066.29" />
+		<revolt:cube index="223" center="-6000 -375 3750" radius="911.386" min="-6500 -950 3250" max="-5500 200 4250" />
+		<revolt:cube index="224" center="-6000 -375 4750" radius="911.386" min="-6500 -950 4250" max="-5500 200 5250" />
+		<revolt:cube index="234" center="-5023.42 -2212.5 1191.29" radius="557.478" min="-5523.42 -2425 1066.29" max="-4523.42 -2000 1316.29" />
+		<revolt:cube index="235" center="-5000 -2012.5 3125" radius="557.478" min="-5500 -2225 3000" max="-4500 -1800 3250" />
+		<revolt:cube index="238" center="-5023.42 -875 1066.29" radius="559.017" min="-5523.42 -1125 1066.29" max="-4523.42 -625 1066.29" />
+		<revolt:cube index="239" center="-5000 -1362.5 3500" radius="709.864" min="-5500 -1800 3250" max="-4500 -925 3750" />
+		<revolt:cube index="261" center="-5023.42 -375 1066.29" radius="559.017" min="-5523.42 -625 1066.29" max="-4523.42 -125 1066.29" />
+		<revolt:cube index="262" center="-5000 -362.5 3750" radius="903.551" min="-5500 -925 3250" max="-4500 200 4250" />
+		<revolt:cube index="263" center="-5000 200 4750" radius="707.107" min="-5500 200 4250" max="-4500 200 5250" />
+	</revolt:bigcube>
+	<revolt:bigcube count="26" center="-2714.81 -982.765 2917.49" radius="3238.66">
+		<revolt:cube index="274" center="-4023.42 -2212.5 1191.29" radius="557.478" min="-4523.42 -2425 1066.29" max="-3523.42 -2000 1316.29" />
+		<revolt:cube index="275" center="-4000 -2012.5 3125" radius="557.478" min="-4500 -2225 3000" max="-3500 -1800 3250" />
+		<revolt:cube index="277" center="-4023.42 -875 1066.29" radius="559.017" min="-4523.42 -1125 1066.29" max="-3523.42 -625 1066.29" />
+		<revolt:cube index="278" center="-4000 -1362.5 3500" radius="709.864" min="-4500 -1800 3250" max="-3500 -925 3750" />
+		<revolt:cube index="299" center="-4023.42 -375 1066.29" radius="559.017" min="-4523.42 -625 1066.29" max="-3523.42 -125 1066.29" />
+		<revolt:cube index="300" center="-4000 -362.5 3750" radius="903.551" min="-4500 -925 3250" max="-3500 200 4250" />
+		<revolt:cube index="301" center="-4000 200 4750" radius="707.107" min="-4500 200 4250" max="-3500 200 5250" />
+		<revolt:cube index="312" center="-3023.42 -2212.5 1441.29" radius="660.137" min="-3523.42 -2425 1066.29" max="-2523.42 -2000 1816.29" />
+		<revolt:cube index="313" center="-3250 -2012.5 3125" radius="351.114" min="-3500 -2225 3000" max="-3000 -1800 3250" />
+		<revolt:cube index="322" center="-2973.46 -1250 1191.29" radius="1002.79" min="-3523.42 -2000 816.294" max="-2423.5 -500 1566.29" />
+		<revolt:cube index="323" center="-2961.75 -1362.5 3658.13" radius="804.789" min="-3500 -1800 3250" max="-2423.5 -925 4066.25" />
+		<revolt:cube index="337" center="-2973.46 -312.5 1316.29" radius="680.157" min="-3523.42 -625 1066.29" max="-2423.5 0 1566.29" />
+		<revolt:cube index="338" center="-2961.75 -400 3750" radius="948.532" min="-3500 -1000 3250" max="-2423.5 200 4250" />
+		<revolt:cube index="339" center="-2974.25 -400 4645.65" radius="1000.83" min="-3500 -1000 4041.29" max="-2448.5 200 5250" />
+		<revolt:cube index="356" center="-2023.46 -1250 1566.29" radius="986.17" min="-2523.5 -2000 1066.29" max="-1523.42 -500 2066.29" />
+		<revolt:cube index="357" center="-1990.16 -1056.25 2566.29" radius="664.034" min="-2423.5 -1112.5 2066.29" max="-1556.83 -1000 3066.29" />
+		<revolt:cube index="358" center="-1990.16 -1043.75 3566.29" radius="665.21" min="-2423.5 -1112.5 3066.29" max="-1556.83 -975 4066.29" />
+		<revolt:cube index="371" center="-2023.42 -500 1566.29" radius="866.025" min="-2523.42 -1000 1066.29" max="-1523.42 0 2066.29" />
+		<revolt:cube index="372" center="-1990.16 -500 2566.29" radius="829.324" min="-2423.5 -1000 2066.29" max="-1556.83 0 3066.29" />
+		<revolt:cube index="373" center="-1990.16 -500 3566.29" radius="829.324" min="-2423.5 -1000 3066.29" max="-1556.83 0 4066.29" />
+		<revolt:cube index="385" center="-1290.13 -1387.5 1566.29" radius="686.504" min="-1556.83 -2000 1066.29" max="-1023.42 -775 2066.29" />
+		<revolt:cube index="386" center="-1340.16 -1000 2566.29" radius="544.926" min="-1556.83 -1000 2066.29" max="-1123.5 -1000 3066.29" />
+		<revolt:cube index="387" center="-1340.16 -1000 3566.29" radius="544.926" min="-1556.83 -1000 3066.29" max="-1123.5 -1000 4066.29" />
+		<revolt:cube index="396" center="-1290.13 -487.5 1566.29" radius="764.06" min="-1556.83 -1000 1066.29" max="-1023.42 25 2066.29" />
+		<revolt:cube index="397" center="-1340.16 -500 2566.29" radius="739.557" min="-1556.83 -1000 2066.29" max="-1123.5 0 3066.29" />
+		<revolt:cube index="398" center="-1340.16 -500 3566.29" radius="739.557" min="-1556.83 -1000 3066.29" max="-1123.5 0 4066.29" />
+	</revolt:bigcube>
+	<revolt:bigcube count="18" center="6110.64 -160.192 3163.74" radius="2792.92">
+		<revolt:cube index="491" center="4740.97 -837.5 4030.97" radius="269.038" min="4600.03 -962.5 3838.9" max="4881.91 -712.5 4223.04" />
+		<revolt:cube index="506" center="4813.94 -812.5 1441.9" radius="540.882" min="4674.71 -912.5 928.897" max="4953.17 -712.5 1954.9" />
+		<revolt:cube index="507" center="4813.94 -812.5 2509.17" radius="654.089" min="4674.71 -912.5 1877.95" max="4953.17 -712.5 3140.4" />
+		<revolt:cube index="508" center="4825.88 -837.5 3549.97" radius="626.301" min="4687.86 -962.5 2938.84" max="4963.9 -712.5 4161.11" />
+		<revolt:cube index="509" center="4799.91 -837.5 4622.17" radius="517.836" min="4600.03 -962.5 4161.11" max="4999.8 -712.5 5083.23" />
+		<revolt:cube index="516" center="5324.02 -275 1455.4" radius="778.549" min="4953.17 -712.5 915.397" max="5694.87 162.5 1995.4" />
+		<revolt:cube index="517" center="5297.22 -275 2591.94" radius="854.557" min="4874.56 -712.5 1937.91" max="5719.87 162.5 3245.98" />
+		<revolt:cube index="518" center="5300.89 -275 3549.51" radius="860.818" min="4881.91 -712.5 2937.91" max="5719.87 162.5 4161.11" />
+		<revolt:cube index="519" center="5275.89 -275 4518.72" radius="777.424" min="4881.91 -712.5 3937.91" max="5669.87 162.5 5099.52" />
+		<revolt:cube index="530" center="6132.5 150 1437.91" radius="716.092" min="5619.87 150 937.909" max="6645.13 150 1937.91" />
+		<revolt:cube index="531" center="6221.58 150 2437.91" radius="782.34" min="5619.87 150 1937.91" max="6823.29 150 2937.91" />
+		<revolt:cube index="532" center="6274.55 -320.437 3437.91" radius="983.807" min="5569.87 -790.874 2788.22" max="6979.22 150 4087.6" />
+		<revolt:cube index="533" center="6196.58 175 4679.43" radius="971.205" min="5569.87 150 3937.91" max="6823.29 200 5420.95" />
+		<revolt:cube index="539" center="7145.13 -848.587 3437.91" radius="336.794" min="6813.31 -906.3 3150.55" max="7476.94 -790.874 3725.27" />
+		<revolt:cube index="545" center="7145.13 150 1437.91" radius="707.107" min="6645.13 150 937.909" max="7645.13 150 1937.91" />
+		<revolt:cube index="546" center="7145.13 -320.437 2544.23" radius="915.936" min="6645.13 -790.874 1937.91" max="7645.13 150 3150.55" />
+		<revolt:cube index="547" center="7217.96 -378.15 3437.91" radius="843.456" min="6540.6 -906.3 2788.22" max="7895.32 150 4087.6" />
+		<revolt:cube index="548" center="7145.13 126.446 4679.43" radius="894.654" min="6645.13 52.8928 3937.91" max="7645.13 200 5420.95" />
+	</revolt:bigcube>
+	<revolt:bigcube count="13" center="8982.29 -329.858 3122.09" radius="2669.93">
+		<revolt:cube index="558" center="8210.07 156.25 1437.91" radius="754.449" min="7645.13 150 937.909" max="8775 162.5 1937.91" />
+		<revolt:cube index="559" center="8210.07 156.25 2437.91" radius="754.449" min="7645.13 150 1937.91" max="8775 162.5 2937.91" />
+		<revolt:cube index="560" center="8197.57 156.25 3437.91" radius="745.133" min="7645.13 150 2937.91" max="8750 162.5 3937.91" />
+		<revolt:cube index="561" center="8197.57 156.25 4437.91" radius="745.135" min="7645.13 150 3937.91" max="8750 162.5 4937.91" />
+		<revolt:cube index="566" center="9588.72 -812.5 1641.22" radius="582.543" min="9448.13 -912.5 1084.82" max="9729.31 -712.5 2197.63" />
+		<revolt:cube index="567" center="9538.38 -812.5 2623.7" radius="553.883" min="9347.44 -912.5 2113.47" max="9729.31 -712.5 3133.93" />
+		<revolt:cube index="568" center="9515.52 -850 3638.25" radius="562.794" min="9347.44 -987.5 3115.55" max="9683.59 -712.5 4160.94" />
+		<revolt:cube index="569" center="9623.01 -862.5 4679.35" radius="707.914" min="9358.61 -1012.5 4040.03" max="9887.42 -712.5 5318.67" />
+		<revolt:cube index="572" center="9200.74 -325 1525.69" radius="882.406" min="8750 -812.5 937.909" max="9651.48 162.5 2113.47" />
+		<revolt:cube index="573" center="9124.58 -275 2540.75" radius="822.821" min="8725 -712.5 1937.91" max="9524.17 162.5 3143.6" />
+		<revolt:cube index="574" center="9097.73 -275 3581.24" radius="862.677" min="8725 -712.5 2937.91" max="9470.46 162.5 4224.58" />
+		<revolt:cube index="575" center="9257.54 -275 4626.58" radius="974.307" min="8725 -712.5 3937.91" max="9790.08 162.5 5315.25" />
+		<revolt:cube index="583" center="10156 -606.785 1366.68" radius="356.175" min="10087.1 -860.479 1126.36" max="10224.9 -353.091 1607" />
+	</revolt:bigcube>
+	<revolt:bigcube count="10" center="-5513.31 -192.209 7258.93" radius="2508.58">
+		<revolt:cube index="203" center="-6020.17 -830.854 6287.98" radius="351.173" min="-6370.27 -853.151 6271.91" max="-5670.08 -808.558 6304.05" />
+		<revolt:cube index="225" center="-5994.32 -375 5767.74" radius="928.898" min="-6508.93 -950 5250" max="-5479.72 200 6285.48" />
+		<revolt:cube index="226" center="-5994.32 -327.047 6778.7" radius="894.106" min="-6508.93 -854.094 6271.91" max="-5479.72 200 7285.48" />
+		<revolt:cube index="227" center="-5993.84 -368.795 7786.11" radius="891.046" min="-6508.93 -895.598 7284.98" max="-5478.76 158.007 8287.24" />
+		<revolt:cube index="228" center="-5993.84 -410.299 8788.12" radius="890.905" min="-6508.93 -937.101 8287.24" max="-5478.76 116.504 9289" />
+		<revolt:cube index="240" center="-5239.86 -831.332 6267.75" radius="241.237" min="-5479.72 -850 6250" max="-5000 -812.664 6285.5" />
+		<revolt:cube index="264" center="-5000 199.719 5767.74" radius="719.76" min="-5500 199.438 5250" max="-4500 200 6285.48" />
+		<revolt:cube index="265" center="-4989.86 -327.047 6767.74" radius="886.45" min="-5479.72 -854.094 6250" max="-4500 200 7285.48" />
+		<revolt:cube index="266" center="-5479.24 -368.795 7786.12" radius="727.079" min="-5479.72 -895.598 7285" max="-5478.76 158.007 8287.24" />
+		<revolt:cube index="267" center="-5478.76 -410.299 8788.12" radius="726.913" min="-5478.76 -937.101 8287.24" max="-5478.76 116.504 9289" />
+	</revolt:bigcube>
+	<revolt:bigcube count="4" center="-3422.15 -149.295 5922.15" radius="1412.22">
+		<revolt:cube index="302" center="-4000 200 5750" radius="707.107" min="-4500 200 5250" max="-3500 200 6250" />
+		<revolt:cube index="303" center="-4000 -325 6250" radius="725" min="-4500 -850 6250" max="-3500 200 6250" />
+		<revolt:cube index="340" center="-3000 -325 5750" radius="880.696" min="-3500 -850 5250" max="-2500 200 6250" />
+		<revolt:cube index="341" center="-3000 -325 6250" radius="725" min="-3500 -850 6250" max="-2500 200 6250" />
+	</revolt:bigcube>
+	<revolt:bigcube count="3" center="2816.94 -337.6 7954.82" radius="1979.23">
+		<revolt:cube index="461" center="2369.36 -287.6 8909.84" radius="758.39" min="2119.36 -800.1 8409.84" max="2619.36 224.9 9409.84" />
+		<revolt:cube index="479" center="3391.97 -553.965 6450.9" radius="354.664" min="3144.41 -807.929 6450" max="3639.54 -300 6451.81" />
+		<revolt:cube index="480" center="3119.36 -337.6 8909.84" radius="903.552" min="2619.36 -900.1 8409.84" max="3619.36 224.9 9409.84" />
+	</revolt:bigcube>
+	<revolt:bigcube count="14" center="5643.44 -337.6 7216.4" radius="3208.6">
+		<revolt:cube index="499" center="4139.54 -557.929 6451.81" radius="559.017" min="3639.54 -807.929 6451.81" max="4639.54 -307.929 6451.81" />
+		<revolt:cube index="500" center="4226.4 -337.6 8909.84" radius="966.901" min="3619.36 -900.1 8409.84" max="4833.43 224.9 9409.84" />
+		<revolt:cube index="510" center="4827.98 -812.5 5306.09" radius="298.645" min="4656.17 -912.5 5052.26" max="4999.8 -712.5 5559.92" />
+		<revolt:cube index="520" center="5251.47 -303.965 5439.69" radius="812.853" min="4833.06 -807.929 4937.91" max="5669.87 200 5941.46" />
+		<revolt:cube index="521" center="5142.33 -303.965 6196.53" radius="756.275" min="4639.54 -807.929 5941.25" max="5645.13 200 6451.81" />
+		<revolt:cube index="522" center="5119.36 -321.775 8909.84" radius="913.424" min="4619.36 -900 8409.84" max="5619.36 256.449 9409.84" />
+		<revolt:cube index="525" center="6545.1 -829.874 5437.02" radius="27.2005" min="6545.08 -851.819 5420.95" max="6545.13 -807.929 5453.09" />
+		<revolt:cube index="534" center="6147.56 -325.909 5439.69" radius="883.63" min="5645.13 -851.819 4937.91" max="6650 200 5941.46" />
+		<revolt:cube index="535" center="6145.13 -303.965 6196.64" radius="754.383" min="5645.13 -807.929 5941.46" max="6645.13 200 6451.81" />
+		<revolt:cube index="536" center="6119.36 -350.05 8909.84" radius="895.793" min="5619.36 -900 8409.84" max="6619.36 199.9 9409.84" />
+		<revolt:cube index="540" center="7245.2 -829.874 5437.02" radius="27.2006" min="7245.13 -851.819 5420.95" max="7245.27 -807.929 5453.09" />
+		<revolt:cube index="549" center="7145.13 -325.909 5439.69" radius="882.248" min="6645.13 -851.819 4937.91" max="7645.13 200 5941.46" />
+		<revolt:cube index="550" center="7145.13 -303.965 6196.64" radius="754.383" min="6645.13 -807.929 5941.46" max="7645.13 200 6451.81" />
+		<revolt:cube index="551" center="6869.36 -350.05 8909.84" radius="784.184" min="6619.36 -900 8409.84" max="7119.36 199.9 9409.84" />
+	</revolt:bigcube>
+	<revolt:bigcube count="9" center="9603.15 -303.965 5713.5" radius="2379.58">
+		<revolt:cube index="562" center="8197.57 -303.965 5439.69" radius="900.526" min="7645.13 -807.929 4937.91" max="8750 200 5941.46" />
+		<revolt:cube index="563" center="8145.13 -303.965 6196.64" radius="754.383" min="7645.13 -807.929 5941.46" max="8645.13 200 6451.81" />
+		<revolt:cube index="576" center="9266.27 -303.965 5425.97" radius="951.599" min="8645.13 -807.929 4910.47" max="9887.42 200 5941.46" />
+		<revolt:cube index="577" center="9147.56 -303.965 6196.64" radius="756" min="8645.13 -807.929 5941.46" max="9650 200 6451.81" />
+		<revolt:cube index="580" center="9870.54 -862.5 5151.58" radius="311.607" min="9654.48 -1012.5 4984.49" max="10086.6 -712.5 5318.67" />
+		<revolt:cube index="584" center="10152.4 -303.965 5689.69" radius="754.86" min="9650 -807.929 5437.91" max="10654.9 200 5941.46" />
+		<revolt:cube index="585" center="10152.4 -303.965 6196.64" radius="755.999" min="9650 -807.929 5941.46" max="10654.9 200 6451.81" />
+		<revolt:cube index="589" center="11154.9 -303.965 5689.69" radius="753.241" min="10654.9 -807.929 5437.91" max="11654.9 200 5941.46" />
+		<revolt:cube index="590" center="11154.9 -303.965 6196.64" radius="754.383" min="10654.9 -807.929 5941.46" max="11654.9 200 6451.81" />
+	</revolt:bigcube>
+	<revolt:bigcube count="15" center="13968.2 -300 7202.39" radius="3113.59">
+		<revolt:cube index="594" center="12407.3 -303.965 5689.69" radius="939.964" min="11654.9 -807.929 5437.91" max="13159.7 200 5941.46" />
+		<revolt:cube index="595" center="12407.3 -303.965 6196.64" radius="940.879" min="11654.9 -807.929 5941.46" max="13159.7 200 6451.81" />
+		<revolt:cube index="598" center="13662.2 -303.965 5689.69" radius="754.86" min="13159.7 -807.929 5437.91" max="14164.6 200 5941.46" />
+		<revolt:cube index="599" center="13662.2 -303.965 6196.64" radius="755.999" min="13159.7 -807.929 5941.46" max="14164.6 200 6451.81" />
+		<revolt:cube index="600" center="13737.4 -300 8893.75" radius="761.32" min="13392 -800 8367.17" max="14082.7 200 9420.32" />
+		<revolt:cube index="603" center="14808 -825 8929.69" radius="27.9507" min="14797.6 -850 8922.75" max="14818.4 -800 8936.64" />
+		<revolt:cube index="605" center="14598.3 -303.965 5833.44" radius="773.644" min="14164.6 -807.929 5437.91" max="15032 200 6228.96" />
+		<revolt:cube index="606" center="14717.1 -303.965 6614.53" radius="1006.08" min="14164.6 -807.929 5941.46" max="15269.5 200 7287.59" />
+		<revolt:cube index="607" center="14641.4 -300 7796.21" radius="1015.86" min="13966.1 -800 7142.45" max="15316.6 200 8449.97" />
+		<revolt:cube index="608" center="14419.8 -325 8669.23" radius="895.185" min="13758.6 -850 7978.58" max="15081 200 9359.87" />
+		<revolt:cube index="610" center="15552.4 -787.948 6513.41" radius="164.48" min="15450.8 -800 6384.63" max="15654 -775.897 6642.19" />
+		<revolt:cube index="611" center="15442.2 -288.073 6014.6" radius="800.875" min="14844.5 -807.929 5650.37" max="16039.9 231.783 6378.83" />
+		<revolt:cube index="612" center="15537.3 -286.951 6680.02" radius="932.67" min="15023.8 -807.929 5927.31" max="16050.7 234.028 7432.73" />
+		<revolt:cube index="613" center="15451.6 -286.552 7674.03" radius="939.489" min="14854.7 -800 6923.06" max="16048.5 226.896 8424.99" />
+		<revolt:cube index="614" center="15507.5 -232.929 8200.84" radius="752.066" min="15081 -800 7951.71" max="15934.1 334.143 8449.97" />
+	</revolt:bigcube>
+	<revolt:bigcube count="3" center="16144.7 -281.131 6744.45" radius="1088.35">
+		<revolt:cube index="615" center="16104.3 -242.951 5985.54" radius="326.164" min="15931.3 -377.748 5730.84" max="16277.2 -108.155 6240.25" />
+		<revolt:cube index="616" center="16144.7 -281.131 6744.57" radius="579.909" min="15931.3 -456.808 6221.87" max="16358 -105.454 7267.26" />
+		<revolt:cube index="617" center="16081.7 -253.346 7463" radius="366.516" min="15942.2 -374.18 7146.35" max="16221.2 -132.512 7779.64" />
+	</revolt:bigcube>
+	<revolt:bigcube count="10" center="-5570.76 -450 11230.8" radius="2375.51">
+		<revolt:cube index="229" center="-5990.32 -431.051 9814.78" radius="895.254" min="-6508.93 -937.101 9289" max="-5471.71 75 10340.6" />
+		<revolt:cube index="230" center="-5881.03 -425 10831.5" radius="913.382" min="-6466.9 -925 10242.5" max="-5295.15 75 11420.4" />
+		<revolt:cube index="231" center="-5820.94 -425 11856.5" radius="791.224" min="-6252.09 -925 11275.3" max="-5389.78 75 12437.7" />
+		<revolt:cube index="232" center="-5689.06 -425 12674.1" radius="570.922" min="-5830.74 -925 12437.7" max="-5547.37 75 12910.5" />
+		<revolt:cube index="241" center="-5283.19 -950 11126.5" radius="27.9506" min="-5295.15 -975 11122.9" max="-5271.23 -925 11130.2" />
+		<revolt:cube index="242" center="-5130.98 -950 11552" radius="27.9504" min="-5142.52 -975 11547.2" max="-5119.43 -925 11556.7" />
+		<revolt:cube index="268" center="-5482.83 -431.051 9765.77" radius="695.354" min="-5493.95 -937.101 9289" max="-5471.71 75 10242.5" />
+		<revolt:cube index="269" center="-5519.13 -450 10758.9" radius="779.131" min="-5773.62 -975 10242.5" max="-5264.64 75 11275.3" />
+		<revolt:cube index="270" center="-5244.76 -450 11749.7" radius="960.001" min="-5773.62 -975 11144.5" max="-4715.9 75 12354.9" />
+		<revolt:cube index="271" center="-5138.38 -425 12659.7" radius="882.423" min="-5830.74 -925 11966.3" max="-4446.02 75 13353.2" />
+	</revolt:bigcube>
+	<revolt:bigcube count="2" center="-2527.19 -425 13063.4" radius="2569.64">
+		<revolt:cube index="304" center="-4319.3 -425 13063.4" radius="774.993" min="-4832.52 -925 12718.8" max="-3806.08 75 13408" />
+		<revolt:cube index="399" center="-505.937 -393.775 13159.8" radius="545.851" min="-631.249 -862.55 12909.8" max="-380.625 75 13409.8" />
+	</revolt:bigcube>
+	<revolt:bigcube count="16" center="1540.67 -334.97 11459.6" radius="2983.08">
+		<revolt:cube index="411" center="368.745 -987.5 10909.8" radius="589.881" min="118.137 -1175 10409.8" max="619.354 -800 11409.8" />
+		<revolt:cube index="412" center="118.137 -987.5 11659.8" radius="589.625" min="-381.863 -1175 11409.8" max="618.137 -800 11909.8" />
+		<revolt:cube index="420" center="618.745 -287.6 10909.8" radius="716" min="618.137 -800.1 10409.8" max="619.354 224.9 11409.8" />
+		<revolt:cube index="421" center="118.137 -300.1 11909.8" radius="866.027" min="-381.863 -800.1 11409.8" max="618.137 199.9 12409.8" />
+		<revolt:cube index="422" center="118.756 -300.1 12909.8" radius="866.383" min="-381.863 -800.1 12409.8" max="619.375 199.9 13409.8" />
+		<revolt:cube index="441" center="1118.75 -287.6 10909.8" radius="873.651" min="618.137 -800.1 10409.8" max="1619.36 224.9 11409.8" />
+		<revolt:cube index="442" center="1118.14 199.9 11909.8" radius="707.108" min="618.137 199.9 11409.8" max="1618.14 199.9 12409.8" />
+		<revolt:cube index="443" center="1118.76 137.45 12909.8" radius="710.296" min="618.137 75 12409.8" max="1619.37 199.9 13409.8" />
+		<revolt:cube index="462" center="2369.36 -275.1 9909.84" radius="766.893" min="2119.36 -800.1 9409.84" max="2619.36 249.9 10409.8" />
+		<revolt:cube index="463" center="2118.75 -275.1 10659.8" radius="1019.18" min="1618.14 -800.1 9909.84" max="2619.36 249.9 11409.8" />
+		<revolt:cube index="464" center="2118.75 199.9 11909.8" radius="707.542" min="1618.14 199.9 11409.8" max="2619.36 199.9 12409.8" />
+		<revolt:cube index="465" center="2118.76 137.45 12909.8" radius="710.297" min="1618.14 75 12409.8" max="2619.38 199.9 13409.8" />
+		<revolt:cube index="481" center="3119.36 199.9 9909.84" radius="707.107" min="2619.36 199.9 9409.84" max="3619.36 199.9 10409.8" />
+		<revolt:cube index="482" center="3119.36 199.9 10909.8" radius="707.107" min="2619.36 199.9 10409.8" max="3619.36 199.9 11409.8" />
+		<revolt:cube index="483" center="3119.36 199.9 11909.8" radius="707.108" min="2619.36 199.9 11409.8" max="3619.36 199.9 12409.8" />
+		<revolt:cube index="484" center="3119.37 137.45 12909.8" radius="709.865" min="2619.36 75 12409.8" max="3619.38 199.9 13409.8" />
+	</revolt:bigcube>
+	<revolt:bigcube count="11" center="5538.49 -53.434 11302.9" radius="3130.49">
+		<revolt:cube index="501" center="4219.06 204.9 9775.72" radius="872.796" min="3619.36 199.9 9141.6" max="4818.76 209.9 10409.8" />
+		<revolt:cube index="502" center="4119.36 -300.1 10909.8" radius="866.025" min="3619.36 -800.1 10409.8" max="4619.36 199.9 11409.8" />
+		<revolt:cube index="503" center="3869.36 -300.1 11909.8" radius="750.001" min="3619.36 -800.1 11409.8" max="4119.36 199.9 12409.8" />
+		<revolt:cube index="504" center="3869.37 -362.55 12909.8" radius="793.004" min="3619.36 -925 12409.8" max="4119.38 199.9 13409.8" />
+		<revolt:cube index="523" center="5119.36 211.925 9775.97" radius="807.428" min="4619.36 199.9 9142.09" max="5619.36 223.949 10409.8" />
+		<revolt:cube index="524" center="5119.36 -300.05 10409.8" radius="707.071" min="4619.36 -800 10409.8" max="5619.36 199.9 10409.8" />
+		<revolt:cube index="537" center="6120.93 199.95 9909.92" radius="708.275" min="5619.36 199.9 9409.84" max="6622.5 200 10410" />
+		<revolt:cube index="538" center="6120.93 -306.051 10921.9" radius="877.352" min="5619.36 -812.101 10409.8" max="6622.5 200 11433.9" />
+		<revolt:cube index="552" center="6870.61 -300.215 9909.92" radius="750.548" min="6619.36 -800.429 9409.84" max="7121.86 200 10410" />
+		<revolt:cube index="553" center="7122.1 -306.051 10919.3" radius="878.513" min="6621.22 -812.101 10404.7" max="7622.98 200 11433.9" />
+		<revolt:cube index="554" center="7122.1 -306.051 11433.9" radius="712.017" min="6621.22 -812.101 11433.9" max="7622.98 200 11433.9" />
+	</revolt:bigcube>
+	<revolt:bigcube count="12" center="9835.49 -300 10931.5" radius="2604.24">
+		<revolt:cube index="564" center="8123.18 -306.051 10918.8" radius="879.18" min="7621.62 -812.101 10403.8" max="8624.74 200 11433.9" />
+		<revolt:cube index="565" center="8123.86 -306.051 11433.9" radius="712.017" min="7622.98 -812.101 11433.9" max="8624.74 200 11433.9" />
+		<revolt:cube index="570" center="9344.23 -773.91 11376.9" radius="229.134" min="9125.62 -812.101 11319.9" max="9562.85 -735.718 11433.9" />
+		<revolt:cube index="578" center="9125.62 -306.051 10918.8" radius="878.793" min="8624.74 -812.101 10403.8" max="9626.5 200 11433.9" />
+		<revolt:cube index="579" center="9376.13 -306.051 11392.3" radius="906.869" min="8624.74 -812.101 11319.9" max="10127.5 200 11464.8" />
+		<revolt:cube index="581" center="9945.86 -767.859 11398.6" radius="185.6" min="9764.2 -800 11378.3" max="10127.5 -735.718 11418.9" />
+		<revolt:cube index="586" center="10376.1 -306.051 10882.1" radius="1059.5" min="9626.5 -812.101 10330.2" max="11125.7 200 11433.9" />
+		<revolt:cube index="587" center="10152.3 -300 11406.1" radius="726.094" min="9626.5 -800 11378.3" max="10678.1 200 11433.9" />
+		<revolt:cube index="588" center="11677.3 -825 10132.3" radius="228.693" min="11460.4 -850 10044.4" max="11894.2 -800 10220.2" />
+		<revolt:cube index="591" center="11681 -325 10136.6" radius="572.801" min="11467.7 -850 10053" max="11894.2 200 10220.2" />
+		<revolt:cube index="592" center="11357.3 -300 10734" radius="1069.67" min="10629 -800 10076.1" max="12085.6 200 11391.9" />
+		<revolt:cube index="593" center="10950.7 -300 11351.5" radius="570.923" min="10678.1 -800 11311" max="11223.3 200 11391.9" />
+	</revolt:bigcube>
+	<revolt:bigcube count="6" center="13099.2 -300 10192.8" radius="1940.85">
+		<revolt:cube index="596" center="12464.8 -300 9950.24" radius="967.15" min="11873.3 -800 9371.02" max="13056.3 200 10529.5" />
+		<revolt:cube index="597" center="12430.4 -300 10616.9" radius="1007.98" min="11612.8 -800 10056.6" max="13248 200 11177.1" />
+		<revolt:cube index="601" center="13395.7 -300 9769.57" radius="875.084" min="12692.4 -800 9066.76" max="14099.1 200 10472.4" />
+		<revolt:cube index="602" center="13232.9 -300 10449.9" radius="743.693" min="12775.2 -800 10144" max="13690.7 200 10755.7" />
+		<revolt:cube index="604" center="14478.9 -825 9373.4" radius="27.951" min="14469.2 -850 9365.47" max="14488.6 -800 9381.33" />
+		<revolt:cube index="609" center="14125.8 -325 9411.07" radius="650.274" min="13745.5 -850 9048.27" max="14506.1 200 9773.87" />
+	</revolt:bigcube>
+	<revolt:bigcube count="1" center="-4829.75 -425 13583.9" radius="837.681">
+		<revolt:cube index="272" center="-4829.75 -425 13583.9" radius="837.681" min="-5219.03 -925 13036" max="-4440.47 75 14131.7" />
+	</revolt:bigcube>
+	<revolt:bigcube count="12" center="-2455.5 -425 14506.5" radius="2735.22">
+		<revolt:cube index="279" center="-4448.4 -950 14141.4" radius="27.9513" min="-4456.33 -975 14131.7" max="-4440.47 -925 14151.1" />
+		<revolt:cube index="280" center="-4004.69 -950 14470.5" radius="27.9509" min="-4011.64 -975 14460.1" max="-3997.75 -925 14480.9" />
+		<revolt:cube index="305" center="-4145.52 -450 13760" radius="887.495" min="-4848.87 -975 13054.5" max="-3442.18 75 14465.4" />
+		<revolt:cube index="306" center="-3661.95 -450 14393.9" radius="650.281" min="-4034.63 -975 14044.3" max="-3289.28 75 14743.5" />
+		<revolt:cube index="342" center="-3181.99 -425 14072.9" radius="753.35" min="-3719.96 -925 13628.6" max="-2644.02 75 14517.2" />
+		<revolt:cube index="343" center="-2871.21 -425 14610" radius="916.042" min="-3524.97 -925 14055.2" max="-2217.45 75 15164.8" />
+		<revolt:cube index="374" center="-2211 -425 14186.6" radius="674.363" min="-2644.02 -925 14055.2" max="-1777.97 75 14318" />
+		<revolt:cube index="375" center="-1918.78 -425 14793.7" radius="913.383" min="-2507.74 -925 14207.9" max="-1329.82 75 15379.6" />
+		<revolt:cube index="376" center="-1564.01 -675 15359.8" radius="285.371" min="-1700.18 -925 15339.9" max="-1427.84 -425 15379.6" />
+		<revolt:cube index="400" center="-630.631 -428.965 13909.8" radius="752.647" min="-880.637 -932.929 13409.8" max="-380.625 75 14409.8" />
+		<revolt:cube index="401" center="-904.161 -428.965 14888.7" radius="884.589" min="-1427.84 -932.929 14384.4" max="-380.483 75 15392.9" />
+		<revolt:cube index="402" center="-904.161 -444.659 15402.4" radius="738.107" min="-1427.84 -964.319 15379.6" max="-380.483 75 15425.1" />
+	</revolt:bigcube>
+	<revolt:bigcube count="18" center="1387.84 -1222.39 14762.2" radius="2952.1">
+		<revolt:cube index="404" center="119.369 -2112.65 13909.8" radius="773.145" min="-380.637 -2425.3 13409.8" max="619.375 -1800 14409.8" />
+		<revolt:cube index="405" center="-380.637 -2175.25 14909.8" radius="559.041" min="-380.637 -2425.3 14409.8" max="-380.637 -1925.2 15409.8" />
+		<revolt:cube index="406" center="-380.637 -2175.25 15909.8" radius="559.044" min="-380.637 -2425.3 15409.8" max="-380.637 -1925.2 16409.9" />
+		<revolt:cube index="413" center="119.369 -1425.1 13909.8" radius="866.085" min="-380.637 -1925.2 13409.8" max="619.375 -925 14409.8" />
+		<revolt:cube index="414" center="-130.637 -1425.15 14912.2" radius="751.637" min="-380.637 -1925.2 14409.8" max="119.363 -925.1 15414.6" />
+		<revolt:cube index="415" center="-380.56 -1425.15 15901.4" radius="713.143" min="-380.637 -1925.2 15392.9" max="-380.483 -925.1 16409.9" />
+		<revolt:cube index="423" center="119.369 -425.05 13909.8" radius="866.058" min="-380.637 -925.1 13409.8" max="619.375 75 14409.8" />
+		<revolt:cube index="424" center="-130.629 -425.05 14912.2" radius="751.639" min="-380.637 -925.1 14409.8" max="119.379 75 15414.6" />
+		<revolt:cube index="425" center="-130.629 -444.659 15746.5" radius="676.367" min="-380.637 -964.319 15392.9" max="119.379 75 16100.1" />
+		<revolt:cube index="426" center="1119.37 -2012.5 14034.8" radius="557.477" min="619.375 -2225 13909.8" max="1619.37 -1800 14159.8" />
+		<revolt:cube index="433" center="1119.37 -1362.5 13659.8" radius="709.863" min="619.375 -1800 13409.8" max="1619.37 -925 13909.8" />
+		<revolt:cube index="444" center="1119.37 -425 13659.8" radius="750" min="619.375 -925 13409.8" max="1619.37 75 13909.8" />
+		<revolt:cube index="445" center="2119.37 -2012.5 13784.8" radius="660.138" min="1619.37 -2225 13409.8" max="2619.38 -1800 14159.8" />
+		<revolt:cube index="453" center="2119.37 -1362.5 13659.8" radius="709.864" min="1619.37 -1800 13409.8" max="2619.38 -925 13909.8" />
+		<revolt:cube index="466" center="2119.37 -425 13659.8" radius="750" min="1619.37 -925 13409.8" max="2619.38 75 13909.8" />
+		<revolt:cube index="467" center="3119.38 -2012.5 13784.8" radius="660.137" min="2619.38 -2225 13409.8" max="3619.38 -1800 14159.8" />
+		<revolt:cube index="473" center="3119.38 -1362.5 13659.8" radius="709.863" min="2619.38 -1800 13409.8" max="3619.38 -925 13909.8" />
+		<revolt:cube index="485" center="3119.38 -425 13659.8" radius="750" min="2619.38 -925 13409.8" max="3619.38 75 13909.8" />
+	</revolt:bigcube>
+	<revolt:bigcube count="3" center="3869.38 -1161.7 13915.3" radius="1425.87">
+		<revolt:cube index="486" center="3869.38 -2012.5 14284.8" radius="498.278" min="3619.38 -2225 13909.8" max="4119.38 -1800 14659.8" />
+		<revolt:cube index="492" center="3869.38 -1362.5 13909.8" radius="709.863" min="3619.38 -1800 13409.8" max="4119.38 -925 14409.8" />
+		<revolt:cube index="505" center="3869.38 -425 13659.8" radius="612.372" min="3619.38 -925 13409.8" max="4119.38 75 13909.8" />
+	</revolt:bigcube>
+</revolt:cubes>
+<revolt:visiboxes>
+	<revolt:camera_visiboxes>
+		<revolt:camera_visibox Mask="0x1" ID="0" min="-17339.3 -2574.19 -23042.7" max="-11681.8 1145.33 -12261.3" />
+		<revolt:camera_visibox Mask="0x2" ID="1" min="-17061.5 -1767.89 -10996.5" max="-7520.74 1496.37 -4838.76" />
+		<revolt:camera_visibox Mask="0x2" ID="1" min="-17040.5 -1390.74 -12474.5" max="-12232.4 71.262 -10839.2" />
+		<revolt:camera_visibox Mask="0x4" ID="2" min="-7548.12 -1088.69 -11544.6" max="-2004.7 1001.94 -4017.01" />
+		<revolt:camera_visibox Mask="0x8" ID="3" min="1292.84 -1866.85 -7683.6" max="4408.57 631.646 -489.455" />
+		<revolt:camera_visibox Mask="0x4" ID="2" min="-2304.02 -780.705 -7202.4" max="-1849.4 519.163 -5936.76" />
+		<revolt:camera_visibox Mask="0x10" ID="4" min="4385.56 -2231.13 -4463.34" max="9698 1508.52 5463.1" />
+		<revolt:camera_visibox Mask="0x20" ID="5" min="4794.9 -1267.95 5458.58" max="16609.9 1213.19 6975.89" />
+		<revolt:camera_visibox Mask="0x40" ID="6" min="7140.33 -1266.48 6637.75" max="15904.8 1049.84 12004" />
+		<revolt:camera_visibox Mask="0x80" ID="7" min="-899.252 -1353.22 8155.17" max="7229.42 1000.76 14385.6" />
+		<revolt:camera_visibox Mask="0x100" ID="8" min="-7129.4 -1287.65 13959.1" max="224.55 585.976 15905.4" />
+		<revolt:camera_visibox Mask="0x100" ID="8" min="-7919.85 -1768.04 6325.29" max="-893.781 1161.62 14529.5" />
+		<revolt:camera_visibox Mask="0x200" ID="9" min="-7475.83 -1823.93 3172.98" max="-2443.15 1233.71 6410.38" />
+		<revolt:camera_visibox Mask="0x400" ID="10" min="-2467.2 -1337.37 1412.03" max="-1023.37 1137.91 4816.24" />
+		<revolt:camera_visibox Mask="0x100000000" ID="32" min="-2195.39 -1791.99 -7891.54" max="1362.1 558.074 -5646.79" />
+		<revolt:camera_visibox Mask="0x800" ID="11" min="-7367.97 -1335.84 -3016.94" max="-851.227 593.811 1634.73" />
+		<revolt:camera_visibox Mask="0x1000" ID="12" min="-6801.96 -1464.63 -4298.48" max="-2780.62 703.319 -2936.29" />
+		<revolt:camera_visibox Mask="0x2000" ID="13" min="-10343.4 -1601.69 -13344.3" max="-4043.65 346.484 -11442.4" />
+		<revolt:camera_visibox Mask="0x4000" ID="14" min="-6469.12 -2079.55 -18226.4" max="-3086.14 686.832 -15603.1" />
+		<revolt:camera_visibox Mask="0x8000" ID="15" min="-10290.5 -1553.82 -18377.8" max="-6312.25 651.481 -13127.8" />
+		<revolt:camera_visibox Mask="0x10000" ID="16" min="-6348.18 -1921.29 -15670.4" max="-2846.75 478.991 -13283.4" />
+		<revolt:camera_visibox Mask="0x20000" ID="17" min="-12386.9 -2005.31 -18685.6" max="-10242.9 361.232 -17452.7" />
+		<revolt:camera_visibox Mask="0x40000" ID="18" min="-9561.64 -1102.63 -9607.29" max="-6589.69 1013.44 -5285.39" />
+		<revolt:camera_visibox Mask="0x80000" ID="19" min="-6059.42 -1314.68 -10886.3" max="-1485.59 485.709 -3245.79" />
+		<revolt:camera_visibox Mask="0x80000" ID="19" min="-4544.95 -824.888 -11499.1" max="-1211.06 911.915 -10553" />
+		<revolt:camera_visibox Mask="0x80000" ID="19" min="-6062.71 -1293.68 -11474.6" max="-5493.14 259.3 -10164.4" />
+		<revolt:camera_visibox Mask="0x100000" ID="20" min="1142.88 -1027.74 -7217.29" max="2402.17 490.353 -3677.49" />
+		<revolt:camera_visibox Mask="0x200000" ID="21" min="4764.11 -876.451 -2655.28" max="7310.07 526.698 -1109.97" />
+		<revolt:camera_visibox Mask="0x400000" ID="22" min="10439.8 -1184.38 5111.37" max="14374.6 965.846 6911.13" />
+		<revolt:camera_visibox Mask="0x800000" ID="23" min="2041.86 -1339.6 8027.11" max="7193.86 709.345 10500.6" />
+		<revolt:camera_visibox Mask="0x1000000" ID="24" min="-1312.16 -1262.01 11125.1" max="5184.47 640.807 14027.2" />
+		<revolt:camera_visibox Mask="0x2000000" ID="25" min="-6562.3 -1317.79 3071.96" max="-2555.68 600.676 6349.85" />
+		<revolt:camera_visibox Mask="0x4000000" ID="26" min="-2487.63 -1425.77 1720.63" max="-1022.09 621.224 4423.13" />
+		<revolt:camera_visibox Mask="0x4000000" ID="26" min="-7407.81 -1196.25 -3159.67" max="-6128.39 604.056 1890.81" />
+		<revolt:camera_visibox Mask="0x8000000" ID="27" min="-9329.02 -1324.27 -11833.2" max="-6185.38 431.775 -11050.1" />
+		<revolt:camera_visibox Mask="0x10000000" ID="28" min="-17414.6 -1734.75 -17342.9" max="-12219.5 247.863 -15262" />
+		<revolt:camera_visibox Mask="0x10000000" ID="28" min="-17491 -1540.28 -19648.4" max="-13131.8 252.413 -18260" />
+		<revolt:camera_visibox Mask="0x20000000" ID="29" min="674.071 -1163.69 -4613.33" max="6048.38 548.22 -461.347" />
+		<revolt:camera_visibox Mask="0x40000000" ID="30" min="-1042.73 -1301.14 -7503.07" max="2767.64 471.215 -5778.95" />
+		<revolt:camera_visibox Mask="0x80000000" ID="31" min="7328.07 -1144.36 628.846" max="9515.93 727.711 5397.54" />
+		<revolt:camera_visibox Mask="0x80000000" ID="31" min="4439.97 -1034.61 -3448.93" max="8631.34 850.026 4125.73" />
+		<revolt:camera_visibox Mask="0x200000000" ID="33" min="5075.23 -874.823 993.572" max="6468.95 1125.95 7228.87" />
+		<revolt:camera_visibox Mask="0x200000000" ID="33" min="5607.22 -1299.91 2908.94" max="7443.43 555.578 6989.2" />
+		<revolt:camera_visibox Mask="0x400000000" ID="34" min="8991.09 -1600.82 5460.38" max="16533 725.502 6870.83" />
+		<revolt:camera_visibox Mask="0x800000000" ID="35" min="6274.96 -1537.34 8929.36" max="13215.9 1307.71 12523.1" />
+		<revolt:camera_visibox Mask="0x1000000000" ID="36" min="-4714.17 -1319.84 10415.3" max="4799.49 841.175 16110.3" />
+		<revolt:camera_visibox Mask="0x2000000000" ID="37" min="-6862.69 -956.02 10101.5" max="-2843.17 1276.05 16117.3" />
+		<revolt:camera_visibox Mask="0x4000000000" ID="38" min="-7051.35 -1178.04 2878.56" max="-673.24 775.37 10899.2" />
+		<revolt:camera_visibox Mask="0x8000000000" ID="39" min="-8368.88 -1456.02 -9678.55" max="-210.208 549.46 -2593.38" />
+		<revolt:camera_visibox Mask="0x10000000000" ID="40" min="-9078.55 -1637.54 -10478.6" max="-5654.26 853.299 -4717.99" />
+		<revolt:camera_visibox Mask="0x10000000000" ID="40" min="-7245.06 -1369.62 -3861.54" max="-815.444 800.764 2678.19" />
+		<revolt:camera_visibox Mask="0x20000000000" ID="41" min="-3365.09 -1308.97 -3827.58" max="504.114 595.97 2630.74" />
+		<revolt:camera_visibox Mask="0x40000000000" ID="42" min="-6379.08 -1162.84 -11561.6" max="-1756.12 915.496 -7452.76" />
+		<revolt:camera_visibox Mask="0x80000000000" ID="43" min="-6375.88 -1561.65 -7994.63" max="-4500.1 909.676 -3358.88" />
+		<revolt:camera_visibox Mask="0x100000000000" ID="44" min="-17024.5 -1251.56 -11168.7" max="-8985.12 2279.64 -4466.24" />
+		<revolt:camera_visibox Mask="0x400000000000" ID="46" min="-16058.4 -2066.13 -11085.9" max="-12198 1374.52 -4694.29" />
+		<revolt:camera_visibox Mask="0x200000000000" ID="45" min="-17213.1 -1296.84 -13408.5" max="-12045 597.116 -9507.63" />
+		<revolt:camera_visibox Mask="0x100000000000" ID="44" min="-17856.6 -1409.53 -14971.9" max="-12581.7 768.693 -11055.7" />
+		<revolt:camera_visibox Mask="0x1000000000000" ID="48" min="4895 -573.162 444.226" max="9215.31 295.792 5482.79" />
+	</revolt:camera_visiboxes>
+	<revolt:cube_visiboxes>
+		<revolt:cube_visibox Mask="0x1" ID="0" min="-10488.2 -2971.33 -17486.8" max="379.257 1294.17 -9304.28" />
+		<revolt:cube_visibox Mask="0x1" ID="0" min="44.1244 -2118.93 -7847.82" max="10327 617.498 6790.77" />
+		<revolt:cube_visibox Mask="0x1" ID="0" min="-672.859 -3094.53 -3301.81" max="18543 1962.57 16402.3" />
+		<revolt:cube_visibox Mask="0x1" ID="0" min="-6825.44 -983.943 -4033.8" max="118.53 906.956 16112.8" />
+		<revolt:cube_visibox Mask="0x1" ID="0" min="-5713.49 -2855.16 -10259" max="854.258 1693.51 -3638.67" />
+		<revolt:cube_visibox Mask="0x2" ID="1" min="-10420 -1178.92 -18283.7" max="-5266.58 1176.09 -11109" />
+		<revolt:cube_visibox Mask="0x2" ID="1" min="-6764.32 -2819.45 4122.69" max="16336.6 1831.08 17166.3" />
+		<revolt:cube_visibox Mask="0x2" ID="1" min="-6830.04 -1559.57 2473.61" max="-2479.85 642.203 4300.33" />
+		<revolt:cube_visibox Mask="0x2" ID="1" min="211.817 -1693.93 -3741.58" max="9501.6 2055.26 4666.87" />
+		<revolt:cube_visibox Mask="0x2" ID="1" min="953.665 -1522.74 -5535.75" max="4840.25 1401.63 -3063.9" />
+		<revolt:cube_visibox Mask="0x2" ID="1" min="-6888.3 -1090.25 -4285.21" max="-5200.08 892.912 7511.24" />
+		<revolt:cube_visibox Mask="0x2" ID="1" min="-5859.83 -1106.81 -1380.11" max="-3986.23 705.549 1993.85" />
+		<revolt:cube_visibox Mask="0x4" ID="2" min="-7247.68 -1246.35 1540.66" max="-2443.24 1148.09 12777.2" />
+		<revolt:cube_visibox Mask="0x4" ID="2" min="-7710.31 -2311.8 8939.93" max="9192.15 1581.21 16088.6" />
+		<revolt:cube_visibox Mask="0x4" ID="2" min="4849.57 -1492.48 -3651.56" max="17219.9 1571.57 13481.7" />
+		<revolt:cube_visibox Mask="0x4" ID="2" min="-17160.8 -1415.56 -20371.8" max="-10791.9 461.237 -12467.1" />
+		<revolt:cube_visibox Mask="0x4" ID="2" min="-14376.6 -2463.93 -18778.3" max="-10855.8 88.924 -11875.2" />
+		<revolt:cube_visibox Mask="0x8" ID="3" min="-5998.99 -3093.65 927.656" max="8125.27 1431.29 15805.3" />
+		<revolt:cube_visibox Mask="0x8" ID="3" min="-17029.5 -3247.13 -21321.8" max="-801.341 1260.02 -9554.77" />
+		<revolt:cube_visibox Mask="0x8" ID="3" min="-17409.5 -4315.16 -4270.72" max="-805.975 941.467 5001.62" />
+		<revolt:cube_visibox Mask="0x8" ID="3" min="4858.93 -1283.06 4659.02" max="17009 1264.99 12096.8" />
+		<revolt:cube_visibox Mask="0x8" ID="3" min="-6621.72 -1285.83 1166.24" max="-5349.06 1299.79 14174.3" />
+		<revolt:cube_visibox Mask="0x10" ID="4" min="-17761.1 -2462.06 -3883.19" max="-678.029 1483.47 17747.7" />
+		<revolt:cube_visibox Mask="0x10" ID="4" min="-2027.02 -2326.93 7012.29" max="16429.6 1827.56 16311.5" />
+		<revolt:cube_visibox Mask="0x10" ID="4" min="-19627.4 -1125.38 -20299.9" max="-1996.53 298.082 -1693.89" />
+		<revolt:cube_visibox Mask="0x10" ID="4" min="-14435.7 -2902.9 -20240.1" max="-3161.83 3100.5 -9202.26" />
+		<revolt:cube_visibox Mask="0x20" ID="5" min="-8190.43 -3409.21 7370.46" max="7854.8 1241.36 17841" />
+		<revolt:cube_visibox Mask="0x20" ID="5" min="-18476.7 -2751.94 -20291.6" max="4427.15 763.933 -1329.28" />
+		<revolt:cube_visibox Mask="0x20" ID="5" min="-19451.5 -3545.66 -2786.08" max="-403.445 1880.68 9821.97" />
+		<revolt:cube_visibox Mask="0x40" ID="6" min="-18297.3 -2735.67 -20848.5" max="10538.4 1857.96 4988.9" />
+		<revolt:cube_visibox Mask="0x40" ID="6" min="-8870.77 -1818.09 10503.3" max="4673.32 1065.37 16595.9" />
+		<revolt:cube_visibox Mask="0x40" ID="6" min="-7651.86 -1477.36 2152.47" max="-2242.9 1348.2 11714.8" />
+		<revolt:cube_visibox Mask="0x80" ID="7" min="-20846.8 -2581.19 -21464.7" max="-610.771 1060.72 10969.8" />
+		<revolt:cube_visibox Mask="0x80" ID="7" min="-2255.35 -2560.86 -7966.48" max="16916.9 2240.23 6869.11" />
+		<revolt:cube_visibox Mask="0x100" ID="8" min="6215.72 -1567.98 -3798.15" max="17526.2 1078.77 14822.7" />
+		<revolt:cube_visibox Mask="0x100" ID="8" min="346.599 -2995.04 -8171.91" max="8034.68 1201.61 7164.09" />
+		<revolt:cube_visibox Mask="0x100" ID="8" min="-17410 -3317.42 -20425.4" max="1597.78 2063.76 1760.09" />
+		<revolt:cube_visibox Mask="0x200" ID="9" min="-17802.3 -2774.82 -23547.9" max="-3147.13 948.26 1364.47" />
+		<revolt:cube_visibox Mask="0x200" ID="9" min="-3531.73 -2379.89 8232.99" max="17823 1401.28 16732.8" />
+		<revolt:cube_visibox Mask="0x200" ID="9" min="-3843.44 -2691.23 -12400.3" max="2293.4 1662.79 -7047.58" />
+		<revolt:cube_visibox Mask="0x200" ID="9" min="1079.4 -2288.97 -7994.5" max="16717 2698.04 9594.34" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-7110.06 -1451.18 8112.57" max="16894.2 1893.73 15833.3" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="612.093 -2540.05 -7831.68" max="16254.9 508.473 8669.54" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-17018.5 -1214.47 -20661.5" max="-9823.87 923.189 -4461.39" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-12279.7 -636.981 -20014.1" max="-2988.38 798.289 -11812.2" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-3508.23 -436.272 -13726.3" max="1046.36 1413.91 -3422.21" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-10824.3 -1321.84 -6931.66" max="-6815.55 694.857 -4730.9" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-5357.28 -1150.24 -18993.4" max="-3789.21 410.346 -11342.2" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-2768.31 -577.232 -11323.1" max="508.976 554.1 -4332.35" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-7907.45 -2731.77 882.92" max="-2637.43 424.198 1509.09" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-10785.2 -859.71 -12532.1" max="-6098.31 342.277 -10583.6" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-4709.28 -1068.37 -13501.6" max="-1124.29 875.599 -5966.21" />
+		<revolt:cube_visibox Mask="0x400" ID="10" min="-16417.2 -2725.67 -21360.9" max="-11085.1 -334.357 -12189.2" />
+		<revolt:cube_visibox Mask="0x800" ID="11" min="-7004.3 -1384.81 2113.64" max="-5269.02 658.878 13567.7" />
+		<revolt:cube_visibox Mask="0x800" ID="11" min="-6701.4 -2405.2 8260.06" max="16249.1 840.54 18214.5" />
+		<revolt:cube_visibox Mask="0x800" ID="11" min="-775.269 -980.131 -7051.64" max="17342.4 1471.84 8809.71" />
+		<revolt:cube_visibox Mask="0x800" ID="11" min="-19082.6 -903.641 -22346.7" max="-6123.45 366.384 -11128.9" />
+		<revolt:cube_visibox Mask="0x800" ID="11" min="-17110.2 -459.55 -13478.1" max="-9292.54 1176.61 -4875.77" />
+		<revolt:cube_visibox Mask="0x800" ID="11" min="-15148.7 -1067.57 -6591.77" max="-6923.68 721.757 -4120.01" />
+		<revolt:cube_visibox Mask="0x800" ID="11" min="-17296.5 -2865.11 -20273.2" max="-11411.5 -250.597 -12163.8" />
+		<revolt:cube_visibox Mask="0x800" ID="11" min="-9865.01 -358.345 -18618.2" max="-5715.22 728.401 -11364" />
+		<revolt:cube_visibox Mask="0x800" ID="11" min="-2055.91 -2499.18 -10729" max="-302.642 -643.76 -7383.34" />
+		<revolt:cube_visibox Mask="0x800" ID="11" min="-7312.29 -266.873 -16258.4" max="-3190.23 756.528 -15132" />
+		<revolt:cube_visibox Mask="0x1000" ID="12" min="-17052.4 -2866.86 -20388.9" max="-10565.2 387.899 -12155.3" />
+		<revolt:cube_visibox Mask="0x1000" ID="12" min="-14616.6 -788.392 -19136.3" max="-6254.35 874.207 -9946.57" />
+		<revolt:cube_visibox Mask="0x1000" ID="12" min="1176.07 -3976.47 -8047.71" max="16926.1 1580.45 16256.1" />
+		<revolt:cube_visibox Mask="0x1000" ID="12" min="-8291.11 -2888.58 4665.93" max="3208.94 2444.76 16758.4" />
+		<revolt:cube_visibox Mask="0x2000" ID="13" min="-3069.31 -1219.72 -4432.76" max="-957.128 628.034 -560.644" />
+		<revolt:cube_visibox Mask="0x2000" ID="13" min="-7256.01 -1320.73 -4271.16" max="-6294.94 566.867 543.54" />
+		<revolt:cube_visibox Mask="0x2000" ID="13" min="-17040.1 -2573.71 -17525.1" max="-11532.5 1025.86 -5073.57" />
+		<revolt:cube_visibox Mask="0x2000" ID="13" min="-13682.8 -792.916 -9718.5" max="-7760.95 678.922 -4053.14" />
+		<revolt:cube_visibox Mask="0x2000" ID="13" min="-899.662 -1865.11 -8583.44" max="16881.6 677.976 16463.4" />
+		<revolt:cube_visibox Mask="0x2000" ID="13" min="-9002.57 -2411.07 4224.67" max="811.677 649.44 16373.8" />
+		<revolt:cube_visibox Mask="0x2000" ID="13" min="-7104.29 -2303.4 2074.59" max="-2482.85 898.402 5171.17" />
+		<revolt:cube_visibox Mask="0x2000" ID="13" min="-2570.4 -1129.87 -1361.79" max="-259.142 1181.52 5652.57" />
+		<revolt:cube_visibox Mask="0x2000" ID="13" min="-8248.96 -881.687 -9662.77" max="-6461.31 686.611 -8047.02" />
+		<revolt:cube_visibox Mask="0x4000" ID="14" min="-17066.4 -1667.01 -11079.3" max="-6115.64 835.12 649.266" />
+		<revolt:cube_visibox Mask="0x4000" ID="14" min="-2773.31 -1843.99 -4241.41" max="-363.856 983.566 6114.83" />
+		<revolt:cube_visibox Mask="0x4000" ID="14" min="-10460.1 -3331.75 3088.5" max="17272.5 787.513 16412.8" />
+		<revolt:cube_visibox Mask="0x4000" ID="14" min="-2104.28 -2928.17 -11471.5" max="11386.2 1468.51 4629.3" />
+		<revolt:cube_visibox Mask="0x4000" ID="14" min="-3551 -921.508 -13399.3" max="-1370.5 771.528 -9613.15" />
+		<revolt:cube_visibox Mask="0x4000" ID="14" min="-3218.64 -357.303 -2939.56" max="-1091.21 923.749 -1627.59" />
+		<revolt:cube_visibox Mask="0x4000" ID="14" min="-17999.7 -2682.13 -17576.1" max="-11206.2 548.337 -10145.5" />
+		<revolt:cube_visibox Mask="0x8000" ID="15" min="-18535.8 -1608.6 -10837.1" max="-5890.55 751.94 -5198.56" />
+		<revolt:cube_visibox Mask="0x8000" ID="15" min="-17854.5 -3815.35 -16957.7" max="-11635.1 839.588 -10655.2" />
+		<revolt:cube_visibox Mask="0x8000" ID="15" min="-589.305 -3066.2 -8384.58" max="16703.1 1422.11 16461.6" />
+		<revolt:cube_visibox Mask="0x8000" ID="15" min="-7699.52 -3320.25 2205.88" max="-205.051 1245.88 15865.1" />
+		<revolt:cube_visibox Mask="0x8000" ID="15" min="-3391.82 -2235.9 -4336.71" max="33.2158 989.8 4831.42" />
+		<revolt:cube_visibox Mask="0x8000" ID="15" min="-8492.29 -3111.66 -10279.3" max="-5408.46 783.235 2671.59" />
+		<revolt:cube_visibox Mask="0x8000" ID="15" min="-6473.56 -1545.42 -3417.2" max="-1893.07 725.552 2052.7" />
+		<revolt:cube_visibox Mask="0x8000" ID="15" min="-6232.94 -239.04 -7692.6" max="-4053.73 863.258 -2724.52" />
+		<revolt:cube_visibox Mask="0x8000" ID="15" min="-6596.91 -885.325 -10315.2" max="-4171.55 907.404 -7198.92" />
+		<revolt:cube_visibox Mask="0x10000" ID="16" min="-15962 -1368.61 -9339.28" max="-6848.97 2119.34 -3365.21" />
+		<revolt:cube_visibox Mask="0x10000" ID="16" min="-17659.4 -2569.3 -20595.8" max="-12217.5 564.974 -7178.06" />
+		<revolt:cube_visibox Mask="0x10000" ID="16" min="-427.943 -2528.45 -10028.6" max="15909.4 562.499 16308.3" />
+		<revolt:cube_visibox Mask="0x10000" ID="16" min="-7479.31 -1174.15 4337.8" max="632.544 896.356 16771" />
+		<revolt:cube_visibox Mask="0x10000" ID="16" min="-8667.67 -2189.39 2436.16" max="-2493.25 1283.39 6630.07" />
+		<revolt:cube_visibox Mask="0x10000" ID="16" min="-2557.31 -1034.1 -2416.24" max="-390.386 578.867 5080.39" />
+		<revolt:cube_visibox Mask="0x20000" ID="17" min="-12243.6 -1742.48 -10597.9" max="-3353.81 429.281 16088.6" />
+		<revolt:cube_visibox Mask="0x20000" ID="17" min="-9837.7 -1334.48 -3341.51" max="17110.3 503.999 16017.4" />
+		<revolt:cube_visibox Mask="0x20000" ID="17" min="-1251.01 -1636.47 -9020.38" max="5852.37 712.087 -1710.43" />
+		<revolt:cube_visibox Mask="0x20000" ID="17" min="-6756.31 -64.1369 -17466.8" max="-4059.01 336.548 -13011.4" />
+		<revolt:cube_visibox Mask="0x40000" ID="18" min="-5970.05 -746.073 -5258.87" max="-5842.05 -618.073 -5015.83" />
+		<revolt:cube_visibox Mask="0x80000" ID="19" min="908.85 -586.477 -6922.68" max="1213.37 -458.477 -6794.68" />
+		<revolt:cube_visibox Mask="0x80000" ID="19" min="-4524.62 -549.79 -14177" max="-4290.96 -421.79 -14049" />
+		<revolt:cube_visibox Mask="0x80000" ID="19" min="-2633.8 -446.626 -2942.18" max="-2496.2 -280.101 -2691.72" />
+		<revolt:cube_visibox Mask="0x80000" ID="19" min="-8152.52 -1121.38 -15849.1" max="-7878.46 -964.649 -15569.9" />
+		<revolt:cube_visibox Mask="0x80000" ID="19" min="-10586.4 -383.83 -7367.4" max="-10362.4 -207.769 -7239.4" />
+		<revolt:cube_visibox Mask="0x100000" ID="20" min="4296.17 -103.444 -2472.55" max="4453.01 24.556 -2286.75" />
+		<revolt:cube_visibox Mask="0x200000" ID="21" min="6874.79 -41.5816 -443.144" max="7117.57 121.141 -235.309" />
+		<revolt:cube_visibox Mask="0x200000" ID="21" min="-1839.17 -1710.48 -8015.49" max="3877.59 566.362 -4934.98" />
+		<revolt:cube_visibox Mask="0x400000" ID="22" min="14107.2 -423.502 9255.53" max="14302.9 -232.616 9503.9" />
+		<revolt:cube_visibox Mask="0x800000" ID="23" min="7693.89 -419.458 11240.9" max="7916.36 -291.458 11445.1" />
+		<revolt:cube_visibox Mask="0x1000000" ID="24" min="-2836.25 -588.266 14943.9" max="-2583.74 -460.266 15179.8" />
+		<revolt:cube_visibox Mask="0x1000000" ID="24" min="7541.11 -564.172 11117.5" max="7826.74 -236.531 11502.1" />
+		<revolt:cube_visibox Mask="0x2000000" ID="25" min="-6265.37 -418.264 6281.11" max="-5933.28 -290.264 6504.97" />
+		<revolt:cube_visibox Mask="0x4000000" ID="26" min="-6150.42 -767.173 -5249.13" max="-5849.71 -590.261 -5082.42" />
+		<revolt:cube_visibox Mask="0x4000000" ID="26" min="-2736.44 -335.759 6070.59" max="-2469.97 -207.759 6272.47" />
+		<revolt:cube_visibox Mask="0x4000000" ID="26" min="-6095.58 -434.696 6262.19" max="-5967.58 -225.616 6460.07" />
+		<revolt:cube_visibox Mask="0x8000000" ID="27" min="-10550.6 -430.28 -7441.52" max="-10196.8 -227.613 -7133.34" />
+		<revolt:cube_visibox Mask="0x10000000" ID="28" min="-10515.9 -537.785 -17976.2" max="-10324.3 -348.624 -17784.6" />
+		<revolt:cube_visibox Mask="0x20000000" ID="29" min="-18496.1 -238.162 -13439.3" max="-1818.06 655.272 2923.17" />
+		<revolt:cube_visibox Mask="0x20000000" ID="29" min="-3393.72 -1438.25 -7783.92" max="552.643 660.718 -5517.45" />
+		<revolt:cube_visibox Mask="0x40000000" ID="30" min="-4619.72 -1756.59 -13473.2" max="-1399.93 1074.84 -8597.44" />
+		<revolt:cube_visibox Mask="0x40000000" ID="30" min="-7780.92 -1439.79 -17204.8" max="-3422.31 587.609 -10711.7" />
+		<revolt:cube_visibox Mask="0x40000000" ID="30" min="-8144.47 -1267.66 -4198.55" max="-2897.82 545.913 3841.49" />
+		<revolt:cube_visibox Mask="0x80000000" ID="31" min="8679.8 -947.752 5479.32" max="17026.3 678.761 7719.53" />
+		<revolt:cube_visibox Mask="0x100000000" ID="32" min="5149.08 -5742.87 -5395.73" max="27319.1 1854.03 23012.5" />
+		<revolt:cube_visibox Mask="0x100000000" ID="32" min="-5371.97 -2999.93 -445.829" max="5869.85 2076.86 19171.1" />
+		<revolt:cube_visibox Mask="0x100000000" ID="32" min="-4393.05 -1262.63 -3549.61" max="-69.3455 691.805 208.337" />
+		<revolt:cube_visibox Mask="0x100000000" ID="32" min="-7430.44 -1384.91 2839.04" max="-4621.7 1326.61 15693" />
+		<revolt:cube_visibox Mask="0x100000000" ID="32" min="-17943.6 -1141.65 -16988.6" max="-7141.84 389.989 -11131.9" />
+		<revolt:cube_visibox Mask="0x100000000" ID="32" min="-5051.84 -620.425 -18164" max="-3743.95 526.016 -11459.7" />
+		<revolt:cube_visibox Mask="0x100000000" ID="32" min="-18443.2 -1865.85 -21438.5" max="-8858.5 373.089 -15524.7" />
+		<revolt:cube_visibox Mask="0x100000000" ID="32" min="4437.7 -1182.74 -3932.74" max="7251.27 1029.55 2247.59" />
+		<revolt:cube_visibox Mask="0x200000000" ID="33" min="-3503.65 -1077 -9004.07" max="5387.3 780.589 -402.06" />
+		<revolt:cube_visibox Mask="0x400000000" ID="34" min="5620.67 -933.287 -5113.89" max="9331.51 831.728 4543.57" />
+		<revolt:cube_visibox Mask="0x400000000" ID="34" min="-552.875 -1297.13 -6532.04" max="6686.27 674.21 2849.39" />
+		<revolt:cube_visibox Mask="0x400000000" ID="34" min="6447.73 -1352.86 8334.35" max="11172.5 790.457 11648.6" />
+		<revolt:cube_visibox Mask="0x800000000" ID="35" min="1105.49 -1219.01 2978.87" max="14169.2 1411.5 7030.36" />
+		<revolt:cube_visibox Mask="0x1000000000" ID="36" min="7297.23 -1553.23 3821.09" max="19916.8 1061.13 11790.8" />
+		<revolt:cube_visibox Mask="0x1000000000" ID="36" min="-10861.2 -2330.33 -1639.11" max="910.199 654.574 6261.66" />
+		<revolt:cube_visibox Mask="0x2000000000" ID="37" min="-1125.07 -1116.33 7702.23" max="7562.89 837.398 13652.7" />
+		<revolt:cube_visibox Mask="0x2000000000" ID="37" min="-4854.3 -1200.22 811.067" max="101.855 1890.33 6987.11" />
+		<revolt:cube_visibox Mask="0x4000000000" ID="38" min="-1817.54 -2187.44 7230.05" max="8067.65 533.515 18951.5" />
+		<revolt:cube_visibox Mask="0x4000000000" ID="38" min="-5668.7 -1240.13 -12498.2" max="-1515.74 1215.44 -7286.77" />
+		<revolt:cube_visibox Mask="0x8000000000" ID="39" min="592.949 -1992.18 -4444.01" max="5191.69 713.737 1483.55" />
+		<revolt:cube_visibox Mask="0x10000000000" ID="40" min="-10190.8 -865.987 -21803" max="-6129.54 1410.01 -10785.9" />
+		<revolt:cube_visibox Mask="0x10000000000" ID="40" min="-2780.93 -427.134 5910.44" max="-2508.95 -139.784 6511.6" />
+		<revolt:cube_visibox Mask="0x20000000000" ID="41" min="-3709.3 -799.296 -17948.7" max="-435.901 1026.55 -4196.9" />
+		<revolt:cube_visibox Mask="0x40000000000" ID="42" min="1253.61 -1717.32 -7480.31" max="8382.39 1989.86 12848.4" />
+		<revolt:cube_visibox Mask="0x80000000000" ID="43" min="-12841.9 -992.197 -20114" max="-6246.62 352.539 -11024.6" />
+		<revolt:cube_visibox Mask="0x100000000000" ID="44" min="-7329.71 -696.501 -3177.93" max="1497.85 433.183 7167.77" />
+		<revolt:cube_visibox Mask="0x100000000000" ID="44" min="-2203.36 -2604.42 -7888.12" max="-555.999 859.36 -6869.74" />
+		<revolt:cube_visibox Mask="0x100000000000" ID="44" min="-1875.17 -1912.49 -8414.41" max="219.886 653.254 -7151.61" />
+		<revolt:cube_visibox Mask="0x100000000000" ID="44" min="-5533.19 -1030.27 -18010.2" max="-4091.62 543.369 -10629.4" />
+		<revolt:cube_visibox Mask="0x200000000000" ID="45" min="-6975.39 -1634.64 -13024.5" max="-1054.98 778.816 -8248.16" />
+		<revolt:cube_visibox Mask="0x400000000000" ID="46" min="-6941.38 -920.124 -12134.2" max="-1339.68 826.209 -9814.46" />
+		<revolt:cube_visibox Mask="0x1000000000000" ID="48" min="-2816.29 -5588.17 -12364.1" max="1022.64 2371.04 733.712" />
+		<revolt:cube_visibox Mask="0x1000000000000" ID="48" min="745.839 -1531.97 -1715.62" max="4370.13 805.018 -520.64" />
+	</revolt:cube_visiboxes>
+</revolt:visiboxes>
+-->
+<Model id="NHood2" >
+	<Material idref="DefaultWorldCubeMaterial" />
+	<Model id="WorldCube0_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="0" count="228" />
+			<Draw primitive="TRILIST" start="228" count="36" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="264" count="60" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="324" count="116" />
+			<Draw primitive="TRILIST" start="440" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="449" count="28" />
+			<Draw primitive="TRILIST" start="477" count="15" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="492" count="32" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube1_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="524" count="72" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="596" count="208" />
+			<Draw primitive="TRILIST" start="804" count="27" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="831" count="112" />
+			<Draw primitive="TRILIST" start="943" count="18" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="961" count="32" />
+			<Draw primitive="TRILIST" start="993" count="21" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="1014" count="96" />
+			<Draw primitive="TRILIST" start="1110" count="18" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="1128" count="44" />
+			<Draw primitive="TRILIST" start="1172" count="3" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube2_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="1175" count="120" />
+			<Draw primitive="TRILIST" start="1295" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="1301" count="72" />
+			<Draw primitive="TRILIST" start="1373" count="132" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="1505" count="44" />
+			<Draw primitive="TRILIST" start="1549" count="15" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="1564" count="32" />
+			<Draw primitive="TRILIST" start="1596" count="12" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube3_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="1608" count="16" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube4_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="1624" count="236" />
+			<Draw primitive="TRILIST" start="1860" count="30" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="1890" count="64" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="1954" count="32" />
+			<Draw primitive="TRILIST" start="1986" count="27" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube5_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="2013" count="40" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="2053" count="132" />
+			<Draw primitive="TRILIST" start="2185" count="30" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="2215" count="124" />
+			<Draw primitive="TRILIST" start="2339" count="18" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="2357" count="56" />
+			<Draw primitive="TRILIST" start="2413" count="21" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="2434" count="20" />
+			<Draw primitive="TRILIST" start="2454" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="2460" count="144" />
+			<Draw primitive="TRILIST" start="2604" count="24" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="2628" count="48" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube6_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="2676" count="1084" />
+			<Draw primitive="TRILIST" start="3760" count="48" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="3808" count="124" />
+			<Draw primitive="TRILIST" start="3932" count="408" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="4340" count="92" />
+			<Draw primitive="TRILIST" start="4432" count="66" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="4498" count="88" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube7_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="4586" count="132" />
+			<Draw primitive="TRILIST" start="4718" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="4724" count="4" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube8_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="4728" count="261" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="4989" count="88" />
+			<Draw primitive="TRILIST" start="5077" count="12" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="5089" count="60" />
+			<Draw primitive="TRILIST" start="5149" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="5152" count="24" />
+			<Draw primitive="TRILIST" start="5176" count="126" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube9_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="5302" count="96" />
+			<Draw primitive="TRILIST" start="5398" count="120" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="5518" count="144" />
+			<Draw primitive="TRILIST" start="5662" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="5665" count="68" />
+			<Draw primitive="TRILIST" start="5733" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="5736" count="4" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube10_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="5740" count="176" />
+			<Draw primitive="TRILIST" start="5916" count="60" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="5976" count="148" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="6124" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6130" count="16" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube11_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6146" count="56" />
+			<Draw primitive="TRILIST" start="6202" count="33" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6235" count="104" />
+			<Draw primitive="TRILIST" start="6339" count="12" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6351" count="96" />
+			<Draw primitive="TRILIST" start="6447" count="18" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6465" count="76" />
+			<Draw primitive="TRILIST" start="6541" count="12" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6553" count="4" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6557" count="28" />
+			<Draw primitive="TRILIST" start="6585" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6594" count="216" />
+			<Draw primitive="TRILIST" start="6810" count="24" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6834" count="80" />
+			<Draw primitive="TRILIST" start="6914" count="18" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube12_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6932" count="32" />
+			<Draw primitive="TRILIST" start="6964" count="9" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube13_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="6973" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6976" count="4" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="6980" count="12" />
+			<Draw primitive="TRILIST" start="6992" count="36" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube14_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7028" count="68" />
+			<Draw primitive="TRILIST" start="7096" count="27" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7123" count="72" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7195" count="12" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7207" count="8" />
+			<Draw primitive="TRILIST" start="7215" count="42" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube15_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7257" count="136" />
+			<Draw primitive="TRILIST" start="7393" count="57" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7450" count="40" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7490" count="60" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7550" count="12" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube16_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7562" count="24" />
+			<Draw primitive="TRILIST" start="7586" count="45" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7631" count="112" />
+			<Draw primitive="TRILIST" start="7743" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7752" count="116" />
+			<Draw primitive="TRILIST" start="7868" count="15" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7883" count="36" />
+			<Draw primitive="TRILIST" start="7919" count="33" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7952" count="36" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="7988" count="16" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="8004" count="68" />
+			<Draw primitive="TRILIST" start="8072" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="8081" count="268" />
+			<Draw primitive="TRILIST" start="8349" count="51" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="8400" count="136" />
+			<Draw primitive="TRILIST" start="8536" count="30" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube17_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="8566" count="24" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="8590" count="8" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="8598" count="124" />
+			<Draw primitive="TRILIST" start="8722" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="8728" count="292" />
+			<Draw primitive="TRILIST" start="9020" count="66" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2j"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9086" count="20" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9106" count="104" />
+			<Draw primitive="TRILIST" start="9210" count="21" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube18_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9231" count="12" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9243" count="24" />
+			<Draw primitive="TRILIST" start="9267" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="9270" count="30" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9300" count="12" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9312" count="12" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9324" count="20" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube19_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9344" count="108" />
+			<Draw primitive="TRILIST" start="9452" count="51" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9503" count="120" />
+			<Draw primitive="TRILIST" start="9623" count="66" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9689" count="60" />
+			<Draw primitive="TRILIST" start="9749" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9758" count="44" />
+			<Draw primitive="TRILIST" start="9802" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9811" count="8" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="9819" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9825" count="52" />
+			<Draw primitive="TRILIST" start="9877" count="12" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube20_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="9889" count="144" />
+			<Draw primitive="TRILIST" start="10033" count="60" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10093" count="156" />
+			<Draw primitive="TRILIST" start="10249" count="27" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10276" count="40" />
+			<Draw primitive="TRILIST" start="10316" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10319" count="48" />
+			<Draw primitive="TRILIST" start="10367" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10370" count="12" />
+			<Draw primitive="TRILIST" start="10382" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="10385" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10388" count="40" />
+			<Draw primitive="TRILIST" start="10428" count="6" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube21_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10434" count="32" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10466" count="48" />
+			<Draw primitive="TRILIST" start="10514" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10523" count="72" />
+			<Draw primitive="TRILIST" start="10595" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2j"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10598" count="100" />
+			<Draw primitive="TRILIST" start="10698" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10707" count="144" />
+			<Draw primitive="TRILIST" start="10851" count="3" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube22_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="10854" count="156" />
+			<Draw primitive="TRILIST" start="11010" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="11019" count="184" />
+			<Draw primitive="TRILIST" start="11203" count="21" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="11224" count="90" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="11314" count="92" />
+			<Draw primitive="TRILIST" start="11406" count="24" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="11430" count="4" />
+			<Draw primitive="TRILIST" start="11434" count="276" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="11710" count="24" />
+			<Draw primitive="TRILIST" start="11734" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="11743" count="88" />
+			<Draw primitive="TRILIST" start="11831" count="15" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2j"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="11846" count="116" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="11962" count="40" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube23_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12002" count="96" />
+			<Draw primitive="TRILIST" start="12098" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="12104" count="45" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12149" count="8" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="12157" count="18" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube24_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12175" count="16" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12191" count="72" />
+			<Draw primitive="TRILIST" start="12263" count="15" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12278" count="32" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12310" count="48" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12358" count="40" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12398" count="92" />
+			<Draw primitive="TRILIST" start="12490" count="27" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube25_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12517" count="92" />
+			<Draw primitive="TRILIST" start="12609" count="33" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12642" count="140" />
+			<Draw primitive="TRILIST" start="12782" count="18" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12800" count="136" />
+			<Draw primitive="TRILIST" start="12936" count="24" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12960" count="24" />
+			<Draw primitive="TRILIST" start="12984" count="12" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="12996" count="16" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13012" count="68" />
+			<Draw primitive="TRILIST" start="13080" count="15" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13095" count="84" />
+			<Draw primitive="TRILIST" start="13179" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13188" count="48" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube26_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13236" count="8" />
+			<Draw primitive="TRILIST" start="13244" count="18" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13262" count="168" />
+			<Draw primitive="TRILIST" start="13430" count="36" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13466" count="32" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13498" count="84" />
+			<Draw primitive="TRILIST" start="13582" count="81" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13663" count="76" />
+			<Draw primitive="TRILIST" start="13739" count="48" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13787" count="60" />
+			<Draw primitive="TRILIST" start="13847" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13853" count="24" />
+			<Draw primitive="TRILIST" start="13877" count="18" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13895" count="8" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube27_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13903" count="4" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13907" count="32" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="13939" count="60" />
+			<Draw primitive="TRILIST" start="13999" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14008" count="68" />
+			<Draw primitive="TRILIST" start="14076" count="51" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14127" count="64" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube28_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14191" count="12" />
+			<Draw primitive="TRILIST" start="14203" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14209" count="200" />
+			<Draw primitive="TRILIST" start="14409" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14418" count="72" />
+			<Draw primitive="TRILIST" start="14490" count="12" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14502" count="24" />
+			<Draw primitive="TRILIST" start="14526" count="27" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14553" count="12" />
+			<Draw primitive="TRILIST" start="14565" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14568" count="24" />
+			<Draw primitive="TRILIST" start="14592" count="33" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube29_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14625" count="48" />
+			<Draw primitive="TRILIST" start="14673" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14679" count="32" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube30_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14711" count="36" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14747" count="28" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14775" count="8" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14783" count="28" />
+			<Draw primitive="TRILIST" start="14811" count="3" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube31_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="14814" count="15" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="14829" count="236" />
+			<Draw primitive="TRILIST" start="15065" count="18" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15083" count="68" />
+			<Draw primitive="TRILIST" start="15151" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15157" count="64" />
+			<Draw primitive="TRILIST" start="15221" count="48" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15269" count="8" />
+			<Draw primitive="TRILIST" start="15277" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15283" count="72" />
+			<Draw primitive="TRILIST" start="15355" count="126" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15481" count="24" />
+			<Draw primitive="TRILIST" start="15505" count="18" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube32_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15523" count="12" />
+			<Draw primitive="TRILIST" start="15535" count="15" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15550" count="64" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15614" count="132" />
+			<Draw primitive="TRILIST" start="15746" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15752" count="8" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15760" count="4" />
+			<Draw primitive="TRILIST" start="15764" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15767" count="8" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15775" count="44" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube33_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15819" count="36" />
+			<Draw primitive="TRILIST" start="15855" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15861" count="128" />
+			<Draw primitive="TRILIST" start="15989" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="15992" count="124" />
+			<Draw primitive="TRILIST" start="16116" count="54" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16170" count="24" />
+			<Draw primitive="TRILIST" start="16194" count="15" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16209" count="88" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube34_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="16297" count="21" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube35_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16318" count="16" />
+			<Draw primitive="TRILIST" start="16334" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16340" count="96" />
+			<Draw primitive="TRILIST" start="16436" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16442" count="76" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16518" count="52" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube36_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16570" count="16" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16586" count="8" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16594" count="4" />
+			<Draw primitive="TRILIST" start="16598" count="3" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube37_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="16601" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16604" count="44" />
+			<Draw primitive="TRILIST" start="16648" count="12" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16660" count="76" />
+			<Draw primitive="TRILIST" start="16736" count="15" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16751" count="108" />
+			<Draw primitive="TRILIST" start="16859" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16865" count="32" />
+			<Draw primitive="TRILIST" start="16897" count="24" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16921" count="48" />
+			<Draw primitive="TRILIST" start="16969" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16978" count="16" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube38_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="16994" count="24" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17018" count="184" />
+			<Draw primitive="TRILIST" start="17202" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2d"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17205" count="72" />
+			<Draw primitive="TRILIST" start="17277" count="33" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2f"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17310" count="28" />
+			<Draw primitive="TRILIST" start="17338" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17341" count="16" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube39_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17357" count="8" />
+			<Draw primitive="TRILIST" start="17365" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17368" count="104" />
+			<Draw primitive="TRILIST" start="17472" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17475" count="80" />
+			<Draw primitive="TRILIST" start="17555" count="30" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17585" count="64" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="17649" count="3" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube40_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17652" count="12" />
+			<Draw primitive="TRILIST" start="17664" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17673" count="48" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17721" count="52" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17773" count="40" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="17813" count="3" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube41_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17816" count="16" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17832" count="4" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube42_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17836" count="12" />
+			<Draw primitive="TRILIST" start="17848" count="24" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="17872" count="172" />
+			<Draw primitive="TRILIST" start="18044" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18050" count="64" />
+			<Draw primitive="TRILIST" start="18114" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18120" count="64" />
+			<Draw primitive="TRILIST" start="18184" count="9" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube43_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18193" count="44" />
+			<Draw primitive="TRILIST" start="18237" count="6" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2b"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18243" count="20" />
+			<Draw primitive="TRILIST" start="18263" count="54" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18317" count="104" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2e"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18421" count="8" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18429" count="40" />
+			<Draw primitive="TRILIST" start="18469" count="3" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="18472" count="9" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18481" count="152" />
+			<Draw primitive="TRILIST" start="18633" count="48" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="fxpage1"/>
+			</RenderState>
+			<Draw primitive="TRILIST" start="18681" count="3" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube44_opaque">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2a"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18684" count="4" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2c"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18688" count="20" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2g"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18708" count="4" />
+		</Pass>
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2i"/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18712" count="24" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube17_alpha">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18736" count="56" />
+			<Draw primitive="TRILIST" start="18792" count="21" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube18_alpha">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18813" count="8" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube21_alpha">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18821" count="96" />
+			<Draw primitive="TRILIST" start="18917" count="3" />
+		</Pass>
+	</Model>
+	<Model id="WorldCube22_alpha">
+		<!-- Material idref="DefaultWorldCubeMaterial" / -->
+		<Pass>
+			<RenderState>
+				<TextureState Stage="0" idref="NHood2h"
+					ColorOp="Modulate"
+					ColorArg1="Diffuse"
+					ColorArg2="Texture"
+					AlphaOp="Modulate"
+					AlphaArg1="Diffuse"
+					AlphaArg2="Texture"
+				/>
+			</RenderState>
+			<Draw primitive="QUADLIST" start="18920" count="8" />
+			<Draw primitive="TRILIST" start="18928" count="3" />
+		</Pass>
+	</Model>
+</Model>
+</XDX>

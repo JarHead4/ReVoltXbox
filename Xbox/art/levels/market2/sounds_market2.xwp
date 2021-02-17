@@ -1,0 +1,15 @@
+[PROJECT]
+BANKCOUNT=1
+[BANK0]
+BANKNAME=market2
+BANKFILE=sounds_market2.xwb
+HEADERFILE=wavs_market2.h
+ENTRYCOUNT=8
+ENTRY0=aircond1,..\..\wavs\market\aircond1.wav
+ENTRY1=cabnhum2,..\..\wavs\market\cabnhum2.wav
+ENTRY2=carpark,..\..\wavs\market\carpark.wav
+ENTRY3=carton,..\..\wavs\market\carton.wav
+ENTRY4=freezer1,..\..\wavs\market\freezer1.wav
+ENTRY5=iceyarea,..\..\wavs\market\iceyarea.wav
+ENTRY6=sdrsclos,..\..\wavs\market\sdrsclos.wav
+ENTRY7=sdrsopen,..\..\wavs\market\sdrsopen.wav

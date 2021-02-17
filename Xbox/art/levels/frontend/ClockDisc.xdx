@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\frontend\ClockDisc.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="frontende" source="../../../frontende.bmp" />
+-->
+<VertexBuffer id="ClockDisc_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">42.5755 42.3906 -2.53157e-006 2.67852e-015 5.96046e-008 1 0xffffffff 0.613281 0.996094</v>
+	<v index="1">-42.3122 42.3906 -2.53157e-006 2.67852e-015 5.96046e-008 1 0xffffffff 0.996094 0.996094</v>
+	<v index="2">-42.3122 -42.4854 2.52743e-006 2.67852e-015 5.96046e-008 1 0xffffffff 0.996094 0.613281</v>
+	<v index="3">42.5755 -42.4854 2.52743e-006 2.67852e-015 5.96046e-008 1 0xffffffff 0.613281 0.613281</v>
+</VertexBuffer>
+<Model id="ClockDisc">
+	<!--
+	<Revolt Radius="60.147152" Xmin="-42.312191" Xmax="42.575470" Ymin="-42.485401" Ymax="42.390594" Zmin="-0.000003" Zmax="0.000003"
+	 PolyNum="1" VertNum="4" QuadNumTex="1" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="ClockDisc_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="ClockDisc_PreviewCamera">
+				0.0166259 0 0 0
+				0 0.0166259 0 0
+				0 0 0.00831295 0
+				-0.00218862 0.000788123 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="frontende"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="4" />
+	</Pass>
+</Model>
+</XDX>

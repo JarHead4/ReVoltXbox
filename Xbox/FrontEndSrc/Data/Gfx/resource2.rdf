@@ -1,0 +1,47 @@
+// List of resources to bundle.
+//
+// The output will be a header file (.h) used at compile time,
+// and a packed resource file (.xpr) used at runtime.
+
+out_header         Resource.h
+out_packedresource Resource.xpr
+out_error          Resource.err
+
+
+Texture Stencil
+{
+   Source      Stencil.bmp
+   AlphaSource Stencil_a.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture Spru
+{
+   Source Spru.bmp
+   AlphaSource Spru_a.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture Spru2
+{
+   Source Spru2.bmp
+   AlphaSource Spru2_a.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture EmbossedStuff1
+{
+   Source ..\Levels\FrontEnd\FrontEndf.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture EmbossedStuff2
+{
+   Source ..\Levels\FrontEnd\FrontEndg.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}

@@ -1,0 +1,45 @@
+define(SOURCEFILELIST,POUND Begin Source File
+
+SOURCE=.\ReVoltUI.cpp
+
+POUND End Source File
+POUND Begin Source File
+SOURCE=.\ReVoltUI.h
+
+POUND End Source File
+POUND Begin Source File
+SOURCE=.\Common.h
+
+POUND End Source File
+POUND Begin Source File
+SOURCE=.\Menu.cpp
+
+POUND End Source File
+POUND Begin Source File
+SOURCE=.\Menu.h
+
+POUND End Source File
+POUND Begin Source File
+SOURCE=.\MenuItem.cpp
+
+POUND End Source File
+POUND Begin Source File
+SOURCE=.\MenuItem.h
+
+POUND End Source File
+POUND Begin Source File
+SOURCE=.\UserInterface.cpp
+
+POUND End Source File
+POUND Begin Source File
+SOURCE=.\UserInterface.h
+
+POUND End Source File)define(ROOTPATH,..\..\..\Samples)undefine(`RELEASELIBS')define(RELEASELIBS,`xonline.lib xvoice.lib')undefine(`DEBUGLIBS')define(DEBUGLIBS,`xonlined.lib xvoiced.lib')undefine(`COMMONSOURCEFILELIST')define(COMMONSOURCEFILELIST,POUND Begin Source File
+
+SOURCE=ROOTPATH\common\src\XbStopWatch.cpp
+
+POUND End Source File
+POUND Begin Source File
+SOURCE=ROOTPATH\common\src\XbOnline.cpp
+
+POUND End Source File)include(ROOTPATH\template.dst)

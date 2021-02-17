@@ -1,0 +1,16 @@
+[PROJECT]
+BANKCOUNT=1
+[BANK0]
+BANKNAME=toy2
+BANKFILE=sounds_toy2.xwb
+HEADERFILE=wavs_toy2.h
+ENTRYCOUNT=9
+ENTRY0=arcade,..\..\wavs\toy\arcade.wav
+ENTRY1=copter,..\..\wavs\toy\copter.wav
+ENTRY2=creak,..\..\wavs\toy\creak.wav
+ENTRY3=dragon,..\..\wavs\toy\dragon.wav
+ENTRY4=piano,..\..\wavs\toy\piano.wav
+ENTRY5=plane,..\..\wavs\toy\plane.wav
+ENTRY6=toybrick,..\..\wavs\toy\toybrick.wav
+ENTRY7=train,..\..\wavs\toy\train.wav
+ENTRY8=whistle,..\..\wavs\toy\whistle.wav

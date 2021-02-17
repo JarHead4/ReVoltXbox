@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "revolt_art", "Art\revolt_art.vcproj", "{EC31243C-C358-4EC6-B48F-792A1C8F364C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "revolt_src", "Src\revolt_src.vcproj", "{EC3609B3-120C-40F6-993D-4BF283F0CBFE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC31243C-C358-4EC6-B48F-792A1C8F364C} = {EC31243C-C358-4EC6-B48F-792A1C8F364C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Profile = Profile
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EC31243C-C358-4EC6-B48F-792A1C8F364C}.Debug.ActiveCfg = Debug|Xbox
+		{EC31243C-C358-4EC6-B48F-792A1C8F364C}.Debug.Build.0 = Debug|Xbox
+		{EC31243C-C358-4EC6-B48F-792A1C8F364C}.Profile.ActiveCfg = Release|Xbox
+		{EC31243C-C358-4EC6-B48F-792A1C8F364C}.Profile.Build.0 = Release|Xbox
+		{EC31243C-C358-4EC6-B48F-792A1C8F364C}.Release.ActiveCfg = Release|Xbox
+		{EC31243C-C358-4EC6-B48F-792A1C8F364C}.Release.Build.0 = Release|Xbox
+		{EC3609B3-120C-40F6-993D-4BF283F0CBFE}.Debug.ActiveCfg = Debug|Xbox
+		{EC3609B3-120C-40F6-993D-4BF283F0CBFE}.Debug.Build.0 = Debug|Xbox
+		{EC3609B3-120C-40F6-993D-4BF283F0CBFE}.Profile.ActiveCfg = Profile|Xbox
+		{EC3609B3-120C-40F6-993D-4BF283F0CBFE}.Profile.Build.0 = Profile|Xbox
+		{EC3609B3-120C-40F6-993D-4BF283F0CBFE}.Release.ActiveCfg = Release|Xbox
+		{EC3609B3-120C-40F6-993D-4BF283F0CBFE}.Release.Build.0 = Release|Xbox
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

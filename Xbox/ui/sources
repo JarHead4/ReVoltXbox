@@ -1,0 +1,31 @@
+TARGETNAME = ReVoltUI
+PROJNAME   = ReVoltUI
+SOURCES    = ReVoltUI.cpp \
+             UserInterface.cpp \
+             MenuItem.cpp \
+             Menu.cpp
+TITLEID    = 0xffff01ED
+
+NTTARGETFILE0 = $(O)\ReVoltUI.dsp
+
+XE_FLAGS   = $(XE_FLAGS) /TESTNAME:$(PROJNAME) /TESTID:$(TITLEID) /INITFLAGS:0x00000000
+
+USE_STL             = 1
+USE_NATIVE_EH       = 1
+TARGETPATH          = obj
+TARGETTYPE          = PROGRAM
+UMTYPE              = xboxapp
+MSC_WARNING_LEVEL   = /W4
+
+INCLUDES   = $(INCLUDES);..\..\..\Samples\common\include
+
+LINKLIBS   = \
+             ..\..\..\Samples\common\src\$(O)\xbframe.lib \
+             $(XDK_LIB_PATH)\xonline$(D).lib \
+             $(XDK_LIB_PATH)\d3d8$(D).lib \
+             $(XDK_LIB_PATH)\d3dx8$(D).lib \
+             $(XDK_LIB_PATH)\xgraphics$(D).lib
+
+LINKER_FLAGS=$(LINKER_FLAGS) /map
+
+USE_LIBCMT=1

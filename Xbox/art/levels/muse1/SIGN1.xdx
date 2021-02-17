@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Muse1\SIGN1.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Muse1f" source="../../../Muse1f.bmp" />
+<Texture id="fxpage1" source="../../gfx/fxpage1.bmp" />
+-->
+<VertexBuffer id="SIGN1_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">15.6206 106.741 -147.355 0.4309 0.787073 -0.441408 0xffffffff 0.015625 0.757813</v>
+	<v index="1">-15.6206 106.741 -19.2585 -0.277462 0.917596 -0.284661 0xff494949 0.015625 0.773438</v>
+	<v index="2">-15.6206 106.741 12.1771 -0.277462 0.917596 0.284661 0xff494949 0.335938 0.773438</v>
+	<v index="3">15.6206 106.741 147.355 0.4309 0.787073 0.441408 0xffffffff 0.335938 0.757813</v>
+	<v index="4">-33.324 -113.539 147.355 0.224596 -0.885085 0.407653 0xffffffff 0.015625 0.757813</v>
+	<v index="5">-64.5653 -106.741 12.1771 -0.70487 -0.641204 0.30334 0xffffffff 0.160156 0.773438</v>
+	<v index="6">-64.5653 -106.741 -19.2585 -0.70487 -0.641204 -0.30334 0xffffffff 0.191406 0.773438</v>
+	<v index="7">-33.324 -113.539 -147.355 0.224596 -0.885085 -0.407653 0xffffffff 0.335938 0.757813</v>
+	<v index="8">-15.6206 106.741 147.355 -0.524999 0.658987 0.538621 0xffffffff 0.015625 0.773438</v>
+	<v index="9">-64.5653 -106.741 147.355 -0.688061 -0.436749 0.579501 0xffbababa 0.335938 0.773438</v>
+	<v index="10">-33.324 -113.539 147.355 0.224596 -0.885085 0.407653 0xffbababa 0.335938 0.757813</v>
+	<v index="11">15.6206 106.741 147.355 0.4309 0.787073 0.441408 0xffffffff 0.015625 0.757813</v>
+	<v index="12">-15.6206 106.741 -147.355 -0.524999 0.658987 -0.538621 0xff303030 0.335938 0.773438</v>
+	<v index="13">15.6206 106.741 -147.355 0.4309 0.787073 -0.441408 0xffffffff 0.335938 0.757813</v>
+	<v index="14">-33.324 -113.539 -147.355 0.224596 -0.885085 -0.407653 0xffbababa 0.015625 0.757813</v>
+	<v index="15">-64.5653 -106.741 -147.355 -0.688061 -0.436749 -0.579501 0xffbababa 0.015625 0.773438</v>
+	<v index="16">15.6206 106.741 147.355 0.4309 0.787073 0.441408 0xffffffff 0.335938 0.773438</v>
+	<v index="17">-33.324 -113.539 147.355 0.224596 -0.885085 0.407653 0xffbababa 0.335938 0.542969</v>
+	<v index="18">-33.324 -113.539 -147.355 0.224596 -0.885085 -0.407653 0xffbababa 0.00390625 0.542969</v>
+	<v index="19">15.6206 106.741 -147.355 0.4309 0.787073 -0.441408 0xffbababa 0.00390625 0.773438</v>
+	<v index="20">-15.6206 106.741 147.355 -0.524999 0.658987 0.538621 0xff494949 0.335938 0.773438</v>
+	<v index="21">15.6206 106.741 147.355 0.4309 0.787073 0.441408 0xffffffff 0.335938 0.757813</v>
+	<v index="22">-15.6206 106.741 12.1771 -0.277462 0.917596 0.284661 0xff494949 0.191406 0.773438</v>
+	<v index="23">-15.6206 106.741 -19.2585 -0.277462 0.917596 -0.284661 0xff494949 0.15625 0.773438</v>
+	<v index="24">15.6206 106.741 -147.355 0.4309 0.787073 -0.441408 0xffffffff 0.015625 0.757813</v>
+	<v index="25">-15.6206 106.741 -147.355 -0.524999 0.658987 -0.538621 0xff494949 0.015625 0.773438</v>
+	<v index="26">-33.324 -113.539 147.355 0.224596 -0.885085 0.407653 0xffffffff 0.015625 0.757813</v>
+	<v index="27">-64.5653 -106.741 147.355 -0.688061 -0.436749 0.579501 0xffffffff 0.015625 0.773438</v>
+	<v index="28">-64.5653 -106.741 12.1771 -0.70487 -0.641204 0.30334 0xffffffff 0.15625 0.773438</v>
+	<v index="29">-33.324 -113.539 -147.355 0.224596 -0.885085 -0.407653 0xffffffff 0.335938 0.757813</v>
+	<v index="30">-64.5653 -106.741 -19.2585 -0.70487 -0.641204 -0.30334 0xffffffff 0.191406 0.773438</v>
+	<v index="31">-64.5653 -106.741 -147.355 -0.688061 -0.436749 -0.579501 0xffffffff 0.335938 0.773438</v>
+	<v index="32">-153.082 106.741 -19.2585 -0.618034 0.412796 -0.669054 0xff141414 0.890625 0.642578</v>
+	<v index="33">-153.082 106.741 12.1771 -0.618034 0.412796 0.669054 0xff141414 0.890625 0.611328</v>
+	<v index="34">-15.6206 106.741 12.1771 -0.277462 0.917596 0.284661 0xff494949 0.859375 0.609375</v>
+	<v index="35">-15.6206 106.741 -19.2585 -0.277462 0.917596 -0.284661 0xff494949 0.859375 0.642578</v>
+	<v index="36">-64.5653 -106.741 -147.355 -0.688061 -0.436749 -0.579501 0xff141414 0.890625 0.642578</v>
+	<v index="37">-64.5653 -106.741 -19.2585 -0.70487 -0.641204 -0.30334 0xff141414 0.890625 0.611328</v>
+	<v index="38">-15.6206 106.741 -19.2585 -0.277462 0.917596 -0.284661 0xff141414 0.859375 0.609375</v>
+	<v index="39">-15.6206 106.741 -147.355 -0.524999 0.658987 -0.538621 0xff494949 0.859375 0.642578</v>
+	<v index="40">-64.5653 -106.741 147.355 -0.688061 -0.436749 0.579501 0xff141414 0.890625 0.642578</v>
+	<v index="41">-15.6206 106.741 147.355 -0.524999 0.658987 0.538621 0xff494949 0.890625 0.611328</v>
+	<v index="42">-15.6206 106.741 12.1771 -0.277462 0.917596 0.284661 0xff141414 0.859375 0.609375</v>
+	<v index="43">-64.5653 -106.741 12.1771 -0.70487 -0.641204 0.30334 0xff141414 0.859375 0.642578</v>
+	<v index="44">-64.5653 -106.741 12.1771 -0.70487 -0.641204 0.30334 0xff141414 0.890625 0.642578</v>
+	<v index="45">-153.082 106.741 12.1771 -0.618034 0.412796 0.669054 0xff303030 0.890625 0.611328</v>
+	<v index="46">-153.082 106.741 -19.2585 -0.618034 0.412796 -0.669054 0xff303030 0.859375 0.609375</v>
+	<v index="47">-64.5653 -106.741 -19.2585 -0.70487 -0.641204 -0.30334 0xff141414 0.859375 0.642578</v>
+	<v index="48">-15.6206 106.741 -19.2585 -0.277462 0.917596 -0.284661 0xff141414 0.890625 0.642578</v>
+	<v index="49">-64.5653 -106.741 -19.2585 -0.70487 -0.641204 -0.30334 0xff494949 0.890625 0.611328</v>
+	<v index="50">-153.082 106.741 -19.2585 -0.618034 0.412796 -0.669054 0xff363636 0.859375 0.609375</v>
+	<v index="51">-64.5653 -106.741 12.1771 -0.70487 -0.641204 0.30334 0xff141414 0.890625 0.642578</v>
+	<v index="52">-15.6206 106.741 12.1771 -0.277462 0.917596 0.284661 0xff494949 0.890625 0.611328</v>
+	<v index="53">-153.082 106.741 12.1771 -0.618034 0.412796 0.669054 0xff494949 0.859375 0.609375</v>
+</VertexBuffer>
+<Model id="SIGN1">
+	<!--
+	<Revolt Radius="193.069122" Xmin="-153.082169" Xmax="15.620640" Ymin="-113.538986" Ymax="106.740959" Zmin="-147.354599" Zmax="147.354599"
+	 PolyNum="15" VertNum="14" QuadNumTex="9" TriNumTex="6" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="SIGN1_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="SIGN1_PreviewCamera">
+				0.00517949 0 0 0
+				0 0.00517949 0 0
+				0 0 0.00258975 0
+				0.35599 0.0176052 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Muse1f"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="20" />
+		<Draw primitive="TRILIST" start="20" count="12" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="SIGN1_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="SIGN1_PreviewCamera">
+				0.00517949 0 0 0
+				0 0.00517949 0 0
+				0 0 0.00258975 0
+				0.35599 0.0176052 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="fxpage1"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="32" count="16" />
+		<Draw primitive="TRILIST" start="48" count="6" />
+	</Pass>
+</Model>
+</XDX>

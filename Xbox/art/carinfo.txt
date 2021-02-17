@@ -1,0 +1,4030 @@
+;; Car Information setup file
+;
+; - Semi-colons are for comments (up to next new line)
+; - Not case sensitive
+; - Curly braces delimit information
+;
+
+NUMCARS		29		; Number of different car types in the game
+ 
+;================================
+; All Cars: Default Safe Values
+;
+; This sets all the definable
+; values on every car to a 
+; safe default. Use this as a 
+; template if you like...but...
+;
+;	DO NOT CHANGE
+;
+;================================
+
+CAR 0-28 {	
+
+	Name		"Right about now"
+
+	; Model Filenames
+
+	MODEL	0		NONE				; Body model
+	MODEL	1		NONE				; wheel front left
+	MODEL	2		NONE				; wheel front right
+	MODEL	3		NONE				; wheel back left
+	MODEL	4		NONE				; wheel back right
+	MODEL	5		NONE				; spring front left
+	MODEL	6		NONE				; spring front right
+	MODEL	7		NONE				; spring back left
+	MODEL	8		NONE				; spring back right
+	MODEL	9		NONE				; axle front left
+	MODEL	10		NONE				; axle front right
+	MODEL	11		NONE				; axle back left
+	MODEL	12		NONE				; axle back right
+	MODEL	13		NONE				; pin front left
+	MODEL	14		NONE				; pin front right
+	MODEL	15		NONE				; pin back left
+	MODEL	16		NONE				; pin back right
+	MODEL	17		NONE				; Aerial section
+	MODEL	18		NONE				; Aerial Top
+
+	TPAGE	NONE
+
+	COLL	NONE
+
+	EnvRGB	255 255 255
+	
+	SteerRate		2.5 ;3.0
+	SteerMod		0.4 ;0.5
+	EngineRate		4.5
+	TopSpeed		45.0
+	MaxRevs			0.5
+	DownForceMod	2.0
+
+	CoM				0.0 0.0 0.0
+
+	BestTime		TRUE
+	Selectable		TRUE
+
+	Weapon			0.0 -32.0, 64.0
+
+	; Body
+
+	BODY {
+		MODELNUM	-1,							; Model Number
+		OFFSET		0, 0, 0,
+		MASS		1.0f,						; Mass
+		INERTIA		870, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1250, 0.0f, 
+					0.0f, 0.0f, 440,
+		GRAVITY		2200.0f,					; Acc due to gravity
+		HARDNESS	0.0f,						; Hardness
+		RESISTANCE	0.001f,						; Air resistance
+		ANGRES		0.001f,						; Angular Air resistance
+		RESMOD		15.0f,						; increase in ang resistance when in air
+		GRIP		0.01,
+		STATICFRICTION	0.8f,					; Static Friction
+		KINETICFRICTION	0.4f,					; Kinetic Friction
+	}
+
+	; Shared wheel Attributes
+
+	WHEEL 0 - 3 {
+		IsPresent	Yes
+		RADIUS		10
+		MASS		0.2							; Mass
+		GRAVITY		2200.0f						; Gravity
+		MaxPos		8.0
+		AXLEFRICTION	0.04f					; Axle Friction
+		ENGINERATIO		5000					; Engine Ratio
+		Grip			0.018
+		SkidWidth		10.0
+	}		
+
+	; Individual Wheel Attributes
+
+	WHEEL 0 {
+		MODELNUM	-1
+		OFFSET1		-16, 14, 32, 
+		OFFSET2		-4.5, 0, 0,
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	TRUE
+		STATICFRICTION	1.58f					; Static Friction
+		KINETICFRICTION	1.10f					; Kinetic Friction
+	}
+
+	WHEEL 1 {
+		MODELNUM	-1
+		OFFSET1		16, 14, 32, 
+		OFFSET2		4.5, 0, 0,
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	TRUE
+		STATICFRICTION	1.58f					; Static Friction
+		KINETICFRICTION	1.10f					; Kinetic Friction
+	}
+
+	WHEEL 2 {
+		MODELNUM	-1
+		OFFSET1		-16, 14, -38, 
+		OFFSET2		-6, 0, 0,
+		IsTurnable	FALSE
+		SteerRatio	0.1
+		IsPowered	TRUE
+		STATICFRICTION	1.53f					; Static Friction
+		KINETICFRICTION	1.09f					; Kinetic Friction
+	}
+
+	WHEEL 3 {
+		MODELNUM	-1
+		OFFSET1		16, 14, -38, 
+		OFFSET2		6, 0, 0,
+		IsTurnable	FALSE
+		SteerRatio	0.1
+		IsPowered	TRUE
+		STATICFRICTION	1.53f					; Static Friction
+		KINETICFRICTION	1.09f					; Kinetic Friction
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	250.0
+		Damping		7.0
+		Restitution	-0.85
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	SPINNER {
+		MODELNUM	-1
+		OFFSET		0, 0, 0
+		AXIS		0, 1, 0
+		ANGVEL		0	
+	}
+
+	AERIAL {
+		SECMODELNUM	-1
+		TOPMODELNUM -1
+		OFFSET		12, -33, -27,
+		DIRECTION	0, -1, 0
+		LENGTH		13
+		STIFFNESS	2000
+		DAMPING		5.5
+	}
+}
+
+
+;=====================================
+;
+;Individual details - change these
+;
+;=====================================
+
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Starting Cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 0: RC Bandit
+;=====================================
+Car 0 {
+
+	Name			"RC Bandit"
+	Selectable		TRUE
+
+	EnvRGB	200 200 0
+
+	TPAGE			"D:\cars\rc\car.bmp"
+
+	COLL			"D:\cars\rc\hull.hul"
+
+	MODEL	0		"D:\cars\rc\body.prm"			; Body model
+	MODEL	1		"D:\cars\rc\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\rc\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\rc\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\rc\wheelbr.prm"		; wheel back right
+	MODEL	5		"D:\cars\rc\spring.prm"		; all springs
+
+	MODEL	9		"D:\cars\rc\axle.prm"			; all axles
+	MODEL	13		"D:\cars\rc\pin.prm"			; all pins
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-18, 7, 42,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		18, 7, 42,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-18, 9, -42,
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		18, 9, -42,
+	}
+
+	SPRING 0 {
+		MODELNUM	5
+		OFFSET		-6, -10, 41
+		LENGTH		16
+	}
+	SPRING 1 {
+		MODELNUM	5
+		OFFSET		6, -10, 41
+		LENGTH		16
+	}
+	SPRING 2 {
+		MODELNUM	5
+		OFFSET		-8, -12, -38,
+		LENGTH		16
+	}
+	SPRING 3 {
+		MODELNUM	5
+		OFFSET		8, -12, -38,
+		LENGTH		16
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		-7, 7, 42,
+		LENGTH		12
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		7, 7, 42,
+		LENGTH		12
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		-7, 7, -30,
+		LENGTH		12
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		7, 7, -30,
+		LENGTH		12
+	}
+
+	PIN	0 {
+		MODELNUM	13
+		OFFSET		0, 0, 0
+		LENGTH		-1.35
+	}
+	PIN	1 {
+		MODELNUM	13
+		OFFSET		0, 0, 0
+		LENGTH		-1.35
+	}
+		
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-5, -6, -30
+		LENGTH		20
+	}
+
+
+	CoM		0.0 -5.0 0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		34.0
+
+	BODY {
+		MASS		1.2f,						; Mass
+		INERTIA		1200, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1800, 0.0f, 
+					0.0f, 0.0f, 650,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		IsPowered	TRUE
+		EngineRatio	6500
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		STEERRATIO	-0.5f						; Steer Ratio
+		STATICFRICTION	1.6					; Static Friction
+		KINETICFRICTION	1.4					; Kinetic Friction
+		Grip		0.016
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	6500
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		STEERRATIO		1.0f					; Steer Ratio
+		STATICFRICTION	1.6					; Static Friction
+		KINETICFRICTION	1.4					; Kinetic Friction
+		Grip		0.016
+	}
+
+	SPRING 0-1 {
+		Stiffness	500.0
+		Damping		12.0
+		Restitution	-0.8
+	}
+	SPRING 2-3 {
+		Stiffness	460.0
+		Damping		10.0
+		Restitution	-0.8
+	}
+
+}	
+
+;=====================================
+; Car 1: dust mite
+;=====================================
+Car 1 {
+
+	Name			"Dust Mite"
+	Selectable		TRUE
+
+	EnvRGB	200 100 200
+
+	TPAGE			"D:\cars\mite\car.bmp"
+
+	COLL			"D:\cars\mite\hull.hul"
+
+	MODEL	0		"D:\cars\mite\body.prm"		; Body model
+	MODEL	1		"D:\cars\mite\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\mite\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\mite\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\mite\wheelbr.prm"		; wheel back right
+    MODEL   5       "D:\cars\mite\spring.prm"          ; springs
+	MODEL	9		"D:\cars\mite\axle.prm"		; all axles
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-20, 5, 37,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		20, 5, 37,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-23, 10, -32
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		23, 10, -32
+	}
+
+	SPRING 0 {
+		MODELNUM	5
+		OFFSET		-10, -10, 32
+		LENGTH		15
+	}
+	SPRING 1 {
+		MODELNUM	5
+		OFFSET		10, -10, 32
+		LENGTH		15
+	}
+	SPRING 2 {
+		MODELNUM	5
+		OFFSET		-12, -12, -26
+		LENGTH		15
+	}
+	SPRING 3 {
+		MODELNUM	5
+		OFFSET		12, -12, -26
+		LENGTH		15
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		-7, 0, 35
+		LENGTH		9
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		7, 0, 35
+		LENGTH		9
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		-8, -1, -28
+		LENGTH		9
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		8, -1, -28
+		LENGTH		9
+	}
+	
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		14, -4, -10
+		LENGTH		30
+	}
+
+	TopSpeed	33.0
+	CoM			0.0 -3.0 0.0
+
+	BODY {
+		MODELNUM	0
+		MASS		1.2f,						; Mass
+		INERTIA		1000, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1500, 0.0f, 
+					0.0f, 0.0f, 750,	
+	}
+
+	WHEEL 0-1 {
+		StaticFriction	1.50
+		KineticFriction	1.35
+		Radius			11.0
+		Grip			0.015
+		MaxPos			10.0
+		Engineratio	9000
+		IsPowered	TRUE
+	}
+
+	WHEEL 2-3 {
+		StaticFriction	1.50
+		KineticFriction	1.35
+		Radius			12.0
+		MaxPos			10.0
+		Grip			0.018
+		IsPowered	TRUE
+		Engineratio	9000
+	}
+
+	SPRING 0-1 {
+		Stiffness	200 ;400
+		Damping		15.0 ;12.0
+		Restitution	-1.0 ;-0.85
+	}
+
+	SPRING 2-3 {
+		Stiffness	180 ;380
+		Damping		15.0 ;11.5
+		Restitution	-1.0 ;-0.85
+	}
+}	
+
+;=====================================
+; Car 2: Phat Slag
+;=====================================
+Car 2 {
+
+	Name			"Phat Slug"
+	Selectable		TRUE
+
+	EnvRGB	0 200 0
+
+	TPAGE			"D:\cars\phat\car.bmp"
+
+	COLL			"D:\cars\phat\hull.hul"
+
+	MODEL	0		"D:\cars\phat\body.prm"		; Body model
+	MODEL	1		"D:\cars\phat\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\phat\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\phat\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\phat\wheelbr.prm"		; wheel back right
+
+	MODEL	5		"D:\cars\phat\spring.prm"		; all springs
+	MODEL	9		"D:\cars\phat\axle.prm"		; all axles
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0-3 {
+		Radius		12.8
+		SkidWidth	18.0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-25, 4, 37,
+		OFFSET2		-9, 0, 0,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		25, 4, 37,
+		OFFSET2		9, 0, 0,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-25, 4, -47
+		OFFSET2		-9, 0, 0,
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		25, 4, -47
+		OFFSET2		9, 0, 0,
+	}
+
+	SPRING 0 {
+		MODELNUM	5
+		OFFSET		-13, -16, 34
+		LENGTH		6.7
+	}
+	SPRING 1 {
+		MODELNUM	5
+		OFFSET		13, -16, 34
+		LENGTH		6.7
+	}
+	SPRING 2 {
+		MODELNUM	5
+		OFFSET		-12, -28, -44
+		LENGTH		6.7
+	}
+	SPRING 3 {
+		MODELNUM	5
+		OFFSET		12, -28, -44
+		LENGTH		6.7
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		-7, -2, 35
+		LENGTH		12
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		7, -2, 35
+		LENGTH		12
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		-7, -4, -47
+		LENGTH		12
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		7, -4, -47
+		LENGTH		12
+	}
+	
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-20, -28, -28
+		DIRECTION	-0.31, -0.9, -0.31
+		LENGTH		20
+	}
+
+	CoM			0.0 -1.0 0.0
+	TopSpeed	34.0
+
+	Spring 0-1 {
+		Stiffness		400.0
+		Damping			9.0
+	}	
+	Spring 2-3 {
+		Stiffness		500.0
+		Damping			11.5
+	}	
+	BODY {
+		MODELNUM	0
+		MASS		3.0
+		INERTIA		4200, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 9000, 0.0f, 
+					0.0f, 0.0f, 3200,	
+	}
+
+	Wheel 0-1 {
+		radius	16.0
+		IsPowered	FALSE
+		EngineRatio	30000
+		IsTurnable	TRUE
+		SteerRatio	-0.45
+
+		MASS			0.4						; Mass
+		MaxPos		15.0
+		SkidWidth		20.0
+		STATICFRICTION	1.7					; Static Friction
+		KINETICFRICTION	1.5					; Kinetic Friction
+		Grip		0.016
+	}
+
+	Wheel 2-3 {
+		radius	18.0
+		EngineRatio	50000
+
+		MASS			0.4						; Mass
+		MaxPos		15.0
+		SkidWidth		20.0
+		STATICFRICTION	1.7					; Static Friction
+		KINETICFRICTION	1.5					; Kinetic Friction
+		Grip		0.016
+	}
+}	
+
+;=====================================
+; Car 3: Col. moss
+;=====================================
+Car 3 {
+
+	Name			"Col. Moss"
+	Selectable		TRUE
+
+	EnvRGB  100 200 100
+
+	TPAGE			"D:\cars\moss\car.bmp"
+
+	COLL			"D:\cars\moss\hull.hul"
+
+	MODEL	0		"D:\cars\moss\body.prm"		; Body model
+	MODEL	1		"D:\cars\moss\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\moss\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\moss\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\moss\wheelbr.prm"		; wheel back right
+
+	MODEL	9		"D:\cars\moss\axle.prm"		; all axles
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-20, -5, 39,
+		radius          9
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		20, -5, 39,
+		radius          9
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-20, -5, -45
+		radius          9
+        }
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		20, -5, -45
+		radius          9
+        } 
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		0, -4, 30
+		LENGTH		20
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		0, -4, 30
+		LENGTH		20
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		0, -4, -36
+		LENGTH		20
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		0, -4, -36
+		LENGTH		20
+	}
+	
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-10, -24, -40
+		LENGTH		20
+	}
+
+	CoM		0.0 10.0 0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		38.0
+
+	BODY {
+		MASS		1.8f,						; Mass
+		INERTIA		1700, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2200, 0.0f, 
+					0.0f, 0.0f, 900,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		IsPowered	TRUE
+		EngineRatio	8500
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		STEERRATIO	-0.3f						; Steer Ratio
+		STATICFRICTION	1.50					; Static Friction
+		KINETICFRICTION	1.38					; Kinetic Friction
+		Grip		0.013
+		SkidWidth	13.0
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	8500
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		STATICFRICTION	1.50					; Static Friction
+		KINETICFRICTION	1.38					; Kinetic Friction
+		Grip		0.014
+		SkidWidth	13.0
+	}
+
+	SPRING 0-1 {
+		Stiffness	500.0
+		Damping		12.0
+		Restitution	-0.8
+	}
+	SPRING 2-3 {
+		Stiffness	460.0
+		Damping		10.0
+		Restitution	-0.8
+	}
+
+}	
+
+
+;=====================================
+; Car 4: Harvester
+;=====================================
+Car 4 {
+
+	Name			"Harvester"
+	Selectable		TRUE
+
+	EnvRGB	200 200 0
+
+	TPAGE			"D:\cars\mud\car.bmp"
+
+	COLL			"D:\cars\mud\hull.hul"
+
+	MODEL	0		"D:\cars\mud\body.prm"		; Body model
+	MODEL	1		"D:\cars\mud\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\mud\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\mud\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\mud\wheelbr.prm"		; wheel back right
+	MODEL	9		"D:\cars\mud\axle.prm"		; axle
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-21, -12, 39,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1	    21, -12, 39,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-22.5, -9, -31
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		22.5, -9, -31
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		0, -15, 39
+		LENGTH		20
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		0, -15, 39
+		LENGTH		18
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		0, -15, -38
+		LENGTH		18
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		0, -15, -38
+		LENGTH		18
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-9, -33, -27
+		LENGTH		34
+	}
+	
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		26.5
+
+	CoM		0.0, 9.0, -5.0
+
+	BODY {
+		MODELNUM	0
+		MASS		2.2f,						; Mass
+		INERTIA		2000, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2600, 0.0f, 
+					0.0f, 0.0f, 1250,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	TRUE
+		EngineRatio	16500
+
+		RADIUS		13.5
+		MASS			0.15						; Mass
+		MaxPos		12.0
+		STEERRATIO	-0.5f						; Steer Ratio
+		AXLEFRICTION	0.05					; Axle Friction
+		STATICFRICTION	1.85					; Static Friction
+		KINETICFRICTION	1.80					; Kinetic Friction
+		Grip		0.017
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	TRUE
+		EngineRatio	16500
+
+		RADIUS		13.5
+		MASS			0.15					; Mass
+		MaxPos		12.0
+		AXLEFRICTION	0.05					; Axle Friction
+		STEERRATIO		1.0f					; Steer Ratio
+		STATICFRICTION	1.82					; Static Friction
+		KINETICFRICTION	1.77					; Kinetic Friction
+		Grip		0.017
+	}
+	SPRING 0-1 {
+		Stiffness		300.0
+		Damping		4.0
+		Restitution 	-0.8
+	}
+	SPRING 2-3 {
+		Stiffness		250.0
+		Damping		4.0
+		Restitution 	-0.8
+	}
+
+}	
+
+;=====================================
+; Car 5:doc grudge
+;=====================================
+Car 5 {
+
+	EnvRGB  200 200 200
+
+	Name			"Dr. Grudge"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\beatall\car.bmp"
+
+	COLL			"D:\cars\beatall\hull.hul"
+
+	MODEL	0		"D:\cars\beatall\body.prm"		; Body model
+	MODEL	1		"D:\cars\beatall\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\beatall\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\beatall\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\beatall\wheelbr.prm"		; wheel back right
+	MODEL	5		"D:\cars\beatall\spring.prm"		; springs
+
+	MODEL	9		"D:\cars\beatall\axle.prm"		; all axles
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-24, 3, 37,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		24, 3, 37,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-24, 3, -36
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		24, 3, -36
+	}
+
+	SPRING 0 {
+		MODELNUM	5
+		OFFSET		-12, -20, 34
+		LENGTH		22
+	}
+	SPRING 1 {
+		MODELNUM	5
+		OFFSET		12, -20, 34
+		LENGTH		22
+	}
+	SPRING 2 {
+		MODELNUM	5
+		OFFSET		-12, -19, -33
+		LENGTH		19
+	}
+	SPRING 3 {
+		MODELNUM	5
+		OFFSET		12, -19, -33
+		LENGTH		19
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		0, -1, 35
+		LENGTH		18
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		0, -1, 35
+		LENGTH		18
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		0, -3, -28
+		LENGTH		18
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		0, -3, -28
+		LENGTH		18
+	}
+	
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-10, -22, -30
+		LENGTH		35
+	}
+
+	CoM		0.0 2.0 0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		38.0
+
+	BODY {
+		MASS		2.2f,						; Mass
+		INERTIA		1800, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2700, 0.0f, 
+					0.0f, 0.0f, 1000,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		IsPowered	TRUE
+		EngineRatio	12000
+		MaxPos		12.0
+
+		RADIUS		12
+		MASS		0.15						; Mass
+		STEERRATIO	-0.5f						; Steer Ratio
+		STATICFRICTION	1.60					; Static Friction
+		KINETICFRICTION	1.35					; Kinetic Friction
+		Grip		0.013
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	12000
+		MaxPos		12.0
+
+		RADIUS		13
+		MASS		0.15						; Mass
+		STATICFRICTION	1.60					; Static Friction
+		KINETICFRICTION	1.35					; Kinetic Friction
+		Grip		0.013
+	}
+
+	SPRING 0-1 {
+		Stiffness	350.0
+		Damping		3.0
+		Restitution	-0.9
+	}
+	SPRING 2-3 {
+		Stiffness	430.0
+		Damping		3.5
+		Restitution	-0.9
+	}
+
+
+}	
+
+;=====================================
+; Car 6: Volken
+;=====================================
+Car 6 {
+
+	EnvRGB			200 200 200
+
+	Name			"Volken Turbo"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\Volken\Volken.bmp"
+	COLL			"D:\cars\Volken\hull.hul"
+
+	MODEL	0		"D:\cars\Volken\body.prm"			; Body model
+	MODEL	1		"D:\cars\Volken\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\Volken\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\Volken\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\Volken\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-25.5, -4, 41,
+		OFFSET2		-2.5, 0, 0,
+		SkidWidth	10
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		25.5, -4, 41,
+		OFFSET2		2.5, 0, 0,
+		SkidWidth	10
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-27, -4, -39,
+		OFFSET2		-2, 0, 0,
+		SkidWidth	11
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		27, -4, -39,
+		OFFSET2		2, 0, 0,
+		SkidWidth	11
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-17, -22, -45
+		LENGTH		17
+	}
+
+
+	CoM		0.0 5.0 -10.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		40.0
+
+	BODY {
+		MASS		2.0f,						; Mass
+		INERTIA		1600, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2400, 0.0f, 
+					0.0f, 0.0f, 850,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	TRUE
+		EngineRatio	21000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		5.0
+		STATICFRICTION	1.6					; Static Friction
+		KINETICFRICTION	1.45					; Kinetic Friction
+		Grip		0.020
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	FALSE
+		EngineRatio	10000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		5.0
+		STATICFRICTION	1.6					; Static Friction
+		KINETICFRICTION	1.45					; Kinetic Friction
+		Grip		0.020
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	1000.0
+		Damping		15.0
+		Restitution	-0.75
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+;=====================================
+; Car 7: Sprinter XL
+;=====================================
+Car 7 {
+
+	EnvRGB			200 200 200
+
+	Name			"Sprinter XL"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\tc6\car.bmp"
+
+	COLL			"D:\cars\tc6\hull.hul"
+
+	MODEL	0		"D:\cars\tc6\body.prm"			; Body model
+	MODEL	1		"D:\cars\tc6\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\tc6\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\tc6\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\tc6\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-19.5, -3, 31,
+		OFFSET2		-2, 0, 0
+		SkidWidth	14
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		19.5, -3, 31,
+		OFFSET2		2, 0, 0
+		SkidWidth	14
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-20, -3, -39,
+		OFFSET2		-2, 0, 0
+		SkidWidth	14
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		20, -3, -39,
+		OFFSET2		2, 0, 0
+		SkidWidth	14
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		20, -17, 21
+		LENGTH		17
+		DAMPING		2.5
+	}
+
+
+	CoM		0.0 2.0 6.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		34.0
+
+	BODY {
+		MASS		1.0f,						; Mass
+		INERTIA		700, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1100, 0.0f, 
+					0.0f, 0.0f, 500,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		IsPowered	TRUE
+		EngineRatio	8500
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STEERRATIO	-0.4f						; Steer Ratio
+		STATICFRICTION	1.55					; Static Friction
+		KINETICFRICTION	1.35					; Kinetic Friction
+		Grip		0.014
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	8500
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.55					; Static Friction
+		KINETICFRICTION	1.35					; Kinetic Friction
+		Grip		0.014
+	}
+
+	SPRING 0 - 1 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	1000.0
+		Damping		15.0
+		Restitution	-0.85
+	}
+
+	SPRING 2 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	800.0
+		Damping		12.0
+		Restitution	-0.85
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Bronze cup cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 8: Dynamo San
+;=====================================
+Car 8 {
+
+	Name			"Dynamo San"
+	Selectable		TRUE
+
+	EnvRGB	0	64	200
+
+	TPAGE			"D:\cars\dino\dino.bmp"
+
+	COLL			"D:\cars\dino\hull.hul"
+
+	MODEL	0		"D:\cars\dino\body.prm"		; Body model
+	MODEL	1		"D:\cars\dino\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\dino\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\dino\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\dino\wheelbr.prm"		; wheel back right
+	MODEL	5		"D:\cars\dino\spring.prm"
+
+	MODEL	9		"D:\cars\dino\axle.prm"		; all axles
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-22, 0, 29,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		22, 0, 29,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-23, 0, -36
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		23, 0, -36
+	}
+
+	SPRING 0 {
+		MODELNUM	5
+		OFFSET		-15, -8, 28
+		LENGTH		4
+	}
+	SPRING 1 {
+		MODELNUM	5
+		OFFSET		15, -8, 28
+		LENGTH		4
+	}
+	SPRING 2 {
+		MODELNUM	5
+		OFFSET		-17, -8, -36
+		LENGTH		4
+	}
+	SPRING 3 {
+		MODELNUM	5
+		OFFSET		17, -8, -36
+		LENGTH		4
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		-18, 0, 30
+		LENGTH		12
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		18, 0, 30
+		LENGTH		12
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		-18, 0, -33
+		LENGTH		16
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		18, 0, -33
+		LENGTH		12
+	}
+	
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		0, -15, -40
+		LENGTH		25
+	}
+
+	CoM				0.0 3.0 -5.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		32.0
+
+	BODY {
+		MASS		1.2f,						; Mass
+		INERTIA		1100, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1500, 0.0f, 
+					0.0f, 0.0f, 600,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	TRUE
+		EngineRatio	12000
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		STATICFRICTION	1.50					; Static Friction
+		KINETICFRICTION	1.35					; Kinetic Friction
+		Grip		0.016
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	17000
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		STATICFRICTION	1.50					; Static Friction
+		KINETICFRICTION	1.35					; Kinetic Friction
+		Grip		0.016
+	}
+
+	SPRING 0-1 {
+		Stiffness	500.0
+		Damping		12.0
+		Restitution	-0.8
+	}
+	SPRING 2-3 {
+		Stiffness	460.0
+		Damping		10.0
+		Restitution	-0.8
+	}
+
+}	
+
+;=====================================
+; Car 9: candy pebbles
+;=====================================
+Car 9 {
+
+	Name			"Candy Pebbles"
+	Selectable		TRUE
+
+	EnvRGB	255 255 255
+
+	TPAGE			"D:\cars\candy\car.bmp"
+
+	COLL			"D:\cars\candy\candy.hul"
+
+	MODEL	0		"D:\cars\candy\body.prm"		; Body model
+	MODEL	1		"D:\cars\candy\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\candy\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\candy\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\candy\wheelbr.prm"		; wheel back right
+	MODEL	9		"D:\cars\candy\axle.prm"		; axle
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-22, -6, 32,
+		OFFSET2		-9, 0, 0
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1	    	22, -6, 32,
+		OFFSET2		9, 0, 0
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-22, -6, -34
+		OFFSET2		-9, 0, 0
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		22, -6, -34
+		OFFSET2		9, 0, 0
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		0, -15, 39
+		LENGTH		20
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		0, -15, 39
+		LENGTH		18
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		0, -15, -38
+		LENGTH		18
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		0, -15, -38
+		LENGTH		18
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-11, -28, -27
+		LENGTH		34
+	}
+	
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		31.0
+
+	CoM		0.0 5.0 0.0
+
+	BODY {
+		MODELNUM	0
+		MASS		1.5f,						; Mass
+		INERTIA		1400, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1850, 0.0f, 
+					0.0f, 0.0f, 750	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	FALSE
+		EngineRatio	10000
+		SkidWidth	18.0
+
+		RADIUS		12.5
+		MASS			0.15						; Mass
+		STATICFRICTION	1.85					; Static Friction
+		KINETICFRICTION	1.80					; Kinetic Friction
+		Grip		0.020
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	28000
+		SkidWidth	18.0
+
+		RADIUS		12.5
+		MASS			0.15					; Mass
+		STATICFRICTION	1.82					; Static Friction
+		KINETICFRICTION	1.77					; Kinetic Friction
+		Grip		0.020
+	}
+	SPRING 0-1 {
+		Stiffness		400.0
+		Damping		3.0
+		Restitution 	-0.8
+	}
+	SPRING 2-3 {
+		Stiffness		350.0
+		Damping		3.0
+		Restitution 	-0.8
+	}
+
+}	
+
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Bronze practise cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 10: genghis Khar
+;=====================================
+Car 10 {
+
+	Name			"Genghis Kar"
+	Selectable		TRUE
+
+	EnvRGB 200 0 0
+
+	TPAGE			"D:\cars\gencar\car.bmp"
+
+	COLL			"D:\cars\gencar\hull.hul"
+
+	MODEL	0		"D:\cars\gencar\body.prm"		; Body model
+	MODEL	1		"D:\cars\gencar\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\gencar\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\gencar\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\gencar\wheelbr.prm"		; wheel back right
+    MODEL   5		"D:\cars\gencar\spring.prm"                ; springs
+	MODEL	9		"D:\cars\gencar\axle.prm"		; all axles
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	CoM			0.0 2.0 0.0
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0-1 {
+		SkidWidth	10.0
+	}
+	WHEEL 2-3 {
+		SkidWidth	18.0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-25, 4.7, 35,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		25, 4.7, 35,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-24, 4.7, -38
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		24, 4.7, -38
+	}
+
+	SPRING 0 {
+		MODELNUM	5
+		OFFSET		-14, -5, 25
+		LENGTH		30
+	}
+	SPRING 1 {
+		MODELNUM	5
+		OFFSET		14, -5, 25
+		LENGTH		30
+	}
+	SPRING 2 {
+		MODELNUM	5
+		OFFSET		-13, -5, -33
+		LENGTH		30
+	}
+	SPRING 3 {
+		MODELNUM	5
+		OFFSET		13, -5, -33
+		LENGTH		30
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		-13, 2, 35
+		LENGTH		12
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		13, 2, 35
+		LENGTH		12
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		-13, 1, -36
+		LENGTH		12
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		13, 1, -36
+		LENGTH		12
+	}
+	
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-16, -11, -25
+		LENGTH		20
+	}
+
+
+	TopSpeed	45.0
+
+	BODY {
+		MODELNUM	0
+		MASS		2.3f,						; Mass
+		INERTIA		2000, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 3000, 0.0f, 
+					0.0f, 0.0f, 1000,
+		ResMod		20.0
+	}
+
+	WHEEL 0-1 {
+		StaticFriction	1.30
+		KineticFriction	1.15
+		Radius			13.5
+		Grip			0.014
+		MaxPos			10.0
+		IsPowered	TRUE
+		Engineratio	12000
+		IsTurnable	TRUE
+		SteerRatio	-0.25
+	}
+
+	WHEEL 2-3 {
+		StaticFriction	1.30
+		KineticFriction	1.15
+		Radius			13.5
+		MaxPos			10.0
+		Grip			0.014
+		IsPowered	TRUE
+		Engineratio	12000
+		IsTurnable	TRUE
+		SteerRatio	0.15
+	}
+
+	SPRING 0-1 {
+		Stiffness	400
+		Damping		5.0
+		Restitution	-0.9
+	}
+
+	SPRING 2-3 {
+		Stiffness	380
+		Damping		4.5
+		Restitution	-0.8
+	}
+}	
+
+;=====================================
+; Car 11: Aquasonic
+;=====================================
+Car 11 {
+
+	EnvRGB			200 200 200
+
+	Name			"Aquasonic"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\tc4\car.bmp"
+
+	COLL			"D:\cars\tc4\hull.hul"
+
+	MODEL	0		"D:\cars\tc4\body.prm"			; Body model
+	MODEL	1		"D:\cars\tc4\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\tc4\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\tc4\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\tc4\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-23.5, -3, 34,
+		OFFSET2		-2, 0, 0
+		SkidWidth	14
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		23.5, -3, 34,
+		OFFSET2		2, 0, 0
+		SkidWidth	14
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-25, -3, -44,
+		OFFSET2		-2, 0, 0
+		SkidWidth	14
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		25, -3, -44,
+		OFFSET2		2, 0, 0
+		SkidWidth	14
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		23, -20, -52
+		LENGTH		17
+	}
+
+
+	CoM		0.0 2.0 6.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		36.0
+
+	BODY {
+		MASS		1.8f,						; Mass
+		INERTIA		1400, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2200, 0.0f, 
+					0.0f, 0.0f, 700,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		IsPowered	FALSE
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.4				; Static Friction
+		KINETICFRICTION	1.17				; Kinetic Friction
+		Grip		0.016
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	TRUE
+		EngineRatio	20000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		AXLEFRICTION	0.05 ;0.10f					; Axle Friction
+		STATICFRICTION	1.40					; Static Friction
+		KINETICFRICTION	1.15					; Kinetic Friction
+		Grip		0.016
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	600.0
+		Damping		10.0
+		Restitution	-0.85
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Bronze single race cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 12: Mouse
+;=====================================
+Car 12 {
+
+	Name			"Mouse"
+	Selectable		TRUE
+
+	EnvRGB			200 200 200
+
+	TPAGE			"D:\cars\mouse\car.bmp"
+
+	COLL			"D:\cars\mouse\hull.hul"
+
+	MODEL	0		"D:\cars\mouse\body.prm"		; Body model
+	MODEL	1		"D:\cars\mouse\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\mouse\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\mouse\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\mouse\wheelbr.prm"		; wheel back right
+	MODEL	9		"D:\cars\mouse\axle.prm"		; axle
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	CoM		0.0 10.0 -5.0
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-30, 3, 39,
+		OFFSET2		-8, 0, 0,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1	    	30, 3, 39,
+		OFFSET2		8, 0, 0,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-30, 3, -38
+		OFFSET2		-8, 0, 0,
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		30, 3, -38
+		OFFSET2		8, 0, 0,
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		-3, -2, 35
+		LENGTH		22
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		3, -2, 35
+		LENGTH		22
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		-3, -1, -36
+		LENGTH		22
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		3, -1, -36
+		LENGTH		22
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		0, -49, 0
+		LENGTH		20
+	}
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		10.0
+	TopSpeed		32.0
+
+	CoM		0.0, 2.0, 0.0
+
+	BODY {
+		MODELNUM	0
+		MASS		3.0f,						; Mass
+		INERTIA		2700, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 3750, 0.0f, 
+					0.0f, 0.0f, 2300,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	TRUE
+		EngineRatio	35000
+
+		RADIUS		18.5
+		MASS			0.45						; Mass
+		MaxPos		20.0
+		SkidWidth		23.0
+		STATICFRICTION	1.55					; Static Friction
+		KINETICFRICTION	1.30					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	35000
+
+		RADIUS		18.5
+		MASS			0.45				; Mass
+		MaxPos		20.0
+		SkidWidth		23.0
+		STATICFRICTION	1.50					; Static Friction
+		KINETICFRICTION	1.30					; Kinetic Friction
+		Grip		0.015
+	}
+	SPRING 0-1 {
+		Stiffness		450.0
+		Damping		9.2
+		Restitution 	-0.95
+	}
+	SPRING 2-3 {
+		Stiffness		450.0
+		Damping		9.2
+		Restitution 	-0.95
+	}
+}	
+
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Silver cup cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 13: Evil Weasel
+;=====================================
+
+Car 13 {
+
+	Name			"Evil Weasel"
+	Selectable		TRUE
+
+	EnvRGB	0 200 200
+
+	TPAGE			"D:\cars\flag\car.bmp"
+
+	COLL			"D:\cars\flag\hull.hul"
+
+	MODEL	0		"D:\cars\flag\body.prm"		; Body model
+	MODEL	1		"D:\cars\flag\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\flag\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\flag\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\flag\wheelbr.prm"		; wheel back right
+	MODEL	5		"D:\cars\flag\spring.prm"		; all springs
+
+	MODEL	9		"D:\cars\flag\axle.prm"		; all axles
+	MODEL	13		"D:\cars\flag\pin.prm"		; all pins
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-20, 3, 46,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		20, 3, 46,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-20, 6.5, -34
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		20, 6.5, -34
+	}
+
+	SPRING 0 {
+		MODELNUM	5
+		OFFSET		-7, -15, 41
+		LENGTH		16
+	}
+	SPRING 1 {
+		MODELNUM	5
+		OFFSET		7, -15, 41
+		LENGTH		16
+	}
+	SPRING 2 {
+		MODELNUM	5
+		OFFSET		-11, -22, -38
+		LENGTH		16
+	}
+	SPRING 3 {
+		MODELNUM	5
+		OFFSET		11, -22, -38
+		LENGTH		16
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		-7, 3, 46
+		LENGTH		12
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		7, 3, 46
+		LENGTH		12
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		-11, 3, -34
+		LENGTH		12
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		11, 3, -34
+		LENGTH		12
+	}
+	
+	PIN 0 {
+		MODELNUM	13
+		OFFSET		0, 0, 0
+		LENGTH		-1.5
+	}
+	PIN 1 {
+		MODELNUM	13
+		OFFSET		0, 0, 0
+		LENGTH		-1.5
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-15, -4, -18
+		LENGTH		32
+	}
+
+	CoM				0.0 -2.0 -0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		39.0
+
+	BODY {
+		MASS		1.4f,						; Mass
+		INERTIA		1500, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2200, 0.0f, 
+					0.0f, 0.0f, 770,	
+		ANGRES		0.005f,						; Angular Air resistance
+		RESMOD		10.0f,						; increase in ang resistance when in air
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		IsPowered	TRUE
+		EngineRatio	7000
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		STEERRATIO	-0.4f						; Steer Ratio
+		STATICFRICTION	1.40					; Static Friction
+		KINETICFRICTION	1.15					; Kinetic Friction
+		Grip		0.013
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	7000
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		STATICFRICTION	1.40					; Static Friction
+		KINETICFRICTION	1.15					; Kinetic Friction
+		Grip		0.013
+	}
+
+	SPRING 0-1 {
+		Stiffness	350.0
+		Damping		3.0
+		Restitution	-0.90
+	}
+	SPRING 2-3 {
+		Stiffness	320.0
+		Damping		2.8
+		Restitution	-0.90
+	}
+
+}	
+
+
+;=====================================
+; Car 14: Panga
+;=====================================
+Car 14 {
+
+	EnvRGB			200 200 200
+
+	Name			"Panga"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\tc2\car.bmp"
+	COLL			"D:\cars\tc2\hull.hul"
+
+	MODEL	0		"D:\cars\tc2\body.prm"			; Body model
+	MODEL	1		"D:\cars\tc2\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\tc2\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\tc2\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\tc2\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-21, 2, 29,
+		OFFSET2		-2, 0, 0
+		SkidWidth	13
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		21, 2, 29,
+		OFFSET2		2, 0, 0
+		SkidWidth	13
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-21, 2, -44.5,
+		OFFSET2		-2, 0, 0
+		SkidWidth	13
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		21, 2, -44.0,
+		OFFSET2		2, 0, 0
+		SkidWidth	13
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		17, -24, -45
+		LENGTH		17
+	}
+
+
+	CoM		0.0 0.0 15.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		37.5
+
+	BODY {
+		MASS		1.8f,						; Mass
+		INERTIA		1500, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2000, 0.0f, 
+					0.0f, 0.0f, 800,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	FALSE
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		6.0
+		STATICFRICTION	1.6					; Static Friction
+		KINETICFRICTION	1.6					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	TRUE
+		EngineRatio	22000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		6.0
+		STATICFRICTION	1.6					; Static Friction
+		KINETICFRICTION	1.6					; Kinetic Friction
+		Grip		0.015
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	800.0
+		Damping		9.0
+		Restitution	-0.95
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Silver practise mode cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 15: R6 Turbo
+;=====================================
+Car 15 {
+
+	Name			"R6 Turbo"
+	Selectable		TRUE
+
+	EnvRGB	200 200 200
+
+	TPAGE			"D:\cars\r5\car.bmp"
+
+	COLL			"D:\cars\r5\hull.hul"
+
+	MODEL	0		"D:\cars\r5\body.prm"		; Body model
+	MODEL	1		"D:\cars\r5\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\r5\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\r5\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\r5\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\Aerialt.m"		; Aerial Top
+
+	COM		0.0 -15.0 -11.0
+	TopSpeed	34
+
+	BODY {
+		MODELNUM	0
+		MASS		0.8f,						; Mass
+		INERTIA		900, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1250, 0.0f, 
+					0.0f, 0.0f, 400,	
+	}
+
+	WHEEL 0-1 {
+		Radius			12
+		STATICFRICTION	1.7
+		KINETICFRICTION	1.5
+		ENGINERATIO		17000
+		Grip			0.015
+	}
+	WHEEL 2-3 {
+		Radius			12
+		STATICFRICTION	1.65
+		KINETICFRICTION	1.5
+		Grip			0.015
+		IsPowered	FALSE
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-14, 14, 32.5, 
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		14, 14, 32.5, 
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-13, 14, -38, 
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		13, 14, -38, 
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 	18
+		OFFSET		12.0 -19.0 -20.0
+		DIRECTION	0.0 -1.0 0.0 ;-0.866 -0.5
+	}
+
+	SPRING 0-1 {
+		Stiffness	500.0
+		Damping		6.0
+		Restitution -0.8
+	}
+	SPRING 2-3 {
+		Stiffness	500.0
+		Damping		6.0
+		Restitution -0.8
+	}
+}	
+
+;=====================================
+; Car 16: Loaded Chique
+;=====================================
+Car 16 {
+
+	EnvRGB			200 200 200
+
+	Name			"Loaded Chique"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\tc5\car.bmp"
+
+	COLL			"D:\cars\tc5\hull.hul"
+
+	MODEL	0		"D:\cars\tc5\body.prm"			; Body model
+	MODEL	1		"D:\cars\tc5\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\tc5\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\tc5\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\tc5\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-19.5, -3, 31,
+		OFFSET2		-2, 0, 0
+		SkidWidth	14
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		19.5, -3, 31,
+		OFFSET2		2, 0, 0
+		SkidWidth	14
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-20, -3, -39,
+		OFFSET2		-2, 0, 0
+		SkidWidth	14
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		20, -3, -39,
+		OFFSET2		2, 0, 0
+		SkidWidth	14
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		20, -17, 21
+		LENGTH		17
+		DAMPING		2.5
+	}
+
+
+	CoM		0.0 2.0 6.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		38.0
+
+	BODY {
+		MASS		1.6f,						; Mass
+		INERTIA		1400, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1700, 0.0f, 
+					0.0f, 0.0f, 850,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.35
+		IsPowered	FALSE
+
+		RADIUS		11
+		MASS		0.15					; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.6					; Static Friction
+		KINETICFRICTION	1.4					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	18000
+
+		RADIUS		11
+		MASS		0.15					; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.65				; Static Friction
+		KINETICFRICTION	1.45				; Kinetic Friction
+		Grip		0.015
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	600.0
+		Damping		10.0
+		Restitution	-0.85
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Silver single race cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 17: Sgt Bertha Ballistics
+;=====================================
+Car 17 {
+
+	Name			"Bertha Ballistics"
+	Selectable		TRUE
+
+	EnvRGB	100 100 100
+
+	TPAGE			"D:\cars\sgt\car.bmp"
+
+	COLL			"D:\cars\sgt\hull.hul"
+
+	MODEL	0		"D:\cars\sgt\body.prm"		; Body model
+	MODEL	1		"D:\cars\sgt\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\sgt\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\sgt\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\sgt\wheelbr.prm"		; wheel back right
+	MODEL	9		"D:\cars\sgt\axle.prm"		; axle
+	MODEL	13		"D:\cars\sgt\radar.prm"		; Radar
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-30, -12, 44,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1	    30, -12, 44,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-31, -12, -38
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		31, -12, -38
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		-0, -16, 44
+		LENGTH		28
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		0, -16, 44
+		LENGTH		28
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		-0, -18, -39
+		LENGTH		28
+	}
+	AXLE 3 {
+	    MODELNUM	9
+		OFFSET		0, -18, -39
+		LENGTH		28
+	}
+
+	SPRING 0 - 1 {
+		Stiffness	350.0
+		Damping		7.0
+		Restitution	-0.85
+	}
+
+	SPRING 2 - 3 {
+		Stiffness	350.0
+		Damping		7.0
+		Restitution	-0.85
+	}
+
+	SPINNER {
+		MODELNUM	13
+		OFFSET	-24, -61, -20
+		AXIS		0, 1.0, 0
+		ANGVEL		1.0
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		7, -54, -15
+		LENGTH		30
+	}
+
+	CoM		0.0 16.0 0.0
+	SteerMod	0.4
+	SteerRate	8
+	TopSpeed	35
+
+	BODY {
+		MODELNUM	0
+		MASS		3.0
+		INERTIA		3000, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 8000, 0.0f, 
+					0.0f, 0.0f, 2500,	
+	}
+
+	Wheel 0-1 {
+		radius	16.0
+		IsTurnable	TRUE
+		SteerRatio	-0.25
+		EngineRatio	30000
+
+		MASS			0.4						; Mass
+		MaxPos		15.0
+		SkidWidth		12.0
+		STATICFRICTION	1.75					; Static Friction
+		KINETICFRICTION	1.60					; Kinetic Friction
+		Grip		0.015
+	}
+
+	Wheel 2-3 {
+		radius	18.0
+		IsTurnable	TRUE
+		SteerRatio	0.03
+		EngineRatio	30000
+
+		MASS			0.4						; Mass
+		MaxPos		15.0
+		SkidWidth		12.0
+		STATICFRICTION	1.70					; Static Friction
+		KINETICFRICTION	1.60					; Kinetic Friction
+		Grip		0.015
+	}
+}	
+
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Gold Cup cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 18: Pest Control
+;=====================================
+Car 18 {
+
+	EnvRGB			200 200 200
+
+	Name			"Pest Control"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\TC3\car.bmp"
+
+	COLL			"D:\cars\TC3\hull.hul"
+
+	MODEL	0		"D:\cars\TC3\body.prm"			; Body model
+	MODEL	1		"D:\cars\TC3\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\TC3\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\TC3\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\TC3\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-22.5, -1, 32.5,
+		OFFSET2		-2, 0, 0
+		SkidWidth	13
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		22.5, -1, 32.5,
+		OFFSET2		2, 0, 0
+		SkidWidth	13
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-23, -1, -44.5,
+		OFFSET2		-2, 0, 0
+		SkidWidth	13
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		23, -1, -44.5,
+		OFFSET2		2, 0, 0
+		SkidWidth	13
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		20, -22, -44
+		LENGTH		17
+	}
+
+
+	CoM		0.0 2.0 0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		47.0
+
+	BODY {
+		MASS		2.0f,						; Mass
+		INERTIA		1400, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2200, 0.0f, 
+					0.0f, 0.0f, 900,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	FALSE
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		5.0
+		STATICFRICTION	1.65					; Static Friction
+		KINETICFRICTION	1.45					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	TRUE
+		EngineRatio	18000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		5.0
+		STATICFRICTION	1.70					; Static Friction
+		KINETICFRICTION	1.50					; Kinetic Friction
+		Grip		0.015
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	600.0
+		Damping		11.0
+		Restitution	-0.95
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+
+;=====================================
+; Car 19: Adeon
+;=====================================
+Car 19 {
+
+	EnvRGB			200 200 200
+
+	Name			"Adeon"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\Adeon\car.bmp"
+
+	COLL			"D:\cars\Adeon\hull.hul"
+
+	MODEL	0		"D:\cars\Adeon\body.prm"			; Body model
+	MODEL	1		"D:\cars\Adeon\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\Adeon\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\Adeon\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\Adeon\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-23.5, -3, 39,
+		OFFSET2		-2, 0, 0
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		23.5, -3, 39,
+		OFFSET2		2, 0, 0
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-23.5, -3, -30.5,
+		OFFSET2		-2, 0, 0
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		23.5, -3, -30.5,
+		OFFSET2		2, 0, 0
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		23, -22, -45
+		LENGTH		17
+	}
+
+
+	CoM		0.0 0.0 0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		35.0
+
+	BODY {
+		MASS		1.2f,						; Mass
+		INERTIA		1000, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1700, 0.0f, 
+					0.0f, 0.0f, 560,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	TRUE
+		EngineRatio	10000
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.80					; Static Friction
+		KINETICFRICTION	1.65					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	TRUE
+		EngineRatio	10000
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.88					; Static Friction
+		KINETICFRICTION	1.67					; Kinetic Friction
+		Grip		0.015
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	1000.0
+		Damping		15.0
+		Restitution	-0.75
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Gold class practise cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 20: PolePot
+;=====================================
+Car 20 {
+
+	Name			"Pole Pot"
+	Selectable		TRUE
+
+    EnvRGB  200 200 200
+
+	TPAGE			"D:\cars\fone\car.bmp"
+
+	COLL			"D:\cars\fone\hull.hul"
+
+	MODEL	0		"D:\cars\fone\body.prm"		; Body model
+	MODEL	1		"D:\cars\fone\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\fone\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\fone\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\fone\wheelbr.prm"		; wheel back right
+	MODEL	9		"D:\cars\fone\axle.prm"		; all axles
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-28, -3, 39,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1	         28, -3, 39,
+	        radius          10
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-27, -3, -38,
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		27, -3, -38,
+	        radius          10
+	}
+
+	AXLE 0 {
+		MODELNUM	9
+		OFFSET		0, -8, 32
+		LENGTH		18
+	}
+	AXLE 1 {
+		MODELNUM	9
+		OFFSET		0, -8, 32
+		LENGTH		18
+	}
+	AXLE 2 {
+		MODELNUM	9
+		OFFSET		0, -8, -36
+		LENGTH		18
+	}
+	AXLE 3 {
+		MODELNUM	9
+		OFFSET		0, -8, -36
+		LENGTH		18
+	}
+	
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-15, -14, -30
+		LENGTH		30
+	}
+
+	CoM		0.0 10.0 0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		37.0
+
+	BODY {
+		MASS		1.7f,						; Mass
+		INERTIA		1100, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2000, 0.0f, 
+					0.0f, 0.0f, 1100,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.3
+		IsPowered	TRUE
+		EngineRatio	13000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		10.0
+		STATICFRICTION	1.30					; Static Friction
+		KINETICFRICTION	1.15					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	13000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		10.0
+		STATICFRICTION	1.33					; Static Friction
+		KINETICFRICTION	1.18					; Kinetic Friction
+		Grip		0.015
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	400.0
+		Damping		5.0
+		Restitution	-0.90
+	}
+
+
+}	
+
+;=====================================
+; Car 21: Zipper
+;=====================================
+Car 21 {
+
+	EnvRGB			200 200 200
+
+	Name			"Zipper"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\tc1\car.bmp"
+	COLL			"D:\cars\tc1\hull.hul"
+
+	MODEL	0		"D:\cars\tc1\body.prm"			; Body model
+	MODEL	1		"D:\cars\tc1\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\tc1\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\tc1\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\tc1\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-21, -4, 34,
+		OFFSET2		-2, 0, 0
+		SkidWidth	13.5
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		21, -4, 34,
+		OFFSET2		2, 0, 0
+		SkidWidth	13.5
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-21, -4, -44.5,
+		OFFSET2		-2, 0, 0
+		SkidWidth	13.5
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		21, -4, -44.5,
+		OFFSET2		2, 0, 0
+		SkidWidth	13.5
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-22, -18, -45
+		LENGTH		17
+	}
+
+
+	CoM		0.0 0.0 5.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		38.0
+
+	BODY {
+		MASS		1.4f,						; Mass
+		INERTIA		1000, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1700, 0.0f, 
+					0.0f, 0.0f, 650,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.4
+		IsPowered	TRUE
+		EngineRatio	12000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.63					; Static Friction
+		KINETICFRICTION	1.45					; Kinetic Friction
+		Grip		0.017
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	12000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.65					; Static Friction
+		KINETICFRICTION	1.46					; Kinetic Friction
+		Grip		0.017
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	700.0
+		Damping		9.0
+		Restitution	-0.90
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Gold single race cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 22: WILL BE SPECIAL #1
+;=====================================
+Car 22 {
+
+	EnvRGB			200 200 200
+
+	Name			"Will be Special #1"
+	Selectable		FALSE
+
+	TPAGE			"D:\cars\trolly\trolley.bmp"
+
+	COLL			"D:\cars\trolly\trolleyHull.hul"
+
+	MODEL	0		"D:\cars\trolly\TrollBod.m"			; Body model
+	MODEL	1		"D:\cars\trolly\TrollWL.m"			; wheel front left
+	MODEL	2		"D:\cars\trolly\TrollWR.m"			; wheel front right
+	MODEL	3		"D:\cars\trolly\TrollWL.m"			; wheel back left
+	MODEL	4		"D:\cars\trolly\TrollWR.m"			; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-50, 10, 110,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		50, 10, 110,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-70, 10, -100,
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		70, 10, -100,
+	}
+
+
+	CoM		0.0 80.0 0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		40.0
+
+	BODY {
+		MASS		10.0f,						; Mass
+		INERTIA		20000, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 22000, 0.0f, 
+					0.0f, 0.0f, 12000,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	FALSE
+		EngineRatio	20000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		10.0
+		STEERRATIO	-0.5f						; Steer Ratio
+		AXLEFRICTION	0.05					; Axle Friction
+		STATICFRICTION	1.9					; Static Friction
+		KINETICFRICTION	1.7					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	TRUE
+		EngineRatio	20000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		10.0
+		AXLEFRICTION	0.05 ;0.10f					; Axle Friction
+		STEERRATIO		1.0f					; Steer Ratio
+		STATICFRICTION	1.9					; Static Friction
+		KINETICFRICTION	1.7					; Kinetic Friction
+		Grip		0.015
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	500.0
+		Damping		10.0
+		Restitution	-0.75
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Special cup cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 23: Cougar
+;=====================================
+Car 23 {
+
+	EnvRGB			200 200 200
+
+	Name			"Cougar"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\Cougar\car.bmp"
+
+	COLL			"D:\cars\Cougar\hull.hul"
+
+	MODEL	0		"D:\cars\Cougar\body.prm"			; Body model
+	MODEL	1		"D:\cars\Cougar\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\Cougar\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\Cougar\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\Cougar\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-24.5, -1, 32.5,
+		OFFSET2		-1.5, 0, 0
+		SkidWidth	11
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		24.5, -1, 32.5,
+		OFFSET2		1.5, 0, 0
+		SkidWidth	11
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-26.5, -1, -34.5,
+		OFFSET2		-1.5, 0, 0
+		SkidWidth	12
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		26.5, -1, -34.5,
+		OFFSET2		1.5, 0, 0
+		SkidWidth	12
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		21, -18, -42
+		LENGTH		17
+	}
+
+
+	CoM		0.0 4.0 -10.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		43.0
+
+	BODY {
+		MASS		2.0f,						; Mass
+		INERTIA		1400, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2200, 0.0f, 
+					0.0f, 0.0f, 700,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.18
+		IsPowered	TRUE
+		EngineRatio	28000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.7					; Static Friction
+		KINETICFRICTION	1.65					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	FALSE
+		EngineRatio	18000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.73					; Static Friction
+		KINETICFRICTION	1.68					; Kinetic Friction
+		Grip		0.015
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	1000.0
+		Damping		15.0
+		Restitution	-0.75
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+
+;=====================================
+; Car 24: Humma
+;=====================================
+Car 24 {
+
+	EnvRGB			200 200 200
+
+	Name			"Humma"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\Sugo\car.bmp"
+
+	COLL			"D:\cars\Sugo\hull.hul"
+
+	MODEL	0		"D:\cars\Sugo\body.prm"			; Body model
+	MODEL	1		"D:\cars\Sugo\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\Sugo\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\Sugo\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\Sugo\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-23.5, -6, 39,
+		OFFSET2		-2, 0, 0
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		23.5, -6, 39,
+		OFFSET2		2, 0, 0
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-23.5, -5, -30.5,
+		OFFSET2		-2, 0, 0
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		23.5, -5, -30.5,
+		OFFSET2		2, 0, 0
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		23, -22, -45
+		LENGTH		17
+	}
+
+
+	CoM		0.0 0.0 0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		36.0
+
+	BODY {
+		MASS		2.0f,						; Mass
+		INERTIA		1400, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2200, 0.0f, 
+					0.0f, 0.0f, 700,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	TRUE
+		EngineRatio	20000
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.72					; Static Friction
+		KINETICFRICTION	1.65					; Kinetic Friction
+		Grip		0.016
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		IsPowered	TRUE
+		EngineRatio	20000
+
+		RADIUS		10
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STATICFRICTION	1.72					; Static Friction
+		KINETICFRICTION	1.65					; Kinetic Friction
+		Grip		0.016
+	}
+
+	SPRING 0 - 1 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	1000.0
+		Damping		15.0
+		Restitution	-0.85
+	}
+
+	SPRING 2 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	800.0
+		Damping		12.0
+		Restitution	-0.85
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Special practise cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 25: Toyeca
+;=====================================
+Car 25 {
+
+	EnvRGB			200 200 200
+
+	Name			"Toyeca"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\Toyeca\Toyecatx.bmp"
+	COLL			"D:\cars\Toyeca\hull.hul"
+
+	MODEL	0		"D:\cars\Toyeca\body.prm"			; Body model
+	MODEL	1		"D:\cars\Toyeca\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\Toyeca\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\Toyeca\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\Toyeca\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-22.5, -6.75, 35.5,
+		OFFSET2		-2.5, 0.0, 0.0,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		22.5, -6.75, 35.5,
+		OFFSET2		2.5, 0.0, 0.0,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-24, -6.75, -33,
+		OFFSET2		-2, 0.0, 0.0,
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		24, -6.75, -33,
+		OFFSET2		2, 0.0, 0.0,
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		-17, -22, -45
+		LENGTH		17
+	}
+
+
+	CoM		0.0 8.0 -10.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		40.0
+
+	BODY {
+		MASS		2.0f,						; Mass
+		INERTIA		1400, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 2200, 0.0f, 
+					0.0f, 0.0f, 700,	
+		GRAVITY		2200.0f,					; Acc due to gravity
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	TRUE
+		EngineRatio	20000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STEERRATIO	-0.25f						; Steer Ratio
+		AXLEFRICTION	0.05					; Axle Friction
+		STATICFRICTION	1.90					; Static Friction
+		KINETICFRICTION	1.75					; Kinetic Friction
+		Grip		0.020
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	TRUE
+		EngineRatio	20000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		AXLEFRICTION	0.05 ;0.10f					; Axle Friction
+		STEERRATIO		1.0f					; Steer Ratio
+		STATICFRICTION	1.88					; Static Friction
+		KINETICFRICTION	1.73					; Kinetic Friction
+		Grip		0.020
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	1000.0
+		Damping		15.0
+		Restitution	-0.75
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+;=====================================
+; Car 26: AMW
+;=====================================
+Car 26 {
+
+	EnvRGB			200 200 200
+
+	Name			"AMW"
+	Selectable		TRUE
+
+	TPAGE			"D:\cars\amw\amw.bmp"
+
+	COLL			"D:\cars\amw\hull.hul"
+
+	MODEL	0		"D:\cars\amw\body.prm"			; Body model
+	MODEL	1		"D:\cars\amw\wheelfl.prm"		; wheel front left
+	MODEL	2		"D:\cars\amw\wheelfr.prm"		; wheel front right
+	MODEL	3		"D:\cars\amw\wheelbl.prm"		; wheel back left
+	MODEL	4		"D:\cars\amw\wheelbr.prm"		; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-28.5, -6, 39,
+		OFFSET2		-1.5, 0, 0
+		SkidWidth	10
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		28.5, -6, 39,
+		OFFSET2		1.5, 0, 0
+		SkidWidth	10
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-28.5, -6, -29,
+		OFFSET2		-1.5, 0, 0
+		SkidWidth	10
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		28.5, -6, -29,
+		OFFSET2		1.5, 0, 0
+		SkidWidth	10
+	}
+
+	AERIAL {
+		SECMODELNUM	17
+		TOPMODELNUM 18
+		OFFSET		20, -23, 28
+		LENGTH		17
+	}
+
+
+	CoM		0.0 6.0 -5.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		40.0
+
+	BODY {
+		MASS		1.0f,						; Mass
+		INERTIA		700, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 1100, 0.0f, 
+					0.0f, 0.0f, 350,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	FALSE
+		EngineRatio	20000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		STEERRATIO	-0.25f						; Steer Ratio
+		AXLEFRICTION	0.05					; Axle Friction
+		STATICFRICTION	1.7					; Static Friction
+		KINETICFRICTION	1.6					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	TRUE
+		EngineRatio	21000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		3.0
+		AXLEFRICTION	0.05 ;0.10f					; Axle Friction
+		STEERRATIO		1.0f					; Steer Ratio
+		STATICFRICTION	1.9					; Static Friction
+		KINETICFRICTION	1.7					; Kinetic Friction
+		Grip		0.014
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	1000.0
+		Damping		15.0
+		Restitution	-0.75
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+;/////////////////////////////////////////////////////////////////////
+;//
+;// Special class single racs cars
+;//
+;/////////////////////////////////////////////////////////////////////
+
+;=====================================
+; Car 27: WILL BE SPECIAL #2
+;=====================================
+Car 27 {
+
+	EnvRGB			200 200 200
+
+	Name			"Will be Special #2"
+	Selectable		FALSE
+
+	TPAGE			"D:\cars\trolly\trolley.bmp"
+
+	COLL			"D:\cars\trolly\trolleyHull.hul"
+
+	MODEL	0		"D:\cars\trolley\TrollBod.m"			; Body model
+	MODEL	1		"D:\cars\trolley\TrollWL.m"			; wheel front left
+	MODEL	2		"D:\cars\trolley\TrollWR.m"			; wheel front right
+	MODEL	3		"D:\cars\trolley\TrollWL.m"			; wheel back left
+	MODEL	4		"D:\cars\trolley\TrollWR.m"			; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-50, 10, 110,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		50, 10, 110,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-70, 10, -100,
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		70, 10, -100,
+	}
+
+
+	CoM		0.0 80.0 0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		40.0
+
+	BODY {
+		MASS		10.0f,						; Mass
+		INERTIA		20000, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 22000, 0.0f, 
+					0.0f, 0.0f, 12000,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	FALSE
+		EngineRatio	20000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		10.0
+		STEERRATIO	-0.5f						; Steer Ratio
+		AXLEFRICTION	0.05					; Axle Friction
+		STATICFRICTION	1.9					; Static Friction
+		KINETICFRICTION	1.7					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	TRUE
+		EngineRatio	20000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		10.0
+		AXLEFRICTION	0.05 ;0.10f					; Axle Friction
+		STEERRATIO		1.0f					; Steer Ratio
+		STATICFRICTION	1.9					; Static Friction
+		KINETICFRICTION	1.7					; Kinetic Friction
+		Grip		0.015
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	500.0
+		Damping		10.0
+		Restitution	-0.75
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+
+
+
+;=====================================
+; Car 28: Trolley
+;=====================================
+Car 28 {
+
+	EnvRGB			200 200 200
+
+	Name			"Trolley"
+	Selectable		FALSE
+
+	TPAGE			"D:\cars\trolly\trolley.bmp"
+
+	COLL			"D:\cars\trolley\trolleyHull.hul"
+
+	MODEL	0		"D:\cars\trolley\TrollBod.m"			; Body model
+	MODEL	1		"D:\cars\trolley\TrollWL.m"			; wheel front left
+	MODEL	2		"D:\cars\trolley\TrollWR.m"			; wheel front right
+	MODEL	3		"D:\cars\trolley\TrollWL.m"			; wheel back left
+	MODEL	4		"D:\cars\trolley\TrollWR.m"			; wheel back right
+
+	MODEL	17		"D:\cars\misc\Aerial.m"		; Aerial section
+	MODEL	18		"D:\cars\misc\AerialT.m"		; Aerial Top
+
+	BODY {
+		MODELNUM	0
+	}
+
+	WHEEL 0 {
+		MODELNUM	1
+		OFFSET1		-50, 10, 110,
+	}
+	WHEEL 1 {
+		MODELNUM	2
+		OFFSET1		50, 10, 110,
+	}
+	WHEEL 2 {
+		MODELNUM	3
+		OFFSET1		-70, 10, -100,
+	}
+	WHEEL 3 {
+		MODELNUM	4
+		OFFSET1		70, 10, -100,
+	}
+
+
+	CoM		0.0 80.0 0.0
+
+	SteerRate		3.0
+	SteerMod		0.4
+	EngineRate		4.5
+	TopSpeed		40.0
+
+	BODY {
+		MASS		10.0f,						; Mass
+		INERTIA		20000, 0.0f, 0.0f,			; Inertia Matrix (MUST BE SYMMETRIC)
+					0.0f, 22000, 0.0f, 
+					0.0f, 0.0f, 12000,	
+	}
+
+	WHEEL 0-1 {
+		IsTurnable	TRUE
+		SteerRatio	-0.5
+		IsPowered	FALSE
+		EngineRatio	20000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		10.0
+		STEERRATIO	-0.5f						; Steer Ratio
+		AXLEFRICTION	0.05					; Axle Friction
+		STATICFRICTION	1.9					; Static Friction
+		KINETICFRICTION	1.7					; Kinetic Friction
+		Grip		0.015
+	}
+	WHEEL 2-3 {
+		IsTurnable	FALSE
+		SteerRatio	0.0
+		IsPowered	TRUE
+		EngineRatio	20000
+
+		RADIUS		11
+		MASS		0.15						; Mass
+		MaxPos		10.0
+		AXLEFRICTION	0.05 ;0.10f					; Axle Friction
+		STEERRATIO		1.0f					; Steer Ratio
+		STATICFRICTION	1.9					; Static Friction
+		KINETICFRICTION	1.7					; Kinetic Friction
+		Grip		0.015
+	}
+
+	SPRING 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0,
+		Stiffness	500.0
+		Damping		10.0
+		Restitution	-0.75
+	}
+
+	PIN 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+
+	AXLE 0 - 3 {
+		MODELNUM	-1
+		OFFSET		0, 0, 0,
+		LENGTH		0, 
+	}
+}	
+

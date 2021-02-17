@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Garden1\PLANT2.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Garden1a" source="../../../Garden1a.bmp" />
+-->
+<VertexBuffer id="PLANT2_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-355.799 -504.402 18.1311 0 0 -1 0xff383838 0.972656 0.644531</v>
+	<v index="1">-365.913 -508.677 -39.8801 -0.0339443 -0.0678887 -0.997115 0xff383838 0.878906 0.644531</v>
+	<v index="2">-521.766 -553.444 -4.70442 -0.048016 -0.0320107 -0.998334 0xff383838 0.925781 0.5625</v>
+	<v index="3">-365.913 -508.677 -39.8801 -0.0339443 -0.0678887 -0.997115 0xff383838 0.878906 0.644531</v>
+	<v index="4">-355.799 -504.402 18.1311 0 0 -1 0xff383838 0.972656 0.644531</v>
+	<v index="5">-135.601 -377.136 24.9825 -0.0998303 0.0998303 -0.989984 0xff9b9b9b 0.972656 0.890625</v>
+	<v index="6">-135.601 -377.136 24.9825 -0.0998303 0.0998303 -0.989984 0xff9b9b9b 0.972656 0.890625</v>
+	<v index="7">-147.649 -371.293 -46.7015 -0.661581 -0.220527 -0.716713 0xff9b9b9b 0.878906 0.890625</v>
+	<v index="8">-365.913 -508.677 -39.8801 -0.0339443 -0.0678887 -0.997115 0xff383838 0.878906 0.644531</v>
+	<v index="9">-135.601 -377.136 24.9825 -0.0998303 0.0998303 -0.989984 0xff9b9b9b 0.972656 0.890625</v>
+	<v index="10">-91.6729 -303.047 -7.63568 0 0.664364 -0.747409 0xff5d5d5d 0.925781 0.9375</v>
+	<v index="11">-147.649 -371.293 -46.7015 -0.661581 -0.220527 -0.716713 0xff9b9b9b 0.878906 0.890625</v>
+	<v index="12">-365.913 -508.677 -39.8801 -0.0339443 -0.0678887 -0.997115 0xffffffff 0.878906 0.644531</v>
+	<v index="13">-355.799 -504.402 18.1311 0 0 -1 0xffffffff 0.972656 0.644531</v>
+	<v index="14">-521.766 -553.444 -4.70442 -0.048016 -0.0320107 -0.998334 0xffffffff 0.925781 0.5625</v>
+	<v index="15">-355.799 -504.402 18.1311 0 0 -1 0xffffffff 0.972656 0.644531</v>
+	<v index="16">-365.913 -508.677 -39.8801 -0.0339443 -0.0678887 -0.997115 0xffffffff 0.878906 0.644531</v>
+	<v index="17">-135.601 -377.136 24.9825 -0.0998303 0.0998303 -0.989984 0xffffffff 0.972656 0.890625</v>
+	<v index="18">-147.649 -371.293 -46.7015 -0.661581 -0.220527 -0.716713 0xffffffff 0.878906 0.890625</v>
+	<v index="19">-135.601 -377.136 24.9825 -0.0998303 0.0998303 -0.989984 0xffffffff 0.972656 0.890625</v>
+	<v index="20">-365.913 -508.677 -39.8801 -0.0339443 -0.0678887 -0.997115 0xffffffff 0.878906 0.644531</v>
+	<v index="21">-91.6729 -303.047 -7.63568 0 0.664364 -0.747409 0xffffffff 0.925781 0.9375</v>
+	<v index="22">-135.601 -377.136 24.9825 -0.0998303 0.0998303 -0.989984 0xffffffff 0.972656 0.890625</v>
+	<v index="23">-147.649 -371.293 -46.7015 -0.661581 -0.220527 -0.716713 0xffffffff 0.878906 0.890625</v>
+</VertexBuffer>
+<Model id="PLANT2">
+	<!--
+	<Revolt Radius="760.633057" Xmin="-521.766418" Xmax="-91.672852" Ymin="-553.444031" Ymax="-303.047119" Zmin="-46.701508" Zmax="24.982502"
+	 PolyNum="8" VertNum="6" QuadNumTex="0" TriNumTex="8" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="PLANT2_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="PLANT2_PreviewCamera">
+				0.00131469 0 0 0
+				0 0.00131469 0 0
+				0 0 0.000657347 0
+				0.403243 0.563012 0.507138 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Garden1a"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="TRILIST" start="0" count="24" />
+	</Pass>
+</Model>
+</XDX>

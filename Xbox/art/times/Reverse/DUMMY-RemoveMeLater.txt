@@ -1,0 +1,5 @@
+This file is only here to force SourceDepot to add this directory to the enlistment.
+
+We can remove it when we're no longer storing track times in D:\times\...
+(which is a hack anyway because D:\ will be the DVD eventually, and we should
+be storing such things on T: or U:)

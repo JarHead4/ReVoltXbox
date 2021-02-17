@@ -1,0 +1,12 @@
+TARGETNAME=MakeStringsBinFromInf
+TARGETPATH=obj
+TARGETTYPE=PROGRAM
+UMENTRY=main
+UMTYPE=console
+
+USE_VC7_WINDOWS=1
+
+SOURCES= MakeStringsBinFromInf.cpp
+
+TARGETLIBS=$(TARGETLIBS) \
+           $(BASEDIR)\Public\wsdk\lib\user32.lib \

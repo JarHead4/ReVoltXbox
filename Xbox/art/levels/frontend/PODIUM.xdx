@@ -1,0 +1,130 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\frontend\PODIUM.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="frontendd" source="../../../frontendd.bmp" />
+<Texture id="frontendf" source="../../../frontendf.bmp" />
+-->
+<VertexBuffer id="PODIUM_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-150.159 -298.906 -151.344 -0.655701 -0.374354 -0.655679 0xff4f4b7b 0.0507813 0.00390625</v>
+	<v index="1">-126.237 -193.659 -127.426 -0.316172 -0.0367976 -0.947988 0xff4f4b7b 0.0507813 0.0117188</v>
+	<v index="2">115.609 -139.606 -115.151 0.315995 -0.0368464 -0.948045 0xff4f4b7b 0.0585938 0.0117188</v>
+	<v index="3">151.802 -298.906 -151.344 0.655665 -0.374415 -0.655681 0xff4f4b7b 0.0585938 0.00390625</v>
+	<v index="4">250.179 -0.219893 -83.4826 0.352356 0.429142 -0.831674 0xff353253 0.0507813 0.00390625</v>
+	<v index="5">115.609 -139.606 -115.151 0.315995 -0.0368464 -0.948045 0xff4f4b7b 0.0507813 0.0117188</v>
+	<v index="6">-126.237 -193.659 -127.426 -0.316172 -0.0367976 -0.947988 0xff4f4b7b 0.0585938 0.0117188</v>
+	<v index="7">-248.536 -0.219893 -83.4826 -0.35236 0.429127 -0.831681 0xff1f1d30 0.0585938 0.00390625</v>
+	<v index="8">-380.239 -193.501 -127.426 -0.637763 -0.16605 -0.752121 0xff6862a2 0.0507813 0.0117188</v>
+	<v index="9">-380.239 -193.501 126.704 -0.8842 -0.467109 1.52302e-007 0xff8580ce 0.0585938 0.0117188</v>
+	<v index="10">-248.536 -0.219917 82.7557 -0.826385 0.563106 8.23325e-008 0xff1f1d30 0.0585938 0.00390625</v>
+	<v index="11">-248.536 -0.219893 -83.4826 -0.35236 0.429127 -0.831681 0xff1f1d30 0.0507813 0.00390625</v>
+	<v index="12">-126.237 -193.659 126.704 -0.781744 -0.623599 1.66599e-007 0xffa7c9ff 0.0351563 0.0117188</v>
+	<v index="13">-380.239 -193.501 126.704 -0.8842 -0.467109 1.52302e-007 0xffa7c9ff 0.0429688 0.0117188</v>
+	<v index="14">-380.239 -193.501 -127.426 -0.637763 -0.16605 -0.752121 0xffd8e6ff 0.0429688 0.00390625</v>
+	<v index="15">-126.237 -193.659 -127.426 -0.316172 -0.0367976 -0.947988 0xffdfddff 0.0351563 0.00390625</v>
+	<v index="16">115.609 -139.606 -115.151 0.315995 -0.0368464 -0.948045 0xffd8e6ff 0.0429688 0.00390625</v>
+	<v index="17">345.184 -139.606 -115.151 0.637507 -0.166056 -0.752336 0xffa39bff 0.0351563 0.00390625</v>
+	<v index="18">345.184 -139.606 114.424 0.884085 -0.467327 -1.37771e-006 0xffa7c9ff 0.0351563 0.0117188</v>
+	<v index="19">115.609 -139.606 114.424 0.781522 -0.623878 -5.19441e-008 0xffe3e2ff 0.0429688 0.0117188</v>
+	<v index="20">250.179 -0.219893 -83.4826 0.352356 0.429142 -0.831674 0xff1f1d30 0.0507813 0.00390625</v>
+	<v index="21">250.179 -0.219917 82.7557 0.826313 0.563211 -1.28769e-006 0xff1f1d30 0.0507813 0.0117188</v>
+	<v index="22">345.184 -139.606 114.424 0.884085 -0.467327 -1.37771e-006 0xff8580ce 0.0585938 0.0117188</v>
+	<v index="23">345.184 -139.606 -115.151 0.637507 -0.166056 -0.752336 0xff6862a2 0.0585938 0.00390625</v>
+	<v index="24">115.609 -139.606 -115.151 0.315995 -0.0368464 -0.948045 0xff4f4b7b 0.0507813 0.00390625</v>
+	<v index="25">115.609 -139.606 114.424 0.781522 -0.623878 -5.19441e-008 0xff8580ce 0.0507813 0.0117188</v>
+	<v index="26">151.802 -298.906 150.617 0.781522 -0.623878 -5.19441e-008 0xffd2d0f0 0.0585938 0.0117188</v>
+	<v index="27">151.802 -298.906 -151.344 0.655665 -0.374415 -0.655681 0xff6862a2 0.0585938 0.00390625</v>
+	<v index="28">151.802 -298.906 -151.344 0.655665 -0.374415 -0.655681 0xffdfddff 0.0351563 0.00390625</v>
+	<v index="29">151.802 -298.906 150.617 0.781522 -0.623878 -5.19441e-008 0xffa7c9ff 0.0351563 0.0117188</v>
+	<v index="30">-150.159 -298.906 150.617 -0.781551 -0.623842 1.18481e-007 0xffa7c9ff 0.0429688 0.0117188</v>
+	<v index="31">-150.159 -298.906 -151.344 -0.655701 -0.374354 -0.655679 0xffd8e6ff 0.0429688 0.00390625</v>
+	<v index="32">-150.159 -298.906 -151.344 -0.655701 -0.374354 -0.655679 0xff6862a2 0.0507813 0.0117188</v>
+	<v index="33">-150.159 -298.906 150.617 -0.781551 -0.623842 1.18481e-007 0xffd2d0f0 0.0585938 0.0117188</v>
+	<v index="34">-126.237 -193.659 126.704 -0.781744 -0.623599 1.66599e-007 0xff8580ce 0.0585938 0.00390625</v>
+	<v index="35">-126.237 -193.659 -127.426 -0.316172 -0.0367976 -0.947988 0xff4f4b7b 0.0507813 0.00390625</v>
+	<v index="36">-248.536 -0.219893 -83.4826 -0.35236 0.429127 -0.831681 0xff1f1d30 0.0507813 0.00390625</v>
+	<v index="37">-126.237 -193.659 -127.426 -0.316172 -0.0367976 -0.947988 0xff4f4b7b 0.0507813 0.0117188</v>
+	<v index="38">-380.239 -193.501 -127.426 -0.637763 -0.16605 -0.752121 0xff4f4b7b 0.0585938 0.00390625</v>
+	<v index="39">250.179 -0.219893 -83.4826 0.352356 0.429142 -0.831674 0xff353253 0.0585938 0.00390625</v>
+	<v index="40">345.184 -139.606 -115.151 0.637507 -0.166056 -0.752336 0xff4f4b7b 0.0507813 0.00390625</v>
+	<v index="41">115.609 -139.606 -115.151 0.315995 -0.0368464 -0.948045 0xff4f4b7b 0.0507813 0.0117188</v>
+	<v index="42">197.034 -626.375 68.0317 0 -5.67663e-008 -1 0xffffffff 0.988281 0.519531</v>
+	<v index="43">-206.166 -626.375 68.0317 0 -5.67663e-008 -1 0xffffffff 0.511719 0.519531</v>
+	<v index="44">-206.166 -223.175 68.0317 0 -5.67663e-008 -1 0xffffffff 0.511719 0.988281</v>
+	<v index="45">197.034 -223.175 68.0317 0 -5.67663e-008 -1 0xffffffff 0.988281 0.988281</v>
+</VertexBuffer>
+<Model id="PODIUM">
+	<!--
+	<Revolt Radius="662.931458" Xmin="-380.238983" Xmax="345.184021" Ymin="-626.374695" Ymax="-0.219893" Zmin="-151.343964" Zmax="150.616974"
+	 PolyNum="12" VertNum="20" QuadNumTex="10" TriNumTex="2" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="PODIUM_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="PODIUM_PreviewCamera">
+				0.00150845 0 0 0
+				0 0.00150845 0 0
+				0 0 0.000754226 0
+				0.0264394 0.472594 0.500274 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="frontendd"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="36" />
+		<Draw primitive="TRILIST" start="36" count="6" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="PODIUM_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="PODIUM_PreviewCamera">
+				0.00150845 0 0 0
+				0 0.00150845 0 0
+				0 0 0.000754226 0
+				0.0264394 0.472594 0.500274 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="frontendf"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="42" count="4" />
+	</Pass>
+</Model>
+</XDX>

@@ -1,0 +1,12 @@
+////////////////////////////////////////////////////////////////
+//
+// Connection Type Menu
+//
+////////////////////////////////////////////////////////////////
+
+void MenuGoBackKillPlay(MENU_HEADER *menuHeader, MENU *menu, MENU_ITEM *menuItem);
+
+extern MENU Menu_Connection;
+
+extern char LocalIP[64];
+extern long HostnameEntry;

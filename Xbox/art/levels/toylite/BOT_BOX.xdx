@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\ToyLite\BOT_BOX.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="ToyLitef" source="../../../ToyLitef.bmp" />
+-->
+<VertexBuffer id="BOT_BOX_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">49.9999 -200 -49.9995 3.83032e-006 -0.707107 -0.707107 0xff808080 0.0898438 0.648438</v>
+	<v index="1">49.9997 -200 50 -3.83032e-006 -0.707107 0.707107 0xff808080 0.00390625 0.648438</v>
+	<v index="2">-49.9999 -200 49.9995 -0.577353 -0.57735 0.577348 0xff808080 0.00390625 0.734375</v>
+	<v index="3">-49.9997 -200 -50 -0.577348 -0.577351 -0.577352 0xff808080 0.0898438 0.734375</v>
+	<v index="4">-49.9997 -200 -50 -0.577348 -0.577351 -0.577352 0xff808080 0.683594 0.253906</v>
+	<v index="5">-49.9999 -200 49.9995 -0.577353 -0.57735 0.577348 0xff808080 0.503906 0.253906</v>
+	<v index="6">-49.9999 2.38419e-005 49.9995 -0.707109 0 0.707104 0xff808080 0.503906 0.621094</v>
+	<v index="7">-49.9997 2.38419e-005 -50 -0.707104 0 -0.707109 0xff808080 0.683594 0.621094</v>
+	<v index="8">49.9999 -200 -49.9995 3.83032e-006 -0.707107 -0.707107 0xff808080 0.00390625 0.742188</v>
+	<v index="9">-49.9997 -200 -50 -0.577348 -0.577351 -0.577352 0xff808080 0.00390625 0.828125</v>
+	<v index="10">-49.9997 2.38419e-005 -50 -0.707104 0 -0.707109 0xff808080 0.183594 0.828125</v>
+	<v index="11">49.9999 2.38419e-005 -49.9995 5.41689e-006 0 -1 0xff808080 0.183594 0.742188</v>
+	<v index="12">-49.9999 -200 49.9995 -0.577353 -0.57735 0.577348 0xff808080 0.183594 0.828125</v>
+	<v index="13">49.9997 -200 50 -3.83032e-006 -0.707107 0.707107 0xff808080 0.183594 0.742188</v>
+	<v index="14">49.9997 2.38419e-005 50 -5.41689e-006 0 1 0xff808080 0.00390625 0.742188</v>
+	<v index="15">-49.9999 2.38419e-005 49.9995 -0.707109 0 0.707104 0xff808080 0.00390625 0.828125</v>
+</VertexBuffer>
+<Model id="BOT_BOX">
+	<!--
+	<Revolt Radius="212.132004" Xmin="-49.999939" Xmax="49.999939" Ymin="-200.000031" Ymax="0.000024" Zmin="-50.000019" Zmax="50.000019"
+	 PolyNum="4" VertNum="8" QuadNumTex="4" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="BOT_BOX_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="BOT_BOX_PreviewCamera">
+				0.00471405 0 0 0
+				0 0.00471405 0 0
+				0 0 0.00235702 0
+				0 0.471405 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="ToyLitef"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="16" />
+	</Pass>
+</Model>
+</XDX>

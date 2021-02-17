@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Toy2\GENBOXC.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Toy2c" source="../../../Toy2c.bmp" />
+-->
+<VertexBuffer id="GENBOXC_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">100.045 -150.922 -99.5845 0.577348 -0.577352 -0.577351 0xff00bf49 0.75 0.25</v>
+	<v index="1">100.045 -150.922 100.415 0.577347 -0.577352 0.577352 0xff00bf49 0.75 0.375</v>
+	<v index="2">-99.9579 -150.922 100.414 -0.577354 -0.577349 0.577348 0xff00bf49 1 0.375</v>
+	<v index="3">-99.9575 -150.922 -99.5834 -0.577352 -0.577349 -0.57735 0xff00bf49 1 0.25</v>
+	<v index="4">-99.9575 -1.0782 -99.5834 -0.707108 0 -0.707106 0xffffffff 0.75 0.25</v>
+	<v index="5">100.045 -1.0782 -99.5845 0.707105 0 -0.707108 0xffffffff 1 0.25</v>
+	<v index="6">100.045 -150.922 -99.5845 0.577348 -0.577352 -0.577351 0xffffffff 1 0.125</v>
+	<v index="7">-99.9575 -150.922 -99.5834 -0.577352 -0.577349 -0.57735 0xffffffff 0.75 0.125</v>
+	<v index="8">100.045 -1.0782 -99.5845 0.707105 0 -0.707108 0xffffffff 0.5 0.625</v>
+	<v index="9">100.045 -1.0782 100.415 0.707104 0 0.70711 0xffffffff 0.75 0.625</v>
+	<v index="10">100.045 -150.922 100.415 0.577347 -0.577352 0.577352 0xffffffff 0.75 0.5</v>
+	<v index="11">100.045 -150.922 -99.5845 0.577348 -0.577352 -0.577351 0xffffffff 0.5 0.5</v>
+	<v index="12">100.045 -1.0782 100.415 0.707104 0 0.70711 0xffffffff 0.5 0.25</v>
+	<v index="13">-99.9579 -1.0782 100.414 -0.70711 0 0.707103 0xffffffff 0.75 0.25</v>
+	<v index="14">-99.9579 -150.922 100.414 -0.577354 -0.577349 0.577348 0xffffffff 0.75 0.125</v>
+	<v index="15">100.045 -150.922 100.415 0.577347 -0.577352 0.577352 0xffffffff 0.5 0.125</v>
+	<v index="16">-99.9579 -1.0782 100.414 -0.70711 0 0.707103 0xffffffff 0.75 0.625</v>
+	<v index="17">-99.9575 -1.0782 -99.5834 -0.707108 0 -0.707106 0xffffffff 1 0.625</v>
+	<v index="18">-99.9575 -150.922 -99.5834 -0.577352 -0.577349 -0.57735 0xffffffff 1 0.5</v>
+	<v index="19">-99.9579 -150.922 100.414 -0.577354 -0.577349 0.577348 0xffffffff 0.75 0.5</v>
+</VertexBuffer>
+<Model id="GENBOXC">
+	<!--
+	<Revolt Radius="207.049500" Xmin="-99.957916" Xmax="100.044777" Ymin="-150.921799" Ymax="-1.078201" Zmin="-99.584511" Zmax="100.415123"
+	 PolyNum="5" VertNum="8" QuadNumTex="5" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="GENBOXC_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="GENBOXC_PreviewCamera">
+				0.00482976 0 0 0
+				0 0.00482976 0 0
+				0 0 0.00241488 0
+				-0.000209758 0.367062 0.498997 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Toy2c"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="20" />
+	</Pass>
+</Model>
+</XDX>

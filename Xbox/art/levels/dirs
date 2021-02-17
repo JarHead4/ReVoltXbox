@@ -1,0 +1,20 @@
+DIRS=\
+    common           \
+    frontend         \
+    garden1          \
+    markar           \
+    market1          \
+    market2          \
+    muse1            \
+    muse2            \
+    Muse_Bat         \
+    nhood1           \
+    nhood1_battle    \
+    nhood2           \
+    ship1            \
+    ship2            \
+    stunts           \
+    toy2             \
+    toylite          \
+    wild_west1       \
+    wild_west2

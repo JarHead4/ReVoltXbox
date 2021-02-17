@@ -1,0 +1,39 @@
+Bit flags:
+1 	Mandatory
+2 	Car
+4 	Level
+8 	Car key (box specific)
+16	Car key (online, sub)
+32 	Level key (box specific)
+
+Enum blobs:
+Unicode .txt file
+Format
+	<file.txt>
+
+Details blob, car keys:
+Packed texture
+Format
+	<texture.xpr>
+
+Display:
+Only show content that is not owned
+
+Enum: 
+	First Content Enum[0]
+	Second Content Enum[0]
+	Select or Back
+
+
+Details:
+	Enum[0]
+	Texture
+	Enum[1]
+	Enum[2]
+	...
+	Price: free or pay
+	Subscription info
+	Purchase/Download/Cancel or Back
+
+
+

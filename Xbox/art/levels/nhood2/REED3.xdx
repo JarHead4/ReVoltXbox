@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\NHood2\REED3.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="NHood2j" source="../../../NHood2j.bmp" />
+-->
+<VertexBuffer id="REED3_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">21.8119 200.079 -8.41595 5.32282e-009 -0.155041 -0.987908 0xffffffff 0.996094 0.476563</v>
+	<v index="1">-20.4537 200.079 -8.41595 5.32282e-009 -0.155041 -0.987908 0xffffffff 0.867188 0.476563</v>
+	<v index="2">6.2905 429.458 -50.4565 0 -0.180277 -0.983616 0xff46493e 0.867188 0.78125</v>
+	<v index="3">37.1443 429.458 -50.4565 0 -0.180277 -0.983616 0xff46493e 0.996094 0.78125</v>
+	<v index="4">1.87553 -38.0087 22.7277 9.56676e-009 -0.0185838 -0.999827 0xffffffff 0.996094 0.476563</v>
+	<v index="5">-44.6165 -38.0087 22.7277 9.56676e-009 -0.0185838 -0.999827 0xffffffff 0.867188 0.476563</v>
+	<v index="6">-20.4537 200.079 -8.41595 5.32282e-009 -0.155041 -0.987908 0xffffffff 0.867188 0.214844</v>
+	<v index="7">21.8119 200.079 -8.41595 5.32282e-009 -0.155041 -0.987908 0xffffffff 0.996094 0.214844</v>
+	<v index="8">-0.561055 -188.984 8.66177 4.19924e-009 0.170579 -0.985344 0xffffffff 0.996094 0.214844</v>
+	<v index="9">-42.8266 -188.984 8.66177 4.19924e-009 0.170579 -0.985344 0xffffffff 0.867188 0.214844</v>
+	<v index="10">-44.6165 -38.0087 22.7277 9.56676e-009 -0.0185838 -0.999827 0xffffffff 0.867188 0.476563</v>
+	<v index="11">1.87553 -38.0087 22.7277 9.56676e-009 -0.0185838 -0.999827 0xffffffff 0.996094 0.476563</v>
+	<v index="12">-0.561055 -188.984 8.66177 4.19924e-009 0.170579 -0.985344 0xffffffff 0.996094 0.214844</v>
+	<v index="13">-25.9579 -461.903 -61.007 0 0.247341 -0.968929 0xffffffff 0.933594 0.0078125</v>
+	<v index="14">-42.8266 -188.984 8.66177 4.19924e-009 0.170579 -0.985344 0xffffffff 0.867188 0.214844</v>
+</VertexBuffer>
+<Model id="REED3">
+	<!--
+	<Revolt Radius="466.637390" Xmin="-44.616547" Xmax="37.144329" Ymin="-461.903442" Ymax="429.458191" Zmin="-61.006992" Zmax="22.727745"
+	 PolyNum="4" VertNum="9" QuadNumTex="3" TriNumTex="1" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="REED3_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="REED3_PreviewCamera">
+				0.00214299 0 0 0
+				0 0.00214299 0 0
+				0 0 0.0010715 0
+				0.00800645 0.034765 0.520508 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="NHood2j"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="12" />
+		<Draw primitive="TRILIST" start="12" count="3" />
+	</Pass>
+</Model>
+</XDX>

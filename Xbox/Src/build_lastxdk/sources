@@ -1,0 +1,29 @@
+!INCLUDE ..\sources.inc 
+
+TARGETNAME = revolt_xbox$(D)
+XE_FLAGS = $(XE_FLAGS) /TESTSERVICE:0x54524150
+
+C_DEFINES = $(C_DEFINES) \
+            -DSHIPPING \
+            -DUSE_LAST_EXTERNAL_XDK
+
+XDK_LIB_PATH=$(BASEDIR)\public\xdk\lib-aug02
+XDK_INC_PATH=$(BASEDIR)\public\xdk\inc-aug02
+
+XNOLIBS=1
+TARGETLIBS = \
+  $(XDK_LIB_PATH)\d3d8$(D).lib \
+  $(XDK_LIB_PATH)\d3dx8$(D).lib \
+  $(XDK_LIB_PATH)\dsound$(D).lib \
+  $(XDK_LIB_PATH)\xonlineS$(D).lib \
+  $(XDK_LIB_PATH)\xgraphics$(D).lib \
+  $(XDK_LIB_PATH)\xvoice$(D).lib \
+  $(XDK_LIB_PATH)\xbdm.lib \
+  $(XDK_LIB_PATH)\xapilib$(D).lib \
+  $(XDK_LIB_PATH)\libcmt$(D).lib \
+  $(XDK_LIB_PATH)\libcpmt$(D).lib \
+  $(XDK_LIB_PATH)\xboxkrnl.lib 
+
+UMINCL=
+INCLUDES = \
+  $(XDK_INC_PATH)

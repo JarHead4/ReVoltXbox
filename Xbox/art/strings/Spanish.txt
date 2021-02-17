@@ -1,0 +1,417 @@
+
+
+
+Re-Volt
+Tipo de Juego
+Nombre
+Coche CR
+Circuito
+Seleccionar Copa
+Resumen
+Tipo de Conexión:
+Ajustes de Render
+Tipo de Juego
+Sala de Espera
+¡El Juego Ya Ha Comenzado!
+Configuración
+Seleccióna Partida
+
+
+Comenzar Carrera
+[Play Live!]
+[Single Player]
+[Multiplayer]
+[System Link]
+Mejores Tiempos
+Tabla De Progreso
+Editor de Circuitos
+Opciones
+[Language]
+[Create Account]
+
+
+[Quick Match]
+[Find a Match]
+Amigos
+[Create a Match]
+[Statistics]
+
+
+[Select Race]
+[Race]
+[Battle Tag]
+
+
+Campeonato
+Carrera Individual
+Carnicería Contra Reloj
+Contra Reloj
+Práctica
+C. Especialistas
+EditMode
+Calculate Car Stats
+
+
+Seleccionar Coche
+
+
+Circuito
+Reflejado
+Invertido
+Coches de la CPU
+Vueltas
+Longitud
+
+
+Copa de Bronce
+Copa de Plata
+Copa de Oro
+Copa de Platino
+
+
+Dificultad
+Basic Cornering
+Advanced Cornering
+Your First Stunts
+
+
+Ajustes del Juego
+Ajustes de Vídeo
+Ajustes de Sonido
+Ajustes del Controlador 
+Ver Créditos
+
+
+Número de Coches
+Coches aleatorios
+Circuitos aleatorios
+Pick ups
+Número de Vueltas
+Tiempo de Battle Tag
+Dificultad
+Coches de Acceso
+Partidos Tiempos
+Colisión
+Unidades de velocidad 
+
+
+Introducir Nombre
+
+
+Activado
+Desactivado
+Si
+No
+Fácil
+Media
+Difícil
+
+
+Resolución
+Texturas
+Brillantez
+Sombras
+Dispositivo de Vídeo
+Brillo
+Contraste
+Distancia de Dibujado
+Reflejos
+Modelos de Ejemplo
+Marcas de Derrapes
+Luces
+Automático
+No Disponible
+Antialias
+Syncronizacion de Raster
+Mostrar Frame Rate
+Filtrado de Texturas
+Nivel de Mipmap
+Wireframe
+Boxes de los Coches
+Partículas
+Humo
+Alta Resolución
+Pantalla Partida
+
+
+Musica de Juego
+SFX
+Música
+Test
+Prueba de Música
+Canales de SFX
+Audio
+Stereo
+Mono 
+
+
+Ver Records
+Grabar Records
+
+Records
+
+
+Comenzar Partida
+Unirse a Partida
+Esperar por Conexión en Antesala
+Escoger Partida
+Ordenador Anfitrión:
+Continuar Partida en Antesala
+Abandonar Partida en Antesala
+Número de Jugadores
+Optimización de Paquetes:
+Protocolo DirectPlay:
+Buscando partidas
+Uniendose a partida...
+Pulsar espacio para actualizar partidas y lista de jugadores
+Proximo circuito
+
+
+Por Defecto
+Bronce
+Plata
+Oro
+Special
+
+
+Cargar Replay
+Grabar Replay
+
+
+Continuar
+Continuar Campeonato
+Terminar Campeonato
+Abandonar Intento
+Reiniciar Juego
+Reiniciar Replay
+Abandonar
+Ver Replay
+
+
+Seleccionar Controlador:
+Configurar Controlador
+Zona Muerta de Dirección
+Rango de Dirección
+Dirección no Lineal
+Poner Controles por Defecto
+Configuración
+
+
+Modo Demo
+Jugador
+Save Carinfo Single
+Save Carinfo Multiple
+Save Current Car Info
+Reiniciar Tabla de Progreso
+MODO DE JUEGO
+Simulación
+Arcade
+Consola
+RC Junior
+MPH
+MPH x10
+FPM
+KPH
+KPH x10
+
+
+LLEGASTE
+INTÉNTA LLEGAR MÁS ALTO PARA
+ACCEDER AL PROXIMO DESAFÍO
+COPA DE BRONCE
+COPA DE PLATA
+COPA DE ORO
+COPA ESPECIAL
+ESTÁ DISPONIBLE
+CIRCUITOS REFLEJADOS
+CIRCUITOS INVERSOS
+ESTA DISPONIBLE
+NUEVA ENTREGA DE COCHES
+TIENES DISPONIBLE
+NUEVOS COCHES
+1º
+2º
+3º
+
+¿Estás seguro?
+    
+	                                                
+Llega al menos el 3º en cada
+carrera para continuar
+Termina el 1º de la tabla para
+acceder al proximo desafío
+Termina el 1º de la tabla y
+seras coronado ""Re-Volt Master""!
+
+
+R
+I
+(R)
+(I)
+
+
+Clase
+Nivel
+Vel
+Acc
+Peso
+Trans
+
+Eléctrico
+Gasolina
+Especial
+
+Novato
+Amateur
+Avanzado
+Semi-Pro
+Pro
+
+4WD
+RWD
+FWD
+
+
+Desconocido
+No Accesible
+
+
+Jugador
+Jugadores
+
+
+Modelo Físico Realista
+Modelo Físico Alto
+Modelo Físico Medio
+Modelo Físico Simple
+
+
+Acelerar
+M. atrás
+Disparar
+Voltear
+Reposicionar
+Pausa
+
+
+Pista
+Pri-
+mero
+Norm
+Inv
+Refl
+Estr.
+
+
+Tipo:
+Fase:
+Circuito:
+Coche
+ganada:
+\8\9 Encontrada:
+\8\9 Conseguidas:
+de
+Batido
+Record:
+
+Te quedan
+Intento.
+Intentos.
+
+
+º
+º
+º
+º
+º
+º
+º
+º
+º
+º
+º
+º
+º
+º
+º
+º
+
+
+¡ENHORABUENA!
+TE HAS CLASIFICADO
+¡ENHORABUENA! HAS
+TERMINADO EL CAMPEAONATO
+¡NO TE HAS CLASIFICADO!
+\4\5
+pnts
+
+
+Mejor  V
+Última V
+Tiempo V
+Carrera
+Vuelta
+Fractura
+Opositor
+Desafío
+¡Desafío Superado!
+tiempo
+Resultado Juego
+Resultado Carrera
+
+¿ Abandonar ? 
+¿ Recomenzar ? 
+¿ Está seguro ? 
+Si
+No
+
+
+Defecto
+Bronce
+Plata
+Oro
+Platino
+
+
+Game Over! Más Suerte La Próxima Vez!
+
+
+¡NUEVA ENTREGA DE COCHES!\n(Compruebe los coches disponibles\nen el menú de selección de coches)\n
+¡ENHORABUENA!\nPISTAS DE %s ESTAN AHORA\nDISPONIBLES EN MODO INVERTIDO\n(Pulse ABAJO en el menú de Circuitos)\n
+¡ENHORABUENA!\nPISTAS DE %s ESTÁN AHORA\nDISPONIBLES EN MODO REFLEJADO\n(Pulse ARRIBA en el menú de Circuitos)\n
+¡ENHORABUENA!\nPISTAS DE %s ESTAN AHORA DISPONIBLES \nEN MODO INVERTIDO Y REFLEJADO\n(Pulse ARRIBA y después ABAJO\nen el menú de Circuitos)\n
+¡NUEVO TIPO DE JUEGO!\n""CARNICERÍA DE COCHES DE CUERDA""\nSE ENCUENTRA DISPONIBLE\n
+
+
+Izquierda
+Derecha
+Claxon
+¿Intentarlo de nuevo?
+Demo
+Cargando Frontend
+Cargando Créditos
+Cargando Game Gauge Benchmark
+Pilotos:
+CPU
+Aleatório
+Estado
+Listo
+No Listo
+Pulsa TAB para comenzar
+¡Juego multijugador terminado!
+Esperando a
+Esperando al Anfitrión...
+Anfitrión
+Pista
+Juego
+Versión Incorrecta
+Completo
+Record
+Escaladas
+Terminado
+Comenzado
+Abierto
+Replay
+Ver Galería
+Local
+Internet

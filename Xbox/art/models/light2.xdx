@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\models\light2.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="fxpage1" source="../gfx/fxpage1.bmp" />
+-->
+<VertexBuffer id="light2_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">16 16 7.04 0.448785 -0.503615 0.738217 0xff040e0e 0.890625 0.642578</v>
+	<v index="1">16 16 -7.04 0.448782 -0.503559 -0.738256 0xff040e0e 0.890625 0.611328</v>
+	<v index="2">-16 16 -7.04 -0.448781 -0.50356 -0.738256 0xff040e0e 0.859375 0.609375</v>
+	<v index="3">-16 16 7.04 -0.448784 -0.503616 0.738217 0xff040e0e 0.859375 0.642578</v>
+	<v index="4">3.2e-005 7.5472 -0.000512 4.88831e-007 -1 -1.50169e-005 0xff4d0005 0.890625 0.642578</v>
+	<v index="5">16 16 -7.04 0.448782 -0.503559 -0.738256 0xff2b0001 0.890625 0.611328</v>
+	<v index="6">16 16 7.04 0.448785 -0.503615 0.738217 0xff2b0001 0.859375 0.609375</v>
+	<v index="7">3.2e-005 7.5472 -0.000512 4.88831e-007 -1 -1.50169e-005 0xff2b0001 0.890625 0.642578</v>
+	<v index="8">16 16 7.04 0.448785 -0.503615 0.738217 0xff2b0001 0.890625 0.611328</v>
+	<v index="9">-16 16 7.04 -0.448784 -0.503616 0.738217 0xff2b0001 0.859375 0.609375</v>
+	<v index="10">-16 16 -7.04 -0.448781 -0.50356 -0.738256 0xff2b0001 0.890625 0.642578</v>
+	<v index="11">16 16 -7.04 0.448782 -0.503559 -0.738256 0xff2b0001 0.890625 0.611328</v>
+	<v index="12">3.2e-005 7.5472 -0.000512 4.88831e-007 -1 -1.50169e-005 0xff2b0001 0.859375 0.609375</v>
+	<v index="13">-16 16 -7.04 -0.448781 -0.50356 -0.738256 0xff2b0001 0.890625 0.642578</v>
+	<v index="14">3.2e-005 7.5472 -0.000512 4.88831e-007 -1 -1.50169e-005 0xff4d0005 0.890625 0.611328</v>
+	<v index="15">-16 16 7.04 -0.448784 -0.503616 0.738217 0xff2b0001 0.859375 0.609375</v>
+</VertexBuffer>
+<Model id="light2">
+	<!--
+	<Revolt Radius="23.697290" Xmin="-16.000000" Xmax="16.000000" Ymin="7.547200" Ymax="16.000000" Zmin="-7.040000" Zmax="7.040000"
+	 PolyNum="5" VertNum="5" QuadNumTex="1" TriNumTex="4" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="light2_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="light2_PreviewCamera">
+				0.0421989 0 0 0
+				0 0.0421989 0 0
+				0 0 0.0210995 0
+				0 -0.496833 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="fxpage1"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="4" />
+		<Draw primitive="TRILIST" start="4" count="12" />
+	</Pass>
+</Model>
+</XDX>

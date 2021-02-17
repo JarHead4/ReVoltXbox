@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Wild_West1\PLANK2.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Wild_West1a" source="../../../Wild_West1a.bmp" />
+-->
+<VertexBuffer id="PLANK2_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">250 -8 400 -0.57735 -0.57735 0.57735 0xff808080 0.226563 0.101563</v>
+	<v index="1">250 0 400 -0.57735 0.57735 0.57735 0xff808080 0.230469 0.921875</v>
+	<v index="2">250 0 -400 -0.57735 0.57735 -0.57735 0xff808080 0.28125 0.921875</v>
+	<v index="3">250 -8 -400 -0.57735 -0.57735 -0.57735 0xff808080 0.28125 0.101563</v>
+	<v index="4">250 -8 -400 -0.57735 -0.57735 -0.57735 0xff393939 0.226563 0.101563</v>
+	<v index="5">250 0 -400 -0.57735 0.57735 -0.57735 0xff393939 0.230469 0.921875</v>
+	<v index="6">300 0 -400 0.57735 0.57735 -0.57735 0xff393939 0.28125 0.921875</v>
+	<v index="7">300 -8 -400 0.57735 -0.57735 -0.57735 0xff393939 0.28125 0.101563</v>
+	<v index="8">250 -8 400 -0.57735 -0.57735 0.57735 0xff626262 0.296875 0.101563</v>
+	<v index="9">250 -8 -400 -0.57735 -0.57735 -0.57735 0xff626262 0.296875 0.996094</v>
+	<v index="10">300 -8 -400 0.57735 -0.57735 -0.57735 0xff626262 0.363281 0.996094</v>
+	<v index="11">300 -8 400 0.57735 -0.57735 0.57735 0xff626262 0.363281 0.101563</v>
+	<v index="12">250 0 400 -0.57735 0.57735 0.57735 0xff393939 0.28125 0.921875</v>
+	<v index="13">250 -8 400 -0.57735 -0.57735 0.57735 0xff393939 0.28125 0.101563</v>
+	<v index="14">300 -8 400 0.57735 -0.57735 0.57735 0xff393939 0.226563 0.101563</v>
+	<v index="15">300 0 400 0.57735 0.57735 0.57735 0xff393939 0.230469 0.921875</v>
+	<v index="16">250 0 -400 -0.57735 0.57735 -0.57735 0xff101010 0.734375 0.992188</v>
+	<v index="17">250 0 400 -0.57735 0.57735 0.57735 0xff101010 0.734375 0.101563</v>
+	<v index="18">300 0 400 0.57735 0.57735 0.57735 0xff101010 0.664063 0.101563</v>
+	<v index="19">300 0 -400 0.57735 0.57735 -0.57735 0xff101010 0.664063 0.992188</v>
+	<v index="20">300 -8 400 0.57735 -0.57735 0.57735 0xff171717 0.28125 0.101563</v>
+	<v index="21">300 -8 -400 0.57735 -0.57735 -0.57735 0xff171717 0.226563 0.101563</v>
+	<v index="22">300 0 -400 0.57735 0.57735 -0.57735 0xff171717 0.230469 0.921875</v>
+	<v index="23">300 0 400 0.57735 0.57735 0.57735 0xff171717 0.28125 0.921875</v>
+</VertexBuffer>
+<Model id="PLANK2">
+	<!--
+	<Revolt Radius="500.063843" Xmin="250.000000" Xmax="300.000000" Ymin="-8.000000" Ymax="0.000000" Zmin="-399.999817" Zmax="399.999817"
+	 PolyNum="6" VertNum="8" QuadNumTex="6" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="PLANK2_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="PLANK2_PreviewCamera">
+				0.00199974 0 0 0
+				0 0.00199974 0 0
+				0 0 0.000999872 0
+				-0.54993 0.00799898 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Wild_West1a"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="24" />
+	</Pass>
+</Model>
+</XDX>

@@ -1,0 +1,197 @@
+LWSC
+1
+
+FirstFrame 1
+LastFrame 60
+FrameStep 1
+PreviewFirstFrame 1
+PreviewLastFrame 60
+PreviewFrameStep 1
+FramesPerSecond 30.000000
+
+LoadObject D:\Workcrap\RC stuff\Objects\Car01.lwo
+ShowObject 8 7
+ObjectMotion (unnamed)
+  9
+  1
+  0 0 0 0 0 0 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 1
+ShadowOptions 7
+
+AddNullObject Ref Obj
+ShowObject 1 7
+ObjectMotion (unnamed)
+  9
+  1
+  0 0.01449999 0.01399999 0 0 -90 1.304 1.304 1.304
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 24
+ShadowOptions 7
+
+AddNullObject Ref Obj
+ShowObject 1 7
+ObjectMotion (unnamed)
+  9
+  1
+  0 0.028 0.0545 0 -17.1 -90 2.144 2.144 2.144
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 40
+ShadowOptions 7
+
+AddNullObject Ref Obj
+ShowObject 1 7
+ObjectMotion (unnamed)
+  9
+  1
+  0 0 0.0275 0 0 0 2.51 2.51 2.51
+  0 0 0 0 0
+EndBehavior 1
+ShadowOptions 7
+
+LoadObject D:\Workcrap\RC stuff\Objects\Spring.lwo
+ShowObject 8 7
+ObjectMotion (unnamed)
+  9
+  1
+  0.05600001 0.0085 0.134 0 0 19.00001 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 27
+ParentObject 1
+ShadowOptions 7
+
+LoadObject D:\Workcrap\RC stuff\Objects\Spring.lwo
+ShowObject 8 7
+ObjectMotion (unnamed)
+  9
+  1
+  -0.05599999 0.0085 0.134 0 0 -19 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 30
+ParentObject 1
+ShadowOptions 7
+
+LoadObject D:\Workcrap\RC stuff\Objects\Spring.lwo
+ShowObject 8 7
+ObjectMotion (unnamed)
+  9
+  1
+  0.04750001 0.003999999 -0.1549999 0 0 39.00002 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 28
+ParentObject 1
+ShadowOptions 7
+
+LoadObject D:\Workcrap\RC stuff\Objects\Spring.lwo
+ShowObject 8 7
+ObjectMotion (unnamed)
+  9
+  1
+  -0.04799998 0.003999999 -0.1549999 0 0 -39 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 30
+ParentObject 1
+ShadowOptions 7
+
+LoadObject D:\Workcrap\RC stuff\Objects\Engine01.lwo
+ShowObject 8 7
+ObjectMotion (unnamed)
+  9
+  1
+  0 -0.0075 0.122 0 0 0 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 1
+ParentObject 1
+ShadowOptions 7
+
+AddNullObject Ref Obj
+ShowObject 1 7
+ObjectMotion (unnamed)
+  9
+  1
+  0 -0.0015 -1.164153e-010 0 0 0 1.034 1.034 1.034
+  0 0 0 0 0
+EndBehavior 1
+ShadowOptions 7
+
+AddNullObject Ref Obj
+ShowObject 1 7
+ObjectMotion (unnamed)
+  9
+  1
+  0 0 -3.142218e-005 0 0 0 1.11 1.11 1.11
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 1
+ShadowOptions 7
+
+AmbientColor 255 255 255
+AmbIntensity 0.250000
+
+AddLight
+LightName Light
+ShowLight 1 7
+LightMotion (unnamed)
+  9
+  1
+  0.5715546 0.4924998 -0.748611 -38.60001 33.6 0 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+LightColor 255 255 255
+LgtIntensity 1.000000
+LightType 0
+ShadowType 1
+
+ShowCamera 1 7
+CameraMotion (unnamed)
+  9
+  1
+  0.1833656 0.1517567 -0.448177 -26.09999 20.69997 0 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+ZoomFactor 3.200000
+Resolution 1
+PixelAspectRatio 2
+SegmentMemory 2200000
+Antialiasing 1
+AdaptiveSampling 1
+AdaptiveThreshold 16
+FilmSize 2
+FieldRendering 0
+MotionBlur 0
+DepthOfField 0
+
+SolidBackdrop 1
+BackdropColor 0 0 0
+ZenithColor 0 40 80
+SkyColor 120 180 240
+GroundColor 50 40 30
+NadirColor 100 80 60
+FogType 0
+DitherIntensity 1
+AnimatedDither 0
+
+RenderMode 2
+RayTraceEffects 0
+DataOverlayLabel  
+
+ViewMode 5
+ViewAimpoint -0.024000 0.002500 0.035000
+ViewDirection -4.005530 -0.284489 0.000000
+ViewZoomFactor 2.666667
+GridNumber 90
+GridSize 0.100000
+ShowMotionPath 1
+ShowBGImage 0
+ShowFogRadius 0
+ShowRedraw 0
+ShowSafeAreas 0
+ShowFieldChart 0

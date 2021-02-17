@@ -1,0 +1,10 @@
+LWO Import Plugin 0.1 Beta Nov 11 1997 08:06:34 VC++40
+Parsing C:\RV_MESHES\james_cars\Car03\Objects\Side.lwo started ...      
+Working on: Side
+Statistic:
+Object   : Side
+Faces    : 499
+Vertices : 306
+Min : <-0.658205,-1.615575,-0.596060>
+Max : <-0.277126,1.582623,0.604068>
+Parsing finished       

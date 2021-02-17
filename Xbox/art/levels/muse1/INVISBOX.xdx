@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Muse1\INVISBOX.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Muse1d" source="../../../Muse1d.bmp" />
+-->
+<VertexBuffer id="INVISBOX_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-215.886 -91.8009 159.288 0.18706 -0.982348 1.17427e-008 0xffffffff 0.835938 0.644531</v>
+	<v index="1">-215.886 -91.8009 -159.835 0.18706 -0.982348 1.17427e-008 0xffffffff 0.835938 0.636719</v>
+	<v index="2">216.019 -9.55684 -159.835 0.18706 -0.982348 1.17427e-008 0xffffffff 0.828125 0.636719</v>
+	<v index="3">216.019 -9.55684 159.288 0.18706 -0.982348 1.17427e-008 0xffffffff 0.828125 0.644531</v>
+</VertexBuffer>
+<Model id="INVISBOX">
+	<!--
+	<Revolt Radius="283.868622" Xmin="-215.886002" Xmax="216.019272" Ymin="-91.800903" Ymax="-9.556835" Zmin="-159.834991" Zmax="159.288055"
+	 PolyNum="1" VertNum="4" QuadNumTex="1" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="INVISBOX_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="INVISBOX_PreviewCamera">
+				0.00352276 0 0 0
+				0 0.00352276 0 0
+				0 0 0.00176138 0
+				-0.000234739 0.178529 0.500482 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Muse1d"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="4" />
+	</Pass>
+</Model>
+</XDX>

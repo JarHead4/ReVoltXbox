@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Market1\CLOSED_N.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Market1g" source="../../../Market1g.bmp" />
+-->
+<VertexBuffer id="CLOSED_N_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-120 -66 150 -0.57735 -0.57735 0.57735 0xff808080 0.251953 0.501953</v>
+	<v index="1">-120 135 150 -0.57735 0.57735 0.57735 0xff808080 0.251953 0.748047</v>
+	<v index="2">-120 135 -150 -0.57735 0.57735 -0.57735 0xff808080 0.498047 0.748047</v>
+	<v index="3">-120 -66 -150 -0.57735 -0.57735 -0.57735 0xff808080 0.498047 0.501953</v>
+	<v index="4">-120 -66 -150 -0.57735 -0.57735 -0.57735 0xff808080 0.00195313 0.501953</v>
+	<v index="5">-120 135 -150 -0.57735 0.57735 -0.57735 0xff808080 0.00195313 0.748047</v>
+	<v index="6">120 135 -150 0.57735 0.57735 -0.57735 0xff808080 0.248047 0.748047</v>
+	<v index="7">120 -66 -150 0.57735 -0.57735 -0.57735 0xff808080 0.248047 0.501953</v>
+	<v index="8">-120 -66 150 -0.57735 -0.57735 0.57735 0xff808080 0.748047 0.748047</v>
+	<v index="9">-120 -66 -150 -0.57735 -0.57735 -0.57735 0xff808080 0.748047 0.501953</v>
+	<v index="10">120 -66 -150 0.57735 -0.57735 -0.57735 0xff808080 0.501953 0.501953</v>
+	<v index="11">120 -66 150 0.57735 -0.57735 0.57735 0xff808080 0.501953 0.748047</v>
+	<v index="12">-120 135 150 -0.57735 0.57735 0.57735 0xff808080 0.248047 0.748047</v>
+	<v index="13">-120 -66 150 -0.57735 -0.57735 0.57735 0xff808080 0.248047 0.501953</v>
+	<v index="14">120 -66 150 0.57735 -0.57735 0.57735 0xff808080 0.00195313 0.501953</v>
+	<v index="15">120 135 150 0.57735 0.57735 0.57735 0xff808080 0.00195313 0.748047</v>
+	<v index="16">-120 135 -150 -0.57735 0.57735 -0.57735 0xff808080 0.501953 0.748047</v>
+	<v index="17">-120 135 150 -0.57735 0.57735 0.57735 0xff808080 0.748047 0.748047</v>
+	<v index="18">120 135 150 0.57735 0.57735 0.57735 0xff808080 0.748047 0.501953</v>
+	<v index="19">120 135 -150 0.57735 0.57735 -0.57735 0xff808080 0.501953 0.501953</v>
+	<v index="20">120 -66 150 0.57735 -0.57735 0.57735 0xff808080 0.498047 0.501953</v>
+	<v index="21">120 -66 -150 0.57735 -0.57735 -0.57735 0xff808080 0.251953 0.501953</v>
+	<v index="22">120 135 -150 0.57735 0.57735 -0.57735 0xff808080 0.251953 0.748047</v>
+	<v index="23">120 135 150 0.57735 0.57735 0.57735 0xff808080 0.498047 0.748047</v>
+</VertexBuffer>
+<Model id="CLOSED_N">
+	<!--
+	<Revolt Radius="234.787140" Xmin="-120.000000" Xmax="120.000000" Ymin="-66.000000" Ymax="135.000000" Zmin="-150.000000" Zmax="150.000000"
+	 PolyNum="6" VertNum="8" QuadNumTex="6" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="CLOSED_N_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="CLOSED_N_PreviewCamera">
+				0.00425918 0 0 0
+				0 0.00425918 0 0
+				0 0 0.00212959 0
+				0 -0.146942 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Market1g"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="24" />
+	</Pass>
+</Model>
+</XDX>

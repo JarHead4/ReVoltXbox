@@ -1,0 +1,15 @@
+[PROJECT]
+BANKCOUNT=1
+[BANK0]
+BANKNAME=garden1
+BANKFILE=sounds_garden1.xwb
+HEADERFILE=wavs_garden1.h
+ENTRYCOUNT=8
+ENTRY0=animal1,..\..\wavs\garden\animal1.wav
+ENTRY1=animal2,..\..\wavs\garden\animal2.wav
+ENTRY2=animal3,..\..\wavs\garden\animal3.wav
+ENTRY3=animal4,..\..\wavs\garden\animal4.wav
+ENTRY4=stream,..\..\wavs\garden\stream.wav
+ENTRY5=tropics2,..\..\wavs\garden\tropics2.wav
+ENTRY6=tropics3,..\..\wavs\garden\tropics3.wav
+ENTRY7=tropics4,..\..\wavs\garden\tropics4.wav

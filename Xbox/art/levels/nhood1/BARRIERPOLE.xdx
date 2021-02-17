@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\NHood1\BARRIERPOLE.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="NHood1c" source="../../../NHood1c.bmp" />
+-->
+<VertexBuffer id="BARRIERPOLE_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-12.3659 27.6997 -1.77387 -0.707107 0.707107 0 0xffffffff 0.5625 0.292969</v>
+	<v index="1">-12.3659 -27.6997 -1.77387 -0.707107 -0.707107 0 0xffffffff 0.648438 0.292969</v>
+	<v index="2">-12.3659 -27.6997 348.576 -0.707107 -0.707107 0 0xffffffff 0.648438 0.00390625</v>
+	<v index="3">-12.3659 27.6997 348.576 -0.707107 0.707107 0 0xffffffff 0.5625 0.00390625</v>
+	<v index="4">-12.3659 -27.6997 -1.77387 -0.707107 -0.707107 0 0xffffffff 0.648438 0.292969</v>
+	<v index="5">-12.3659 27.6997 -1.77387 -0.707107 0.707107 0 0xffffffff 0.5625 0.292969</v>
+	<v index="6">-12.3659 27.6997 -352.123 -0.707107 0.707107 0 0xffffffff 0.5625 0.582031</v>
+	<v index="7">-12.3659 -27.6997 -352.123 -0.707107 -0.707107 0 0xffffffff 0.648438 0.582031</v>
+	<v index="8">12.3659 -27.6997 -1.77387 0.707107 -0.707107 0 0xffffffff 0.5625 0.292969</v>
+	<v index="9">12.3659 -27.6997 348.576 0.707107 -0.707107 0 0xffffffff 0.5625 0.582031</v>
+	<v index="10">-12.3659 -27.6997 348.576 -0.707107 -0.707107 0 0xffffffff 0.585938 0.582031</v>
+	<v index="11">-12.3659 -27.6997 -1.77387 -0.707107 -0.707107 0 0xffffffff 0.585938 0.292969</v>
+	<v index="12">12.3659 -27.6997 -1.77387 0.707107 -0.707107 0 0xffffffff 0.5625 0.292969</v>
+	<v index="13">-12.3659 -27.6997 -1.77387 -0.707107 -0.707107 0 0xffffffff 0.585938 0.292969</v>
+	<v index="14">-12.3659 -27.6997 -352.123 -0.707107 -0.707107 0 0xffffffff 0.585938 0.00390625</v>
+	<v index="15">12.3659 -27.6997 -352.123 0.707107 -0.707107 0 0xffffffff 0.5625 0.00390625</v>
+	<v index="16">12.3659 27.6997 -1.77387 0.707107 0.707107 0 0xff282930 0.585938 0.292969</v>
+	<v index="17">12.3659 27.6997 -352.123 0.707107 0.707107 0 0xff282930 0.585938 0.00390625</v>
+	<v index="18">-12.3659 27.6997 -352.123 -0.707107 0.707107 0 0xff282930 0.5625 0.00390625</v>
+	<v index="19">-12.3659 27.6997 -1.77387 -0.707107 0.707107 0 0xff282930 0.5625 0.292969</v>
+	<v index="20">12.3659 27.6997 -1.77387 0.707107 0.707107 0 0xff282930 0.585938 0.292969</v>
+	<v index="21">-12.3659 27.6997 -1.77387 -0.707107 0.707107 0 0xff282930 0.5625 0.292969</v>
+	<v index="22">-12.3659 27.6997 348.576 -0.707107 0.707107 0 0xff282930 0.5625 0.582031</v>
+	<v index="23">12.3659 27.6997 348.576 0.707107 0.707107 0 0xff282930 0.585938 0.582031</v>
+	<v index="24">12.3659 27.6997 -1.77387 0.707107 0.707107 0 0xff595a71 0.5625 0.292969</v>
+	<v index="25">12.3659 27.6997 348.576 0.707107 0.707107 0 0xff595a71 0.5625 0.582031</v>
+	<v index="26">12.3659 -27.6997 348.576 0.707107 -0.707107 0 0xff595a71 0.648438 0.582031</v>
+	<v index="27">12.3659 -27.6997 -1.77387 0.707107 -0.707107 0 0xff595a71 0.648438 0.292969</v>
+	<v index="28">12.3659 27.6997 -1.77387 0.707107 0.707107 0 0xff595a71 0.5625 0.292969</v>
+	<v index="29">12.3659 -27.6997 -1.77387 0.707107 -0.707107 0 0xff595a71 0.648438 0.292969</v>
+	<v index="30">12.3659 -27.6997 -352.123 0.707107 -0.707107 0 0xff595a71 0.648438 0.00390625</v>
+	<v index="31">12.3659 27.6997 -352.123 0.707107 0.707107 0 0xff595a71 0.5625 0.00390625</v>
+</VertexBuffer>
+<Model id="BARRIERPOLE">
+	<!--
+	<Revolt Radius="353.427582" Xmin="-12.365948" Xmax="12.365948" Ymin="-27.699722" Ymax="27.699722" Zmin="-352.123352" Zmax="348.575623"
+	 PolyNum="8" VertNum="12" QuadNumTex="8" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="BARRIERPOLE_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="BARRIERPOLE_PreviewCamera">
+				0.00282943 0 0 0
+				0 0.00282943 0 0
+				0 0 0.00141472 0
+				0 0 0.50251 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="NHood1c"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="32" />
+	</Pass>
+</Model>
+</XDX>

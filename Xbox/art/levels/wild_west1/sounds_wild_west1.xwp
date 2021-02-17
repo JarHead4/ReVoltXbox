@@ -1,0 +1,14 @@
+[PROJECT]
+BANKCOUNT=1
+[BANK0]
+BANKNAME=wild_west1
+BANKFILE=sounds_wild_west1.xwb
+HEADERFILE=wavs_wild_west1.h
+ENTRYCOUNT=7
+ENTRY0=bats,..\..\wavs\ghost\bats.wav
+ENTRY1=coyote1,..\..\wavs\ghost\coyote1.wav
+ENTRY2=eagle1,..\..\wavs\ghost\eagle1.wav
+ENTRY3=minedrip,..\..\wavs\ghost\minedrip.wav
+ENTRY4=rattler,..\..\wavs\ghost\rattler.wav
+ENTRY5=townbell,..\..\wavs\ghost\townbell.wav
+ENTRY6=tumbweed,..\..\wavs\ghost\tumbweed.wav

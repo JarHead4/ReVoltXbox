@@ -1,0 +1,9 @@
+TARGETPATH = obj
+TARGETTYPE = NOTARGET
+SOURCES =
+
+# With the -c0 option, build -c will delete the NTTARGETFILE0 files
+SOURCES_OPTIONS = -c0
+
+# Art files to be built
+NTTARGETFILE0 = muse1.xbr sounds_muse1.xwb sounds_muse1.sfx

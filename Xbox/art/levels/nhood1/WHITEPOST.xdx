@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\NHood1\WHITEPOST.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="NHood1e" source="../../../NHood1e.bmp" />
+-->
+<VertexBuffer id="WHITEPOST_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-40.9133 -507.391 -39.8464 -0.707107 0 -0.707107 0xffeaeef5 0.300781 0.515625</v>
+	<v index="1">-40.9133 -507.391 39.8464 -0.707107 0 0.707107 0xff2c3540 0.300781 0.558594</v>
+	<v index="2">-40.9133 507.391 39.8464 -0.707107 0 0.707107 0xffeaeef5 0.605469 0.558594</v>
+	<v index="3">-40.9133 507.391 -39.8464 -0.707107 0 -0.707107 0xffeaeef5 0.605469 0.515625</v>
+	<v index="4">-40.9133 -507.391 -39.8464 -0.707107 0 -0.707107 0xffffffff 0.300781 0.515625</v>
+	<v index="5">-40.9133 507.391 -39.8464 -0.707107 0 -0.707107 0xffffffff 0.300781 0.558594</v>
+	<v index="6">40.9133 507.391 -39.8464 0.707107 0 -0.707107 0xffffffff 0.605469 0.558594</v>
+	<v index="7">40.9133 -507.391 -39.8464 0.707107 0 -0.707107 0xffffffff 0.605469 0.515625</v>
+	<v index="8">-40.9133 507.391 39.8464 -0.707107 0 0.707107 0xff364458 0.605469 0.515625</v>
+	<v index="9">-40.9133 -507.391 39.8464 -0.707107 0 0.707107 0xff2c3540 0.300781 0.515625</v>
+	<v index="10">40.9133 -507.391 39.8464 0.707107 0 0.707107 0xff2c3540 0.300781 0.558594</v>
+	<v index="11">40.9133 507.391 39.8464 0.707107 0 0.707107 0xff364458 0.605469 0.558594</v>
+	<v index="12">40.9133 -507.391 39.8464 0.707107 0 0.707107 0xff2c3540 0.300781 0.515625</v>
+	<v index="13">40.9133 -507.391 -39.8464 0.707107 0 -0.707107 0xff3a4553 0.300781 0.558594</v>
+	<v index="14">40.9133 507.391 -39.8464 0.707107 0 -0.707107 0xff5d6b80 0.605469 0.558594</v>
+	<v index="15">40.9133 507.391 39.8464 0.707107 0 0.707107 0xff5d6b80 0.605469 0.515625</v>
+</VertexBuffer>
+<Model id="WHITEPOST">
+	<!--
+	<Revolt Radius="510.594940" Xmin="-40.913345" Xmax="40.913345" Ymin="-507.390930" Ymax="507.390930" Zmin="-39.846420" Zmax="39.846420"
+	 PolyNum="4" VertNum="8" QuadNumTex="4" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="WHITEPOST_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="WHITEPOST_PreviewCamera">
+				0.0019585 0 0 0
+				0 0.0019585 0 0
+				0 0 0.00097925 0
+				0 0 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="NHood1e"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="16" />
+	</Pass>
+</Model>
+</XDX>

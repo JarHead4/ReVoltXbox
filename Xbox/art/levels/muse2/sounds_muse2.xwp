@@ -1,0 +1,13 @@
+[PROJECT]
+BANKCOUNT=1
+[BANK0]
+BANKNAME=muse2
+BANKFILE=sounds_muse2.xwb
+HEADERFILE=wavs_muse2.h
+ENTRYCOUNT=6
+ENTRY0=alarm2,..\..\wavs\muse\alarm2.wav
+ENTRY1=escalate,..\..\wavs\muse\escalate.wav
+ENTRY2=largdoor,..\..\wavs\muse\largdoor.wav
+ENTRY3=laserhum,..\..\wavs\muse\laserhum.wav
+ENTRY4=museumam,..\..\wavs\muse\museumam.wav
+ENTRY5=rotating,..\..\wavs\muse\rotating.wav

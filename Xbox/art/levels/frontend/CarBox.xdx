@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\frontend\CarBox.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="frontendd" source="../../../frontendd.bmp" />
+<Texture id="frontende" source="../../../frontende.bmp" />
+-->
+<VertexBuffer id="CarBox_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">84.3783 68.308 -0.000154972 0.57735 0.57735 0.57735 0xff1c1b2c 0.378906 0.835938</v>
+	<v index="1">-84.3779 68.308 -0.000154972 -0.57735 0.57735 0.57735 0xff1c1b2c 0.546875 0.835938</v>
+	<v index="2">-84.3779 -68.8063 -0.000160933 -0.57735 -0.57735 0.57735 0xff1c1b2c 0.546875 0.722656</v>
+	<v index="3">84.3783 -68.8063 -0.000160933 0.57735 -0.57735 0.57735 0xff1c1b2c 0.378906 0.722656</v>
+	<v index="4">-32.7093 61.1292 -105.508 -0.000106494 0.000767625 -1 0xff393758 0.0351563 0.464844</v>
+	<v index="5">77.2907 61.1292 -105.508 0.000777543 0.000767672 -0.999999 0xff393758 0.0234375 0.464844</v>
+	<v index="6">77.2907 -48.8708 -105.508 0.000777497 -0.000276328 -1 0xff393758 0.0234375 0.472656</v>
+	<v index="7">-32.7093 -48.8708 -105.508 -0.000106541 -0.000276374 -1 0xff393758 0.0351563 0.472656</v>
+	<v index="8">84.3783 68.308 -105.492 0.408885 0.408873 -0.815865 0xff393758 0.511719 0.789063</v>
+	<v index="9">77.2907 61.1292 -105.508 0.000777543 0.000767672 -0.999999 0xff393758 0.5 0.761719</v>
+	<v index="10">-32.7093 61.1292 -105.508 -0.000106494 0.000767625 -1 0xff393758 0.160156 0.761719</v>
+	<v index="11">-84.3779 68.308 -105.492 -0.408201 0.40901 -0.816139 0xff393758 0.00390625 0.789063</v>
+	<v index="12">-32.7093 61.1292 -105.508 -0.000106494 0.000767625 -1 0xff393758 0.160156 0.761719</v>
+	<v index="13">-32.7093 -48.8708 -105.508 -0.000106541 -0.000276374 -1 0xff393758 0.160156 0.433594</v>
+	<v index="14">-84.3779 -68.8063 -105.492 -0.408301 -0.408509 -0.81634 0xff393758 0.00390625 0.371094</v>
+	<v index="15">-84.3779 68.308 -105.492 -0.408201 0.40901 -0.816139 0xff393758 0.00390625 0.789063</v>
+	<v index="16">77.2907 -48.8708 -105.508 0.000777497 -0.000276328 -1 0xff393758 0.0234375 0.464844</v>
+	<v index="17">77.2907 61.1292 -105.508 0.000777543 0.000767672 -0.999999 0xff393758 0.0234375 0.472656</v>
+	<v index="18">84.3783 68.308 -105.492 0.408885 0.408873 -0.815865 0xff393758 0.0351563 0.472656</v>
+	<v index="19">84.3783 -68.8063 -105.492 0.408985 -0.408372 -0.816066 0xff393758 0.0351563 0.464844</v>
+	<v index="20">-32.7093 -48.8708 -105.508 -0.000106541 -0.000276374 -1 0xff393758 0.160156 0.4375</v>
+	<v index="21">77.2907 -48.8708 -105.508 0.000777497 -0.000276328 -1 0xff393758 0.5 0.4375</v>
+	<v index="22">84.3783 -68.8063 -105.492 0.408985 -0.408372 -0.816066 0xff393758 0.511719 0.34375</v>
+	<v index="23">-84.3779 -68.8063 -105.492 -0.408301 -0.408509 -0.81634 0xff393758 0.00390625 0.34375</v>
+	<v index="24">-84.3779 68.308 -105.492 -0.408201 0.40901 -0.816139 0xff222136 0.00390625 0.78125</v>
+	<v index="25">-84.3779 68.308 -0.000154972 -0.57735 0.57735 0.57735 0xff222136 0.00390625 0.996094</v>
+	<v index="26">84.3783 68.308 -0.000154972 0.57735 0.57735 0.57735 0xff222136 0.511719 0.996094</v>
+	<v index="27">84.3783 68.308 -105.492 0.408885 0.408873 -0.815865 0xff222136 0.511719 0.78125</v>
+	<v index="28">-84.3779 -68.8063 -105.492 -0.408301 -0.408509 -0.81634 0xff343251 0.164063 0.441406</v>
+	<v index="29">-84.3779 -68.8063 -0.000160933 -0.57735 -0.57735 0.57735 0xff292840 0.164063 0.667969</v>
+	<v index="30">-84.3779 68.308 -0.000154972 -0.57735 0.57735 0.57735 0xff292840 0.621094 0.667969</v>
+	<v index="31">-84.3779 68.308 -105.492 -0.408201 0.40901 -0.816139 0xff2b2a44 0.621094 0.441406</v>
+	<v index="32">84.3783 -68.8063 -105.492 0.408985 -0.408372 -0.816066 0xff424067 0.511719 0.996094</v>
+	<v index="33">84.3783 -68.8063 -0.000160933 0.57735 -0.57735 0.57735 0xff222136 0.511719 0.78125</v>
+	<v index="34">-84.3779 -68.8063 -0.000160933 -0.57735 -0.57735 0.57735 0xff222136 0.00390625 0.78125</v>
+	<v index="35">-84.3779 -68.8063 -105.492 -0.408301 -0.408509 -0.81634 0xff424067 0.00390625 0.996094</v>
+	<v index="36">84.3783 68.308 -105.492 0.408885 0.408873 -0.815865 0xff2b2a44 0.164063 0.441406</v>
+	<v index="37">84.3783 68.308 -0.000154972 0.57735 0.57735 0.57735 0xff292840 0.164063 0.667969</v>
+	<v index="38">84.3783 -68.8063 -0.000160933 0.57735 -0.57735 0.57735 0xff292840 0.621094 0.667969</v>
+	<v index="39">84.3783 -68.8063 -105.492 0.408985 -0.408372 -0.816066 0xff343251 0.621094 0.441406</v>
+</VertexBuffer>
+<Model id="CarBox">
+	<!--
+	<Revolt Radius="151.599838" Xmin="-84.377884" Xmax="84.378342" Ymin="-68.806328" Ymax="68.308006" Zmin="-105.508209" Zmax="-0.000155"
+	 PolyNum="10" VertNum="12" QuadNumTex="10" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="CarBox_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="CarBox_PreviewCamera">
+				0.00659631 0 0 0
+				0 0.00659631 0 0
+				0 0 0.00329816 0
+				-1.50978e-006 0.00164354 0.673992 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="frontendd"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="4" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="CarBox_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="CarBox_PreviewCamera">
+				0.00659631 0 0 0
+				0 0.00659631 0 0
+				0 0 0.00329816 0
+				-1.50978e-006 0.00164354 0.673992 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="frontende"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="4" count="36" />
+	</Pass>
+</Model>
+</XDX>

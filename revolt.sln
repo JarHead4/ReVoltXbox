@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "revolt", "revolt.vcproj", "{40FF8F29-7E1D-4A70-8D63-88B67D2E1DB9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Preprocess Only = Preprocess Only
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{40FF8F29-7E1D-4A70-8D63-88B67D2E1DB9}.Debug.ActiveCfg = Debug|Xbox
+		{40FF8F29-7E1D-4A70-8D63-88B67D2E1DB9}.Debug.Build.0 = Debug|Xbox
+		{40FF8F29-7E1D-4A70-8D63-88B67D2E1DB9}.Preprocess Only.ActiveCfg = Preprocess Only|Win32
+		{40FF8F29-7E1D-4A70-8D63-88B67D2E1DB9}.Preprocess Only.Build.0 = Preprocess Only|Win32
+		{40FF8F29-7E1D-4A70-8D63-88B67D2E1DB9}.Release.ActiveCfg = Release|Xbox
+		{40FF8F29-7E1D-4A70-8D63-88B67D2E1DB9}.Release.Build.0 = Release|Xbox
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

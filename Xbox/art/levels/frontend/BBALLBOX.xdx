@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\frontend\BBALLBOX.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="frontendd" source="../../../frontendd.bmp" />
+<Texture id="frontende" source="../../../frontende.bmp" />
+-->
+<VertexBuffer id="BBALLBOX_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">69.1936 -137.8 68.7288 0.57735 -0.57735 0.57735 0xff1c1b2c 0.546875 0.835938</v>
+	<v index="1">69.1936 0.131446 68.7288 0.57735 0.57735 0.57735 0xff1c1b2c 0.546875 0.722656</v>
+	<v index="2">-68.7374 0.131446 68.7288 -0.57735 0.57735 0.57735 0xff1c1b2c 0.378906 0.722656</v>
+	<v index="3">-68.7374 -137.8 68.7288 -0.57735 -0.57735 0.57735 0xff1c1b2c 0.378906 0.835938</v>
+	<v index="4">-68.7374 -137.8 68.7288 -0.57735 -0.57735 0.57735 0xff343251 0.566406 0.00390625</v>
+	<v index="5">-68.7374 0.131446 68.7288 -0.57735 0.57735 0.57735 0xff292840 0.566406 0.277344</v>
+	<v index="6">-68.7374 0.131446 -69.2022 -0.57735 0.57735 -0.57735 0xff292840 0.839844 0.277344</v>
+	<v index="7">-68.7374 -137.8 -69.2022 -0.57735 -0.57735 -0.57735 0xff343251 0.839844 0.00390625</v>
+	<v index="8">69.1936 -137.8 -69.2022 0.57735 -0.57735 -0.57735 0xff343251 0.566406 0.00390625</v>
+	<v index="9">69.1936 0.131446 -69.2022 0.57735 0.57735 -0.57735 0xff2b2a44 0.566406 0.277344</v>
+	<v index="10">69.1936 0.131446 68.7288 0.57735 0.57735 0.57735 0xff292840 0.839844 0.277344</v>
+	<v index="11">69.1936 -137.8 68.7288 0.57735 -0.57735 0.57735 0xff343251 0.839844 0.00390625</v>
+	<v index="12">-68.7374 -137.8 -69.2022 -0.57735 -0.57735 -0.57735 0xff393758 0.285156 0.00390625</v>
+	<v index="13">-68.7374 0.131446 -69.2022 -0.57735 0.57735 -0.57735 0xff393758 0.285156 0.277344</v>
+	<v index="14">69.1936 0.131446 -69.2022 0.57735 0.57735 -0.57735 0xff393758 0.558594 0.277344</v>
+	<v index="15">69.1936 -137.8 -69.2022 0.57735 -0.57735 -0.57735 0xff393758 0.558594 0.00390625</v>
+	<v index="16">-68.7374 -137.8 68.7288 -0.57735 -0.57735 0.57735 0xff222136 0.566406 0.00390625</v>
+	<v index="17">-68.7374 -137.8 -69.2022 -0.57735 -0.57735 -0.57735 0xff424067 0.566406 0.277344</v>
+	<v index="18">69.1936 -137.8 -69.2022 0.57735 -0.57735 -0.57735 0xff424067 0.839844 0.277344</v>
+	<v index="19">69.1936 -137.8 68.7288 0.57735 -0.57735 0.57735 0xff222136 0.839844 0.00390625</v>
+	<v index="20">69.1936 0.131446 -69.2022 0.57735 0.57735 -0.57735 0xff222136 0.566406 0.00390625</v>
+	<v index="21">-68.7374 0.131446 -69.2022 -0.57735 0.57735 -0.57735 0xff222136 0.566406 0.277344</v>
+	<v index="22">-68.7374 0.131446 68.7288 -0.57735 0.57735 0.57735 0xff222136 0.839844 0.277344</v>
+	<v index="23">69.1936 0.131446 68.7288 0.57735 0.57735 0.57735 0xff222136 0.839844 0.00390625</v>
+</VertexBuffer>
+<Model id="BBALLBOX">
+	<!--
+	<Revolt Radius="169.013107" Xmin="-68.737396" Xmax="69.193634" Ymin="-137.799591" Ymax="0.131446" Zmin="-69.202202" Zmax="68.728836"
+	 PolyNum="6" VertNum="8" QuadNumTex="6" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="BBALLBOX_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="BBALLBOX_PreviewCamera">
+				0.0059167 0 0 0
+				0 0.0059167 0 0
+				0 0 0.00295835 0
+				-0.00134971 0.407271 0.5007 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="frontendd"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="4" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="BBALLBOX_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="BBALLBOX_PreviewCamera">
+				0.0059167 0 0 0
+				0 0.0059167 0 0
+				0 0 0.00295835 0
+				-0.00134971 0.407271 0.5007 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="frontende"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="4" count="20" />
+	</Pass>
+</Model>
+</XDX>

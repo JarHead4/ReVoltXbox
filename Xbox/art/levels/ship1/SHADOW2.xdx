@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Ship1\SHADOW2.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="fxpage1" source="../../gfx/fxpage1.bmp" />
+-->
+<VertexBuffer id="SHADOW2_VertexBuffer_TransparentTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">9.6914 136.5 -225.094 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="1">27.4449 136.5 -207.874 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="2">9.15117 136.5 147.939 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="3">-139.216 136.5 142.573 0 -1 0 0xff000000 0.859375 0.642578</v>
+	<v index="4">9.15117 136.5 147.939 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="5">27.4449 136.5 166.096 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="6">-38.6546 136.5 278.161 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="7">-139.216 136.5 142.573 0 -1 0 0xff000000 0.859375 0.642578</v>
+	<v index="8">9.15117 136.5 147.939 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="9">64.5162 136.5 103.873 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="10">82.81 136.5 122.03 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="11">27.4449 136.5 166.096 0 -1 0 0xff000000 0.859375 0.642578</v>
+	<v index="12">-138.175 136.5 -225.094 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="13">-82.81 136.5 -269.16 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="14">-64.813 136.5 -251.697 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="15">-120.178 136.5 -207.631 0 -1 0 0xff000000 0.859375 0.642578</v>
+	<v index="16">9.6914 136.5 -225.094 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="17">65.0565 136.5 -269.16 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="18">82.81 136.5 -251.94 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="19">27.4449 136.5 -207.874 0 -1 0 0xff000000 0.859375 0.642578</v>
+	<v index="20">-139.216 136.5 142.573 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="21">-138.175 136.5 -225.094 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="22">-120.178 136.5 -207.631 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="23">-139.216 136.5 142.573 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="24">-120.178 136.5 -207.631 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="25">9.6914 136.5 -225.094 0 -1 0 0xff000000 0.859375 0.609375</v>
+	<v index="26">-191.191 136.5 282.681 0 -1 0 0xff000000 0.890625 0.642578</v>
+	<v index="27">-139.216 136.5 142.573 0 -1 0 0xff000000 0.890625 0.611328</v>
+	<v index="28">-38.6546 136.5 278.161 0 -1 0 0xff000000 0.859375 0.609375</v>
+</VertexBuffer>
+<Model id="SHADOW2">
+	<!--
+	<Revolt Radius="367.552155" Xmin="-191.191010" Xmax="82.810005" Ymin="136.500000" Ymax="136.500000" Zmin="-269.159607" Zmax="282.680634"
+	 PolyNum="8" VertNum="15" QuadNumTex="5" TriNumTex="3" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="SHADOW2_VertexBuffer_TransparentTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="SHADOW2_PreviewCamera">
+				0.0027207 0 0 0
+				0 0.0027207 0 0
+				0 0 0.00136035 0
+				0.147436 -0.371376 0.490803 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="fxpage1"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="20" />
+		<Draw primitive="TRILIST" start="20" count="9" />
+	</Pass>
+</Model>
+</XDX>

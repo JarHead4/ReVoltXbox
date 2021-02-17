@@ -1,0 +1,13 @@
+[PROJECT]
+BANKCOUNT=1
+[BANK0]
+BANKNAME=ship1
+BANKFILE=sounds_ship1.xwb
+HEADERFILE=wavs_ship1.h
+ENTRYCOUNT=6
+ENTRY0=intamb1,..\..\wavs\ship\intamb1.wav
+ENTRY1=seagulls,..\..\wavs\ship\seagulls.wav
+ENTRY2=shiphorn,..\..\wavs\ship\shiphorn.wav
+ENTRY3=strmrain,..\..\wavs\ship\strmrain.wav
+ENTRY4=thunder1,..\..\wavs\ship\thunder1.wav
+ENTRY5=wash,..\..\wavs\ship\wash.wav

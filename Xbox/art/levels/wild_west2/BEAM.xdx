@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Wild_West2\BEAM.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Wild_West2a" source="../../../Wild_West2a.bmp" />
+-->
+<VertexBuffer id="BEAM_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-0.00984 -887.105 -0.238099 1 0 0 0xff555555 0.210938 0.121094</v>
+	<v index="1">-0.00984 -887.105 -29.8724 1 0 0 0xff555555 0.152344 0.121094</v>
+	<v index="2">-0.00984 -849.45 -29.8724 1 0 0 0xff555555 0.152344 1</v>
+	<v index="3">-0.00984 -849.45 -0.238099 1 0 0 0xff555555 0.210938 1</v>
+	<v index="4">-1040.6 -887.105 -0.238099 -1 0 0 0xff555555 0.152344 0.121094</v>
+	<v index="5">-1040.6 -849.45 -0.238099 -1 0 0 0xff555555 0.152344 1</v>
+	<v index="6">-1040.6 -849.45 -29.8724 -1 0 0 0xff555555 0.210938 1</v>
+	<v index="7">-1040.6 -887.105 -29.8724 -1 0 0 0xff555555 0.210938 0.121094</v>
+	<v index="8">-1040.6 -887.105 -29.8724 0 0 -1 0xffaeaeae 0.441406 0.980469</v>
+	<v index="9">-1040.6 -849.45 -29.8724 0 0 -1 0xffaeaeae 0.507813 0.980469</v>
+	<v index="10">-520.305 -849.45 -29.8724 0 0 -1 0xffaeaeae 0.507813 0.101563</v>
+	<v index="11">-520.305 -887.105 -29.8724 0 0 -1 0xffaeaeae 0.441406 0.101563</v>
+	<v index="12">-1040.6 -887.105 -0.238099 0 -1 0 0xffffffff 0.296875 0.980469</v>
+	<v index="13">-1040.6 -887.105 -29.8724 0 -1 0 0xffffffff 0.363281 0.980469</v>
+	<v index="14">-520.305 -887.105 -29.8724 0 -1 0 0xffffffff 0.363281 0.101563</v>
+	<v index="15">-520.305 -887.105 -0.238099 0 -1 0 0xffffffff 0.296875 0.101563</v>
+	<v index="16">-1040.6 -849.45 -0.238099 0 0 1 0xffaeaeae 0.296875 1</v>
+	<v index="17">-1040.6 -887.105 -0.238099 0 0 1 0xffaeaeae 0.363281 1</v>
+	<v index="18">-520.305 -887.105 -0.238099 0 0 1 0xffaeaeae 0.363281 0.121094</v>
+	<v index="19">-520.305 -849.45 -0.238099 0 0 1 0xffaeaeae 0.296875 0.121094</v>
+	<v index="20">-1040.6 -849.45 -29.8724 0 1 0 0xff3c3c3c 0.296875 1</v>
+	<v index="21">-1040.6 -849.45 -0.238099 0 1 0 0xff3c3c3c 0.363281 1</v>
+	<v index="22">-520.305 -849.45 -0.238099 0 1 0 0xff434343 0.363281 0.121094</v>
+	<v index="23">-520.305 -849.45 -29.8724 0 1 0 0xff434343 0.296875 0.121094</v>
+	<v index="24">-520.305 -887.105 -29.8724 0 0 -1 0xffaeaeae 0.363281 0.101563</v>
+	<v index="25">-520.305 -849.45 -29.8724 0 0 -1 0xffaeaeae 0.296875 0.101563</v>
+	<v index="26">-0.00984 -849.45 -29.8724 0 0 -1 0xffaeaeae 0.296875 0.980469</v>
+	<v index="27">-0.00984 -887.105 -29.8724 0 0 -1 0xffaeaeae 0.363281 0.980469</v>
+	<v index="28">-520.305 -887.105 -0.238099 0 -1 0 0xffffffff 0.363281 0.101563</v>
+	<v index="29">-520.305 -887.105 -29.8724 0 -1 0 0xffffffff 0.296875 0.101563</v>
+	<v index="30">-0.00984 -887.105 -29.8724 0 -1 0 0xffffffff 0.296875 0.980469</v>
+	<v index="31">-0.00984 -887.105 -0.238099 0 -1 0 0xffffffff 0.363281 0.980469</v>
+	<v index="32">-520.305 -849.45 -0.238099 0 0 1 0xffaeaeae 0.429688 0.121094</v>
+	<v index="33">-520.305 -887.105 -0.238099 0 0 1 0xffaeaeae 0.375 0.121094</v>
+	<v index="34">-0.00984 -887.105 -0.238099 0 0 1 0xffaeaeae 0.375 1</v>
+	<v index="35">-0.00984 -849.45 -0.238099 0 0 1 0xffaeaeae 0.429688 1</v>
+	<v index="36">-520.305 -849.45 -29.8724 0 1 0 0xff434343 0.210938 0.121094</v>
+	<v index="37">-520.305 -849.45 -0.238099 0 1 0 0xff434343 0.152344 0.121094</v>
+	<v index="38">-0.00984 -849.45 -0.238099 0 1 0 0xff3c3c3c 0.152344 1</v>
+	<v index="39">-0.00984 -849.45 -29.8724 0 1 0 0xff3c3c3c 0.210938 1</v>
+</VertexBuffer>
+<Model id="BEAM">
+	<!--
+	<Revolt Radius="1367.733887" Xmin="-1040.599976" Xmax="-0.009840" Ymin="-887.104980" Ymax="-849.450012" Zmin="-29.872416" Zmax="-0.238099"
+	 PolyNum="10" VertNum="32" QuadNumTex="10" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="BEAM_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="BEAM_PreviewCamera">
+				0.000731136 0 0 0
+				0 0.000731136 0 0
+				0 0 0.000365568 0
+				0.380414 0.634829 0.505504 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Wild_West2a"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="40" />
+	</Pass>
+</Model>
+</XDX>

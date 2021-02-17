@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<XDX version="0.2" >
+
+<!-- These are all the preview images for use in the level selection screen -->
+
+<Texture id="Muse1"      source="Muse1.bmp"      format="D3DFMT_DXT1" />
+<Texture id="Muse2"      source="Muse2.bmp"      format="D3DFMT_DXT1" />
+<Texture id="ToyLite"    source="ToyLite.bmp"    format="D3DFMT_DXT1" />
+<Texture id="Wild_west1" source="Wild_west1.bmp" format="D3DFMT_DXT1" />
+<Texture id="Wild_west2" source="Wild_west2.bmp" format="D3DFMT_DXT1" />
+<Texture id="garden1"    source="garden1.bmp"    format="D3DFMT_DXT1" />
+<Texture id="markar"     source="markar.bmp"     format="D3DFMT_DXT1" />
+<Texture id="market1" 	 source="market1.bmp"    format="D3DFMT_DXT1" />
+<Texture id="market2" 	 source="market2.bmp"    format="D3DFMT_DXT1" />
+<Texture id="nhood1"  	 source="nhood1.bmp"     format="D3DFMT_DXT1" />
+<Texture id="nhood2"  	 source="nhood2.bmp"     format="D3DFMT_DXT1" />
+<Texture id="ship1"   	 source="ship1.bmp"      format="D3DFMT_DXT1" />
+<Texture id="ship2"   	 source="ship2.bmp"      format="D3DFMT_DXT1" />
+<Texture id="stunts"  	 source="stunts.bmp"     format="D3DFMT_DXT1" />
+<Texture id="toy2"    	 source="toy2.bmp"       format="D3DFMT_DXT1" />
+
+</XDX>

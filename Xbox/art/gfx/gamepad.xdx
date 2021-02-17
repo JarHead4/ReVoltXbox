@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+
+<!-- This is the image to be displayed as soon as possible when the
+     game starts up -->
+
+<Texture id="GamePadTexture" source="GamePad.tga" format="D3DFMT_LIN_R5G6B5" levels="1" />
+
+</XDX>

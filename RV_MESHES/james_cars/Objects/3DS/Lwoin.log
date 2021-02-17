@@ -1,0 +1,10 @@
+LWO Import Plugin 0.1 Beta Nov 11 1997 08:06:34 VC++40
+Parsing C:\Rcstuff\Objects\3ds\Wfnt_rht.lwo started ...      
+Working on: Wfnt_rht
+Statistic:
+Object   : Wfnt_rht
+Faces    : 72
+Vertices : 38
+Min : <-0.062066,-1.946895,-2.124303>
+Max : <1.915771,2.071177,2.123429>
+Parsing finished       

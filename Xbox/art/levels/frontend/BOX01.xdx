@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\frontend\BOX01.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="frontendb" source="../../../frontendb.bmp" />
+<Texture id="frontendd" source="../../../frontendd.bmp" />
+-->
+<VertexBuffer id="BOX01_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">135.68 -69.3414 -39.9744 0.57735 -0.57735 -0.57735 0xff8b87d8 0.183594 0.996094</v>
+	<v index="1">135.68 -69.3414 0 0.57735 -0.57735 0.57735 0xff222136 0.28125 0.996094</v>
+	<v index="2">-135.576 -69.3414 0 -0.57735 -0.57735 0.57735 0xff222136 0.28125 0.441406</v>
+	<v index="3">-135.576 -69.3414 -39.9744 -0.57735 -0.57735 -0.57735 0xff8b87d8 0.183594 0.441406</v>
+	<v index="4">135.68 69.9032 -39.9744 0.57735 0.57735 -0.57735 0xff343251 0.28125 0.605469</v>
+	<v index="5">135.68 69.9032 0 0.57735 0.57735 0.57735 0xff292840 0.183594 0.605469</v>
+	<v index="6">135.68 -69.3414 0 0.57735 -0.57735 0.57735 0xff292840 0.183594 0.996094</v>
+	<v index="7">135.68 -69.3414 -39.9744 0.57735 -0.57735 -0.57735 0xff8b87d8 0.28125 0.996094</v>
+	<v index="8">-135.576 69.9032 -39.9744 -0.57735 0.57735 -0.57735 0xff222136 0.28125 0.441406</v>
+	<v index="9">-135.576 69.9032 0 -0.57735 0.57735 0.57735 0xff222136 0.183594 0.441406</v>
+	<v index="10">135.68 69.9032 0 0.57735 0.57735 0.57735 0xff222136 0.183594 0.996094</v>
+	<v index="11">135.68 69.9032 -39.9744 0.57735 0.57735 -0.57735 0xff222136 0.28125 0.996094</v>
+	<v index="12">-135.576 -69.3414 -39.9744 -0.57735 -0.57735 -0.57735 0xff8b87d8 0.183594 0.996094</v>
+	<v index="13">-135.576 -69.3414 0 -0.57735 -0.57735 0.57735 0xff292840 0.28125 0.996094</v>
+	<v index="14">-135.576 69.9032 0 -0.57735 0.57735 0.57735 0xff292840 0.28125 0.605469</v>
+	<v index="15">-135.576 69.9032 -39.9744 -0.57735 0.57735 -0.57735 0xff343251 0.183594 0.605469</v>
+	<v index="16">135.68 -69.3414 -39.9744 0.57735 -0.57735 -0.57735 0xff8b87d8 0.28125 0.996094</v>
+	<v index="17">-135.576 -69.3414 -39.9744 -0.57735 -0.57735 -0.57735 0xff8b87d8 0.28125 0.441406</v>
+	<v index="18">-135.576 69.9032 -39.9744 -0.57735 0.57735 -0.57735 0xff393758 0 0.441406</v>
+	<v index="19">135.68 69.9032 -39.9744 0.57735 0.57735 -0.57735 0xff393758 0 0.996094</v>
+	<v index="20">-135.576 69.9032 0 -0.57735 0.57735 0.57735 0xff1c1b2c 0.378906 0.835938</v>
+	<v index="21">-135.576 -69.3414 0 -0.57735 -0.57735 0.57735 0xff1c1b2c 0.546875 0.835938</v>
+	<v index="22">135.68 -69.3414 0 0.57735 -0.57735 0.57735 0xff1c1b2c 0.546875 0.722656</v>
+	<v index="23">135.68 69.9032 0 0.57735 0.57735 0.57735 0xff1c1b2c 0.378906 0.722656</v>
+</VertexBuffer>
+<Model id="BOX01">
+	<!--
+	<Revolt Radius="157.776459" Xmin="-135.576050" Xmax="135.679764" Ymin="-69.341431" Ymax="69.903191" Zmin="-39.974422" Zmax="0.000000"
+	 PolyNum="6" VertNum="8" QuadNumTex="6" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="BOX01_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="BOX01_PreviewCamera">
+				0.00633808 0 0 0
+				0 0.00633808 0 0
+				0 0 0.00316904 0
+				-0.000328674 -0.00178024 0.56334 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="frontendb"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="20" />
+	</Pass>
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="BOX01_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="BOX01_PreviewCamera">
+				0.00633808 0 0 0
+				0 0.00633808 0 0
+				0 0 0.00316904 0
+				-0.000328674 -0.00178024 0.56334 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="frontendd"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="20" count="4" />
+	</Pass>
+</Model>
+</XDX>

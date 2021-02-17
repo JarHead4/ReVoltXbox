@@ -1,0 +1,216 @@
+<?xml version="1.0" ?>
+<XDX version="0.2" >
+<!-- converted from D:\levels\FRONTEND\FRONTEND.w 
+WorldBigCubeCount="0" 
+WorldCubeCount="0" 
+WorldPolyCount="0" 
+WorldCubeNum="235" 
+-->
+<include href="Default.xdx" />
+<Texture id="font1" source="../../gfx/font1.bmp" levels="1" colorkey="0xff000000" />
+<Texture id="font2" source="../../gfx/font2.bmp" levels="1" colorkey="0xff000000" />
+<Texture id="envstill" source="../../gfx/envfront.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="envroll" source="../../gfx/envroll.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="shadow" source="../../gfx/shadow.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="fxpage1" source="../../gfx/fxpage1.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="fxpage2" source="../../gfx/fxpage2.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="fxpage3" source="../../gfx/fxpage3.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDa" source="FRONTENDa.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDb" source="FRONTENDb.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDc" source="FRONTENDc.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDd" source="FRONTENDd.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDd0" source="FRONTENDd0.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDd1" source="FRONTENDd1.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDd2" source="FRONTENDd2.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDe" source="FRONTENDe.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDf" source="FRONTENDf.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDg" source="FRONTENDg.bmp" levels="0" colorkey="0xff000000" />
+<!--
+<Texture id="FRONTENDh" source="FRONTENDh.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDi" source="FRONTENDi.bmp" levels="0" colorkey="0xff000000" />
+<Texture id="FRONTENDj" source="FRONTENDj.bmp" levels="0" colorkey="0xff000000" />
+-->
+<!-- static level models -->
+<include href="../../models/pickup.xdx" />
+<include href="../../models/firework.xdx" />
+<include href="../../models/wbomb.xdx" />
+<include href="../../models/ball.xdx" />
+<!-- InstanceModelNum="27" -->
+<include href="BBALLBOX.xdx" />
+<include href="BOX01.xdx" />
+<include href="BOX02.xdx" />
+<include href="BOX03.xdx" />
+<include href="BOX04.xdx" />
+<include href="BOX05.xdx" />
+<include href="BOX5.xdx" />
+<include href="CHICKS.xdx" />
+<include href="CLOCKCASE.xdx" />
+<include href="CUP01.xdx" />
+<include href="HELBLADEBIG.xdx" />
+<include href="HELBLADESMALL.xdx" />
+<include href="HELLBODY.xdx" />
+<include href="HELLSB.xdx" />
+<include href="LARGEMAGSTAND.xdx" />
+<include href="LIGHT.xdx" />
+<include href="MAGSTAND.xdx" />
+<include href="PANGACARD.xdx" />
+<include href="PLAIN.xdx" />
+<include href="PODIUM.xdx" />
+<include href="POSTERSTAND.xdx" />
+<include href="POSTERSTAND2.xdx" />
+<include href="SALEBIN.xdx" />
+<include href="SMALLSCREEN.xdx" />
+<include href="TRACK.xdx" />
+<include href="TVSTAND.xdx" />
+<include href="UFOSTAND.xdx" />
+<!-- Put world vertices in a separate file. -->
+<include href="FRONTEND_vertex.xdx" />
+<Model id="FRONTEND">
+	<!-- Set default state -->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="FRONTEND_VertexBuffer_Opaque" />
+			</decl>
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="World * View * Projection" count="4" parameter="FRONTEND_Camera">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0
+				0 0 0 1</Constant>
+			<Constant index="8" name="Transpose(Inverse(World))" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+	</Pass>
+	<Pass>
+		<RenderState>
+			<TextureState Stage="0" idref="NULL"
+				ColorOp="SelectArg1"
+				ColorArg1="Diffuse"
+				AlphaOp="SelectArg1"
+				AlphaArg1="Diffuse"
+			/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="36" />
+		<Draw primitive="TRILIST" start="36" count="12" />
+	</Pass>
+	<Pass>
+		<RenderState>
+			<TextureState Stage="0" idref="FRONTENDa"
+				ColorOp="Modulate"
+				ColorArg1="Diffuse"
+				ColorArg2="Texture"
+				AlphaOp="Modulate"
+				AlphaArg1="Diffuse"
+				AlphaArg2="Texture"
+			/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="48" count="2872" />
+		<Draw primitive="TRILIST" start="2920" count="756" />
+	</Pass>
+	<Pass>
+		<RenderState>
+			<TextureState Stage="0" idref="FRONTENDb"
+				ColorOp="Modulate"
+				ColorArg1="Diffuse"
+				ColorArg2="Texture"
+				AlphaOp="Modulate"
+				AlphaArg1="Diffuse"
+				AlphaArg2="Texture"
+			/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="3676" count="848" />
+		<Draw primitive="TRILIST" start="4524" count="129" />
+	</Pass>
+	<Pass>
+		<RenderState>
+			<TextureState Stage="0" idref="FRONTENDc"
+				ColorOp="Modulate"
+				ColorArg1="Diffuse"
+				ColorArg2="Texture"
+				AlphaOp="Modulate"
+				AlphaArg1="Diffuse"
+				AlphaArg2="Texture"
+			/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="4653" count="104" />
+	</Pass>
+	<Pass>
+		<RenderState>
+			<TextureState Stage="0" idref="FRONTENDe"
+				ColorOp="Modulate"
+				ColorArg1="Diffuse"
+				ColorArg2="Texture"
+				AlphaOp="Modulate"
+				AlphaArg1="Diffuse"
+				AlphaArg2="Texture"
+			/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="4757" count="12" />
+	</Pass>
+	<Pass>
+		<RenderState>
+			<TextureState Stage="0" idref="FRONTENDf"
+				ColorOp="Modulate"
+				ColorArg1="Diffuse"
+				ColorArg2="Texture"
+				AlphaOp="Modulate"
+				AlphaArg1="Diffuse"
+				AlphaArg2="Texture"
+			/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="4769" count="32" />
+		<Draw primitive="TRILIST" start="4801" count="6" />
+	</Pass>
+	<!-- Set default state -->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="FRONTEND_VertexBuffer_Transparent" />
+			</decl>
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="World * View * Projection" count="4" parameter="FRONTEND_Camera">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0
+				0 0 0 1</Constant>
+			<Constant index="8" name="Transpose(Inverse(World))" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+	</Pass>
+	<Pass>
+		<RenderState>
+			<TextureState Stage="0" idref="FRONTENDa"
+				ColorOp="Modulate"
+				ColorArg1="Diffuse"
+				ColorArg2="Texture"
+				AlphaOp="Modulate"
+				AlphaArg1="Diffuse"
+				AlphaArg2="Texture"
+			/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="452" />
+		<Draw primitive="TRILIST" start="452" count="291" />
+	</Pass>
+	<Pass>
+		<RenderState>
+			<TextureState Stage="0" idref="FRONTENDf"
+				ColorOp="Modulate"
+				ColorArg1="Diffuse"
+				ColorArg2="Texture"
+				AlphaOp="Modulate"
+				AlphaArg1="Diffuse"
+				AlphaArg2="Texture"
+			/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="743" count="32" />
+		<Draw primitive="TRILIST" start="775" count="12" />
+	</Pass>
+</Model>
+</XDX>

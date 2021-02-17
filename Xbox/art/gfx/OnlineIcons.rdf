@@ -1,0 +1,94 @@
+// List of resources to bundle.
+//
+// The output will be a header file (.h) used at compile time,
+// and a packed resource file (.xpr) used at runtime.
+
+out_header         OnlineIcons.h
+out_packedresource OnlineIcons.xpr
+out_error          OnlineIcons.err
+
+
+Texture CommunicatorTV
+{
+   Source      CommunicatorTV.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture FriendOnline
+{
+   Source      FriendOnline.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture FriendInviteReceived
+{
+   Source      FriendInviteReceived.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture FriendInviteSent
+{
+   Source      friendinviteSENT.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture GameInvite
+{
+   Source      GameInvite.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture GameInviteSent
+{
+   Source      GameInviteSent.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture CommunicatorOn
+{
+   Source      CommunicatorOn.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture CommunicatorMuted
+{
+   Source      CommunicatorMuted.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture Talking0
+{
+   Source      Talking0.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture Talking1
+{
+   Source      Talking1.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture Talking2
+{
+   Source      Talking2.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture Talking3
+{
+   Source      Talking3.tga
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+

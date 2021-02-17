@@ -1,0 +1,21 @@
+// List of resources to bundle.
+//
+// The output will be a header file (.h) used at compile time,
+// and a packed resource file (.xpr) used at runtime.
+
+out_header         Resource.h
+out_packedresource carbox.xpr
+out_error          Resource.err
+out_prefix         Resource
+
+Texture Carbox
+{
+   Source carbox.bmp
+   Format D3DFMT_R5G6B5
+   Width  128
+   Height 128
+   Levels 1   
+}
+
+
+

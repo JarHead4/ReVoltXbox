@@ -1,0 +1,330 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HABEXTRACT MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HABEXTRACT\0"
+            VALUE "LegalCopyright", "Copyright © 1996\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HABEXTRACT.EXE\0"
+            VALUE "ProductName", "HABEXTRACT Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Habitat Data Extraction..."
+    IDS_TITLE               "Habitat Data Extraction V1.0"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\HabExtract.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\HabExtract.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 218, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Habitat Data Extraction"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,15,18,20
+    LTEXT           "Habitat Data Extraction Version 1.0",IDC_STATIC,40,10,
+                    119,8,SS_NOPREFIX
+    LTEXT           "Written by J.Croudy",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,179,7,32,14,WS_GROUP | NOT WS_TABSTOP
+    LTEXT           "Copyright © 1996 Probe Entertainment",IDC_STATIC,40,40,
+                    119,8
+END
+
+IDD_HABEXTRACT_DIALOG DIALOGEX 0, 0, 272, 192
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Habitat Data Extraction"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    5,165,260,8
+    PUSHBUTTON      "Close",IDCANCEL,160,175,50,14
+    DEFPUSHBUTTON   "&Begin",IDBEGIN,105,175,50,14
+    PUSHBUTTON      "&Help",9,215,175,50,14
+    CONTROL         "",IDC_EDIT1,"RICHEDIT",ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,7,7,258,153
+END
+
+IDD_LOGDIALOG DIALOG DISCARDABLE  0, 0, 191, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Habitat Data Extraction Log"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&File",IDFILE,135,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,45,50,14
+    LTEXT           "Choose destination for log",IDC_STATIC,40,15,80,10
+    PUSHBUTTON      "&Printer",IDPRINT,135,25,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,15,18,20
+END
+
+IDD_HELP DIALOG DISCARDABLE  0, 0, 181, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Habitat Data Extraction Help"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,69,57,50,14
+    LTEXT           "Press ""Begin"" to start processing. You can abort the processing at any time by pressing ""Abort"", or pause it by pressing ""Pause"". At the end of the process, you can press ""Save Log"" to save the log to a file or printer.",
+                    IDC_STATIC,25,5,147,40
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,15,13,13
+END
+
+IDD_PROPNAME DIALOG DISCARDABLE  0, 0, 200, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create New Property Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,40,12,148,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,40,60,148,113,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,40,80,148,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Create",IDOK,88,116,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,144,116,50,14
+    LTEXT           "&Name:",IDC_STATIC,8,16,24,8
+    LTEXT           "&Value:",IDC_STATIC,12,84,25,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,5,110,18,20
+    LTEXT           "&Type:",IDC_STATIC,12,64,20,8
+    GROUPBOX        "Default Value",IDC_STATIC,4,44,190,61
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_HABEXTRACT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_LOGDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_PROPNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPNAME DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 17, 0
+0x6843, 0x7261, 0x6361, 0x6574, 0x2072, 0x7473, 0x6972, 0x676e, "\000" 
+    IDC_COMBO1, 0x403, 14, 0
+0x6f42, 0x6c6f, 0x6165, 0x206e, 0x6176, 0x756c, 0x0065, 
+    IDC_COMBO1, 0x403, 21, 0
+0x6953, 0x6e67, 0x6465, 0x3820, 0x622d, 0x7469, 0x6920, 0x746e, 0x6765, 
+0x7265, "\000" 
+    IDC_COMBO1, 0x403, 22, 0
+0x6953, 0x6e67, 0x6465, 0x3120, 0x2d36, 0x6962, 0x2074, 0x6e69, 0x6574, 
+0x6567, 0x0072, 
+    IDC_COMBO1, 0x403, 22, 0
+0x6953, 0x6e67, 0x6465, 0x3320, 0x2d32, 0x6962, 0x2074, 0x6e69, 0x6574, 
+0x6567, 0x0072, 
+    IDC_COMBO1, 0x403, 23, 0
+0x6e55, 0x6973, 0x6e67, 0x6465, 0x3820, 0x622d, 0x7469, 0x6920, 0x746e, 
+0x6765, 0x7265, "\000" 
+    IDC_COMBO1, 0x403, 24, 0
+0x6e55, 0x6973, 0x6e67, 0x6465, 0x3120, 0x2d36, 0x6962, 0x2074, 0x6e69, 
+0x6574, 0x6567, 0x0072, 
+    IDC_COMBO1, 0x403, 24, 0
+0x6e55, 0x6973, 0x6e67, 0x6465, 0x3320, 0x2d32, 0x6962, 0x2074, 0x6e69, 
+0x6574, 0x6567, 0x0072, 
+    IDC_COMBO1, 0x403, 21, 0
+0x6c46, 0x616f, 0x6974, 0x676e, 0x7020, 0x696f, 0x746e, 0x7620, 0x6c61, 
+0x6575, "\000" 
+    IDC_COMBO1, 0x403, 38, 0
+0x6f44, 0x6275, 0x656c, 0x7020, 0x6572, 0x6963, 0x6973, 0x6e6f, 0x6620, 
+0x6f6c, 0x7461, 0x6e69, 0x2067, 0x6f70, 0x6e69, 0x2074, 0x6176, 0x756c, 
+0x0065, 
+    0
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\HabExtract.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

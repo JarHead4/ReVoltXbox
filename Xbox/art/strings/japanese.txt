@@ -1,0 +1,417 @@
+
+
+
+Re-Volt
+Select Race
+Enter Name
+Select Car
+Select Track
+Select Cup
+Summary
+Connection Type:
+Render Settings
+Game Type
+Waiting Room
+The Game Has Already Started!
+Controller Settings
+Select Game To Join
+
+
+Start Race
+Play Live!
+Single Player
+Multiplayer
+System Link
+Best Trial Times
+Progress Table
+Track Editor
+Options
+Language
+Create Account
+
+
+Quick Match
+Find a Match
+Friends
+Create a Match
+Statistics
+
+
+Select Race
+Race
+Battle Tag
+
+
+Championship
+Single Race
+Clockwork Carnage
+Time Trial
+Practice
+Stunt Arena
+Edit Mode
+Calculate Car Stats
+
+
+Select Car
+
+
+Select Track
+Mirrored
+Reversed
+CPU Cars
+Laps
+Length
+
+
+Bronze Cup
+Silver Cup
+Gold Cup
+Platinum Cup
+
+
+Select Mode
+Basic Cornering
+Advanced Cornering
+Your First Stunts
+
+
+Game Settings
+Video Settings
+Audio Settings
+Controller Settings
+View Credits
+
+
+Number of Cars
+Random Cars
+Random Tracks
+Pick ups
+Number of Laps
+Battle Tag Time
+Difficulty
+Access Cars
+Split Times
+Collision
+Speed Units
+
+
+Enter Name
+
+
+On
+Off
+Yes
+No
+Easy
+Medium
+Hard
+
+
+Resolution
+Textures
+Shininess
+Shadows
+Video Device
+Brightness
+Contrast
+Draw Distance
+Reflections
+Instance Models
+Skid Marks
+Lights
+Automatic
+Unavailable
+Antialias
+Enable V-Sync
+Show Frame Rate
+Texture Filter
+Mipmap Level
+Wireframe
+Car BBoxes
+Particles
+Smoke
+High Resolution
+Screen Split
+
+
+In-Game Music
+SFX Volume
+Music Volume
+SFX Test
+Music Test
+SFX Channels
+Audio
+Stereo
+Mono
+
+
+View Records
+Save Records
+
+Records
+
+
+Start Game
+Join Game
+Wait for Lobby Connection
+Choose Game
+Host Computer:
+Continue Lobby Game
+Quit Lobby Game
+Number of Players
+Packet Optimization
+DirectPlay Protocol
+Searching for Games...
+Joining Game...
+Press Spacebar To Refresh Game and Player List
+Next Track
+
+
+Default
+Bronze
+Silver
+Gold
+Special
+
+
+Load Replay
+Save Replay
+
+
+Resume
+Continue Championship
+End Championship
+Give Up Try
+Restart Race
+Restart Replay
+Quit
+View Replay
+
+
+Select Controller:
+Configure Controller
+Steering Deadzone
+Steering Range
+Non-linear Steering
+Set Controls to Default
+Configuration
+
+
+Demo Mode
+Player     
+Save Carinfo Single
+Save Carinfo Multiple
+Save Current Car Info
+Reset Progress Table
+Mode
+Simulation
+Arcade
+Console
+Junior RC
+MPH
+Scaled MPH
+FPM
+KPH
+Scaled KPH
+
+
+YOU CAME
+TRY TO COME HIGHER TO
+UNLOCK THE NEXT CHALLENGE!
+BRONZE CUP
+SILVER CUP
+GOLD CUP
+SPECIAL CUP
+IS UNLOCKED
+MIRRORED TRACKS
+REVERSED TRACKS
+HAVE BEEN UNLOCKED
+NEW DELIVERY OF CARS
+YOU HAVE UNLOCKED
+NEW CARS
+1ST
+2ND
+3RD
+
+Are you sure?
+
+
+Place 3rd or better in each
+race to progress!
+Finish top of the table to
+access the next challenge!
+Finish top of the table and
+be crowned \"Re-Volt Master\"!
+
+M
+R
+(M)
+(R)
+
+
+Class
+Rating
+Speed
+Acc
+Weight
+Trans
+
+Electric
+Glow
+Special
+
+Rookie
+Amateur
+Advanced
+Semi-Pro
+Pro
+
+
+4WD
+RWD
+FWD
+
+
+Unknown
+Locked
+
+
+Player
+Players
+
+
+Full Speed; Realistic collision
+Full Speed; Simple car collision
+Full Speed; Simple collision
+Reduced Speed; Simple collision
+
+
+Accelerate
+Reverse
+Fire
+Flip Car
+Reposition
+Pause
+
+
+Tracks
+Won
+Race
+Norm
+Rev
+Mirr
+Stars
+
+
+Game Mode:
+Stage:
+Track:
+Car
+Won Race:
+Found Star:
+Stars Collected:
+of
+Beaten
+Challenge Time:
+
+You have
+Try Left.
+Tries Left.
+
+
+1st
+2nd
+3rd
+4th
+5th
+6th
+7th
+8th
+9th
+10th
+11th
+12th
+13th
+14th
+15th
+16th
+
+
+CONGRATULATIONS!
+YOU QUALIFIED!
+CONGRATULATIONS!
+CHAMPIONSHIP FINISHED!
+YOU FAILED TO QUALIFY!
+Car
+Pnts
+
+
+Best Lap
+Last Lap
+Lap
+Race
+Lap
+Split
+Opponent
+Challenge
+Challenge Time Beaten!
+Time
+Game Results
+Race Results
+
+
+Really Quit?
+Really Restart?
+Really or Pretend?
+Really
+Pretend
+
+
+Default
+Bronze
+Silver
+Gold
+Platinum
+
+Game Over!  Better Luck Next Time!
+
+
+NEW DELIVERY OF CARS!\n(Check the stack of boxes on\nthe Car Selection Screen)\n
+CONGRATULATIONS!\n%s TRACKS ARE NOW\nAVAILABLE IN REVERSE MODE\n(Press DOWN on Track Selection screen)\n
+CONGRATULATIONS!\n%s TRACKS ARE NOW\nAVAILABLE IN MIRROR MODE\n(Press UP on Track Selection screen)\n
+CONGRATULATIONS!\n%s TRACKS ARE NOW AVAILABLE\nIN REVERSE MIRROR MODE\n(Press UP and then DOWN\non Track Selection screen)\n
+NEW GAME MODE!\n\"CLOCKWORK CARNAGE\"\nHAS BEEN UNLOCKED\n
+
+
+Left
+Right
+Horn
+Try Again?
+Demo
+Loading Frontend
+Loading Credits
+Loading Game Gauge Benchmark
+Racers:
+CPU
+Random
+Status
+Ready
+Not Ready
+Press TAB to Start
+Multiplayer Game Terminated!
+Waiting For:
+Waiting For Host...
+Host
+Track
+Game
+Wrong Version
+Full
+Record
+Scaled
+Finished
+Started
+Open
+Replay
+View Gallery
+Local
+Download

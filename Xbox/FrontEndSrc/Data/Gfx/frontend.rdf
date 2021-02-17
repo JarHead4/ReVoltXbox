@@ -1,0 +1,68 @@
+// List of resources to bundle.
+//
+// The output will be a header file (.h) used at compile time,
+// and a packed resource file (.xpr) used at runtime.
+
+out_header         FrontEnd.h
+out_packedresource FrontEnd.xpr
+out_error          FrontEnd.err
+
+
+Texture LiveSignOn
+{
+   Source      LiveSignOn.bmp
+   AlphaSource LiveSignOn_a.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture LiveSignOnPlayerScreen
+{
+   Source      LiveSignOnPlayerScreen.bmp
+   AlphaSource LiveSignOnPlayerScreen_a.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture LiveSignOnListBox
+{
+   Source      LiveSignOnListBox.bmp
+   AlphaSource LiveSignOnListBox_a.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture ScreenHeader_TopLayer
+{
+   Source      ScreenHeader_TopLayer.bmp
+   AlphaSource ScreenHeader_TopLayer_a.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture ScreenHeader_BottomLayer
+{
+   Source      ScreenHeader_BottomLayer.bmp
+   AlphaSource ScreenHeader_BottomLayer_a.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture ScreenFooter_TopLayer
+{
+   Source      ScreenFooter_TopLayer.bmp
+   AlphaSource ScreenFooter_TopLayer_a.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+Texture ScreenFooter_BottomLayer
+{
+   Source      ScreenFooter_BottomLayer.bmp
+   AlphaSource ScreenFooter_BottomLayer_a.bmp
+   Format D3DFMT_LIN_A8R8G8B8
+   Levels 1
+}
+
+
+

@@ -1,0 +1,36 @@
+DIRS=\
+    adeon       \
+    amw         \
+    beatall	\
+    candy	\
+    cougar	\
+    dino	\
+    flag	\
+    fone	\
+    gencar	\
+    mite	\
+    moss	\
+    mouse	\
+    mud		\
+    panga	\
+    phat	\
+    q		\
+    r5		\
+    rc		\
+    rotor	\
+    sgt		\
+    sugo	\
+    tc1		\
+    tc2		\
+    tc3		\
+    tc4		\
+    tc5		\
+    tc6		\
+    toyeca	\
+    trolley	\
+    ufo		\
+    volken	\
+    wincar	\
+    wincar2	\
+    wincar3     \
+    wincar4

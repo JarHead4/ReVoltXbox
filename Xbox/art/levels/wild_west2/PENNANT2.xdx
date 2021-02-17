@@ -1,0 +1,171 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Wild_West2\PENNANT2.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Wild_West2c" source="../../../Wild_West2c.bmp" />
+-->
+<VertexBuffer id="PENNANT2_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">-616.247 -60.6338 0 0 0 -1 0xff401e1e 0.335938 0.515625</v>
+	<v index="1">-738.347 -86.9047 0 0 0 -1 0xff401e1e 0 0.515625</v>
+	<v index="2">-749.767 -0.55673 0 0 0 -1 0xff401e1e 0 0.769531</v>
+	<v index="3">-625.777 26.1204 0 0 0 -1 0xff401e1e 0.335938 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="4">-749.767 -0.55673 0 0 0 1 0xff401e1e 0 0.769531</v>
+	<v index="5">-738.347 -86.9047 0 0 0 1 0xff401e1e 0 0.515625</v>
+	<v index="6">-616.247 -60.6338 0 0 0 1 0xff401e1e 0.335938 0.515625</v>
+	<v index="7">-625.777 26.1204 0 0 0 1 0xff401e1e 0.335938 0.769531</v>
+	<!-- double-sided end -->
+	<v index="8">-493.624 -39.1091 0 0 0 -1 0xff433a32 0.335938 0.515625</v>
+	<v index="9">-616.247 -60.6338 0 0 0 -1 0xff433a32 0 0.515625</v>
+	<v index="10">-625.777 26.1204 0 0 0 -1 0xff433a32 0 0.769531</v>
+	<v index="11">-501.258 47.9781 0 0 0 -1 0xff433a32 0.335938 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="12">-625.777 26.1204 0 0 0 1 0xff433a32 0 0.769531</v>
+	<v index="13">-616.247 -60.6338 0 0 0 1 0xff433a32 0 0.515625</v>
+	<v index="14">-493.624 -39.1091 0 0 0 1 0xff433a32 0.335938 0.515625</v>
+	<v index="15">-501.258 47.9781 0 0 0 1 0xff433a32 0.335938 0.769531</v>
+	<!-- double-sided end -->
+	<v index="16">-370.584 -22.3487 0 0 0 -1 0xff2d2e47 0 0.515625</v>
+	<v index="17">-493.624 -39.1091 0 0 0 -1 0xff2d2e47 0.335938 0.515625</v>
+	<v index="18">-501.258 47.9781 0 0 0 -1 0xff2d2e47 0.335938 0.769531</v>
+	<v index="19">-376.315 64.9977 0 0 0 -1 0xff2d2e47 0 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="20">-501.258 47.9781 0 0 0 1 0xff2d2e47 0.335938 0.769531</v>
+	<v index="21">-493.624 -39.1091 0 0 0 1 0xff2d2e47 0.335938 0.515625</v>
+	<v index="22">-370.584 -22.3487 0 0 0 1 0xff2d2e47 0 0.515625</v>
+	<v index="23">-376.315 64.9977 0 0 0 1 0xff2d2e47 0 0.769531</v>
+	<!-- double-sided end -->
+	<v index="24">-247.23 -10.3669 0 0 0 -1 0xff401e1e 0 0.515625</v>
+	<v index="25">-370.584 -22.3487 0 0 0 -1 0xff401e1e 0.335938 0.515625</v>
+	<v index="26">-376.315 64.9977 0 0 0 -1 0xff401e1e 0.335938 0.769531</v>
+	<v index="27">-251.054 77.1648 0 0 0 -1 0xff401e1e 0 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="28">-376.315 64.9977 0 0 0 1 0xff401e1e 0.335938 0.769531</v>
+	<v index="29">-370.584 -22.3487 0 0 0 1 0xff401e1e 0.335938 0.515625</v>
+	<v index="30">-247.23 -10.3669 0 0 0 1 0xff401e1e 0 0.515625</v>
+	<v index="31">-251.054 77.1648 0 0 0 1 0xff401e1e 0 0.769531</v>
+	<!-- double-sided end -->
+	<v index="32">-123.668 -3.17373 0 0 0 -1 0xff433a32 0.335938 0.515625</v>
+	<v index="33">-247.23 -10.3669 0 0 0 -1 0xff433a32 0 0.515625</v>
+	<v index="34">-251.054 77.1648 0 0 0 -1 0xff433a32 0 0.769531</v>
+	<v index="35">-125.58 84.4692 0 0 0 -1 0xff433a32 0.335938 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="36">-251.054 77.1648 0 0 0 1 0xff433a32 0 0.769531</v>
+	<v index="37">-247.23 -10.3669 0 0 0 1 0xff433a32 0 0.515625</v>
+	<v index="38">-123.668 -3.17373 0 0 0 1 0xff433a32 0.335938 0.515625</v>
+	<v index="39">-125.58 84.4692 0 0 0 1 0xff433a32 0.335938 0.769531</v>
+	<!-- double-sided end -->
+	<v index="40">-5.96046e-005 -0.775327 0 0 0 -1 0xff2d2e47 0.335938 0.515625</v>
+	<v index="41">-123.668 -3.17373 0 0 0 -1 0xff2d2e47 0 0.515625</v>
+	<v index="42">-125.58 84.4692 0 0 0 -1 0xff2d2e47 0 0.769531</v>
+	<v index="43">-5.96046e-005 86.9047 0 0 0 -1 0xff2d2e47 0.335938 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="44">-125.58 84.4692 0 0 0 1 0xff2d2e47 0 0.769531</v>
+	<v index="45">-123.668 -3.17373 0 0 0 1 0xff2d2e47 0 0.515625</v>
+	<v index="46">-5.96046e-005 -0.775327 0 0 0 1 0xff2d2e47 0.335938 0.515625</v>
+	<v index="47">-5.96046e-005 86.9047 0 0 0 1 0xff2d2e47 0.335938 0.769531</v>
+	<!-- double-sided end -->
+	<v index="48">123.667 -3.17373 0 0 0 -1 0xff401e1e 0 0.515625</v>
+	<v index="49">-5.96046e-005 -0.775327 0 0 0 -1 0xff401e1e 0.335938 0.515625</v>
+	<v index="50">-5.96046e-005 86.9047 0 0 0 -1 0xff401e1e 0.335938 0.769531</v>
+	<v index="51">125.58 84.4692 0 0 0 -1 0xff401e1e 0 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="52">-5.96046e-005 86.9047 0 0 0 1 0xff401e1e 0.335938 0.769531</v>
+	<v index="53">-5.96046e-005 -0.775327 0 0 0 1 0xff401e1e 0.335938 0.515625</v>
+	<v index="54">123.667 -3.17373 0 0 0 1 0xff401e1e 0 0.515625</v>
+	<v index="55">125.58 84.4692 0 0 0 1 0xff401e1e 0 0.769531</v>
+	<!-- double-sided end -->
+	<v index="56">247.23 -10.3669 0 0 0 -1 0xff60564e 0.335938 0.515625</v>
+	<v index="57">123.667 -3.17373 0 0 0 -1 0xff60564e 0 0.515625</v>
+	<v index="58">125.58 84.4692 0 0 0 -1 0xff60564e 0 0.769531</v>
+	<v index="59">251.054 77.1648 0 0 0 -1 0xff60564e 0.335938 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="60">125.58 84.4692 0 0 0 1 0xff60564e 0 0.769531</v>
+	<v index="61">123.667 -3.17373 0 0 0 1 0xff60564e 0 0.515625</v>
+	<v index="62">247.23 -10.3669 0 0 0 1 0xff60564e 0.335938 0.515625</v>
+	<v index="63">251.054 77.1648 0 0 0 1 0xff60564e 0.335938 0.769531</v>
+	<!-- double-sided end -->
+	<v index="64">370.584 -22.3487 0 0 0 -1 0xff7678ae 0 0.515625</v>
+	<v index="65">247.23 -10.3669 0 0 0 -1 0xff7678ae 0.335938 0.515625</v>
+	<v index="66">251.054 77.1648 0 0 0 -1 0xff7678ae 0.335938 0.769531</v>
+	<v index="67">376.315 64.9977 0 0 0 -1 0xff7678ae 0 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="68">251.054 77.1648 0 0 0 1 0xff7678ae 0.335938 0.769531</v>
+	<v index="69">247.23 -10.3669 0 0 0 1 0xff7678ae 0.335938 0.515625</v>
+	<v index="70">370.584 -22.3487 0 0 0 1 0xff7678ae 0 0.515625</v>
+	<v index="71">376.315 64.9977 0 0 0 1 0xff7678ae 0 0.769531</v>
+	<!-- double-sided end -->
+	<v index="72">493.624 -39.1091 0 0 0 -1 0xffb14e4f 0.335938 0.515625</v>
+	<v index="73">370.584 -22.3487 0 0 0 -1 0xffb14e4f 0 0.515625</v>
+	<v index="74">376.315 64.9977 0 0 0 -1 0xffb14e4f 0 0.769531</v>
+	<v index="75">501.258 47.9781 0 0 0 -1 0xffb14e4f 0.335938 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="76">376.315 64.9977 0 0 0 1 0xffb14e4f 0 0.769531</v>
+	<v index="77">370.584 -22.3487 0 0 0 1 0xffb14e4f 0 0.515625</v>
+	<v index="78">493.624 -39.1091 0 0 0 1 0xffb14e4f 0.335938 0.515625</v>
+	<v index="79">501.258 47.9781 0 0 0 1 0xffb14e4f 0.335938 0.769531</v>
+	<!-- double-sided end -->
+	<v index="80">616.246 -60.6338 0 0 0 -1 0xffffffff 0 0.515625</v>
+	<v index="81">493.624 -39.1091 0 0 0 -1 0xffffffff 0.335938 0.515625</v>
+	<v index="82">501.258 47.9781 0 0 0 -1 0xffffffff 0.335938 0.769531</v>
+	<v index="83">625.777 26.1205 0 0 0 -1 0xffffffff 0 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="84">501.258 47.9781 0 0 0 1 0xffffffff 0.335938 0.769531</v>
+	<v index="85">493.624 -39.1091 0 0 0 1 0xffffffff 0.335938 0.515625</v>
+	<v index="86">616.246 -60.6338 0 0 0 1 0xffffffff 0 0.515625</v>
+	<v index="87">625.777 26.1205 0 0 0 1 0xffffffff 0 0.769531</v>
+	<!-- double-sided end -->
+	<v index="88">738.347 -86.9047 0 0 0 -1 0xff7678ae 0 0.515625</v>
+	<v index="89">616.246 -60.6338 0 0 0 -1 0xff7678ae 0.335938 0.515625</v>
+	<v index="90">625.777 26.1205 0 0 0 -1 0xff7678ae 0.335938 0.769531</v>
+	<v index="91">749.767 -0.55673 0 0 0 -1 0xff7678ae 0 0.769531</v>
+	<!-- double-sided begin -->
+	<v index="92">625.777 26.1205 0 0 0 1 0xff7678ae 0.335938 0.769531</v>
+	<v index="93">616.246 -60.6338 0 0 0 1 0xff7678ae 0.335938 0.515625</v>
+	<v index="94">738.347 -86.9047 0 0 0 1 0xff7678ae 0 0.515625</v>
+	<v index="95">749.767 -0.55673 0 0 0 1 0xff7678ae 0 0.769531</v>
+	<!-- double-sided end -->
+</VertexBuffer>
+<Model id="PENNANT2">
+	<!--
+	<Revolt Radius="749.766724" Xmin="-749.766541" Xmax="749.766541" Ymin="-86.904701" Ymax="86.904701" Zmin="0.000000" Zmax="0.000000"
+	 PolyNum="12" VertNum="26" QuadNumTex="12" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="PENNANT2_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="PENNANT2_PreviewCamera">
+				0.00133375 0 0 0
+				0 0.00133375 0 0
+				0 0 0.000666874 0
+				0 0 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Wild_West2c"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="96" />
+	</Pass>
+</Model>
+</XDX>

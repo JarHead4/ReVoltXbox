@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Wild_West2\PLANK2.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="Wild_West2a" source="../../../Wild_West2a.bmp" />
+-->
+<VertexBuffer id="PLANK2_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">250 0 -151.387 -1 0 0 0xff797979 0.28125 0.101563</v>
+	<v index="1">250 -8 -151.387 -1 0 0 0xff797979 0.226563 0.101563</v>
+	<v index="2">250 -8 150.191 -1 0 0 0xff797979 0.230469 0.921875</v>
+	<v index="3">250 0 150.191 -1 0 0 0xff797979 0.28125 0.921875</v>
+	<v index="4">250 -8 -151.387 -1 0 0 0xff797979 0.230469 0.921875</v>
+	<v index="5">250 0 -151.387 -1 0 0 0xff797979 0.28125 0.921875</v>
+	<v index="6">250 0 -400 -1 0 0 0xff797979 0.28125 0.101563</v>
+	<v index="7">250 -8 -400 -1 0 0 0xff797979 0.226563 0.101563</v>
+	<v index="8">250 -8 -151.387 0 -1 0 0xffc3c3c3 0.28125 0.101563</v>
+	<v index="9">300 -8 -151.387 0 -1 0 0xffc3c3c3 0.226563 0.101563</v>
+	<v index="10">300 -8 150.191 0 -1 0 0xffc3c3c3 0.230469 0.921875</v>
+	<v index="11">250 -8 150.191 0 -1 0 0xffc3c3c3 0.28125 0.921875</v>
+	<v index="12">300 -8 -151.387 0 -1 0 0xffc3c3c3 0.445313 0.941406</v>
+	<v index="13">250 -8 -151.387 0 -1 0 0xffc3c3c3 0.507813 0.941406</v>
+	<v index="14">250 -8 -400 0 -1 0 0xffc3c3c3 0.507813 0.105469</v>
+	<v index="15">300 -8 -400 0 -1 0 0xffc3c3c3 0.441406 0.105469</v>
+	<v index="16">250 0 -151.387 0 1 0 0xff2e2e2e 0.363281 0.996094</v>
+	<v index="17">250 0 150.191 0 1 0 0xff2e2e2e 0.363281 0.101563</v>
+	<v index="18">300 0 150.191 0 1 0 0xff2e2e2e 0.296875 0.101563</v>
+	<v index="19">300 0 -151.387 0 1 0 0xff2e2e2e 0.296875 0.996094</v>
+	<v index="20">250 0 -151.387 0 1 0 0xff2e2e2e 0.664063 0.992188</v>
+	<v index="21">300 0 -151.387 0 1 0 0xff2e2e2e 0.734375 0.992188</v>
+	<v index="22">300 0 -400 0 1 0 0xff2e2e2e 0.734375 0.101563</v>
+	<v index="23">250 0 -400 0 1 0 0xff2e2e2e 0.664063 0.101563</v>
+	<v index="24">300 -8 -151.387 1 0 0 0xff797979 0.230469 0.921875</v>
+	<v index="25">300 0 -151.387 1 0 0 0xff797979 0.28125 0.921875</v>
+	<v index="26">300 0 150.191 1 0 0 0xff797979 0.28125 0.101563</v>
+	<v index="27">300 -8 150.191 1 0 0 0xff797979 0.226563 0.101563</v>
+	<v index="28">300 0 -151.387 1 0 0 0xff797979 0.28125 0.101563</v>
+	<v index="29">300 -8 -151.387 1 0 0 0xff797979 0.226563 0.101563</v>
+	<v index="30">300 -8 -400 1 0 0 0xff797979 0.230469 0.921875</v>
+	<v index="31">300 0 -400 1 0 0 0xff797979 0.28125 0.921875</v>
+	<v index="32">250 0 150.191 -1 0 0 0xff797979 0.28125 0.921875</v>
+	<v index="33">250 -8 150.191 -1 0 0 0xff797979 0.28125 0.101563</v>
+	<v index="34">250 -8 400 -1 0 0 0xff797979 0.226563 0.101563</v>
+	<v index="35">250 0 400 -1 0 0 0xff797979 0.230469 0.921875</v>
+	<v index="36">300 -8 150.191 0 -1 0 0xffc3c3c3 0.363281 0.996094</v>
+	<v index="37">300 -8 400 0 -1 0 0xffc3c3c3 0.363281 0.101563</v>
+	<v index="38">250 -8 400 0 -1 0 0xffc3c3c3 0.296875 0.101563</v>
+	<v index="39">250 -8 150.191 0 -1 0 0xffc3c3c3 0.296875 0.996094</v>
+	<v index="40">300 0 150.191 0 1 0 0xff2e2e2e 0.507813 0.105469</v>
+	<v index="41">250 0 150.191 0 1 0 0xff2e2e2e 0.441406 0.105469</v>
+	<v index="42">250 0 400 0 1 0 0xff2e2e2e 0.445313 0.941406</v>
+	<v index="43">300 0 400 0 1 0 0xff2e2e2e 0.507813 0.941406</v>
+	<v index="44">300 0 150.191 1 0 0 0xff797979 0.28125 0.921875</v>
+	<v index="45">300 0 400 1 0 0 0xff797979 0.28125 0.101563</v>
+	<v index="46">300 -8 400 1 0 0 0xff797979 0.226563 0.101563</v>
+	<v index="47">300 -8 150.191 1 0 0 0xff797979 0.230469 0.921875</v>
+	<v index="48">250 -8 -400 0 0 -1 0xffffffff 0.28125 0.921875</v>
+	<v index="49">250 0 -400 0 0 -1 0xffffffff 0.28125 0.101563</v>
+	<v index="50">300 0 -400 0 0 -1 0xffffffff 0.226563 0.101563</v>
+	<v index="51">300 -8 -400 0 0 -1 0xffffffff 0.230469 0.921875</v>
+	<v index="52">250 0 400 0 0 1 0xffffffff 0.230469 0.921875</v>
+	<v index="53">250 -8 400 0 0 1 0xffffffff 0.28125 0.921875</v>
+	<v index="54">300 -8 400 0 0 1 0xffffffff 0.28125 0.101563</v>
+	<v index="55">300 0 400 0 0 1 0xffffffff 0.226563 0.101563</v>
+</VertexBuffer>
+<Model id="PLANK2">
+	<!--
+	<Revolt Radius="500.063843" Xmin="250.000000" Xmax="300.000000" Ymin="-8.000000" Ymax="0.000000" Zmin="-399.999817" Zmax="399.999817"
+	 PolyNum="14" VertNum="40" QuadNumTex="14" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="PLANK2_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="PLANK2_PreviewCamera">
+				0.00199974 0 0 0
+				0 0.00199974 0 0
+				0 0 0.000999872 0
+				-0.54993 0.00799898 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="Wild_West2a"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="56" />
+	</Pass>
+</Model>
+</XDX>

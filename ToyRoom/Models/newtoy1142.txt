@@ -1,0 +1,140 @@
+Summary Info for newtoy1142.max (at Frame 0)
+
+Objects:
+  			Cast	Receive	Motion		
+  Name (Type)	Verts	Faces	Shadows	Shadows	Blur	Hidden	Frozen	Material (Type)
+  ------------------------	------------	------------	------------	------------	------------	------------	------------	------------------------
+  toytrack (Editable Mesh)	7637	13875	Yes	Yes	No	No	No	 (Multi/Sub-Object)
+  hanging plane (Editable M	131	254	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  ground plane (Editable Me	131	254	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  Teddy (Editable Mesh)	140	276	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  sailboat (Editable Mesh)	10	18	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  tugboat (Editable Mesh)	64	95	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  tughull (Editable Mesh)	14	14	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  Robot01 (Editable Mesh)	226	398	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  Dozer01 (Editable Mesh)	138	256	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  Crane01 (Editable Mesh)	216	404	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  Truck01 (Editable Mesh)	204	374	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  float01 (Editable Mesh)	111	228	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  Float01 (Editable Mesh)	111	228	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  rocket&pad01 (Editable Me	97	154	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  Robot02 (Editable Mesh)	226	402	Yes	Yes	No	Yes	No	Material #25 (Standard)
+  kiddycopter01 (Editable M	146	312	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  kiddycopter02 (Editable M	146	308	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  bigrocket01 (Editable Mes	105	176	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  Nelly01 (Editable Mesh)	85	162	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  Nelly02 (Editable Mesh)	85	162	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  MrFuzz01 (Editable Mesh)	51	192	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  Tanker01 (Editable Mesh)	160	300	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  flood01 (Editable Mesh)	28	50	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  flood02 (Editable Mesh)	28	50	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  flood03 (Editable Mesh)	28	50	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  flood04 (Editable Mesh)	28	50	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  fuzzbox01 (Editable Mesh)	7	6	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  gator01 (Editable Mesh)	97	184	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  gator02 (Editable Mesh)	97	184	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  palm01 (Editable Mesh)	32	58	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  palm02 (Editable Mesh)	31	56	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves01 (Editable Mesh)	179	266	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelf01 (Editable Mesh)	54	88	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  book01 (Editable Mesh)	34	44	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  book02 (Editable Mesh)	34	44	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelf02 (Editable Mesh)	75	106	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  candy01 (Editable Mesh)	28	48	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelf03 (Editable Mesh)	104	160	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves02 (Editable Mesh)	108	176	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  candy02 (Editable Mesh)	28	48	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves03 (Editable Mesh)	102	168	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox01 (Editable Mesh)	12	12	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  ball01 (Editable Mesh)	26	48	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  duplo01 (Editable Mesh)	160	248	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves04 (Editable Mesh)	129	194	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  drawer01 (Editable Mesh)	93	108	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox02 (Editable Mesh)	16	16	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox03 (Editable Mesh)	30	30	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox04 (Editable Mesh)	19	20	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  drawer02 (Editable Mesh)	93	108	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox05 (Editable Mesh)	26	26	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox06 (Editable Mesh)	12	12	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cabinet01 (Editable Mesh)	72	116	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cabinet02 (Editable Mesh)	114	150	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox07 (Editable Mesh)	16	16	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  sbox01 (Editable Mesh)	8	12	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox08 (Editable Mesh)	29	30	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  airhock01 (Editable Mesh)	67	64	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox09 (Editable Mesh)	12	12	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  hopper01 (Editable Mesh)	66	115	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  duplo02 (Editable Mesh)	80	122	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves05 (Editable Mesh)	108	176	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cabinet03 (Editable Mesh)	144	232	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves06 (Editable Mesh)	122	212	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  drawer03 (Editable Mesh)	20	34	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  blackbrd01 (Editable Mesh	28	28	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  tallbox01 (Editable Mesh)	32	40	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  duplo03 (Editable Mesh)	80	122	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  chest01 (Editable Mesh)	120	190	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  sign01 (Editable Mesh)	12	6	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  bridge01 (Editable Mesh)	80	144	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  tallbox02 (Editable Mesh)	16	16	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  spire01 (Editable Mesh)	31	54	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  sbox02 (Editable Mesh)	8	12	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  sbox03 (Editable Mesh)	24	36	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves07 (Editable Mesh)	104	196	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelf04 (Editable Mesh)	52	98	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox10 (Editable Mesh)	22	22	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves08 (Editable Mesh)	104	196	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves09 (Editable Mesh)	152	276	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  botbox01 (Editable Mesh)	24	24	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  botbox02 (Editable Mesh)	16	20	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox11 (Editable Mesh)	8	10	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox12 (Editable Mesh)	12	12	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelf05 (Editable Mesh)	75	106	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  genbox01 (Editable Mesh)	8	10	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  genbox02 (Editable Mesh)	8	10	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  genbox03 (Editable Mesh)	8	8	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  genbox04 (Editable Mesh)	16	20	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  tallbox03 (Editable Mesh)	8	8	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves10 (Editable Mesh)	156	258	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  duplo04 (Editable Mesh)	160	248	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  cardbox13 (Editable Mesh)	22	24	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  genbox05 (Editable Mesh)	16	20	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  genbox06 (Editable Mesh)	8	10	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  corner01 (Editable Mesh)	48	80	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelves11 (Editable Mesh)	123	186	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  shelf06 (Editable Mesh)	75	106	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  spire02 (Editable Mesh)	31	54	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  spire03 (Editable Mesh)	31	54	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+  fuzzbox02 (Editable Mesh)	16	32	Yes	Yes	No	Yes	No	 (Multi/Sub-Object)
+
+
+Helpers:
+  		
+  Name (Type)	Hidden	Frozen
+  ------------------------	------------	------------
+  Point04 (Object)	Yes	No
+  Point02 (Object)	Yes	No
+  Point01 (Object)	Yes	No
+  Point03 (Object)	Yes	No
+
+
+Scene Totals:
+  Objects: 101
+  Shapes: 0
+  Cameras: 0
+  Lights: 0
+  Helpers: 4
+  Space Warps: 0
+  Total: 105
+
+Mesh Totals:
+
+  Verts: 14564
+  Faces: 25527
+Materials:
+
+    ( Multi/Sub-Object )
+      Material #25  ( Standard )
+
+  Material #25  ( Standard )
+
+

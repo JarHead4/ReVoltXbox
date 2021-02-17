@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\Toy2\HIDEPOLY.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="fxpage1" source="../../gfx/fxpage1.bmp" />
+-->
+<VertexBuffer id="HIDEPOLY_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">0.2 -800.2 -399.8 1 0 0 0xff3c5064 0.890625 0.642578</v>
+	<v index="1">0.2 -0.200009 -399.8 1 0 0 0xff3c5064 0.890625 0.611328</v>
+	<v index="2">0.2 -0.200009 400.2 1 0 0 0xff3c5064 0.859375 0.609375</v>
+	<v index="3">0.2 -800.2 400.2 1 0 0 0xff3c5064 0.859375 0.642578</v>
+	<!-- double-sided begin -->
+	<v index="4">0.2 -0.200009 400.2 -1 0 0 0xff3c5064 0.859375 0.609375</v>
+	<v index="5">0.2 -0.200009 -399.8 -1 0 0 0xff3c5064 0.890625 0.611328</v>
+	<v index="6">0.2 -800.2 -399.8 -1 0 0 0xff3c5064 0.890625 0.642578</v>
+	<v index="7">0.2 -800.2 400.2 -1 0 0 0xff3c5064 0.859375 0.642578</v>
+	<!-- double-sided end -->
+</VertexBuffer>
+<Model id="HIDEPOLY">
+	<!--
+	<Revolt Radius="894.695557" Xmin="0.200000" Xmax="0.200000" Ymin="-800.200012" Ymax="-0.200009" Zmin="-399.800018" Zmax="400.199982"
+	 PolyNum="1" VertNum="4" QuadNumTex="1" TriNumTex="0" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="HIDEPOLY_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="HIDEPOLY_PreviewCamera">
+				0.0011177 0 0 0
+				0 0.0011177 0 0
+				0 0 0.000558849 0
+				-0.00022354 0.447303 0.499888 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="fxpage1"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="8" />
+	</Pass>
+</Model>
+</XDX>

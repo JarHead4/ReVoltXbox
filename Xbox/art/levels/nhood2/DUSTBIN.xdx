@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<XDX version="0.6" >
+<!-- converted from D:\levels\NHood2\DUSTBIN.xdx
+ModelCount="1"
+<include href="Default.xdx" />
+-->
+<!--
+<Texture id="NHood2j" source="../../../NHood2j.bmp" />
+-->
+<VertexBuffer id="DUSTBIN_VertexBuffer_OpaqueTextured"
+ names="POSITION NORMAL DIFFUSE TEXCOORD0"
+ format="FLOAT3 FLOAT3 D3DCOLOR FLOAT2">
+	<v index="0">79.9912 -113.424 -79.9913 0.884035 -0.338028 -0.322828 0xff3b3b3b 0.550781 0.726563</v>
+	<v index="1">71.2083 -199.5 0.98404 0.562325 -0.826903 0.00472074 0xff3b3b3b 0.480469 0.730469</v>
+	<v index="2">-71.2193 -199.5 0.98404 -0.562363 -0.826877 0.004721 0xff3b3b3b 0.480469 0.773438</v>
+	<v index="3">-79.9912 -113.424 -79.9913 -0.680233 -0.537828 -0.49802 0xff3b3b3b 0.550781 0.773438</v>
+	<v index="4">-73.5302 152 73.5826 0 0.0241381 0.999709 0xffc3b83a 0.167969 0.902344</v>
+	<v index="5">-79.9912 -113.424 79.9913 -0.465239 -0.352351 0.812035 0xfffff04c 0.160156 0.710938</v>
+	<v index="6">79.9912 -113.424 79.9913 0.727066 -0.265933 0.632973 0xfffff04c 0.332031 0.710938</v>
+	<v index="7">73.6058 152 73.5826 0.706697 0.0340646 0.706696 0xffc3b83a 0.328125 0.902344</v>
+	<v index="8">79.9912 -113.424 79.9913 0.727066 -0.265933 0.632973 0xffffffff 0.550781 0.773438</v>
+	<v index="9">-79.9912 -113.424 79.9913 -0.465239 -0.352351 0.812035 0xffffffff 0.550781 0.726563</v>
+	<v index="10">-71.2193 -199.5 0.98404 -0.562363 -0.826877 0.004721 0xffffffff 0.480469 0.730469</v>
+	<v index="11">71.2083 -199.5 0.98404 0.562325 -0.826903 0.00472074 0xffb5b5b5 0.480469 0.773438</v>
+	<v index="12">73.6058 152 73.5826 0.706697 0.0340646 0.706696 0xff9d932e 0.328125 0.902344</v>
+	<v index="13">79.9912 -113.424 79.9913 0.727066 -0.265933 0.632973 0xff89823c 0.332031 0.710938</v>
+	<v index="14">79.9912 -113.424 -79.9913 0.884035 -0.338028 -0.322828 0xff89823c 0.160156 0.710938</v>
+	<v index="15">73.6058 152 -73.5534 0.999711 0.0240505 0 0xff89823c 0.167969 0.902344</v>
+	<v index="16">-79.9912 -113.424 79.9913 -0.465239 -0.352351 0.812035 0xffb5b5b5 0.550781 0.726563</v>
+	<v index="17">-79.9912 -113.424 -79.9913 -0.680233 -0.537828 -0.49802 0xff6c6c6c 0.480469 0.730469</v>
+	<v index="18">-71.2193 -199.5 0.98404 -0.562363 -0.826877 0.004721 0xff6c6c6c 0.480469 0.773438</v>
+	<v index="19">71.2083 -199.5 0.98404 0.562325 -0.826903 0.00472074 0xff4e4e4e 0.480469 0.730469</v>
+	<v index="20">79.9912 -113.424 -79.9913 0.884035 -0.338028 -0.322828 0xff717171 0.480469 0.773438</v>
+	<v index="21">79.9912 -113.424 79.9913 0.727066 -0.265933 0.632973 0xff4e4e4e 0.550781 0.726563</v>
+</VertexBuffer>
+<Model id="DUSTBIN">
+	<!--
+	<Revolt Radius="211.833420" Xmin="-79.991211" Xmax="79.991211" Ymin="-199.499985" Ymax="152.000000" Zmin="-79.991272" Zmax="79.991272"
+	 PolyNum="6" VertNum="9" QuadNumTex="4" TriNumTex="2" QuadNumRGB="0" TriNumRGB="0" />
+	-->
+	<Pass>
+		<VertexShader idref="VSLightDiffuseTexture">
+			<decl>
+			<stream index="0" idref="DUSTBIN_VertexBuffer_OpaqueTextured" />
+			</decl>
+			<!-- TODO: track down the proper source of the model's material color -->
+			<Constant index="0" name="Diffuse">1 1 1 1</Constant>
+			<Constant index="1" name="LightDirection">0 0 1 1</Constant>
+			<Constant index="4" name="MWORLDVIEWPROJECTION" count="4" parameter="DUSTBIN_PreviewCamera">
+				0.00472069 0 0 0
+				0 0.00472069 0 0
+				0 0 0.00236035 0
+				0 0.112116 0.5 1</Constant>
+			<Constant index="8" name="MWORLDINVERSE" count="3">
+				1 0 0 0
+				0 1 0 0
+				0 0 1 0</Constant>
+		</VertexShader>
+		<RenderState>
+		<TextureState Stage="0" idref="NHood2j"
+			ColorOp="Modulate"
+			ColorArg1="Texture"
+			ColorArg2="Diffuse"
+			AlphaOp="Modulate"
+			AlphaArg1="Texture"
+			AlphaArg2="Diffuse"
+			/>
+		<TextureState Stage="1" ColorOp="Disable" AlphaOp="Disable"/>
+		</RenderState>
+		<Draw primitive="QUADLIST" start="0" count="16" />
+		<Draw primitive="TRILIST" start="16" count="6" />
+	</Pass>
+</Model>
+</XDX>

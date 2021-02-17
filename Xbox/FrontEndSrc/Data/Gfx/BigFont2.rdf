@@ -1,0 +1,23 @@
+// List of resources to bundle.
+//
+// The output will be a header file (.h) used at compile time,
+// and a packed resource file (.xpr) used at runtime.
+
+out_header         BigFont2.h
+out_packedresource BigFont2.xpr
+out_error          BigFont2.err
+
+
+Texture Font
+{
+   Source      BigFont2.bmp
+   AlphaSource BigFont2_a.bmp
+   Format      D3DFMT_A4R4G4B4
+   Levels      1
+}
+
+UserData FontData
+{
+   DataFile BigFont2.abc
+}
+
